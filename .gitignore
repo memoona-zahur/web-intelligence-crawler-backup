@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+data/*.db
+data/backups/
+data/logs/
+node_modules/
+.env
+innerlight-admin/
+innerlight-backend/
+db-backups/
+.coverage
+htmlcov/
+.pytest_cache/
