@@ -79,7 +79,8 @@ def test_profile_truncated_at_max_chars(allow_hosts, monkeypatch):
 def test_empty_when_below_minimum_text(allow_hosts, monkeypatch):
     monkeypatch.setattr(config, "MIN_TEXT_CHARS", 10_000)
     result = run_crawl(html_client({"/": HOME}))
-    assert result.status == "empty"
+    # CHANGED in Phase 2 (ISS-10, ISS-12): the old status word "empty" no longer exists; a site without usable text is "requires_review"
+    assert result.status == "requires_review"
     assert result.clean_text is None
     assert "no usable text" in result.error
 

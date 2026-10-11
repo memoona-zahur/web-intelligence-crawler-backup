@@ -147,12 +147,27 @@ def test_500_then_success_succeeds_on_retry():
 # --- network failures -----------------------------------------------------
 
 
-def test_timeout_maps_to_network_and_retries():
+def test_timeout_maps_to_network_and_retries_once():
+    """CHANGED in Phase 2: a server that times out is retried once only (a slow server would hold a worker for 3 x the limit)."""
     calls = {"n": 0}
 
     def handler(request):
         calls["n"] += 1
         raise httpx.ConnectTimeout("timed out", request=request)
+
+    with pytest.raises(FetchError) as exc:
+        fetch(make_client(handler), "https://example.com/")
+    assert exc.value.kind == "network"
+    assert exc.value.timeout is True
+    assert calls["n"] == 2
+
+
+def test_connection_refused_uses_every_retry():
+    calls = {"n": 0}
+
+    def handler(request):
+        calls["n"] += 1
+        raise httpx.ConnectError("refused", request=request)
 
     with pytest.raises(FetchError) as exc:
         fetch(make_client(handler), "https://example.com/")
@@ -228,11 +243,24 @@ def test_robots_disallow_respected():
     assert rules.allowed("https://example.com/about")
 
 
-def test_robots_fail_open_on_server_error():
+def test_robots_server_error_means_do_not_crawl_now_by_default():
+    """CHANGED in Phase 2 (ISS-14, user decision, pending sir confirmation): RFC 9309 - robots.txt 5xx after retries = disallow."""
     def handler(request):
         return httpx.Response(500, request=request)
 
     rules = asyncio.run(load_robots(make_client(handler), "https://example.com", {}))
+    assert rules.unavailable is True
+    assert not rules.allowed("https://example.com/")
+
+
+def test_robots_server_error_fails_open_when_the_policy_says_allow(monkeypatch):
+    monkeypatch.setenv("ROBOTS_5XX_POLICY", "allow")
+
+    def handler(request):
+        return httpx.Response(500, request=request)
+
+    rules = asyncio.run(load_robots(make_client(handler), "https://example.com", {}))
+    assert rules.unavailable is False and rules.missing is True
     assert rules.allowed("https://example.com/")
 
 

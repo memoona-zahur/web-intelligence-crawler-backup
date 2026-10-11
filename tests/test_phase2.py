@@ -161,8 +161,11 @@ def test_structured_data_lines_keep_source_fields():
     assert "Canonical: https://example.com/" in lines
 
 
-def test_stops_early_when_enough_text_is_collected(allow_hosts, monkeypatch):
-    monkeypatch.setattr(config, "SUFFICIENT_TEXT_CHARS", 80)
+def test_stops_early_when_the_important_page_types_are_read(allow_hosts, monkeypatch):
+    """CHANGED in Phase 2 (ISS-08): the stop rule is page-type coverage plus enough evidence, not 12,000 characters of homepage text.
+    The homepage alone is NOT enough when an About page exists; once About is read and the evidence threshold is met, Contact is not fetched."""
+    monkeypatch.setattr("app.crawler.pipeline.MIN_EVIDENCE_CHARS", 80)
     result = run_crawl(html_client({"/": HOME, "/about": ABOUT, "/locations": LOCATIONS}))
-    assert result.pages_crawled == 1
-    assert "=== PAGE: about" not in result.clean_text
+    assert result.pages_crawled == 2
+    assert "=== PAGE: about" in result.clean_text
+    assert "=== PAGE: locations" not in result.clean_text

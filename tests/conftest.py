@@ -26,6 +26,12 @@ def db(tmp_path, monkeypatch):
     yield engine
 
 
+@pytest.fixture(autouse=True)
+def no_dns(monkeypatch):
+    """CR-J03: unit tests never touch the network, not even DNS. The guard has its own tests (test_guard*.py) that call it directly."""
+    monkeypatch.setattr("app.crawler.fetcher.assert_public_url", lambda url: url)
+
+
 @pytest.fixture()
 def make_website(db):
     def _make(url: str, status: str = "pending", **extra) -> int:

@@ -1,7 +1,7 @@
 """Priority-page discovery: About/Services first, junk never."""
 
 from app.crawler import config
-from app.crawler.discover import discover_pages
+from app.crawler.discover import canonical_key, discover_pages
 
 
 def links(html: str) -> list[str]:
@@ -53,21 +53,26 @@ def test_excludes_junk_paths():
     assert links(html) == []
 
 
-def test_excludes_offsite_and_subdomain_links():
+def test_excludes_offsite_links_and_non_business_subdomains():
+    """CHANGED in Phase 2 (CR-C05): a business subdomain of the same registrable domain (shop.example.com) is the same site;
+    blog./careers. subdomains and other domains are not."""
     html = """
     <html><body>
       <a href="https://evil.com/about">Evil</a>
+      <a href="https://blog.example.com/products">Blog subdomain</a>
+      <a href="https://careers.example.com/about">Careers subdomain</a>
       <a href="https://shop.example.com/products">Shop subdomain</a>
       <a href="/about">Real about</a>
     </body></html>
     """
     found = links(html)
-    assert found == ["https://example.com/about"]
+    assert sorted(found) == ["https://example.com/about", "https://shop.example.com/products"]
 
 
 def test_www_variant_matches_base_host():
+    # CHANGED in Phase 2: the link keeps the host it was written with (no extra redirect); www and apex are the same site
     html = '<html><body><a href="https://www.example.com/about">About</a></body></html>'
-    assert links(html) == ["https://example.com/about"]
+    assert [canonical_key(u) for u in links(html)] == ["example.com/about"]
 
 
 def test_skips_schemes_and_fragments():
