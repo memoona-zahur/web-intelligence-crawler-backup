@@ -329,7 +329,7 @@ async def _crawl(client: httpx.AsyncClient, normalized_url: str, robots_cache: d
     method = "http"
     renders = 0
     assessment = assess_page(extracted.text, extracted.title, html, host)
-    if assessment.kind in ("js_shell", "thin") and renders < MAX_RENDERS_PER_SITE:
+    if assessment.kind == "js_shell" and renders < MAX_RENDERS_PER_SITE:   # a page with little text and NO script cannot be improved by a browser
         renders += 1
         rendered = await render_page(home_url)
         if rendered:

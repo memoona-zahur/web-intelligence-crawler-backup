@@ -41,12 +41,12 @@ TERMS: dict[str, tuple[str, ...]] = {
     ),
     "services": (
         "services", "service", "solutions", "solution", "capabilities", "expertise", "what we do", "whatwedo", "offerings", "practice areas",
-        "practices", "consulting", "our services", "our solutions", "service offerings", "specialties", "specialisms", "competencies",
+        "practices", "consulting", "research", "research and development", "r d", "innovation", "our services", "our solutions", "service offerings", "specialties", "specialisms", "competencies",
         "leistungen", "dienstleistungen", "loesungen", "losungen", "angebot", "kompetenzen", "was wir tun", "leistung", "dienste",
         "nos services", "prestations", "expertises", "offres", "activites", "metiers", "savoir faire", "ce que nous faisons",
         "servicios", "soluciones", "que hacemos", "nuestros servicios", "capacidades", "servicio",
         "servizi", "soluzioni", "cosa facciamo", "competenze", "servicos", "solucoes", "o que fazemos", "servico",
-        "diensten", "oplossingen", "wat we doen", "dienst", "hizmetler", "cozumler", "hizmet", "layanan", "jasa", "solusi",
+        "diensten", "oplossingen", "wat we doen", "dienst", "hizmetler", "hizmetlerimiz", "cozumler", "cozumlerimiz", "hizmet", "layanan", "jasa", "solusi",
         "uslugi", "usługi", "resheniya", "rozwiazania", "oferta", "tjanster", "losningar",
         "خدماتنا", "الخدمات", "خدمات", "حلول", "حلولنا", "ہماری خدمات", "سروسز", "सेवाएं", "सेवाएँ", "समाधान",
         "服务", "产品与服务", "解决方案", "业务", "业务范围", "サービス", "事業内容", "ソリューション", "業務内容", "서비스", "사업분야", "사업 분야", "솔루션",
@@ -113,13 +113,23 @@ ALLOWED_QUERY_KEYS = {"page_id", "p_id", "id", "pageid", "pid", "cid", "sec", "s
 TRACKING_PREFIXES = ("utm_", "fbclid", "gclid", "msclkid", "mc_", "_ga", "ref", "source", "sessionid", "sid", "phpsessid", "jsessionid")
 _LANG_SEGMENT = re.compile(r"^[a-z]{2}([-_][a-z]{2,4})?$")
 _DATE_ARCHIVE = re.compile(r"/(19|20)\d{2}/(0?[1-9]|1[0-2])(/|$)")
-_PAGINATION = re.compile(r"/(page|p|seite|pagina)/\d+(/|$)")
+_PAGINATION = re.compile(r"/(page|p|seite|pagina)/\d{1,3}(/|$)")
 _JSESSION = re.compile(r";jsessionid=[^/?#]*", re.I)
 _WORDS = re.compile(r"[^\W_]+", re.UNICODE)
 
 
+_LETTER_MAP = str.maketrans({"ı": "i", "İ": "i", "ł": "l", "Ł": "l", "ø": "o", "Ø": "o", "đ": "d", "Đ": "d", "ß": "ss", "æ": "ae", "œ": "oe"})
+
+
 def _strip_accents(text: str) -> str:
-    return "".join(c for c in unicodedata.normalize("NFKD", text) if not unicodedata.combining(c))
+    """Remove accents from Latin letters only (münchen -> munchen). Kana, Hangul, Arabic ... are composed, never decomposed."""
+    out = []
+    for char in text.translate(_LETTER_MAP):
+        if ord(char) < 0x250:
+            out.append("".join(c for c in unicodedata.normalize("NFKD", char) if not unicodedata.combining(c)))
+        else:
+            out.append(unicodedata.normalize("NFKC", char))
+    return "".join(out)
 
 
 def _is_latin(text: str) -> bool:
@@ -232,6 +242,9 @@ def classify(path: str, anchor_text: str = "", nav: bool = False) -> tuple[str, 
         return "skip", 0
     segs = _segments(path)
     first_words = tokens(segs[0]) if segs else []
+    top = [s for s in path.lower().split("/") if s][:2]   # before the language prefix is removed: "wp-json" looks like a language code
+    if any(s in SECTION_SKIP or s.startswith("wp-") for s in top[:1] + (top[1:2] if top and _LANG_SEGMENT.match(top[0]) else [])):
+        return "skip", 0
     if first_words and all(w in SECTION_SKIP or w in _SKIP_FILLER for w in first_words) and any(w in SECTION_SKIP for w in first_words):
         return "skip", 0
     path_words = tokens(" ".join(segs))

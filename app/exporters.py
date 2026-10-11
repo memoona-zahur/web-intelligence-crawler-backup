@@ -12,6 +12,7 @@ from sqlalchemy.sql import Select
 
 from app.database import get_session
 from app.records import EXPORT_COLUMNS, export_row
+from app.sanitize import clean_text, sanitize_cell
 
 
 def iter_csv(stmt: Select) -> Iterator[str]:
@@ -24,7 +25,7 @@ def iter_csv(stmt: Select) -> Iterator[str]:
             buffer.seek(0)
             buffer.truncate()
             row = export_row(site)
-            writer.writerow([row[column] for column in EXPORT_COLUMNS])
+            writer.writerow([sanitize_cell(row[column]) for column in EXPORT_COLUMNS])  # CR-E11: formula characters neutralised
             yield buffer.getvalue()
 
 
@@ -35,7 +36,7 @@ def iter_json(stmt: Select) -> Iterator[str]:
         for site in session.scalars(stmt).yield_per(200):
             prefix = "" if first else ","
             first = False
-            yield prefix + json.dumps(export_row(site), ensure_ascii=False)
+            yield prefix + json.dumps({k: clean_text(v) for k, v in export_row(site).items()}, ensure_ascii=False)
     yield "]"
 
 
@@ -46,7 +47,7 @@ def iter_xlsx(stmt: Select) -> Iterator[bytes]:
     with get_session() as session:
         for site in session.scalars(stmt).yield_per(200):
             row = export_row(site)
-            sheet.append([row[column] for column in EXPORT_COLUMNS])
+            sheet.append([sanitize_cell(row[column]) for column in EXPORT_COLUMNS])
     buffer = io.BytesIO()
     book.save(buffer)
     buffer.seek(0)

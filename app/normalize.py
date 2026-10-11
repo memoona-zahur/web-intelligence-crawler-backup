@@ -93,23 +93,27 @@ def _parse_inner(raw: str) -> tuple[str | None, str]:
 
     ip = parse_ip_literal(host)
     if ip is not None:
+        if ip.version == 4 and not re.fullmatch(r"\d{1,3}(\.\d{1,3}){3}", host):
+            return None, "IP address written in an unusual form (not a website name)"
         host = f"[{ip}]" if ip.version == 6 else str(ip)
     else:
         host = host.removeprefix("www.")
         if not host or "." not in host:
             return None, "host has no dot (not a public domain name)"
-        try:
-            host = host.encode("idna").decode("ascii")  # münchen.de -> xn--mnchen-3ya.de
-        except UnicodeError:
-            return None, "invalid international host name"
         if len(host) > 253:
             return None, "host name longer than 253 characters"
+        if not host.isascii():
+            try:
+                host = host.encode("idna").decode("ascii")  # münchen.de -> xn--mnchen-3ya.de
+            except UnicodeError:
+                return None, "invalid international host name"
         labels = host.split(".")
+        if any(len(label) > 63 for label in labels):
+            return None, "a part of the host name is longer than 63 characters"
         if any(not _LABEL.match(label) for label in labels):
-            return None, "invalid characters or label length in host name"
+            return None, "invalid characters in the host name"
         if labels[-1].isdigit():
             return None, "top-level domain cannot be numeric"
-
     if port is not None and not 1 <= port <= 65535:
         return None, "invalid port"
     suffix = f":{port}" if port and port not in (80, 443) else ""

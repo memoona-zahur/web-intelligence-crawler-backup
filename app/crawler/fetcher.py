@@ -14,6 +14,7 @@ from __future__ import annotations
 import asyncio
 import contextvars
 import time
+import zlib
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -62,6 +63,7 @@ def _request_headers() -> dict[str, str]:
         "User-Agent": config.user_agent(),
         "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.5",
         "Accept-Language": "en, *;q=0.5",
+        "Accept-Encoding": "gzip, deflate",
     }
 
 
@@ -95,19 +97,58 @@ async def _guard(url: str) -> None:
 
 
 async def _read_body(response: httpx.Response, cap: int) -> bytes:
-    """Read at most `cap` decoded bytes. Raises FetchError('too_large') for oversize bodies and decompression bombs (ISS-02)."""
-    chunks: list[bytes] = []
+    """Read at most `cap` decoded bytes. Raises FetchError('too_large') for oversize bodies and decompression bombs (ISS-02).
+
+    gzip / deflate bodies are expanded here, in steps with a hard output limit, so one small compressed chunk can never balloon in memory
+    (httpx's own decoder expands a whole chunk at once). Other encodings are left to httpx.
+    """
+    if response.is_stream_consumed:  # already read and decoded (only happens with in-memory test responses)
+        if len(response.content) > cap:
+            raise FetchError("too_large", f"page larger than {cap} bytes")
+        return response.content
+    encoding = (response.headers.get("content-encoding") or "identity").lower().strip()
+    if encoding in ("gzip", "x-gzip", "deflate"):
+        decompressor = zlib.decompressobj(zlib.MAX_WBITS | 16 if "gzip" in encoding else zlib.MAX_WBITS)
+        chunks: list[bytes] = []
+        total = 0
+
+        def take(data: bytes) -> None:
+            nonlocal total
+            total += len(data)
+            if total > cap:
+                raise FetchError("too_large", f"page larger than {cap} bytes")
+            if total > 1_000_000 and total > config.MAX_DECODED_RATIO * max(response.num_bytes_downloaded, 1):
+                raise FetchError("too_large", f"decompressed size is more than {config.MAX_DECODED_RATIO}x the transferred size (possible decompression bomb)")
+            chunks.append(data)
+
+        try:
+            async for raw in response.aiter_raw():
+                pending = raw
+                while pending:
+                    data = decompressor.decompress(pending, cap + 1 - total)
+                    if data:
+                        take(data)
+                    pending = decompressor.unconsumed_tail
+                    if not data and pending:
+                        break  # no progress: damaged stream
+            tail = decompressor.flush()
+            if tail:
+                take(tail)
+        except zlib.error as exc:
+            raise FetchError("network", f"damaged compressed response: {exc}") from exc
+        return b"".join(chunks)
+
+    chunks = []
     total = 0
     async for chunk in response.aiter_bytes():
         total += len(chunk)
         if total > cap:
             raise FetchError("too_large", f"page larger than {cap} bytes")
-        raw = max(response.num_bytes_downloaded, 1)
-        if total > 1_000_000 and total > config.MAX_DECODED_RATIO * raw:
+        downloaded = response.num_bytes_downloaded
+        if downloaded and total > 1_000_000 and total > config.MAX_DECODED_RATIO * downloaded:
             raise FetchError("too_large", f"decompressed size is more than {config.MAX_DECODED_RATIO}x the transferred size (possible decompression bomb)")
         chunks.append(chunk)
     return b"".join(chunks)
-
 
 async def _one_attempt(client: httpx.AsyncClient, url: str, expect_html: bool) -> FetchResult:
     started = time.perf_counter()

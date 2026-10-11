@@ -70,7 +70,8 @@ def _read(text: str) -> list[tuple[str, str, str]]:
             out = []  # fall through: treat as a plain list
     for line in text.splitlines():
         try:
-            cell = next(csv.reader([line.strip()]), [""])[0].strip()
+            cells = next(csv.reader([line.strip()]), [])
+            cell = cells[0].strip() if cells else ""   # a blank line gives no cells at all (this used to crash the whole import)
         except csv.Error:
             cell = line.strip()
         if cell:

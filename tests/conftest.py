@@ -8,11 +8,24 @@ import app.database as database
 from app.models import Base, Website
 
 
-@pytest.fixture(autouse=True)
-def db(tmp_path, monkeypatch):
-    """Every test gets its own empty SQLite file — the real data/ DB is never touched."""
-    engine = create_engine(f"sqlite:///{tmp_path / 'test.db'}")
+@pytest.fixture(scope="session")
+def _schema_template(tmp_path_factory):
+    """The empty schema is built once; every test copies it (building 11 tables per test cost 0.8 s)."""
+    path = tmp_path_factory.mktemp("schema") / "template.db"
+    engine = create_engine(f"sqlite:///{path}")
     Base.metadata.create_all(engine)
+    engine.dispose()
+    return path
+
+
+@pytest.fixture(autouse=True)
+def db(tmp_path, monkeypatch, _schema_template):
+    """Every test gets its own empty SQLite file — the real data/ DB is never touched."""
+    import shutil
+
+    target = tmp_path / "test.db"
+    shutil.copy(_schema_template, target)
+    engine = create_engine(f"sqlite:///{target}")
     monkeypatch.setattr(database, "engine", engine)
     monkeypatch.setattr(database, "SessionLocal", sessionmaker(bind=engine))
     monkeypatch.setenv("OBSERVE_ECHO", "0")
@@ -23,6 +36,7 @@ def db(tmp_path, monkeypatch):
     monkeypatch.delenv("ROBOTS_5XX_POLICY", raising=False)
     monkeypatch.setattr("app.crawler.config.DOMAIN_DELAY", 0.0)
     monkeypatch.setattr("app.crawler.config.RETRY_BACKOFF", 0.0)
+    monkeypatch.setattr("app.crawler.config.DOMAIN_DELAY_MAX", 0.0)    # no real waiting after a 429/5xx in unit tests
     yield engine
 
 

@@ -31,3 +31,17 @@ def html_client(pages: dict[str, str], robots: str | int = 404, default_status: 
 
 def assert_status(result, expected: str) -> None:
     assert result.status == expected, f"expected {expected!r}, got {result.status!r} ({result.error})"
+
+
+class _Chunks(httpx.AsyncByteStream):
+    def __init__(self, data: bytes, size: int) -> None:
+        self.data, self.size = data, size
+
+    async def __aiter__(self):
+        for start in range(0, len(self.data), self.size):
+            yield self.data[start:start + self.size]
+
+
+def stream_response(request, body: bytes, status: int = 200, headers: dict | None = None, chunk: int = 16384) -> httpx.Response:
+    """A response that is streamed in chunks like a real connection (httpx pre-reads responses built with content=)."""
+    return httpx.Response(status, headers=headers or {}, stream=_Chunks(body, chunk), request=request)

@@ -125,6 +125,10 @@ def _tokens(node: Tag) -> set[str]:
     return words
 
 
+def _looks_like_content(node: Tag) -> bool:
+    return bool(node.find(["h1", "h2", "h3"])) or len(node.find_all("p")) >= 2 or len(node.find_all("li")) >= 3 or len(node.find_all(["div", "section", "article", "main"])) >= 2
+
+
 def _visible_len(node: Tag) -> int:
     return len(_clean_line(node.get_text(" ", strip=True)))
 
@@ -159,8 +163,9 @@ def _drop_noise(soup: BeautifulSoup, use_name_hints: bool = True) -> None:
             continue
         if not (_tokens(node) & _NOISE_WORDS):
             continue
-        # a wrapper that holds most of the page is the page, not a banner (ISS-05)
-        if total >= 400 and _visible_len(node) > 0.5 * total:
+        # a wrapper that holds most of the page text AND looks like content (headings, several paragraphs or list items) is the page,
+        # not a banner (ISS-05). A banner is typically one short paragraph.
+        if _visible_len(node) > 0.5 * total and _looks_like_content(node):
             continue
         to_drop.append(node)
     for node in to_drop:

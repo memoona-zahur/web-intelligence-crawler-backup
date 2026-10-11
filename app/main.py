@@ -233,8 +233,9 @@ async def import_list(
         log_event("upload_rejected", chars=len(text))
         return RedirectResponse("/?notice=upload", status_code=303)
 
+    source_file = file.filename if (file is not None and file.filename) else "web form"  # kept with every row (CR-A07, ISS-20)
     with get_session() as session:
-        result = import_urls(session, text)
+        result = import_urls(session, text, source_file=source_file)
 
     return RedirectResponse(
         (
