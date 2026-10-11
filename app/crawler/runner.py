@@ -33,11 +33,12 @@ from app.crawler.persist import save_details
 from app.database import get_session
 from app.limits import crawl_concurrency
 from app.models import Job, Website
+from app.normalize import normalize_website
 from app.observe import log_event
 from app.profile import apply_crawl_result, record_domain
 from app.recovery import release_stale_claims, utcnow
 
-RETRYABLE_CATEGORIES = {"timeout", "network", "http_5xx", "rate_limited", "robots_unavailable"}
+RETRYABLE_CATEGORIES = {"timeout", "network", "tls", "http_5xx", "rate_limited", "robots_unavailable"}
 LEASE_SECONDS = 600
 HEARTBEAT_SECONDS = 60
 
@@ -107,10 +108,25 @@ def _save(site_id: int, result: CrawlResult) -> None:
             return
         website = site.normalized_website
         apply_crawl_result(site, result, now, retry_count=result.attempt_no or None)
+        _flag_duplicate_by_redirect(session, site, result)
         save_details(session, site, result, now, job_id=result.job_id, retry_count=result.attempt_no or 0)
         session.commit()
     if website:
         record_domain(website, result, now)
+
+
+def _flag_duplicate_by_redirect(session, site: Website, result: CrawlResult) -> None:
+    """A site that redirects to a company that is already in the list is a duplicate of it (CR-B05). The row stays; the link is kept."""
+    if not (result.redirected and site.final_url):
+        return
+    target = normalize_website(site.final_url)
+    if not target or target == site.normalized_website:
+        return
+    other = session.scalar(select(Website.id).where(Website.normalized_website == target, Website.id != site.id))
+    if other is not None:
+        site.duplicate_of_id = other
+        note = f"duplicate: redirects to {target}, which is already in the list (site #{other})"
+        site.crawl_error = f"{site.crawl_error}; {note}" if site.crawl_error else note
 
 
 def _is_cancelled(job_id: int | None) -> bool:
@@ -179,9 +195,12 @@ def _heartbeat(task_id: int, worker_id: str) -> bool:
         return queue.heartbeat(session, task_id, worker_id, LEASE_SECONDS)
 
 
-def _task_state(task_id: int, state: str) -> None:
+def _task_state(task_id: int, state: str, website_id: int | None = None) -> None:
     with get_session() as session:
         queue.set_state(session, task_id, state)
+        if state == "extracting" and website_id is not None:  # the site answered; its pages are being read (CR-A13, B06 "Active")
+            session.execute(update(Website).where(Website.id == website_id).values(status=config.STATUS_EXTRACTING, website_status="Active"))
+            session.commit()
 
 
 def _finish_task(task_id: int, state: str, error: str | None, delay: float | None, website_id: int | None = None) -> None:
@@ -262,7 +281,7 @@ async def _drain(job_id: int | None, concurrency: int, log, summary: RunSummary,
                 return
             result.job_id = claimed.job_id
             result.attempt_no = claimed.attempt
-            await _db(_task_state, claimed.task_id, "extracting")
+            await _db(_task_state, claimed.task_id, "extracting", claimed.website_id)
             try:
                 await _db(_save, claimed.website_id, result)
             except Exception as exc:  # noqa: BLE001 - a failed save must not kill the worker; the task keeps the reason

@@ -91,6 +91,7 @@ class Website(Base):
     content_crawled_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
     content_is_stale: Mapped[bool | None] = mapped_column(Boolean, default=False, nullable=True)
     truncation_note: Mapped[str | None] = mapped_column(Text, nullable=True)
+    duplicate_of_id: Mapped[int | None] = mapped_column(Integer, nullable=True)   # this site redirects to another site that is already in the list (CR-B05)
     created_at: Mapped[datetime] = mapped_column(
         DateTime,
         default=lambda: datetime.now(timezone.utc).replace(tzinfo=None),

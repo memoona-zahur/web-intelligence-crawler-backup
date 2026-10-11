@@ -134,6 +134,36 @@ def test_redirected_site_stores_final_url_and_status_word(make_website):
         assert (row.status, row.website_status, row.final_url) == ("redirected", "Redirected", "https://new-owner.com/") and row.clean_text
 
 
+def test_a_site_that_redirects_to_a_site_already_in_the_list_is_flagged_as_a_duplicate(make_website):  # CR-B05
+    from tests.sitekit import Site, page
+
+    target = make_website("https://new-owner.com")
+    old = make_website("https://old-name.com")
+    site = Site().redirect("/", "https://new-owner.com/")
+    site.add("new-owner.com/", page("New Owner"))
+    run_save(old, crawl(site, "https://old-name.com"))
+    with get_session() as session:
+        row = session.get(Website, old)
+        assert row.status == "redirected" and row.duplicate_of_id == target and "already in the list" in row.crawl_error
+        assert session.get(Website, target).duplicate_of_id is None
+    other = make_website("https://other-old.com")
+    alone = Site().redirect("/", "https://somewhere-new.com/")
+    alone.add("somewhere-new.com/", page("Somewhere"))
+    run_save(other, crawl(alone, "https://other-old.com"))
+    with get_session() as session:
+        assert session.get(Website, other).duplicate_of_id is None          # the target is not in the list: just Redirected
+
+
+def test_the_extracting_stage_marks_the_website_active(make_website):
+    from app.crawler import runner as r
+
+    site_id = make_website("https://acme.com")
+    r._task_state(0, "extracting", site_id)
+    with get_session() as session:
+        site = session.get(Website, site_id)
+        assert site.status == "extracting" and site.website_status == "Active"
+
+
 def test_retry_after_is_stored_as_the_next_retry_time(make_website):
     site_id = make_website("https://acme.com")
     run_save(site_id, CrawlResult("robots_blocked", None, "robots.txt unavailable (HTTP 503)", 0, error_category="robots_unavailable", retry_after=900.0, crawl_outcome="Blocked"))

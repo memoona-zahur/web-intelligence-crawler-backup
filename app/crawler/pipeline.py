@@ -111,6 +111,14 @@ def _fail(status: str, error: str, category: str, *, retry_after: float | None =
                        category, None, retry_after, False, "", records or [])
 
 
+def _network_category(detail: str, timed_out: bool = False) -> str:
+    """tls | timeout | network: what kind of connection failure this was (CR-B01 lists SSL/TLS errors separately)."""
+    low = (detail or "").lower()
+    if any(word in low for word in ("ssl", "certificate", "tls handshake")):
+        return "tls"
+    return "timeout" if timed_out or "timeout" in low or "timed out" in low else "network"
+
+
 def _guard_result(exc: GuardError) -> CrawlResult:
     if isinstance(exc, DnsFailure):
         return _fail(config.STATUS_UNREACHABLE, str(exc), "dns")
@@ -122,7 +130,7 @@ def _fetch_error_result(exc: FetchError) -> CrawlResult:
         return _fail(config.STATUS_ROBOTS_BLOCKED, exc.detail, "robots_disallowed")
     status = _STATUS_BY_ERROR.get(exc.kind, config.STATUS_FAILED)
     if exc.kind == "network":
-        category = "timeout" if exc.timeout else "network"
+        category = _network_category(exc.detail, exc.timeout)
     elif exc.kind == "http":
         category = "http_5xx" if (exc.status_code or 0) >= 500 else "http_4xx"
     elif exc.kind == "blocked":
@@ -130,8 +138,6 @@ def _fetch_error_result(exc: FetchError) -> CrawlResult:
     else:
         category = exc.kind
     retry_after = exc.retry_after if exc.kind in ("blocked", "http") and (exc.status_code in (429, 503)) else None
-    if exc.kind == "network" and any(w in exc.detail.lower() for w in ("ssl", "certificate", "tls")):
-        category = "tls"
     return _fail(status, exc.detail, category, retry_after=retry_after, http_status=exc.status_code)
 
 
@@ -286,8 +292,7 @@ async def _crawl(client: httpx.AsyncClient, normalized_url: str, robots_cache: d
                 robots = alt
         if robots.unavailable and robots.error_kind == "network":
             # The site cannot be reached at all: that is Unreachable (not Blocked). Nothing is crawled; the task is retried later.
-            timed_out = "timeout" in (robots.detail or "").lower()
-            return _fail(config.STATUS_UNREACHABLE, robots.detail or "cannot reach the site", "timeout" if timed_out else "network", retry_after=900.0)
+            return _fail(config.STATUS_UNREACHABLE, robots.detail or "cannot reach the site", _network_category(robots.detail), retry_after=900.0)
         if robots.unavailable:  # the server answered robots.txt with 5xx / 429: not crawled now (ROBOTS_5XX_POLICY=disallow), retried later
             return _fail(config.STATUS_ROBOTS_BLOCKED, robots.detail or "robots.txt unavailable", "robots_unavailable",
                          retry_after=robots.retry_after or 900.0)

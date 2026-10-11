@@ -66,7 +66,7 @@ def add_sites(engine, urls):
 def test_postgresql_schema_matches_the_models_and_is_at_head(pg_engine):
     with pg_engine.connect() as conn:
         assert compare_metadata(MigrationContext.configure(conn), Base.metadata) == []
-        assert conn.execute(text("select version_num from alembic_version")).scalar() == "0002_phase2_crawl_schema"
+        assert conn.execute(text("select version_num from alembic_version")).scalar() == "0003_duplicate_of"
         indexes = {row[0] for row in conn.execute(text("select indexname from pg_indexes where tablename = 'crawl_tasks'"))}
     assert {"uq_crawl_tasks_active_website", "uq_crawl_tasks_running_domain"} <= indexes
 

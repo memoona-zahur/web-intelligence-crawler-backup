@@ -98,7 +98,7 @@ STATUS_CANCELLED = "cancelled"
 
 # The requirement vocabulary (CR-B06) for each status word.
 WEBSITE_STATUS_WORD = {
-    STATUS_PENDING: "Pending", STATUS_QUEUED: "Pending", STATUS_CRAWLING: "Pending", STATUS_EXTRACTING: "Pending",
+    STATUS_PENDING: "Pending", STATUS_QUEUED: "Pending", STATUS_CRAWLING: "Pending", STATUS_EXTRACTING: "Active",   # Active = the site answered and its pages are being read
     STATUS_CRAWLED: "Crawled", STATUS_REDIRECTED: "Redirected", STATUS_PARKED: "Parked",
     STATUS_UNDER_CONSTRUCTION: "Under Construction", STATUS_REQUIRES_REVIEW: "Requires Review", STATUS_EMPTY: "Under Construction",
     STATUS_UNREACHABLE: "Unreachable", STATUS_BLOCKED: "Blocked", STATUS_ROBOTS_BLOCKED: "Blocked",

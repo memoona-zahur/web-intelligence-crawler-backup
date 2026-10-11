@@ -21,7 +21,7 @@ def test_fresh_database_gets_the_full_schema(tmp_path):
     assert {"websites", "jobs", "crawl_tasks", "pages", "page_contents", "fetch_attempts", "crawl_errors", "import_issues",
             "domain_stats", "evidence_records", "alembic_version"} <= tables
     with engine.connect() as conn:
-        assert conn.execute(text("select version_num from alembic_version")).scalar() == "0002_phase2_crawl_schema"
+        assert conn.execute(text("select version_num from alembic_version")).scalar() == "0003_duplicate_of"
 
 
 def test_migrations_match_the_models(tmp_path):
@@ -38,7 +38,7 @@ def test_create_all_database_is_accepted_and_stamped(tmp_path):
     run_migrations(engine)
     run_migrations(engine)  # idempotent
     with engine.connect() as conn:
-        assert conn.execute(text("select version_num from alembic_version")).scalar() == "0002_phase2_crawl_schema"
+        assert conn.execute(text("select version_num from alembic_version")).scalar() == "0003_duplicate_of"
 
 
 def test_phase1_database_upgrades_and_keeps_its_rows(tmp_path):

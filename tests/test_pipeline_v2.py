@@ -195,6 +195,14 @@ def test_connection_failure_is_unreachable_and_http_is_tried_after_https():
     assert result.status == "unreachable" and result.error_category == "network" and result.crawl_outcome == "Failed"
 
 
+def test_a_certificate_problem_is_reported_as_tls(monkeypatch):  # CR-B01: SSL/TLS error is its own category
+    def bad_cert(request):
+        raise httpx.ConnectError("[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired", request=request)
+
+    result = crawl(Site().add("/", bad_cert).add("/robots.txt", bad_cert))
+    assert result.status == "unreachable" and result.error_category == "tls"
+
+
 def test_https_failure_falls_back_to_http():
     def handler(request):
         if request.url.scheme == "https":
