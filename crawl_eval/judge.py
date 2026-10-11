@@ -9,7 +9,9 @@ import re
 from urllib.parse import urlparse
 
 STATUS_WORD = {"crawled": "Crawled", "empty": "Under Construction", "unreachable": "Unreachable", "blocked": "Blocked", "robots_blocked": "Blocked",
-               "invalid": "Invalid", "failed": "Failed"}
+               "invalid": "Invalid", "failed": "Failed",
+               # added for Phase 2 (judge v3, additive): words the Phase 1 crawler could not produce. Phase 1 data contains none of them, so Phase 1 verdicts are unchanged.
+               "parked": "Parked", "redirected": "Redirected", "under_construction": "Under Construction", "requires_review": "Requires Review"}
 # Words the crawler's status vocabulary cannot express at all (CR-B06): a row expecting one of these can only be MATCHed if the crawler says something equivalent.
 NO_SUCH_STATUS = {"Parked", "Redirected", "Requires Review"}
 
@@ -183,7 +185,7 @@ def judge(row: dict, c: dict) -> dict:
     else:
         if actual == exp:
             res["status_verdict"] = "MATCH"
-        elif exp in NO_SUCH_STATUS:
+        elif exp in NO_SUCH_STATUS and c.get("status_vocab") != "v3":
             res["status_verdict"] = "MISMATCH"
             res["reason"] = f"expected '{exp}', which the crawler's status vocabulary cannot express (CR-B06); crawler said '{actual}' ({c.get('error')})"
         else:

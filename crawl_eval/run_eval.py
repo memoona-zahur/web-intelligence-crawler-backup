@@ -285,7 +285,15 @@ async def run(args) -> Path:
 
     log(f"run {run_id} label={args.label} smoke={args.smoke} limit={args.limit} concurrency={args.concurrency} resume={args.resume}")
     hm = load_module(HERE / "tools" / "hash_manifest.py", "hash_manifest")
-    manifest_file = HERE / "baseline" / "run_manifest.json"
+    if args.code_manifest == "auto":  # Phase 2: the code under test is hashed now; the check after the run proves it did not change DURING the run
+        manifest_file = out / "code_manifest.json"
+        if not (args.resume and manifest_file.exists()):
+            hm.create(manifest_file)
+    elif args.code_manifest:
+        manifest_file = Path(args.code_manifest)
+    else:  # default = Phase 1 behaviour: the frozen baseline manifest
+        manifest_file = HERE / "baseline" / "run_manifest.json"
+    code_sha256 = json.loads(manifest_file.read_text(encoding="utf-8")).get("combined_sha256")
     code_ok_before = hm.verify(manifest_file) == 0
     log(f"app code hash check before run: {'OK' if code_ok_before else 'MISMATCH'}")
 
@@ -404,6 +412,8 @@ async def run(args) -> Path:
             raise SystemExit("--include-from run used a different dataset file")
         if not (src_man["app_code_unchanged_before"] and src_man["app_code_unchanged_after"]):
             raise SystemExit("--include-from run did not prove the code unchanged")
+        if src_man.get("code_sha256") and src_man["code_sha256"] != code_sha256:
+            raise SystemExit("--include-from run used different code (code hash differs)")
         with ps_file.open("a", encoding="utf-8") as fh:
             for line in (src / "per_site.jsonl").read_text(encoding="utf-8").split("\n"):
                 if line.strip():
@@ -521,7 +531,8 @@ async def run(args) -> Path:
     manifest = {
         "run_id": run_id, "label": args.label, "started": ts, "smoke": args.smoke, "concurrency_used": args.concurrency,
         "crawler_own_default_concurrency": {"config.CONCURRENCY": cconfig.CONCURRENCY, "limits.crawl_concurrency()": crawl_concurrency()},
-        "git_commit": subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip(), "git_tag": "crawler-baseline-v1",
+        "git_commit": subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip(), "git_tag": args.code_tag,
+        "code_manifest": manifest_file.name, "code_sha256": code_sha256,
         "app_code_unchanged_before": code_ok_before, "app_code_unchanged_after": code_ok_after,
         "dataset_file": str(ds_path.name), "dataset_sha256": sha256_file(ds_path), "rows_total": len(rows), "rows_selected": len(sel), "rows_crawled": len(plan),
         "python": platform.python_version(), "os": platform.platform(), "db": str(db_path), "wrappers": telemetry.WRAPPERS,
@@ -576,6 +587,8 @@ def build_reports(out: Path, quiet: bool = False, apply_reclass: bool = True):
         row = rows[rid]
         x = recs.get(rid)
         c = {"imp": imp.get(rid), "secret_stored": manifest.get("secret_stored")}
+        if manifest.get("git_tag", "crawler-baseline-v1") != "crawler-baseline-v1":
+            c["status_vocab"] = "v3"  # Phase 2 code: it can say Parked / Redirected / ...; the judge must not claim the vocabulary is missing
         if x:
             ts = x.get("tel_site") or {}
             db = x["db"]
@@ -709,6 +722,8 @@ def main():
     ap.add_argument("--report-only")
     ap.add_argument("--probe-after")
     ap.add_argument("--probe-recheck")
+    ap.add_argument("--code-manifest", help="'auto' = hash app/ etc. at start and prove it unchanged at the end (Phase 2 code); a path = verify against that manifest; omitted = Phase 1 baseline manifest")
+    ap.add_argument("--code-tag", default="crawler-baseline-v1", help="git tag/name recorded in run_manifest.json for the code under test")
     ap.add_argument("--include-from", help="earlier run dir (same dataset + code) whose row results are reused instead of crawling those sites again")
     args = ap.parse_args()
     if args.report_only:
