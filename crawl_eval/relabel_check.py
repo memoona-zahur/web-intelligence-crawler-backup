@@ -25,6 +25,12 @@ import run_eval as R  # noqa: E402
 
 out = Path(sys.argv[1])
 final_rows = {r["id"]: r for r in csv.DictReader((out / "results.csv").open(encoding="utf-8-sig"))}
+# ROUND 2 (every remaining label). Snapshot of all labels BEFORE round 2 is taken once, so counts and moves stay exact on re-runs.
+snap_file = out / "labels_before_round2.json"
+if not snap_file.exists():
+    snap_file.write_text(json.dumps({rid: r["verdict"] for rid, r in final_rows.items()}), encoding="utf-8")
+snap = json.loads(snap_file.read_text(encoding="utf-8"))
+r2_ids = sorted(rid for rid, v in snap.items() if v in ("SITE-CHANGED", "ENV-DEPENDENT"))
 
 
 def _probe_agrees_as_of_close_out_start(expected, cls, category="", subcategory=""):
@@ -57,7 +63,7 @@ sample = sorted(random.Random(20261012).sample(sc_ids, 10))
 # rows that became SITE-CHANGED only because of the JavaScript-redirect refinement of probe_agrees (not in the original 41): checked with the same rule
 refined_rows, _m2 = R.build_reports(out, quiet=True, apply_reclass=False)  # refined judge, before any reclassification (stable basis)
 extra_ids = sorted(r2["id"] for r2 in refined_rows if r2["verdict"] == "SITE-CHANGED" and next(o for o in rows if o["id"] == r2["id"])["verdict"] != "SITE-CHANGED")
-sample = sorted(set(sample) | set(extra_ids))
+sample = sorted(set(sample) | set(extra_ids) | set(r2_ids))
 orig_sample = sorted(random.Random(20261012).sample(sc_ids, 10))
 
 
@@ -108,7 +114,21 @@ for r in rows:
         agrees = judge.probe_agrees(expected, reading, r["category"], r["subcategory"])
         dns_none = not f.get("dns_any_ok", False)
         unreachable_but_resolves = reading == "Unreachable" and f.get("dns_any_ok", False)
-        if agrees is True or unreachable_but_resolves:
+        basis = "ENV-DEPENDENT" if r["verdict"] == "ENV-DEPENDENT" else "SITE-CHANGED"
+        crawler_net = r["crawler_status"] in ("unreachable",) or "cannot resolve host" in (r["crawler_error"] or "")
+        if basis == "ENV-DEPENDENT":
+            # ENV rule (round 2): the label claims this NETWORK (ISP DNS / connectivity / geo) caused the crawler failure.
+            #   holds if the crawler failed on the network (DNS / unreachable) and the name resolves somewhere (transient or connectivity), or the fresh probe cannot reach it either while the name resolves;
+            #   does NOT hold if no resolver knows the name (the site is gone -> SITE-CHANGED), or the crawler failure was not a network failure and the site reads fine now (-> MISMATCH).
+            if dns_none and reading == "Unreachable":
+                holds = False
+            elif crawler_net or unreachable_but_resolves:
+                holds = True
+            elif agrees is True:
+                holds = False
+            else:
+                holds = True
+        elif agrees is True or unreachable_but_resolves:
             holds = False
         elif agrees is None and reading != "unknown" and not dns_none:
             holds = False  # the probe cannot judge this kind of row (JavaScript), so a SITE-CHANGED label has no support
@@ -120,14 +140,16 @@ for r in rows:
                      label_holds="YES" if holds else "NO")
         if not holds:
             net = r["crawler_status"] in ("unreachable",) or "cannot resolve host" in (r["crawler_error"] or "") or unreachable_but_resolves
-            new = "ENV-DEPENDENT" if net else "MISMATCH"
+            new = ("SITE-CHANGED" if (dns_none and reading == "Unreachable") else "MISMATCH") if basis == "ENV-DEPENDENT" else ("ENV-DEPENDENT" if net else "MISMATCH")
             entry["new_label"] = new
             why = (f"fresh probe reads the site as '{reading}' ({entry['fresh_probe_detail']}), "
                    + ("a plain GET cannot execute JavaScript, so the probe cannot show that this JavaScript-redirect site changed; the SITE-CHANGED label has no support and the difference is a crawler result" if agrees is None and not unreachable_but_resolves else
                       "compatible with the dataset expectation, so the site had not changed; the crawler's failure was a network/DNS failure" if net and agrees else
                       "name resolves but the site is not reachable from this network" if unreachable_but_resolves else
                       "compatible with the dataset expectation, so the site had not changed; the difference is a crawler result"))
-            reclass[rid] = {"to": new, "reason": why, "fresh_probe": {k: f.get(k) for k in ("predicted", "note", "error", "head_status", "dns_any_ok")}}
+            if basis == "ENV-DEPENDENT":
+                why = (f"fresh probe reads the site as '{reading}' ({entry['fresh_probe_detail']}); " + ("the name resolves nowhere (all resolvers, 3 tries), so the site is gone, not a network problem" if new == "SITE-CHANGED" else "the crawler failure was not a network failure and the site reads normally now, so it is a crawler result"))
+            reclass[rid] = {"from": basis, "to": new, "reason": why, "fresh_probe": {k: f.get(k) for k in ("predicted", "note", "error", "head_status", "dns_any_ok")}}
     review.append(entry)
 changed = [(r["id"], r["verdict"], final_rows[r["id"]]["verdict"]) for r in rows if r["verdict"] != final_rows[r["id"]]["verdict"]]
 (out / "label_changes_since_run_end.json").write_text(json.dumps({"rows_whose_verdict_differs_between_original_labels_and_final": changed}, indent=1), encoding="utf-8")
@@ -137,9 +159,18 @@ with (out / "label_review.csv").open("w", newline="", encoding="utf-8-sig") as f
     w = csv.DictWriter(fh, fieldnames=keys)
     w.writeheader()
     w.writerows(review)
+def _cnt(m):
+    from collections import Counter
+    return dict(Counter(m.values()))
+
+
+moved = [{"id": rid, "from": snap[rid], "to": final_rows[rid]["verdict"]} for rid in snap if snap[rid] != final_rows[rid]["verdict"]]
+round2 = {"rule": "Round 2 (requested after approval of Phase 1): a fresh independent probe, one per row, of EVERY SITE-CHANGED and ENV-DEPENDENT row not yet re-probed. SITE-CHANGED rule = round 1. ENV-DEPENDENT rule: see comment in relabel_check.py (written before the probes were run).",
+          "rows_with_a_label_before_round_2": len(r2_ids), "rows_probed_in_round_2": [rid for rid in r2_ids if rid not in orig_sample and rid not in extra_ids],
+          "before_counts": _cnt(snap), "after_counts": _cnt({rid: r["verdict"] for rid, r in final_rows.items()}), "rows_moved_in_round_2_only": [m for m in moved if m["id"] in r2_ids and m["id"] not in orig_sample and m["id"] not in extra_ids]}
 (HERE / "dataset" / "label_reclassifications.json").write_text(json.dumps({
     "rule": "Fresh independent probe of 10 random SITE-CHANGED rows (seed 20261012) at Phase 1 close. A label is changed only when the fresh probe shows it does not hold. Applied by run_eval.build_reports. Same rule in Phase 2.",
-    "sampled": orig_sample, "extra_checked": extra_ids, "rows": reclass}, indent=1, ensure_ascii=False), encoding="utf-8")
+    "sampled": orig_sample, "extra_checked": extra_ids, "round_2": round2, "rows": reclass}, indent=1, ensure_ascii=False), encoding="utf-8")
 (out / "fresh_probe_review.json").write_text(json.dumps({"sampled_rows": orig_sample, "extra_rows_checked_because_the_refinement_moved_them": extra_ids, "fresh_probes": fresh_res, "reclassified": reclass}, indent=1, ensure_ascii=False, default=str), encoding="utf-8")
 print(f"{len(review)} rows listed; sampled {len(sample)}; holds: {sum(1 for e in review if e['label_holds']=='YES')}; does not hold: {sum(1 for e in review if e['label_holds']=='NO')}")
 for e in review:

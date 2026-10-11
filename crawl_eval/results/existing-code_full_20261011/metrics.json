@@ -3,9 +3,9 @@
  "rows_judged": 988,
  "verdicts": {
   "MATCH": 752,
-  "MISMATCH": 164,
-  "ENV-DEPENDENT": 29,
-  "SITE-CHANGED": 39,
+  "MISMATCH": 169,
+  "ENV-DEPENDENT": 27,
+  "SITE-CHANGED": 36,
   "PARTIAL": 3,
   "ORACLE-LIMITATION": 1
  },
@@ -19,7 +19,7 @@
   "robots_blocked": 7
  },
  "match_rate_all": 0.761,
- "judged_for_crawler_fault": 919,
+ "judged_for_crawler_fault": 924,
  "happy_rows": 600,
  "happy_crawled": 530,
  "happy_useful_text_ge_500": 498,
@@ -45,9 +45,8 @@
   },
   "E-commerce and retail": {
    "MATCH": 56,
-   "SITE-CHANGED": 1,
-   "ENV-DEPENDENT": 1,
-   "MISMATCH": 2
+   "MISMATCH": 3,
+   "ENV-DEPENDENT": 1
   },
   "SaaS / software / platforms": {
    "MATCH": 55,
@@ -57,9 +56,9 @@
   },
   "Healthcare, education, finance, real estate, non-profit, government": {
    "MATCH": 67,
-   "MISMATCH": 2,
-   "SITE-CHANGED": 4,
-   "ENV-DEPENDENT": 7
+   "MISMATCH": 4,
+   "SITE-CHANGED": 3,
+   "ENV-DEPENDENT": 6
   },
   "Small local businesses on site builders": {
    "MATCH": 57,
@@ -73,9 +72,9 @@
   },
   "Non-English / international": {
    "MATCH": 68,
-   "ENV-DEPENDENT": 8,
-   "SITE-CHANGED": 2,
-   "MISMATCH": 2
+   "ENV-DEPENDENT": 5,
+   "MISMATCH": 3,
+   "SITE-CHANGED": 4
   },
   "JavaScript-heavy SPAs": {
    "MATCH": 38,
@@ -114,8 +113,8 @@
    "SITE-CHANGED": 3
   },
   "HTTP errors": {
-   "ENV-DEPENDENT": 1,
-   "SITE-CHANGED": 6,
+   "ENV-DEPENDENT": 2,
+   "SITE-CHANGED": 5,
    "MATCH": 21,
    "MISMATCH": 2
   },
@@ -128,7 +127,7 @@
   },
   "Bot-protected / WAF": {
    "MATCH": 24,
-   "SITE-CHANGED": 1
+   "ENV-DEPENDENT": 1
   },
   "robots.txt": {
    "MATCH": 13,
@@ -149,8 +148,7 @@
   },
   "Input handling": {
    "MATCH": 59,
-   "MISMATCH": 18,
-   "SITE-CHANGED": 1,
+   "MISMATCH": 19,
    "ENV-DEPENDENT": 1,
    "ORACLE-LIMITATION": 1
   },

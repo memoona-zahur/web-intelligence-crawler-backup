@@ -6,6 +6,41 @@
    "MISMATCH"
   ],
   [
+   "T0133",
+   "SITE-CHANGED",
+   "MISMATCH"
+  ],
+  [
+   "T0288",
+   "SITE-CHANGED",
+   "MISMATCH"
+  ],
+  [
+   "T0304",
+   "ENV-DEPENDENT",
+   "MISMATCH"
+  ],
+  [
+   "T0437",
+   "SITE-CHANGED",
+   "MISMATCH"
+  ],
+  [
+   "T0454",
+   "ENV-DEPENDENT",
+   "SITE-CHANGED"
+  ],
+  [
+   "T0456",
+   "ENV-DEPENDENT",
+   "SITE-CHANGED"
+  ],
+  [
+   "T0494",
+   "ENV-DEPENDENT",
+   "SITE-CHANGED"
+  ],
+  [
    "T0522",
    "MISMATCH",
    "SITE-CHANGED"
@@ -26,7 +61,22 @@
    "ENV-DEPENDENT"
   ],
   [
+   "T0731",
+   "SITE-CHANGED",
+   "ENV-DEPENDENT"
+  ],
+  [
    "T0777",
+   "SITE-CHANGED",
+   "MISMATCH"
+  ],
+  [
+   "T0805",
+   "SITE-CHANGED",
+   "ENV-DEPENDENT"
+  ],
+  [
+   "T0899",
    "SITE-CHANGED",
    "MISMATCH"
   ]

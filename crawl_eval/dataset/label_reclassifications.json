@@ -17,8 +17,142 @@
   "T0522",
   "T0524"
  ],
+ "round_2": {
+  "rule": "Round 2 (requested after approval of Phase 1): a fresh independent probe, one per row, of EVERY SITE-CHANGED and ENV-DEPENDENT row not yet re-probed. SITE-CHANGED rule = round 1. ENV-DEPENDENT rule: see comment in relabel_check.py (written before the probes were run).",
+  "rows_with_a_label_before_round_2": 68,
+  "rows_probed_in_round_2": [
+   "T0021",
+   "T0085",
+   "T0090",
+   "T0113",
+   "T0133",
+   "T0147",
+   "T0204",
+   "T0212",
+   "T0218",
+   "T0245",
+   "T0256",
+   "T0266",
+   "T0268",
+   "T0288",
+   "T0293",
+   "T0303",
+   "T0304",
+   "T0308",
+   "T0315",
+   "T0316",
+   "T0325",
+   "T0369",
+   "T0402",
+   "T0436",
+   "T0437",
+   "T0440",
+   "T0441",
+   "T0454",
+   "T0456",
+   "T0465",
+   "T0468",
+   "T0494",
+   "T0495",
+   "T0518",
+   "T0603",
+   "T0609",
+   "T0612",
+   "T0658",
+   "T0662",
+   "T0664",
+   "T0667",
+   "T0691",
+   "T0695",
+   "T0703",
+   "T0704",
+   "T0723",
+   "T0724",
+   "T0727",
+   "T0730",
+   "T0731",
+   "T0737",
+   "T0766",
+   "T0776",
+   "T0805",
+   "T0866",
+   "T0899",
+   "T0900",
+   "T0954",
+   "T0956"
+  ],
+  "before_counts": {
+   "MATCH": 752,
+   "MISMATCH": 164,
+   "ENV-DEPENDENT": 29,
+   "SITE-CHANGED": 39,
+   "PARTIAL": 3,
+   "ORACLE-LIMITATION": 1
+  },
+  "after_counts": {
+   "MATCH": 752,
+   "MISMATCH": 169,
+   "ENV-DEPENDENT": 27,
+   "SITE-CHANGED": 36,
+   "PARTIAL": 3,
+   "ORACLE-LIMITATION": 1
+  },
+  "rows_moved_in_round_2_only": [
+   {
+    "id": "T0133",
+    "from": "SITE-CHANGED",
+    "to": "MISMATCH"
+   },
+   {
+    "id": "T0288",
+    "from": "SITE-CHANGED",
+    "to": "MISMATCH"
+   },
+   {
+    "id": "T0304",
+    "from": "ENV-DEPENDENT",
+    "to": "MISMATCH"
+   },
+   {
+    "id": "T0437",
+    "from": "SITE-CHANGED",
+    "to": "MISMATCH"
+   },
+   {
+    "id": "T0454",
+    "from": "ENV-DEPENDENT",
+    "to": "SITE-CHANGED"
+   },
+   {
+    "id": "T0456",
+    "from": "ENV-DEPENDENT",
+    "to": "SITE-CHANGED"
+   },
+   {
+    "id": "T0494",
+    "from": "ENV-DEPENDENT",
+    "to": "SITE-CHANGED"
+   },
+   {
+    "id": "T0731",
+    "from": "SITE-CHANGED",
+    "to": "ENV-DEPENDENT"
+   },
+   {
+    "id": "T0805",
+    "from": "SITE-CHANGED",
+    "to": "ENV-DEPENDENT"
+   },
+   {
+    "id": "T0899",
+    "from": "SITE-CHANGED",
+    "to": "MISMATCH"
+   }
+  ]
+ },
  "rows": {
   "T0118": {
+   "from": "SITE-CHANGED",
    "to": "MISMATCH",
    "reason": "fresh probe reads the site as 'Crawled' (15180 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
    "fresh_probe": {
@@ -29,7 +163,92 @@
     "dns_any_ok": true
    }
   },
+  "T0133": {
+   "from": "SITE-CHANGED",
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (4209 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "4209 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0288": {
+   "from": "SITE-CHANGED",
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (3213 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "3213 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0304": {
+   "from": "ENV-DEPENDENT",
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (4631 chars); the crawler failure was not a network failure and the site reads normally now, so it is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "4631 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0437": {
+   "from": "SITE-CHANGED",
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (3950 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "3950 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0454": {
+   "from": "ENV-DEPENDENT",
+   "to": "SITE-CHANGED",
+   "reason": "fresh probe reads the site as 'Unreachable' (no-dns); the name resolves nowhere (all resolvers, 3 tries), so the site is gone, not a network problem",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "no-dns",
+    "head_status": null,
+    "dns_any_ok": false
+   }
+  },
+  "T0456": {
+   "from": "ENV-DEPENDENT",
+   "to": "SITE-CHANGED",
+   "reason": "fresh probe reads the site as 'Unreachable' (no-dns); the name resolves nowhere (all resolvers, 3 tries), so the site is gone, not a network problem",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "no-dns",
+    "head_status": null,
+    "dns_any_ok": false
+   }
+  },
+  "T0494": {
+   "from": "ENV-DEPENDENT",
+   "to": "SITE-CHANGED",
+   "reason": "fresh probe reads the site as 'Unreachable' (no-dns); the name resolves nowhere (all resolvers, 3 tries), so the site is gone, not a network problem",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "no-dns",
+    "head_status": null,
+    "dns_any_ok": false
+   }
+  },
   "T0507": {
+   "from": "SITE-CHANGED",
    "to": "MISMATCH",
    "reason": "fresh probe reads the site as 'Requires Review' (almost no static text (57 chars)), a plain GET cannot execute JavaScript, so the probe cannot show that this JavaScript-redirect site changed; the SITE-CHANGED label has no support and the difference is a crawler result",
    "fresh_probe": {
@@ -41,6 +260,7 @@
    }
   },
   "T0575": {
+   "from": "SITE-CHANGED",
    "to": "MISMATCH",
    "reason": "fresh probe reads the site as 'Crawled' (1748 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
    "fresh_probe": {
@@ -52,6 +272,19 @@
    }
   },
   "T0722": {
+   "from": "SITE-CHANGED",
+   "to": "ENV-DEPENDENT",
+   "reason": "fresh probe reads the site as 'Unreachable' (ConnectError), name resolves but the site is not reachable from this network",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "ConnectError",
+    "head_status": null,
+    "dns_any_ok": true
+   }
+  },
+  "T0731": {
+   "from": "SITE-CHANGED",
    "to": "ENV-DEPENDENT",
    "reason": "fresh probe reads the site as 'Unreachable' (ConnectError), name resolves but the site is not reachable from this network",
    "fresh_probe": {
@@ -63,6 +296,7 @@
    }
   },
   "T0777": {
+   "from": "SITE-CHANGED",
    "to": "MISMATCH",
    "reason": "fresh probe reads the site as 'Requires Review' (almost no static text (35 chars)), a plain GET cannot execute JavaScript, so the probe cannot show that this JavaScript-redirect site changed; the SITE-CHANGED label has no support and the difference is a crawler result",
    "fresh_probe": {
@@ -70,6 +304,30 @@
     "note": "almost no static text (35 chars)",
     "error": "",
     "head_status": 307,
+    "dns_any_ok": true
+   }
+  },
+  "T0805": {
+   "from": "SITE-CHANGED",
+   "to": "ENV-DEPENDENT",
+   "reason": "fresh probe reads the site as 'Unreachable' (ReadTimeout), name resolves but the site is not reachable from this network",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "ReadTimeout",
+    "head_status": null,
+    "dns_any_ok": true
+   }
+  },
+  "T0899": {
+   "from": "SITE-CHANGED",
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (6333 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "6333 chars",
+    "error": "",
+    "head_status": 200,
     "dns_any_ok": true
    }
   }

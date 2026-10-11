@@ -176,6 +176,7 @@ stats = dict(cov_all=cov_all, cov_must=cov_must, must_pass=must_pass, m_all=m_al
                                                          "defects_by_severity": dict(sev_count)}, indent=1), encoding="utf-8")
 
 lr0 = list(csv.DictReader((out / "label_review.csv").open(encoding="utf-8-sig")))
+RC2 = J(HERE / "dataset" / "label_reclassifications.json")["round_2"]
 n_chk = sum(1 for r in lr0 if r["fresh_probe_reading"])
 n_not0 = sum(1 for r in lr0 if r["label_holds"] == "NO")
 reclass_txt = ", ".join(f"{r['id']} to {r['new_label']}" for r in lr0 if r["label_holds"] == "NO")
@@ -224,7 +225,7 @@ S = f"""# Phase 1 result in plain English – existing crawler, unchanged
 * Wikidata favours large and old organisations; "small local business" rows are site-builder sites of limited size, not proven small or local.
 * Tested from Lahore: {vd.get('ENV-DEPENDENT',0)} rows are ENV-DEPENDENT and some SITE-CHANGED rows may also be geo-blocking or rate limits.
 * One run on one day; sites change. Not a statistical sample, and nothing here is a forecast for 60,000 sites.
-* **Close-out check of the labels:** all {len(lr0) - 3} rows labelled SITE-CHANGED or ENV-DEPENDENT at the end of the run (plus 3 rows moved by a rule refinement) are listed with their evidence in `label_review.csv`. A fresh independent probe of {n_chk} of them (10 random SITE-CHANGED rows plus the 3 refinement rows) showed the label holds for {n_chk - n_not0} and not for {n_not0}; reclassified: {reclass_txt}. Sites that alternate between 403 and 200 (T0118, T0575) cannot be called "changed".
+* **Close-out check of the labels (two rounds):** every one of the {len(lr0)} rows labelled SITE-CHANGED or ENV-DEPENDENT ({len(lr0) - 3} at the end of the run, plus 3 moved by a rule refinement) got one fresh independent probe; evidence in `label_review.csv`. The label holds for {n_chk - n_not0} rows and not for {n_not0}. Counts before round 2: {RC2["before_counts"]}; after: {RC2["after_counts"]}. Reclassified: {reclass_txt}. Sites that alternate between 403 and 200 (T0118, T0575) cannot be called "changed"; a few DNS answers were inconsistent between checks.
 * The Chromium child process memory was not measured. Excel upload, the web paste box and 200-status challenge pages were not tested.
 """
 (out / "summary.md").write_text(S, encoding="utf-8")
@@ -331,9 +332,8 @@ lr = list(csv.DictReader((out / "label_review.csv").open(encoding="utf-8-sig")))
 fp = J(out / "fresh_probe_review.json")
 n_hold = sum(1 for r in lr if r["label_holds"] == "YES")
 n_not = sum(1 for r in lr if r["label_holds"] == "NO")
-A(f"<p class='small'>Close-out review: every row below was labelled {sum(1 for r in lr if r['label']=='SITE-CHANGED')} SITE-CHANGED or {sum(1 for r in lr if r['label']=='ENV-DEPENDENT')} ENV-DEPENDENT at the end of the run. "
-  f"A fresh independent probe of 10 randomly chosen SITE-CHANGED rows (seed 20261012) showed the label holds for {n_hold} and not for {n_not}; those {n_not} were reclassified ({', '.join(r['id'] + ' → ' + r['new_label'] for r in lr if r['label_holds']=='NO')}). "
-  "Two of them (T0118, T0575) answered 403 to the original probe and a normal page to the fresh one: such sites alternate and cannot be called 'changed'. Full table: <code>label_review.csv</code>; probe data: <code>fresh_probe_review.json</code>.</p>")
+A(f"<p class='small'>Close-out review (two rounds): every row below was re-probed once by a fresh independent probe ({n_hold + n_not} rows: {sum(1 for r in lr if r['label']=='SITE-CHANGED')} labelled SITE-CHANGED and {sum(1 for r in lr if r['label']=='ENV-DEPENDENT')} ENV-DEPENDENT at the end of the run, plus the rows a rule refinement moved). The label holds for {n_hold} and not for {n_not}; reclassified: {', '.join(r['id'] + ' → ' + r['new_label'] for r in lr if r['label_holds']=='NO')}. "
+  f"Verdict counts before round 2 {RC2['before_counts']}, after {RC2['after_counts']}. T0118 and T0575 answered 403 to the original probe and a normal page to the fresh one: such sites alternate and cannot be called 'changed'. Full table: <code>label_review.csv</code>; probe data: <code>fresh_probe_review.json</code>.</p>")
 for lab in ("SITE-CHANGED", "ENV-DEPENDENT"):
     lst = [r for r in lr if r["label"] == lab]
     A(f"<details><summary><b>{lab}</b> (label at end of run) – {len(lst)} rows</summary><div class='small scroll'><table><tr><th>Id</th><th>URL</th><th>Expected</th><th>Crawler said</th><th>Probe reading</th><th>Why labelled</th><th>Fresh check</th><th>Final label</th></tr>" +

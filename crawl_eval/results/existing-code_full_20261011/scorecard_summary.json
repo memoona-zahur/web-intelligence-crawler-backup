@@ -12,16 +12,16 @@
   "N/A": 10
  },
  "match_rate_judged_all": [
-  81.8,
-  919
+  81.4,
+  924
  ],
  "match_rate_judged_happy": [
-  94.5,
-  561
+  93.8,
+  565
  ],
  "match_rate_judged_error_edge": [
-  62.0,
-  358
+  61.8,
+  359
  ],
  "defects_by_severity": {
   "Critical": 4,

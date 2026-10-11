@@ -425,10 +425,1858 @@
      0
     ]
    }
+  },
+  "T0021": {
+   "host": "belex.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0085": {
+   "host": "dino-cars.de",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.dino-cars.de/",
+   "scheme": "https",
+   "bytes": 230936,
+   "note": "5371 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0090": {
+   "host": "marlinsportscars.co.uk",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0113": {
+   "host": "cryorig.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.cryorig.com/",
+   "scheme": "https",
+   "bytes": 45023,
+   "note": "1467 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0133": {
+   "host": "thekirbyonmain.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.thekirbyonmain.com/",
+   "scheme": "http",
+   "bytes": 176424,
+   "note": "4209 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0147": {
+   "host": "maruiimai.mistore.jp",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ReadTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0204": {
+   "host": "calavion.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://calavion.com",
+   "scheme": "https",
+   "bytes": 83547,
+   "note": "7866 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0212": {
+   "host": "gluster.org",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0218": {
+   "host": "rock-chips.com",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0245": {
+   "host": "explus.com.tw",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0256": {
+   "host": "uk-erlangen.de",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0266": {
+   "host": "city.minamisoma.lg.jp",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0268": {
+   "host": "bit.edu.cn",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0288": {
+   "host": "qbe.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.qbe.com/",
+   "scheme": "https",
+   "bytes": 200728,
+   "note": "3213 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0293": {
+   "host": "gob.mx",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0303": {
+   "host": "umoncton.ca",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0304": {
+   "host": "sevenoaksschool.org",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.sevenoaksschool.org/",
+   "scheme": "https",
+   "bytes": 202530,
+   "note": "4631 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0308": {
+   "host": "wti.org.in",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0315": {
+   "host": "ign.gob.ar",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectError",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0316": {
+   "host": "81.cn",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0325": {
+   "host": "bpa.ad",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.areb.ad/ca/",
+   "scheme": "https",
+   "bytes": 86817,
+   "note": "1463 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0369": {
+   "host": "kantiv.com",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0402": {
+   "host": "tetralaval.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.tetralaval.com/",
+   "scheme": "https",
+   "bytes": 69730,
+   "note": "6274 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0436": {
+   "host": "dirk.org",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.dirk.org/",
+   "scheme": "https",
+   "bytes": 66709,
+   "note": "15461 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0437": {
+   "host": "skad.ru",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://skad.ru",
+   "scheme": "https",
+   "bytes": 219433,
+   "note": "3950 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0440": {
+   "host": "pei.co.il",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0441": {
+   "host": "kimberly-clark.co.il",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Requires Review",
+   "final_url": "https://www.kimberly-clark.com/he-il/",
+   "scheme": "https",
+   "bytes": 202440,
+   "note": "almost no static text (36 chars)",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0454": {
+   "host": "hanwa.co.jp",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0456": {
+   "host": "tbipet.com.tw",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0465": {
+   "host": "lgdisplay.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.lgdisplay.com/kor",
+   "scheme": "https",
+   "bytes": 72332,
+   "note": "3088 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0468": {
+   "host": "dm.co.kr",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 404,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Failed",
+   "final_url": "http://dm.co.kr",
+   "scheme": "http",
+   "bytes": 0,
+   "note": "http 404",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0494": {
+   "host": "serpost.com.pe",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0495": {
+   "host": "koandina.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0518": {
+   "host": "kettleconsulting.co.za",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Requires Review",
+   "final_url": "https://kettleconsulting.co.za",
+   "scheme": "https",
+   "bytes": 13181,
+   "note": "almost no static text (48 chars)",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0603": {
+   "host": "mecglobal.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://wavemakerglobal.com",
+   "scheme": "https",
+   "bytes": 84039,
+   "note": "698 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0609": {
+   "host": "luce.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.luce.sg/",
+   "scheme": "https",
+   "bytes": 162665,
+   "note": "9095 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0612": {
+   "host": "nds.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.synamedia.com/",
+   "scheme": "https",
+   "bytes": 73592,
+   "note": "4469 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0658": {
+   "host": "zelepro.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Parked",
+   "final_url": "https://zelepro.com",
+   "scheme": "https",
+   "bytes": 11067,
+   "note": "parked/for-sale wording",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0662": {
+   "host": "innova.info",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "http://innova.info",
+   "scheme": "http",
+   "bytes": 11992,
+   "note": "73 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0664": {
+   "host": "fly.ch",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "http://fly.ch",
+   "scheme": "http",
+   "bytes": 432,
+   "note": "89 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0667": {
+   "host": "kingdom.com.sa",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://kingdom.com.sa/homepage",
+   "scheme": "https",
+   "bytes": 300301,
+   "note": "9413 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0691": {
+   "host": "petroperu.com.pe",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.petroperu.com.pe/",
+   "scheme": "https",
+   "bytes": 102221,
+   "note": "9195 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0695": {
+   "host": "diamond-gp.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Requires Review",
+   "final_url": "https://www.onamae.com/auc/other/detail/261104?banner_id=auction_parkingLP_diamond-gp.com_redirect",
+   "scheme": "http",
+   "bytes": 5444,
+   "note": "almost no static text (57 chars)",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0703": {
+   "host": "plantagen.fi",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://plantagen.se/",
+   "scheme": "http",
+   "bytes": 207029,
+   "note": "1287 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0704": {
+   "host": "hdb-egy.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 404,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Failed",
+   "final_url": "http://hdb-egy.com",
+   "scheme": "http",
+   "bytes": 309,
+   "note": "http 404",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0723": {
+   "host": "kundmueller.de",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.brauerei-kundmueller.de/",
+   "scheme": "http",
+   "bytes": 18395,
+   "note": "384 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0724": {
+   "host": "chorus.de",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.encavis.com/gruenes-kapital/institutionelle-mandate",
+   "scheme": "https",
+   "bytes": 159177,
+   "note": "6546 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0727": {
+   "host": "nps.gov",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.nps.gov/index.htm",
+   "scheme": "https",
+   "bytes": 72051,
+   "note": "6008 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0730": {
+   "host": "vmlyr.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.vml.com",
+   "scheme": "https",
+   "bytes": 135971,
+   "note": "2639 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0731": {
+   "host": "keralty.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectError",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0737": {
+   "host": "krupp-krankenhaus.de",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.krupp-krankenhaus.de/",
+   "scheme": "https",
+   "bytes": 268216,
+   "note": "14630 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0766": {
+   "host": "foveon.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.sigma-global.com/en/",
+   "scheme": "https",
+   "bytes": 14657,
+   "note": "1292 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0776": {
+   "host": "tecmo.co.jp",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0805": {
+   "host": "firstmidwest.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ReadTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0866": {
+   "host": "sonigas.com.mx",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectTimeout",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0899": {
+   "host": "bücher.de",
+   "dns_system_ok": true,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": null,
+   "predicted": "Crawled",
+   "final_url": "https://www.buecher.de/",
+   "scheme": "https",
+   "bytes": 229074,
+   "note": "6333 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "timeout",
+     "timeout",
+     "timeout"
+    ],
+    "8.8.8.8": [
+     "timeout",
+     "timeout",
+     "timeout"
+    ]
+   }
+  },
+  "T0900": {
+   "host": "💩.la",
+   "dns_system_ok": true,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "InvalidURL",
+   "dns_public_rcode": null,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "timeout",
+     "timeout",
+     "timeout"
+    ],
+    "8.8.8.8": [
+     "timeout",
+     "timeout",
+     "timeout"
+    ]
+   }
+  },
+  "T0954": {
+   "host": "henriettenstiftung.de",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.diakovere.de/standorte/henriettenstift/",
+   "scheme": "http",
+   "bytes": 177081,
+   "note": "16998 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0956": {
+   "host": "jugendfarm-bb.de",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://jugendfarm-bb.de",
+   "scheme": "https",
+   "bytes": 72604,
+   "note": "1186 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
   }
  },
  "reclassified": {
   "T0118": {
+   "from": "SITE-CHANGED",
    "to": "MISMATCH",
    "reason": "fresh probe reads the site as 'Crawled' (15180 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
    "fresh_probe": {
@@ -439,7 +2287,92 @@
     "dns_any_ok": true
    }
   },
+  "T0133": {
+   "from": "SITE-CHANGED",
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (4209 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "4209 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0288": {
+   "from": "SITE-CHANGED",
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (3213 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "3213 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0304": {
+   "from": "ENV-DEPENDENT",
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (4631 chars); the crawler failure was not a network failure and the site reads normally now, so it is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "4631 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0437": {
+   "from": "SITE-CHANGED",
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (3950 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "3950 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0454": {
+   "from": "ENV-DEPENDENT",
+   "to": "SITE-CHANGED",
+   "reason": "fresh probe reads the site as 'Unreachable' (no-dns); the name resolves nowhere (all resolvers, 3 tries), so the site is gone, not a network problem",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "no-dns",
+    "head_status": null,
+    "dns_any_ok": false
+   }
+  },
+  "T0456": {
+   "from": "ENV-DEPENDENT",
+   "to": "SITE-CHANGED",
+   "reason": "fresh probe reads the site as 'Unreachable' (no-dns); the name resolves nowhere (all resolvers, 3 tries), so the site is gone, not a network problem",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "no-dns",
+    "head_status": null,
+    "dns_any_ok": false
+   }
+  },
+  "T0494": {
+   "from": "ENV-DEPENDENT",
+   "to": "SITE-CHANGED",
+   "reason": "fresh probe reads the site as 'Unreachable' (no-dns); the name resolves nowhere (all resolvers, 3 tries), so the site is gone, not a network problem",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "no-dns",
+    "head_status": null,
+    "dns_any_ok": false
+   }
+  },
   "T0507": {
+   "from": "SITE-CHANGED",
    "to": "MISMATCH",
    "reason": "fresh probe reads the site as 'Requires Review' (almost no static text (57 chars)), a plain GET cannot execute JavaScript, so the probe cannot show that this JavaScript-redirect site changed; the SITE-CHANGED label has no support and the difference is a crawler result",
    "fresh_probe": {
@@ -451,6 +2384,7 @@
    }
   },
   "T0575": {
+   "from": "SITE-CHANGED",
    "to": "MISMATCH",
    "reason": "fresh probe reads the site as 'Crawled' (1748 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
    "fresh_probe": {
@@ -462,6 +2396,19 @@
    }
   },
   "T0722": {
+   "from": "SITE-CHANGED",
+   "to": "ENV-DEPENDENT",
+   "reason": "fresh probe reads the site as 'Unreachable' (ConnectError), name resolves but the site is not reachable from this network",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "ConnectError",
+    "head_status": null,
+    "dns_any_ok": true
+   }
+  },
+  "T0731": {
+   "from": "SITE-CHANGED",
    "to": "ENV-DEPENDENT",
    "reason": "fresh probe reads the site as 'Unreachable' (ConnectError), name resolves but the site is not reachable from this network",
    "fresh_probe": {
@@ -473,6 +2420,7 @@
    }
   },
   "T0777": {
+   "from": "SITE-CHANGED",
    "to": "MISMATCH",
    "reason": "fresh probe reads the site as 'Requires Review' (almost no static text (35 chars)), a plain GET cannot execute JavaScript, so the probe cannot show that this JavaScript-redirect site changed; the SITE-CHANGED label has no support and the difference is a crawler result",
    "fresh_probe": {
@@ -480,6 +2428,30 @@
     "note": "almost no static text (35 chars)",
     "error": "",
     "head_status": 307,
+    "dns_any_ok": true
+   }
+  },
+  "T0805": {
+   "from": "SITE-CHANGED",
+   "to": "ENV-DEPENDENT",
+   "reason": "fresh probe reads the site as 'Unreachable' (ReadTimeout), name resolves but the site is not reachable from this network",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "ReadTimeout",
+    "head_status": null,
+    "dns_any_ok": true
+   }
+  },
+  "T0899": {
+   "from": "SITE-CHANGED",
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (6333 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "6333 chars",
+    "error": "",
+    "head_status": 200,
     "dns_any_ok": true
    }
   }

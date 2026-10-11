@@ -1501,15 +1501,15 @@
  "verdicts_by_group": {
   "happy": {
    "MATCH": 530,
-   "MISMATCH": 30,
-   "ENV-DEPENDENT": 24,
-   "SITE-CHANGED": 16
+   "MISMATCH": 35,
+   "ENV-DEPENDENT": 20,
+   "SITE-CHANGED": 15
   },
   "error_edge": {
-   "MISMATCH": 133,
-   "SITE-CHANGED": 24,
+   "MISMATCH": 134,
+   "SITE-CHANGED": 21,
    "MATCH": 222,
-   "ENV-DEPENDENT": 5,
+   "ENV-DEPENDENT": 7,
    "PARTIAL": 3,
    "ORACLE-LIMITATION": 1
   }

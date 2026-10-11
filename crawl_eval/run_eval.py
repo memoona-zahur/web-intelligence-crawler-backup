@@ -586,7 +586,7 @@ def build_reports(out: Path, quiet: bool = False, apply_reclass: bool = True):
             pass
         j = judge.judge(row, c)
         rc = reclass.get(rid)
-        if rc and j["verdict"] == "SITE-CHANGED":  # fresh-probe review at Phase 1 close: the label did not hold (see label_review.md)
+        if rc and j["verdict"] == rc.get("from", "SITE-CHANGED"):  # fresh-probe review at Phase 1 close: the label did not hold (see label_review.md)
             j["reason"] = f"RECLASSIFIED {j['verdict']} -> {rc['to']}: {rc['reason']}"
             j["verdict"] = rc["to"]
         if rid in oracle_lim and j["verdict"] in ("MISMATCH", "PARTIAL"):
