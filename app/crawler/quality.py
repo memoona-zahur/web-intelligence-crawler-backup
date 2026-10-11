@@ -91,6 +91,15 @@ _LOGIN_PHRASES = (
 )
 _LOGIN_TITLE = re.compile(r"\b(log ?in|sign ?in|anmelden|iniciar sesi[oó]n|connexion|accedi|login required)\b", re.I)
 
+# Chinese, Japanese and Korean text carries about 2.5 times as much meaning per character as English, so the "enough text" thresholds count it that way.
+_CJK = re.compile("[぀-ヿ㐀-䶿一-鿿豈-﫿가-힯]")
+
+
+def info_length(text: str) -> float:
+    """Length of the text in English-equivalent characters (CJK characters count 2.5)."""
+    return len(text) + 1.5 * len(_CJK.findall(text))
+
+
 _SOFT404_TITLE = re.compile(
     r"(404|page not found|not found|nothing found|error 40\d|no longer available|doesn.?t exist|seite nicht gefunden|page introuvable|p[aá]gina no encontrada|"
     r"pagina non trovata|oops!?\b|something went wrong|this page can.?t be found|we can.?t find|couldn.?t find)",
@@ -116,7 +125,7 @@ class PageAssessment:
 
 def looks_like_shell(text: str, html: bytes) -> bool:
     """True when the HTML likely needs a browser to reveal the page (empty application shell)."""
-    if len(text) >= config.MIN_USEFUL_PAGE_CHARS:
+    if info_length(text) >= config.MIN_USEFUL_PAGE_CHARS:
         return False
     raw = html.decode("utf-8", errors="ignore").lower() if isinstance(html, (bytes, bytearray)) else str(html).lower()
     if any(hint in raw for hint in _SHELL_HINTS):
@@ -125,7 +134,7 @@ def looks_like_shell(text: str, html: bytes) -> bool:
 
 
 def page_is_useful(text: str) -> bool:
-    return len(text) >= config.MIN_USEFUL_PAGE_CHARS
+    return info_length(text) >= config.MIN_USEFUL_PAGE_CHARS
 
 
 def _hits(haystack: str, phrases) -> list[str]:
@@ -174,9 +183,11 @@ def assess_page(text: str, title: str, html: bytes | str, final_host: str = "", 
     if n < 800 and (_SOFT404_TITLE.search(low_title) or _hits(low_text[:1500], _SOFT404_TEXT)):
         return PageAssessment("soft_404", [title or "error text"])
 
-    # --- JS shell / thin ---
-    if n < config.MIN_USEFUL_PAGE_CHARS:
+    # --- JS shell / empty / thin ---
+    if info_length(text.strip()) < config.MIN_USEFUL_PAGE_CHARS:
         if any(h in low_raw for h in _SHELL_HINTS) or any(r.decode() in low_raw for r in _SHELL_ROOTS) or "<script" in low_raw:
             return PageAssessment("js_shell", ["little text and a script-driven page"])
+        if n == 0:  # CR-B03 "empty website": no text at all and nothing a browser could add
+            return PageAssessment("under_construction", ["empty page (no text at all)"])
         return PageAssessment("thin", [f"{n} characters of text"])
     return PageAssessment("ok")

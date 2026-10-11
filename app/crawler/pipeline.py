@@ -36,7 +36,7 @@ from app.crawler.discover import ORDER, PageLink, canonical_key, classify, disco
 from app.crawler.extract import Extracted, extract_detailed
 from app.crawler.fetcher import ATTEMPT_TRACE, FetchError, FetchResult, RobotsRules, fetch_page, load_robots
 from app.crawler.guard import DnsFailure, GuardError, UnsafeTarget
-from app.crawler.quality import assess_page, looks_like_shell, page_is_useful
+from app.crawler.quality import assess_page, info_length, looks_like_shell, page_is_useful
 from app.crawler.sitemap import sitemap_urls
 from app.crawler.structured import structured_data, structured_lines
 from app.domains import domain_key, same_site
@@ -216,6 +216,7 @@ class _Collector:
         self.seen_lines: set[str] = set()
         self.records: list[dict] = []
         self.total = 0
+        self.info_total = 0.0   # English-equivalent length (CJK counts 2.5) for the minimum-text check
 
     def record(self, **fields) -> dict:
         rec = {"url": "", "canonical_url": None, "page_type": "other", "discovery_source": "", "rank_score": 0, "title": "", "http_status": None,
@@ -239,6 +240,7 @@ class _Collector:
         note = f"Retrieved via {method}: {url}"
         self.sections.append((label, url, f"{title}\n{note}\n{body}" if title else f"{note}\n{body}"))
         self.total += len(body)
+        self.info_total += info_length(body)
         return len(body)
 
 
@@ -394,8 +396,7 @@ async def _crawl(client: httpx.AsyncClient, normalized_url: str, robots_cache: d
         attempted += attempted_pages
         stop_note = "; ".join(x for x in (stop_note, stop_note2) if x)
 
-    total = collector.total
-    if not collector.sections or total < config.MIN_TEXT_CHARS:
+    if not collector.sections or collector.info_total < config.MIN_TEXT_CHARS:
         return _fail(config.STATUS_REQUIRES_REVIEW, "no usable text found", "no_content", final_url=home_url, http_status=http_status,
                      pages_attempted=attempted, records=collector.records)
 

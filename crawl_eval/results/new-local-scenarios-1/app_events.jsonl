@@ -1,0 +1,20 @@
+{"ts": "2026-10-11T16:09:11+00:00", "event": "crawl_started", "sites": 50, "job_id": 2}
+{"ts": "2026-10-11T16:10:53+00:00", "event": "crawl_finished", "sites": 50, "seconds": 102.3, "counts": {"parked": 1, "under_construction": 2, "blocked": 3, "failed": 8, "unreachable": 1, "requires_review": 5, "invalid": 1, "robots_blocked": 2, "crawled": 27}, "job_id": 2}
+{"ts": "2026-10-11T16:10:53+00:00", "event": "crawl_started", "sites": 3, "job_id": 3}
+{"ts": "2026-10-11T16:11:04+00:00", "event": "crawl_finished", "sites": 3, "seconds": 10.9, "counts": {"crawled": 3}, "job_id": 3}
+{"ts": "2026-10-11T16:11:04+00:00", "event": "crawl_started", "sites": 1, "job_id": 4}
+{"ts": "2026-10-11T16:11:57+00:00", "event": "crawl_finished", "sites": 1, "seconds": 52.2, "counts": {"unreachable": 1}, "job_id": 4}
+{"ts": "2026-10-11T16:11:57+00:00", "event": "crawl_started", "sites": 1, "job_id": 5}
+{"ts": "2026-10-11T16:12:23+00:00", "event": "crawl_finished", "sites": 1, "seconds": 26.3, "counts": {"unreachable": 1}, "job_id": 5}
+{"ts": "2026-10-11T16:12:23+00:00", "event": "crawl_started", "sites": 1, "job_id": 6}
+{"ts": "2026-10-11T16:12:49+00:00", "event": "crawl_finished", "sites": 1, "seconds": 26.3, "counts": {"unreachable": 1}, "job_id": 6}
+{"ts": "2026-10-11T16:12:49+00:00", "event": "crawl_started", "sites": 1, "job_id": 7}
+{"ts": "2026-10-11T16:12:51+00:00", "event": "crawl_finished", "sites": 1, "seconds": 1.6, "counts": {"failed": 1}, "job_id": 7}
+{"ts": "2026-10-11T16:12:51+00:00", "event": "crawl_started", "sites": 1, "job_id": 8}
+{"ts": "2026-10-11T16:12:53+00:00", "event": "crawl_finished", "sites": 1, "seconds": 1.8, "counts": {"failed": 1}, "job_id": 8}
+{"ts": "2026-10-11T16:12:53+00:00", "event": "crawl_started", "sites": 1, "job_id": 9}
+{"ts": "2026-10-11T16:13:01+00:00", "event": "crawl_finished", "sites": 1, "seconds": 7.9, "counts": {"crawled": 1}, "job_id": 9}
+{"ts": "2026-10-11T16:13:01+00:00", "event": "crawl_started", "sites": 1, "job_id": 10}
+{"ts": "2026-10-11T16:13:06+00:00", "event": "crawl_finished", "sites": 1, "seconds": 5.3, "counts": {"crawled": 1}, "job_id": 10}
+{"ts": "2026-10-11T16:13:06+00:00", "event": "crawl_started", "sites": 1, "job_id": 11}
+{"ts": "2026-10-11T16:13:46+00:00", "event": "crawl_finished", "sites": 1, "seconds": 39.7, "counts": {"crawled": 1}, "job_id": 11}

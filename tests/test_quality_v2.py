@@ -109,7 +109,24 @@ def test_javascript_shell_vs_thin():
     assert assess(shell).kind == "js_shell"
     assert assess("<html><body><noscript>Please enable JavaScript to use this app</noscript></body></html>").kind == "js_shell"
     assert assess("<html><head><title>Hi</title></head><body><p>Hi</p></body></html>").kind == "thin"
-    assert assess("").kind == "thin"
+    assert assess("").kind == "under_construction"        # nothing at all: an empty website (CR-B03)
+
+
+def test_japanese_and_chinese_pages_are_judged_by_meaning_not_by_character_count():
+    """Found by the local scenario run: 70 Japanese characters (one paragraph) were called "thin" by an English-sized threshold."""
+    ja = "<html><head><title>株式会社テスト</title></head><body><h1>株式会社テスト</h1><p>私たちは産業用ポンプと圧縮機の設計、製造、保守を行っています。水処理、鉱業、食品加工のお客様に長年サービスを提供しています。</p></body></html>"
+    zh = "<html><head><title>某某公司</title></head><body><h1>某某公司</h1><p>我们生产工业水泵和压缩机，为水处理和矿业客户提供三十年的服务。</p></body></html>"
+    assert assess(ja).kind == "ok" and assess(zh).kind == "ok"
+    from app.crawler.quality import info_length, page_is_useful
+
+    assert info_length("abc") == 3 and info_length("日本語") == 7.5
+    assert page_is_useful("私たちは産業用ポンプと圧縮機の設計、製造、保守を行っています。水処理、鉱業のお客様に長年サービスを提供しています。") and not page_is_useful("日本語です")
+
+
+def test_a_completely_empty_page_is_an_empty_website_but_a_few_words_need_review():  # CR-B03
+    assert assess("<html><head></head><body></body></html>").kind == "under_construction"
+    assert assess("<html><head><title>Hi</title></head><body><p>Hi there</p></body></html>").kind == "thin"
+    assert assess("<html><body><div id='root'></div><script src='/a.js'></script></body></html>").kind == "js_shell"
 
 
 def test_a_short_but_real_one_page_site_is_ok():

@@ -1,0 +1,131 @@
+{
+ "run_id": "new-local-scenarios-1",
+ "label": "new-local-scenarios",
+ "started": "20261011-090908",
+ "smoke": false,
+ "concurrency_used": 5,
+ "crawler_own_default_concurrency": {
+  "config.CONCURRENCY": 10,
+  "limits.crawl_concurrency()": 10
+ },
+ "git_commit": "29bb33c457bf996bf1f047304d63b60a7714932a",
+ "git_tag": "phase2-dev-selftest",
+ "code_manifest": "code_manifest.json",
+ "code_sha256": "5886e92128929c97f89aa614bbe3fbb6a5b06ad61642424f7620acc971512aae",
+ "app_code_unchanged_before": true,
+ "app_code_unchanged_after": true,
+ "dataset_file": "local_scenarios.csv",
+ "dataset_sha256": "a73f6b132ea8ce564908b094d765f764e7a5d6e5b8359607b616765a10fb0872",
+ "rows_total": 61,
+ "rows_selected": 61,
+ "rows_crawled": 61,
+ "python": "3.14.6",
+ "os": "Windows-10-10.0.19045-SP0",
+ "db": "C:\\crawl_eval_data\\db\\new-local-scenarios-1.db",
+ "wrappers": [
+  "httpx.AsyncClient.send (request log, UA, timing, safety net)",
+  "app.crawler.fetcher._one_attempt (attempt/retry log)",
+  "app.crawler.fetcher.assert_public_url + app.crawler.browser.assert_public_url (guard log; scenario host:port allow-list)",
+  "app.crawler.pipeline.load_robots (robots decision)",
+  "app.crawler.pipeline.render_page + app.crawler.browser.render_page (browser use)",
+  "app.crawler.pipeline.crawl_one + app.crawler.runner.crawl_one (per-site timing and result)",
+  "app.crawler.runner._save (DB write time)",
+  "app.importer.extract_urls / normalize_website / is_safe_import_target (import decisions)"
+ ],
+ "guard_relaxed_for": "127.0.0.1 ports 8800-8861 and 8899 only",
+ "safety_net": "requests aimed at non-global addresses that the crawler's guard did not stop are not sent (recorded SAFETY_NET_BLOCKED)",
+ "direct_insert_rows": 61,
+ "memory_note": "RSS is this Python process only; Chromium child processes are not included",
+ "wall_seconds_crawl": 274.8,
+ "secret_stored": false,
+ "domain_stats_rows": 61,
+ "crawl_jobs": [
+  [
+   2,
+   "crawl",
+   "completed",
+   50,
+   "blocked=3, crawled=27, failed=8, invalid=1, parked=1, requires_review=5, robots_blocked=2, under_construction=2, unreachable=1"
+  ],
+  [
+   3,
+   "crawl",
+   "completed",
+   3,
+   "crawled=3"
+  ],
+  [
+   4,
+   "crawl",
+   "completed",
+   1,
+   "unreachable=1"
+  ],
+  [
+   5,
+   "crawl",
+   "completed",
+   1,
+   "unreachable=1"
+  ],
+  [
+   6,
+   "crawl",
+   "completed",
+   1,
+   "unreachable=1"
+  ],
+  [
+   7,
+   "crawl",
+   "completed",
+   1,
+   "failed=1"
+  ],
+  [
+   8,
+   "crawl",
+   "completed",
+   1,
+   "failed=1"
+  ],
+  [
+   9,
+   "crawl",
+   "completed",
+   1,
+   "crawled=1"
+  ],
+  [
+   10,
+   "crawl",
+   "completed",
+   1,
+   "crawled=1"
+  ],
+  [
+   11,
+   "crawl",
+   "completed",
+   1,
+   "crawled=1"
+  ]
+ ],
+ "peak_rss_mb": 141.8,
+ "rows_reused_from_earlier_run": [],
+ "include_from": null,
+ "watchdog": {
+  "soft_mb": 2048,
+  "hard_mb": 3072,
+  "free_soft_mb": 1536,
+  "free_hard_mb": 1024,
+  "soft_limit_event": null,
+  "hard_limit_record_file": "C:\\Users\\DELL\\OneDrive\\Documents\\AI-Powered Website Intelligence\\Web-intelliegence-main\\crawl_eval\\results\\new-local-scenarios-1\\watchdog_hard.json"
+ },
+ "machine": {
+  "total_ram_gb": 15.9,
+  "note": "Windows 10, 15.9 GB RAM (read at start of project)"
+ },
+ "data_folder_note": "An empty data/ folder exists in the repo root; it was created by the existing test suite during Step 0 (1:05 PM 2026-10-10). The harness never opens data/websites.db.",
+ "stage_2_heavy_rows": 8
+}

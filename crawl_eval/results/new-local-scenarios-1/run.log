@@ -1,0 +1,43 @@
+09:09:08 run new-local-scenarios-1 label=new-local-scenarios smoke=False limit=None concurrency=5 resume=False
+09:09:08 app code hash check before run: OK
+09:09:11 dataset local_scenarios.csv sha256 a73f6b132ea8ce56 rows=61 selected=61
+09:09:11 importer: added=1 duplicates=0 invalid=60; raws=61 lines=61; crashes=0
+09:09:11 crawl plan: 61 rows (61 direct, 0 via importer); reused 0; to do now: 53 normal + 8 heavy (final stage)
+09:09:11 stage 1 batch 1: 50 sites
+09:09:26   runner:   10/50 done — failed (site #14)
+09:09:42   runner:   20/50 done — failed (site #29)
+09:09:56   runner:   30/50 done — crawled (site #40)
+09:10:31   runner:   40/50 done — failed (site #53)
+09:10:53   runner:   50/50 done — crawled (site #59)
+09:10:53   batch counts: {'parked': 1, 'under_construction': 2, 'blocked': 3, 'failed': 8, 'unreachable': 1, 'requires_review': 5, 'invalid': 1, 'robots_blocked': 2, 'crawled': 27} in 102.3s
+09:10:53   checkpoint written (50/53)
+09:10:53 stage 1 batch 2: 3 sites
+09:11:04   runner:   3/3 done — crawled (site #62)
+09:11:04   batch counts: {'crawled': 3} in 10.9s
+09:11:04   checkpoint written (53/53)
+09:11:04 stage 2 (final, heavy scenarios): 8 rows, one at a time
+09:11:04   heavy row T0698 http://127.0.0.1:8801/ (rss now 123 MB, machine free 7286 MB)
+09:11:57   runner:   1/1 done — unreachable (site #5)
+09:11:57   batch counts: {'unreachable': 1} in 52.2s
+09:11:57   heavy row T0699 http://127.0.0.1:8802/ (rss now 124 MB, machine free 7679 MB)
+09:12:23   runner:   1/1 done — unreachable (site #6)
+09:12:23   batch counts: {'unreachable': 1} in 26.3s
+09:12:23   heavy row T0700 http://127.0.0.1:8803/ (rss now 124 MB, machine free 7717 MB)
+09:12:49   runner:   1/1 done — unreachable (site #7)
+09:12:49   batch counts: {'unreachable': 1} in 26.3s
+09:12:49   heavy row T0843 http://127.0.0.1:8804/ (rss now 125 MB, machine free 7674 MB)
+09:12:51   runner:   1/1 done — failed (site #27)
+09:12:51   batch counts: {'failed': 1} in 1.6s
+09:12:51   heavy row T0844 http://127.0.0.1:8805/ (rss now 126 MB, machine free 7668 MB)
+09:12:53   runner:   1/1 done — failed (site #28)
+09:12:53   batch counts: {'failed': 1} in 1.8s
+09:12:53   heavy row T0846 http://127.0.0.1:8807/ (rss now 127 MB, machine free 7685 MB)
+09:13:01   runner:   1/1 done — crawled (site #30)
+09:13:01   batch counts: {'crawled': 1} in 7.9s
+09:13:01   heavy row T0847 http://127.0.0.1:8808/ (rss now 127 MB, machine free 7662 MB)
+09:13:06   runner:   1/1 done — crawled (site #31)
+09:13:06   batch counts: {'crawled': 1} in 5.3s
+09:13:06   heavy row T0848 http://127.0.0.1:8817/ (rss now 127 MB, machine free 7658 MB)
+09:13:46   runner:   1/1 done — crawled (site #32)
+09:13:46   batch counts: {'crawled': 1} in 39.7s
+09:13:46 app code hash check after run: OK
