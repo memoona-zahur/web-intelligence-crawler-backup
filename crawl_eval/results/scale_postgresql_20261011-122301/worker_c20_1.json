@@ -1,0 +1,1 @@
+{"pid": 20820, "concurrency": 20, "seconds": 58.95, "counts": {"crawled": 315, "failed": 11, "parked": 4, "robots_blocked": 1, "unreachable": 3, "redirected": 2}, "peak_rss_mb": 105.5}

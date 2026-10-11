@@ -1,0 +1,395 @@
+[
+ {
+  "database": "postgresql",
+  "sites": 1000,
+  "imported": 1000,
+  "queued": 1000,
+  "concurrency_per_worker": 5,
+  "worker_processes": 3,
+  "exit_codes": [
+   0,
+   0,
+   0
+  ],
+  "prep_seconds": 1.7,
+  "wall_seconds": 125.8,
+  "sites_per_hour_THIS_RUN_ONLY": 28622,
+  "website_status": {
+   "unreachable": 9,
+   "failed": 38,
+   "parked": 8,
+   "robots_blocked": 5,
+   "crawled": 931,
+   "redirected": 9
+  },
+  "task_states": {
+   "retry_scheduled": 52,
+   "done": 948
+  },
+  "task_attempts": {
+   "1": 1000
+  },
+  "unfinished_websites": 0,
+  "pages_saved": 4700,
+  "fetch_attempts_saved": 10632,
+  "fake_page_latency_ms_p50": 139.0,
+  "fake_page_latency_ms_p95": 201.0,
+  "tasks_per_worker_slot": {
+   "DESKTOP-RN1AJ8B-5844-0": 63,
+   "DESKTOP-RN1AJ8B-7548-0": 62,
+   "DESKTOP-RN1AJ8B-16552-3": 60,
+   "DESKTOP-RN1AJ8B-16552-4": 59,
+   "DESKTOP-RN1AJ8B-7548-4": 61,
+   "DESKTOP-RN1AJ8B-7548-2": 62,
+   "DESKTOP-RN1AJ8B-16552-2": 68,
+   "DESKTOP-RN1AJ8B-5844-1": 65,
+   "DESKTOP-RN1AJ8B-7548-3": 63,
+   "DESKTOP-RN1AJ8B-5844-3": 64,
+   "DESKTOP-RN1AJ8B-16552-1": 60,
+   "DESKTOP-RN1AJ8B-5844-4": 68,
+   "DESKTOP-RN1AJ8B-16552-0": 63,
+   "DESKTOP-RN1AJ8B-5844-2": 62,
+   "DESKTOP-RN1AJ8B-7548-1": 68
+  },
+  "same_domain_overlaps": 0,
+  "peak_rss_mb_per_worker_process": [
+   104.7,
+   104.8,
+   104.5
+  ],
+  "worker_reports": [
+   {
+    "pid": 5844,
+    "concurrency": 5,
+    "seconds": 121.07,
+    "counts": {
+     "crawled": 313,
+     "failed": 11,
+     "parked": 4,
+     "unreachable": 4,
+     "redirected": 5,
+     "robots_blocked": 1
+    },
+    "peak_rss_mb": 104.7
+   },
+   {
+    "pid": 7548,
+    "concurrency": 5,
+    "seconds": 120.98,
+    "counts": {
+     "crawled": 311,
+     "redirected": 3,
+     "failed": 13,
+     "unreachable": 1,
+     "parked": 2,
+     "robots_blocked": 1
+    },
+    "peak_rss_mb": 104.8
+   },
+   {
+    "pid": 16552,
+    "concurrency": 5,
+    "seconds": 121.09,
+    "counts": {
+     "crawled": 307,
+     "parked": 2,
+     "failed": 14,
+     "unreachable": 4,
+     "robots_blocked": 3,
+     "redirected": 1
+    },
+    "peak_rss_mb": 104.5
+   }
+  ],
+  "checks": {
+   "all_workers_exited_0": true,
+   "nothing_lost": true,
+   "no_task_attempted_twice_by_mistake": true,
+   "no_same_domain_overlap": true,
+   "work_shared_by_all_processes": true,
+   "outcomes_as_designed": true
+  }
+ },
+ {
+  "database": "postgresql",
+  "sites": 1000,
+  "imported": 1000,
+  "queued": 1000,
+  "concurrency_per_worker": 10,
+  "worker_processes": 3,
+  "exit_codes": [
+   0,
+   0,
+   0
+  ],
+  "prep_seconds": 1.5,
+  "wall_seconds": 71.9,
+  "sites_per_hour_THIS_RUN_ONLY": 50059,
+  "website_status": {
+   "crawled": 931,
+   "failed": 38,
+   "parked": 8,
+   "redirected": 9,
+   "robots_blocked": 5,
+   "unreachable": 9
+  },
+  "task_states": {
+   "retry_scheduled": 52,
+   "done": 948
+  },
+  "task_attempts": {
+   "1": 1000
+  },
+  "unfinished_websites": 0,
+  "pages_saved": 4700,
+  "fetch_attempts_saved": 10632,
+  "fake_page_latency_ms_p50": 140.0,
+  "fake_page_latency_ms_p95": 200.0,
+  "tasks_per_worker_slot": {
+   "DESKTOP-RN1AJ8B-5068-3": 34,
+   "DESKTOP-RN1AJ8B-16420-4": 32,
+   "DESKTOP-RN1AJ8B-20004-2": 34,
+   "DESKTOP-RN1AJ8B-16420-6": 34,
+   "DESKTOP-RN1AJ8B-20004-3": 35,
+   "DESKTOP-RN1AJ8B-20004-6": 33,
+   "DESKTOP-RN1AJ8B-20004-0": 34,
+   "DESKTOP-RN1AJ8B-20004-8": 35,
+   "DESKTOP-RN1AJ8B-16420-7": 28,
+   "DESKTOP-RN1AJ8B-16420-5": 34,
+   "DESKTOP-RN1AJ8B-5068-5": 34,
+   "DESKTOP-RN1AJ8B-16420-1": 29,
+   "DESKTOP-RN1AJ8B-20004-9": 30,
+   "DESKTOP-RN1AJ8B-20004-7": 26,
+   "DESKTOP-RN1AJ8B-16420-2": 32,
+   "DESKTOP-RN1AJ8B-16420-0": 32,
+   "DESKTOP-RN1AJ8B-5068-0": 28,
+   "DESKTOP-RN1AJ8B-5068-7": 34,
+   "DESKTOP-RN1AJ8B-16420-9": 32,
+   "DESKTOP-RN1AJ8B-5068-4": 31,
+   "DESKTOP-RN1AJ8B-16420-3": 28,
+   "DESKTOP-RN1AJ8B-5068-8": 33,
+   "DESKTOP-RN1AJ8B-5068-6": 28,
+   "DESKTOP-RN1AJ8B-16420-8": 31,
+   "DESKTOP-RN1AJ8B-5068-2": 33,
+   "DESKTOP-RN1AJ8B-5068-1": 33,
+   "DESKTOP-RN1AJ8B-20004-5": 28,
+   "DESKTOP-RN1AJ8B-5068-9": 27,
+   "DESKTOP-RN1AJ8B-20004-4": 33,
+   "DESKTOP-RN1AJ8B-20004-1": 33
+  },
+  "same_domain_overlaps": 0,
+  "peak_rss_mb_per_worker_process": [
+   105.3,
+   105.6,
+   106.3
+  ],
+  "worker_reports": [
+   {
+    "pid": 20004,
+    "concurrency": 10,
+    "seconds": 67.34,
+    "counts": {
+     "crawled": 313,
+     "failed": 13,
+     "redirected": 5,
+     "unreachable": 3,
+     "parked": 3,
+     "robots_blocked": 1
+    },
+    "peak_rss_mb": 105.3
+   },
+   {
+    "pid": 5068,
+    "concurrency": 10,
+    "seconds": 67.33,
+    "counts": {
+     "crawled": 311,
+     "redirected": 2,
+     "parked": 2,
+     "failed": 11,
+     "robots_blocked": 3,
+     "unreachable": 4
+    },
+    "peak_rss_mb": 105.6
+   },
+   {
+    "pid": 16420,
+    "concurrency": 10,
+    "seconds": 67.62,
+    "counts": {
+     "parked": 3,
+     "crawled": 307,
+     "failed": 14,
+     "unreachable": 2,
+     "robots_blocked": 1,
+     "redirected": 2
+    },
+    "peak_rss_mb": 106.3
+   }
+  ],
+  "checks": {
+   "all_workers_exited_0": true,
+   "nothing_lost": true,
+   "no_task_attempted_twice_by_mistake": true,
+   "no_same_domain_overlap": true,
+   "work_shared_by_all_processes": true,
+   "outcomes_as_designed": true
+  }
+ },
+ {
+  "database": "postgresql",
+  "sites": 1000,
+  "imported": 1000,
+  "queued": 1000,
+  "concurrency_per_worker": 20,
+  "worker_processes": 3,
+  "exit_codes": [
+   0,
+   0,
+   0
+  ],
+  "prep_seconds": 1.7,
+  "wall_seconds": 63.4,
+  "sites_per_hour_THIS_RUN_ONLY": 56758,
+  "website_status": {
+   "crawled": 931,
+   "failed": 38,
+   "parked": 8,
+   "redirected": 9,
+   "robots_blocked": 5,
+   "unreachable": 9
+  },
+  "task_states": {
+   "retry_scheduled": 52,
+   "done": 948
+  },
+  "task_attempts": {
+   "1": 1000
+  },
+  "unfinished_websites": 0,
+  "pages_saved": 4700,
+  "fetch_attempts_saved": 10632,
+  "fake_page_latency_ms_p50": 177.0,
+  "fake_page_latency_ms_p95": 326.0,
+  "tasks_per_worker_slot": {
+   "DESKTOP-RN1AJ8B-19540-13": 17,
+   "DESKTOP-RN1AJ8B-17704-14": 17,
+   "DESKTOP-RN1AJ8B-17704-13": 13,
+   "DESKTOP-RN1AJ8B-20820-11": 17,
+   "DESKTOP-RN1AJ8B-17704-6": 15,
+   "DESKTOP-RN1AJ8B-17704-18": 14,
+   "DESKTOP-RN1AJ8B-20820-1": 15,
+   "DESKTOP-RN1AJ8B-19540-14": 16,
+   "DESKTOP-RN1AJ8B-20820-0": 15,
+   "DESKTOP-RN1AJ8B-20820-2": 16,
+   "DESKTOP-RN1AJ8B-20820-4": 17,
+   "DESKTOP-RN1AJ8B-20820-13": 14,
+   "DESKTOP-RN1AJ8B-20820-8": 17,
+   "DESKTOP-RN1AJ8B-17704-2": 14,
+   "DESKTOP-RN1AJ8B-17704-17": 16,
+   "DESKTOP-RN1AJ8B-17704-7": 17,
+   "DESKTOP-RN1AJ8B-17704-5": 15,
+   "DESKTOP-RN1AJ8B-20820-5": 18,
+   "DESKTOP-RN1AJ8B-20820-18": 13,
+   "DESKTOP-RN1AJ8B-19540-15": 17,
+   "DESKTOP-RN1AJ8B-19540-2": 14,
+   "DESKTOP-RN1AJ8B-19540-6": 18,
+   "DESKTOP-RN1AJ8B-17704-11": 15,
+   "DESKTOP-RN1AJ8B-19540-17": 15,
+   "DESKTOP-RN1AJ8B-20820-14": 16,
+   "DESKTOP-RN1AJ8B-20820-12": 17,
+   "DESKTOP-RN1AJ8B-19540-7": 16,
+   "DESKTOP-RN1AJ8B-17704-9": 16,
+   "DESKTOP-RN1AJ8B-17704-12": 16,
+   "DESKTOP-RN1AJ8B-17704-16": 17,
+   "DESKTOP-RN1AJ8B-19540-16": 17,
+   "DESKTOP-RN1AJ8B-17704-10": 16,
+   "DESKTOP-RN1AJ8B-19540-12": 14,
+   "DESKTOP-RN1AJ8B-20820-7": 15,
+   "DESKTOP-RN1AJ8B-19540-10": 15,
+   "DESKTOP-RN1AJ8B-19540-8": 17,
+   "DESKTOP-RN1AJ8B-19540-11": 16,
+   "DESKTOP-RN1AJ8B-17704-8": 17,
+   "DESKTOP-RN1AJ8B-20820-9": 16,
+   "DESKTOP-RN1AJ8B-20820-16": 17,
+   "DESKTOP-RN1AJ8B-19540-0": 16,
+   "DESKTOP-RN1AJ8B-19540-1": 16,
+   "DESKTOP-RN1AJ8B-19540-19": 17,
+   "DESKTOP-RN1AJ8B-19540-9": 12,
+   "DESKTOP-RN1AJ8B-17704-4": 16,
+   "DESKTOP-RN1AJ8B-19540-5": 18,
+   "DESKTOP-RN1AJ8B-17704-1": 15,
+   "DESKTOP-RN1AJ8B-19540-4": 16,
+   "DESKTOP-RN1AJ8B-20820-3": 17,
+   "DESKTOP-RN1AJ8B-20820-15": 17,
+   "DESKTOP-RN1AJ8B-19540-3": 14,
+   "DESKTOP-RN1AJ8B-19540-18": 14,
+   "DESKTOP-RN1AJ8B-20820-10": 16,
+   "DESKTOP-RN1AJ8B-20820-6": 17,
+   "DESKTOP-RN1AJ8B-17704-19": 15,
+   "DESKTOP-RN1AJ8B-17704-15": 17,
+   "DESKTOP-RN1AJ8B-20820-19": 15,
+   "DESKTOP-RN1AJ8B-20820-17": 16,
+   "DESKTOP-RN1AJ8B-17704-0": 14,
+   "DESKTOP-RN1AJ8B-17704-3": 17
+  },
+  "same_domain_overlaps": 0,
+  "peak_rss_mb_per_worker_process": [
+   105.7,
+   105.5,
+   105.6
+  ],
+  "worker_reports": [
+   {
+    "pid": 19540,
+    "concurrency": 20,
+    "seconds": 58.94,
+    "counts": {
+     "parked": 2,
+     "crawled": 311,
+     "redirected": 2,
+     "failed": 16,
+     "unreachable": 3,
+     "robots_blocked": 1
+    },
+    "peak_rss_mb": 105.7
+   },
+   {
+    "pid": 20820,
+    "concurrency": 20,
+    "seconds": 58.95,
+    "counts": {
+     "crawled": 315,
+     "failed": 11,
+     "parked": 4,
+     "robots_blocked": 1,
+     "unreachable": 3,
+     "redirected": 2
+    },
+    "peak_rss_mb": 105.5
+   },
+   {
+    "pid": 17704,
+    "concurrency": 20,
+    "seconds": 58.79,
+    "counts": {
+     "crawled": 305,
+     "robots_blocked": 3,
+     "failed": 11,
+     "redirected": 5,
+     "unreachable": 3,
+     "parked": 2
+    },
+    "peak_rss_mb": 105.6
+   }
+  ],
+  "checks": {
+   "all_workers_exited_0": true,
+   "nothing_lost": true,
+   "no_task_attempted_twice_by_mistake": true,
+   "no_same_domain_overlap": true,
+   "work_shared_by_all_processes": true,
+   "outcomes_as_designed": true
+  }
+ }
+]

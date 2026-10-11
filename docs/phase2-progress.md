@@ -14,7 +14,7 @@ Chromium for the browser tests/harness: `set PLAYWRIGHT_BROWSERS_PATH=C:/crawl_e
 | 3 | Guard, normaliser, importer, fetcher (+ robots RFC 9309), politeness | DONE + unit tests |
 | 4 | Detectors, discovery, extraction, structured data, browser | DONE + unit tests + real-Chromium tests |
 | 5 | Queue, worker, runner, persistence, ops commands | DONE + unit tests; local scale test on SQLite done |
-| 6 | Full test run, harness contract, scenario tests, scale test | SQLite parts DONE; **PostgreSQL parts waiting for the PostgreSQL install** |
+| 6 | Full test run, harness contract, scenario tests, scale test | DONE on SQLite and PostgreSQL 17 (2026-10-11). Still NOT DONE: the 100-row PostgreSQL-queue smoke path (needs real sites and a real contact) |
 | GATE 5 | Smoke-1 (real sites) | **NOT STARTED - needs a real `CRAWLER_CONTACT_URL` in `.env` from the project owner** |
 
 ## Decisions (user)
@@ -64,6 +64,8 @@ Chromium for the browser tests/harness: `set PLAYWRIGHT_BROWSERS_PATH=C:/crawl_e
    the unused `ROBOTS_TIMEOUT` constant was removed (robots.txt uses the normal step timeout).
 
 ## Test results
+PostgreSQL (2026-10-11, local only): 9 PG tests incl. migrations at head, idempotent upgrade, 2 worker processes, 60k import = pass; whole suite with TEST_DATABASE_URL set: **767 passed, 0 skipped**, socket guard 0 attempts. Scale test 1,000 sites x 3 processes on PG, concurrency 5/10/20: all checks PASS, 0 domain overlaps (crawl_eval/results/scale_postgresql_20261011-122301). Throughput numbers are for this machine and fake sites only.
+
 Last full run (2026-10-11, end of build step 6): **739 passed, 9 skipped** (the 9 PostgreSQL tests: no `TEST_DATABASE_URL`), coverage of all of `app/` **94 %** (crawler modules 91-100 %). Full output: `docs/phase2-test-output.txt`.
 
 Other runs (all local, no real website): harness mini run 8/8 MATCH; all 60 local scenario rows MATCH (`crawl_eval/results/new-local-scenarios-1`); SQLite scale test 1,000 sites x 3 processes x concurrency 5/10/20, all checks PASS (`crawl_eval/results/scale_sqlite_local`); harness contract 68/68 (`crawl_eval/tools/check_harness_contract.py`).
