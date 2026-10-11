@@ -120,24 +120,29 @@ def claim_next(session: Session, worker_id: str, job_id: int | None = None, leas
                             .values(state="retry_scheduled", not_before=backoffs[host], last_error=f"domain back-off until {backoffs[host].isoformat(timespec='seconds')}"))
             session.commit()
             continue
-        try:
-            with session.begin_nested():
-                result = session.execute(
-                    update(CrawlTask)
-                    .where(CrawlTask.id == row.id, CrawlTask.state.in_(RUNNABLE_STATES))
-                    .values(state="claimed", worker_id=worker_id, attempt=CrawlTask.attempt + 1, started_at=now,
-                            lease_until=now + timedelta(seconds=lease_seconds))
-                )
-                if result.rowcount != 1:
-                    continue  # another worker was faster
-                session.execute(update(Website).where(Website.id == row.website_id)
-                                .values(status=config.STATUS_CRAWLING, crawl_status=config.STATUS_CRAWLING, claimed_at=now))
-        except IntegrityError:
-            continue  # the domain is being crawled by someone else right now
-        session.commit()
-        return ClaimedTask(row.id, row.website_id, row.normalized_website, row.attempt + 1, row.job_id, row.domain_key)
+        if _try_claim(session, row.id, row.website_id, worker_id, lease_seconds, now):
+            session.commit()
+            return ClaimedTask(row.id, row.website_id, row.normalized_website, row.attempt + 1, row.job_id, row.domain_key)
     session.commit()
     return None
+
+
+def _try_claim(session: Session, task_id: int, website_id: int, worker_id: str, lease_seconds: int, now: datetime) -> bool:
+    """Take one task. The conditions are checked AGAIN inside the UPDATE (state and not_before): the candidate list may be a few moments old, and
+    another worker may have claimed the task, or finished it with a retry scheduled for later, in between. False = someone else was faster."""
+    try:
+        with session.begin_nested():
+            result = session.execute(
+                update(CrawlTask)
+                .where(CrawlTask.id == task_id, CrawlTask.state.in_(RUNNABLE_STATES), or_(CrawlTask.not_before.is_(None), CrawlTask.not_before <= now))
+                .values(state="claimed", worker_id=worker_id, attempt=CrawlTask.attempt + 1, started_at=now, lease_until=now + timedelta(seconds=lease_seconds))
+            )
+            if result.rowcount != 1:
+                return False
+            session.execute(update(Website).where(Website.id == website_id).values(status=config.STATUS_CRAWLING, crawl_status=config.STATUS_CRAWLING, claimed_at=now))
+    except IntegrityError:
+        return False  # the domain is being crawled by someone else right now
+    return True
 
 
 def set_state(session: Session, task_id: int, state: str) -> None:

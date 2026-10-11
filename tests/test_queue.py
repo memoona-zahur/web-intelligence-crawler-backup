@@ -126,6 +126,24 @@ def test_expired_lease_returns_the_task_and_the_website(make_website):
         assert again.task_id == claimed.task_id and again.attempt == 2
 
 
+def test_a_stale_candidate_cannot_claim_a_task_that_was_just_scheduled_for_later(make_website):
+    """Found by the 60-worker scale test: a worker read its candidate list, another worker finished the task with a retry scheduled for later,
+    and the first worker then claimed it anyway because the claim only checked the state. The claim must re-check not_before itself."""
+    (a,) = make_sites(make_website, "https://a.com")
+    with get_session() as session:
+        queue.enqueue(session, [a])
+        session.commit()
+        task_id = session.scalars(select(CrawlTask.id)).one()
+        first = queue.claim_next(session, "w1")
+        queue.finish(session, first.task_id, "retry_scheduled", "later", utcnow() + timedelta(minutes=15))   # the retry is now scheduled
+        now = utcnow()
+        assert queue._try_claim(session, task_id, a, "w2-with-a-stale-list", 600, now) is False           # not allowed before its time
+        assert session.get(CrawlTask, task_id).state == "retry_scheduled" and session.get(CrawlTask, task_id).attempt == 1
+        assert queue._try_claim(session, task_id, a, "w2", 600, now + timedelta(minutes=16)) is True       # allowed after its time
+        assert session.get(CrawlTask, task_id).attempt == 2
+        assert queue._try_claim(session, task_id, a, "w3", 600, now + timedelta(minutes=17)) is False      # already claimed by w2
+
+
 def test_clean_shutdown_releases_only_that_workers_tasks(make_website):
     a, b = make_sites(make_website, "https://a.com", "https://b.com")
     with get_session() as session:

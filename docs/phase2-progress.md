@@ -1,39 +1,54 @@
 # Phase 2 progress log (crawler-v2)
 
 Read this first after a `/clear`. Full plan: `C:\Users\DELL\.claude\plans\pasted-content-id-c7ba-read-claude-md-imperative-kay.md`
-(copy of the approved GATE 4 plan; sections 1-9). Rules: `CLAUDE.md`, `docs/phase-plan.md` section 2.
-Python for anything importing `app/`: `C:\crawl_eval_data\venv\Scripts\python.exe -B`.
+(approved GATE 4 plan, sections 1-9). Rules: `CLAUDE.md`, `docs/phase-plan.md` section 2. Open policy questions: `docs/open-questions-for-sir.md`.
+Python for anything importing `app/`: `C:\crawl_eval_data\venv2\Scripts\python.exe -B` (Phase 1 pins + alembic, psycopg[binary], protego, tldextract,
+charset-normalizer; list in `docs/phase2-pip-freeze.txt`). The Phase 1 venv `C:\crawl_eval_data\venv` is untouched.
+Chromium for the browser tests/harness: `set PLAYWRIGHT_BROWSERS_PATH=C:/crawl_eval_data/browsers`.
 
 ## Status
 | Step | Work | State |
 |---|---|---|
-| 1a | Branch `crawler-v2` from main 54d03d0; source cross-check | DONE (no new CR-X found) |
-| 1b | Judge/harness change (plan section 5) + equivalence proof | DONE, committed 3d17da9 as a PROPOSAL; **not re-frozen, not tagged**. `freeze_judge.py verify` fails on purpose until approval. Evidence: `crawl_eval/judge_v3_equivalence.md` (results.csv + metrics.json byte-identical to Phase 1) |
-| GATE 4a | Show diff + equivalence proof to the user | WAITING for approval. Then: `freeze_judge.py write <copy of a run dir> phase2-judge-v3 "<reason>"`, verify, commit, `git tag phase2-judge-v3` |
-| 2 | PostgreSQL + new dependencies | BLOCKED until user confirms (see Open questions) |
-| 3-6 | Build (settings, guard, importer, fetcher, politeness, detectors, discovery, extraction, browser, queue, persistence, ops) | not started |
-| 7 | Smoke-1 (real sites) -> GATE 5 | not started |
-| 8 | Full-1 -> GATE 6 | not started |
-| 9 | Fix loop, Full-2, Full-3, comparison, sir note -> GATE 7 | not started |
+| 1 | Branch `crawler-v2`; source cross-check; judge v3 (+ proof, local `--code-manifest auto` test) | DONE. Judge re-frozen, tag `phase2-judge-v3`, `freeze_judge.py verify` = FROZEN JUDGE OK |
+| 2 | Settings, Alembic (baseline + Phase 2 schema), new models | DONE (SQLite tested; PostgreSQL NOT TESTED - not installed) |
+| 3 | Guard, normaliser, importer, fetcher (+ robots RFC 9309), politeness | DONE + unit tests |
+| 4 | Detectors, discovery, extraction, structured data, browser | DONE + unit tests + real-Chromium tests |
+| 5 | Queue, worker, runner, persistence, ops commands | DONE + unit tests; local scale test on SQLite done |
+| 6 | Full test run, harness contract, scenario tests, scale test | SQLite parts DONE; **PostgreSQL parts waiting for the PostgreSQL install** |
+| GATE 5 | Smoke-1 (real sites) | **NOT STARTED - needs a real `CRAWLER_CONTACT_URL` in `.env` from the project owner** |
 
 ## Decisions (user)
-- robots.txt 5xx/unreachable: RFC 9309 strict (retry x2, then Blocked + retry later; 4xx = no rules).
-- User-Agent contact: required setting `CRAWLER_CONTACT_URL`, no default; user supplies the real URL before the first real-site run.
-- Judge: additive change (4 new status words + `--code-manifest`), prove Phase 1 verdicts identical, re-freeze, tag `phase2-judge-v3`.
-- DB: PostgreSQL (native Windows) + Alembic; SQLite only for unit tests and the frozen harness. Queue: PG table `crawl_tasks` (no Redis/Celery).
+- robots.txt 5xx/unreachable: RFC 9309 strict (retry x2, then Blocked + retry later; 4xx = no rules). Network-level failure of the whole site = Unreachable (derived choice, listed in open questions).
+- User-Agent contact: required setting `CRAWLER_CONTACT_URL`, no default in production; test contact `test@example.invalid` only in dev/test mode and never sent to a non-local host.
+- DB: PostgreSQL (native Windows) + Alembic; SQLite for unit tests, the harness and small local runs. Queue: PG/SQL table `crawl_tasks` (no Redis/Celery). Pending sir confirmation.
 - Cross-domain redirect: crawl target, status Redirected. Raw HTML off by default. CR-E12, CR-A05 deferred.
-- Real-site budget: max 2 smoke + 4 full runs, concurrency 5; loop iterations use unit/fixture/scenario server only.
-- Plan additions (GATE 4 approval): keep this file updated; commit after every build step; G08 scale test (1,000 local sites, concurrency 5/10/20) runs on PostgreSQL with 2-3 worker processes (not only SQLite); run the 100-row smoke subset once through the PG + queue path (outside the frozen harness) and report differences from the SQLite smoke; **before installing PostgreSQL or any dependency, give exact steps and wait for confirmation** (user must first check with their sir that PostgreSQL + DB queue instead of Redis/Celery is acceptable); never edit frozen `crawl_eval/` files except through GATE 4a; run `freeze_judge.py verify` before every field run; stop at GATE 4a.
+- Real-site budget: max 2 smoke + 4 full runs, concurrency 5; loop iterations use unit/fixture/scenario server only. Run `freeze_judge.py verify` before every field run.
+- Never edit frozen `crawl_eval/` files except through the GATE 4a procedure (written approval -> proof -> re-freeze -> tag).
+- Install nothing new without confirmation (PostgreSQL steps are in the stop report).
 
 ## Open questions
-- Sir's approval of PostgreSQL + DB queue (blocks Step 2 and everything that needs new dependencies).
+- Sir's confirmation of PostgreSQL + DB queue, robots policy, contact policy: `docs/open-questions-for-sir.md`.
 - Real `CRAWLER_CONTACT_URL` (needed before Smoke-1).
+- PostgreSQL 17 install (blocks: PG test suite, PG scale test, PG smoke path run).
+
+## Changes to existing tests (each one encoded behaviour now judged wrong)
+| File::test | Change | Reason |
+|---|---|---|
+| tests/conftest.py | TEST mode, zero politeness waits, no DNS in unit tests, schema copied once per session | CR-J03 (no network, not even DNS); speed (suite 136 s -> ~50 s) |
+| test_requirements::test_contact_url_changes_the_user_agent | `/1.0` -> `/2.0` | ISS-31: one bot name, version 2 |
+| test_pipeline::test_empty_when_below_minimum_text | status `empty` -> `requires_review` | ISS-10/12: new status vocabulary |
+| test_fetcher::test_timeout_maps_to_network_and_retries | now `..._retries_once` (2 calls, not 3) + new test for refused connections (3 calls) | a timing-out server holds a worker; one retry |
+| test_fetcher::test_robots_fail_open_on_server_error | now: robots 5xx = unavailable, not allowed; plus a test for `ROBOTS_5XX_POLICY=allow` | ISS-14, user decision (pending sir) |
+| test_discover::test_excludes_offsite_and_subdomain_links | business subdomains of the same registrable domain are kept; blog./careers. and other domains excluded | CR-C05 |
+| test_discover::test_www_variant_matches_base_host | compares `canonical_key` (host as written is kept) | no extra redirect per page |
+| test_phase2::test_stops_early_when_enough_text_is_collected | now `..._when_the_important_page_types_are_read` (coverage rule) | ISS-08 |
 
 ## Test results
-(none yet for Phase 2)
+See the stop report (`pytest` output and coverage are attached there). Last full run before this log: 725 passed.
 
 ## Commits / tags
 | Ref | Meaning |
 |---|---|
-| `crawler-baseline-v1`, `phase1-complete`, `phase1-complete-v2` | Phase 1, never touch |
-| `phase2-judge-v3` | to be created at GATE 4a |
+| `crawler-baseline-v1`, `phase1-complete`, `phase1-complete-v2` | Phase 1, never touched |
+| `phase2-judge-v3` | judge v3 frozen (GATE 4a) |
+| branch `crawler-v2` | all Phase 2 work, committed after every step |
