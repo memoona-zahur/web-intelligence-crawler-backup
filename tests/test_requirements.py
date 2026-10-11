@@ -19,7 +19,8 @@ from app.main import app
 def test_contact_url_changes_the_user_agent(monkeypatch):
     monkeypatch.setenv("CRAWLER_CONTACT_URL", "mailto:crawler@example.com")
 
-    assert config.user_agent() == "WebsiteIntelligenceBot/1.0 (+mailto:crawler@example.com)"
+    # Phase 2 (ISS-31): one bot name, version 2.0 (was 1.0)
+    assert config.user_agent() == "WebsiteIntelligenceBot/2.0 (+mailto:crawler@example.com)"
 
 
 def test_unchanged_crawl_keeps_the_classification(make_website):

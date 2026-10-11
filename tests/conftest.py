@@ -17,6 +17,12 @@ def db(tmp_path, monkeypatch):
     monkeypatch.setattr(database, "SessionLocal", sessionmaker(bind=engine))
     monkeypatch.setenv("OBSERVE_ECHO", "0")
     monkeypatch.setenv("OBSERVE_LOG", str(tmp_path / "events.jsonl"))
+    # Phase 2: unit tests run in TEST mode (test contact, local/mocked hosts only) and without real waiting.
+    monkeypatch.setenv("CRAWLER_MODE", "test")
+    monkeypatch.delenv("CRAWLER_CONTACT_URL", raising=False)
+    monkeypatch.delenv("ROBOTS_5XX_POLICY", raising=False)
+    monkeypatch.setattr("app.crawler.config.DOMAIN_DELAY", 0.0)
+    monkeypatch.setattr("app.crawler.config.RETRY_BACKOFF", 0.0)
     yield engine
 
 

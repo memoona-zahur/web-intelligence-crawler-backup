@@ -11,3 +11,8 @@ pydantic
 python-dotenv
 openpyxl
 playwright
+alembic
+psycopg[binary]
+protego
+tldextract
+charset-normalizer
