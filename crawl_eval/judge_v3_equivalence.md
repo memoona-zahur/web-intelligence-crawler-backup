@@ -1,6 +1,6 @@
 # Judge v3 – proof that Phase 1 verdicts are unchanged (GATE 4a evidence)
 
-Date: 2026-10-11 · Branch `crawler-v2` · Proposed change, NOT yet re-frozen (waits for the project owner's OK).
+Date: 2026-10-11 · Branch `crawler-v2` · APPROVED by the project owner at GATE 4a (with two conditions: local test of `--code-manifest auto`; regenerate stale `run_stats.md`) and re-frozen as `phase2-judge-v3`.
 
 ## What changed (3 files, 24 lines added, 6 removed)
 | File | Change | Effect on Phase 1 |
@@ -22,10 +22,17 @@ Method: copy the saved Phase 1 run `existing-code_full_20261011` to a scratch fo
 | dataset `testing_URLs.csv` | unchanged, SHA-256 prefix `0963AB3FEAD262C8` |
 Verdict counts reproduced: MATCH 752, MISMATCH 169, ENV-DEPENDENT 27, SITE-CHANGED 36, PARTIAL 3, ORACLE-LIMITATION 1.
 
-## Not yet proven (honest limits)
-- The `--code-manifest auto` path has only been syntax-checked and its `--help` shown; it runs for the first time in a Phase 2 run.
-- The new status words are exercised by unit tests only after the Phase 2 code exists.
+## Local-only test of `--code-manifest auto` (GATE 4a condition A1; no real sites; 8 scenario rows, `dataset/mini_local.csv`)
+| Test | Expected | Actual |
+|---|---|---|
+| Run A (`--code-manifest auto`, unchanged old code) | hash at start, re-check at end | `code_manifest.json` created (56 files, combined `59e787ea…`); check OK before and after; 8/8 rows crawled; manifest has `code_sha256`, tag `phase2-dev-selftest` |
+| Run B (`--include-from` run A, same code) | rows reused, nothing crawled | "reused 8 row results … not crawled again"; to do now: 0 |
+| Run C (`--include-from` a copy of A with an altered `code_sha256`) | refused | `--include-from run used different code (code hash differs)` |
+| Run D (`--code-manifest <manifest with one file hash flipped>`) | mismatch detected | `MISMATCH {'changed': ['app/__init__.py']}` before and after; `app_code_unchanged_before/after` both False |
+No bug found. Runs C and D were deliberate negative tests; their (empty) result folders were deleted. A test-setup slip of mine (PowerShell 5.1 wrote a BOM into a JSON file) was not a harness bug.
+Not tested here: the new status words with a real Phase 2 crawler (needs Phase 2 code; covered by unit tests later).
 
-## After approval
-`freeze_judge.py write <scratch copy> phase2-judge-v3 "<reason>"` → new `FROZEN_JUDGE.json` (previous hashes kept) → commit → tag `phase2-judge-v3`.
-Until then `freeze_judge.py verify` correctly says `FROZEN JUDGE CHANGED: ['judge.py', 'run_eval.py']`.
+## Frozen
+`run_stats.md` is not in the frozen list; it was regenerated from the verified round-2 numbers (MATCH 752, PARTIAL 3, MISMATCH 169, ENV 27, SITE-CHANGED 36, ORACLE-LIMITATION 1).
+Re-frozen 2026-10-11 as tag `phase2-judge-v3`, combined hash `b5b3a08be96c…` (previous `8f951d1f…` kept in `FROZEN_JUDGE.json`). `freeze_judge.py verify` → `FROZEN JUDGE OK`.
+Rule from now on: no frozen file is edited except through this procedure (user's written approval → proof → re-freeze → tag).

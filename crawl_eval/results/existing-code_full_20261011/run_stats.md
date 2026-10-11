@@ -10,9 +10,9 @@ Code under test: `existing-code` (git `24818a60`, tag `crawler-baseline-v1`). Ap
 |---|---:|
 | MATCH | 752 |
 | PARTIAL | 3 |
-| MISMATCH | 163 |
-| ENV-DEPENDENT | 28 |
-| SITE-CHANGED | 41 |
+| MISMATCH | 169 |
+| ENV-DEPENDENT | 27 |
+| SITE-CHANGED | 36 |
 | ORACLE-LIMITATION | 1 |
 | HARNESS-ERROR | 0 |
 | NOT-RUN | 0 |
@@ -24,24 +24,24 @@ Code under test: `existing-code` (git `24818a60`, tag `crawler-baseline-v1`). Ap
 
 | Category | Rows | MATCH | PARTIAL | MISMATCH | ENV | SITE-CHG | Other |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Bot-protected / WAF | 25 | 24 | 0 | 0 | 0 | 1 | 0 |
+| Bot-protected / WAF | 25 | 24 | 0 | 0 | 1 | 0 | 0 |
 | Corporate / B2B services | 70 | 66 | 0 | 3 | 1 | 0 | 0 |
 | Crawl traps | 20 | 19 | 0 | 1 | 0 | 0 | 0 |
 | Dead domains (NXDOMAIN) | 30 | 1 | 0 | 26 | 0 | 3 | 0 |
-| E-commerce and retail | 60 | 56 | 0 | 2 | 1 | 1 | 0 |
+| E-commerce and retail | 60 | 56 | 0 | 3 | 1 | 0 | 0 |
 | Encoding oddities | 15 | 12 | 0 | 2 | 1 | 0 | 0 |
-| HTTP errors | 30 | 21 | 0 | 2 | 0 | 7 | 0 |
-| Healthcare, education, finance, real estate, non-profit, government | 80 | 67 | 0 | 2 | 7 | 4 | 0 |
-| Input handling | 80 | 59 | 0 | 18 | 1 | 1 | 1 |
-| JavaScript-heavy SPAs | 50 | 38 | 0 | 11 | 1 | 0 | 0 |
+| HTTP errors | 30 | 21 | 0 | 2 | 2 | 5 | 0 |
+| Healthcare, education, finance, real estate, non-profit, government | 80 | 67 | 0 | 4 | 6 | 3 | 0 |
+| Input handling | 80 | 59 | 0 | 19 | 1 | 0 | 1 |
+| JavaScript-heavy SPAs | 50 | 38 | 0 | 9 | 1 | 2 | 0 |
 | Large multinational enterprises | 30 | 28 | 0 | 1 | 1 | 0 | 0 |
 | Login-walled | 7 | 2 | 0 | 5 | 0 | 0 | 0 |
-| Manufacturers, industrial, distributors, wholesalers | 60 | 47 | 0 | 6 | 2 | 5 | 0 |
-| Minimal / one-page / static sites | 30 | 28 | 0 | 1 | 0 | 1 | 0 |
-| Non-English / international | 80 | 68 | 0 | 2 | 8 | 2 | 0 |
+| Manufacturers, industrial, distributors, wholesalers | 60 | 47 | 0 | 7 | 2 | 4 | 0 |
+| Minimal / one-page / static sites | 30 | 28 | 0 | 2 | 0 | 0 | 0 |
+| Non-English / international | 80 | 68 | 0 | 3 | 5 | 4 | 0 |
 | Non-HTML and heavy content | 15 | 13 | 0 | 2 | 0 | 0 | 0 |
 | Parked / for-sale domains | 30 | 0 | 0 | 29 | 1 | 0 | 0 |
-| Redirect behaviour | 40 | 18 | 3 | 15 | 1 | 3 | 0 |
+| Redirect behaviour | 40 | 18 | 3 | 16 | 1 | 2 | 0 |
 | SSL/TLS problems | 20 | 17 | 0 | 0 | 0 | 3 | 0 |
 | SaaS / software / platforms | 60 | 55 | 0 | 1 | 3 | 1 | 0 |
 | Sitemap variants and non-standard navigation | 20 | 20 | 0 | 0 | 0 | 0 | 0 |
@@ -77,9 +77,9 @@ Code under test: `existing-code` (git `24818a60`, tag `crawler-baseline-v1`). Ap
 | T0101 | Manufacturers, industrial, d | https://easteggbottle.com/ | Crawled | Blocked | MISMATCH | expected Crawled, crawler said Blocked: HTTP 403 from https://easteggbottle.com |
 | T0113 | Manufacturers, industrial, d | http://www.cryorig.com/ | Crawled | Invalid | ENV-DEPENDENT | expected Crawled, crawler said Invalid: cannot resolve host 'cryorig.com' |
 | T0116 | Manufacturers, industrial, d | https://www.briomoulds.com/ | Crawled | Under Construction | MISMATCH | expected Crawled, crawler said Under Construction: no usable text found |
-| T0118 | Manufacturers, industrial, d | https://www.electric-center.co.uk/ | Crawled | Blocked | SITE-CHANGED | expected Crawled, crawler said Blocked: HTTP 403 from https://electric-center.co.uk |
+| T0118 | Manufacturers, industrial, d | https://www.electric-center.co.uk/ | Crawled | Blocked | MISMATCH | RECLASSIFIED SITE-CHANGED -> MISMATCH: fresh probe reads the site as 'Crawled' (15180 chars), compatible with the dataset expectation, so th |
 | T0124 | Manufacturers, industrial, d | http://www.pagani.com/ | Crawled | Blocked | SITE-CHANGED | expected Crawled, crawler said Blocked: HTTP 429 from https://pagani.com |
-| T0133 | E-commerce and retail | https://www.thekirbyonmain.com | Crawled | Blocked | SITE-CHANGED | expected Crawled, crawler said Blocked: HTTP 403 from https://www.thekirbyonmain.com/ |
+| T0133 | E-commerce and retail | https://www.thekirbyonmain.com | Crawled | Blocked | MISMATCH | RECLASSIFIED SITE-CHANGED -> MISMATCH: fresh probe reads the site as 'Crawled' (4209 chars), compatible with the dataset expectation, so the |
 | T0147 | E-commerce and retail | https://www.maruiimai.mistore.jp/hakodate.html | Crawled | Unreachable | ENV-DEPENDENT | expected Crawled, crawler said Unreachable: timeout fetching http://maruiimai.mistore.jp |
 | T0164 | E-commerce and retail | https://carvanbits.co.uk/ | Crawled | Blocked | MISMATCH | expected Crawled, crawler said Blocked: HTTP 403 from https://carvanbits.co.uk |
 | T0181 | E-commerce and retail | https://www.bim.com.tr | Crawled | Under Construction | MISMATCH | expected Crawled, crawler said Under Construction: no usable text found |
@@ -93,10 +93,10 @@ Code under test: `existing-code` (git `24818a60`, tag `crawler-baseline-v1`). Ap
 | T0263 | Healthcare, education, finan | https://www.liusmed.com/ | Crawled | Under Construction | MISMATCH | expected Crawled, crawler said Under Construction: no usable text found |
 | T0266 | Healthcare, education, finan | https://www.city.minamisoma.lg.jp/portal/health/ho | Crawled | Invalid | SITE-CHANGED | expected Crawled, crawler said Invalid: cannot resolve host 'city.minamisoma.lg.jp' |
 | T0268 | Healthcare, education, finan | http://www.bit.edu.cn/ | Crawled | Unreachable | ENV-DEPENDENT | expected Crawled, crawler said Unreachable: timeout fetching https://bit.edu.cn/ |
-| T0288 | Healthcare, education, finan | http://www.qbe.com/ | Crawled | Blocked | SITE-CHANGED | expected Crawled, crawler said Blocked: HTTP 403 from https://www.qbe.com/ |
+| T0288 | Healthcare, education, finan | http://www.qbe.com/ | Crawled | Blocked | MISMATCH | RECLASSIFIED SITE-CHANGED -> MISMATCH: fresh probe reads the site as 'Crawled' (3213 chars), compatible with the dataset expectation, so the |
 | T0293 | Healthcare, education, finan | https://www.gob.mx/banobras | Crawled | Unreachable | ENV-DEPENDENT | expected Crawled, crawler said Unreachable: timeout fetching http://gob.mx |
 | T0303 | Healthcare, education, finan | http://www.umoncton.ca/ | Crawled | Unreachable | ENV-DEPENDENT | expected Crawled, crawler said Unreachable: timeout fetching http://umoncton.ca |
-| T0304 | Healthcare, education, finan | https://www.sevenoaksschool.org/ | Crawled | Failed | ENV-DEPENDENT | expected Crawled, crawler said Failed: page larger than 2000000 bytes |
+| T0304 | Healthcare, education, finan | https://www.sevenoaksschool.org/ | Crawled | Failed | MISMATCH | RECLASSIFIED ENV-DEPENDENT -> MISMATCH: fresh probe reads the site as 'Crawled' (4631 chars); the crawler failure was not a network failure  |
 | T0308 | Healthcare, education, finan | https://www.wti.org.in | Crawled | Invalid | ENV-DEPENDENT | expected Crawled, crawler said Invalid: cannot resolve host 'www.wti.org.in' |
 | T0315 | Healthcare, education, finan | https://www.ign.gob.ar/ | Crawled | Unreachable | ENV-DEPENDENT | expected Crawled, crawler said Unreachable: connection error fetching https://ign.gob.ar/: [SSL: CERTIFICATE_VERIFY_FAILED] certificate veri |
 | T0316 | Healthcare, education, finan | http://www.81.cn/jw_208551/index.html | Crawled | Invalid | SITE-CHANGED | expected Crawled, crawler said Invalid: cannot resolve host '81.cn' |
@@ -107,18 +107,18 @@ Code under test: `existing-code` (git `24818a60`, tag `crawler-baseline-v1`). Ap
 | T0402 | Large multinational enterpri | http://www.tetralaval.com | Crawled | Invalid | ENV-DEPENDENT | expected Crawled, crawler said Invalid: cannot resolve host 'tetralaval.com' |
 | T0420 | Large multinational enterpri | https://www.hamiltoncompany.com | Crawled | Failed | MISMATCH | expected Crawled, crawler said Failed: page larger than 2000000 bytes |
 | T0436 | Non-English / international | https://www.dirk.org/ | Crawled | Invalid | ENV-DEPENDENT | expected Crawled, crawler said Invalid: cannot resolve host 'dirk.org' |
-| T0437 | Non-English / international | https://skad.ru/ | Crawled | Under Construction | SITE-CHANGED | expected Crawled, crawler said Under Construction: no usable text found |
+| T0437 | Non-English / international | https://skad.ru/ | Crawled | Under Construction | MISMATCH | RECLASSIFIED SITE-CHANGED -> MISMATCH: fresh probe reads the site as 'Crawled' (3950 chars), compatible with the dataset expectation, so the |
 | T0440 | Non-English / international | http://www.pei.co.il | Crawled | Unreachable | ENV-DEPENDENT | expected Crawled, crawler said Unreachable: timeout fetching http://pei.co.il |
 | T0441 | Non-English / international | https://www.kimberly-clark.co.il | Crawled | Blocked | ENV-DEPENDENT | expected Crawled, crawler said Blocked: HTTP 403 from https://kimberly-clark.co.il |
 | T0450 | Non-English / international | http://mellishoeco.com/ | Crawled | Unreachable | MISMATCH | expected Crawled, crawler said Unreachable: timeout fetching https://injectslotgacor.com/ |
 | T0451 | Non-English / international | https://www.groupebcp.com/ar | Crawled | Under Construction | MISMATCH | expected Crawled, crawler said Under Construction: no usable text found |
-| T0454 | Non-English / international | https://www.hanwa.co.jp/ | Crawled | Invalid | ENV-DEPENDENT | expected Crawled, crawler said Invalid: cannot resolve host 'hanwa.co.jp' |
-| T0456 | Non-English / international | http://www.tbipet.com.tw/ | Crawled | Invalid | ENV-DEPENDENT | expected Crawled, crawler said Invalid: cannot resolve host 'tbipet.com.tw' |
+| T0454 | Non-English / international | https://www.hanwa.co.jp/ | Crawled | Invalid | SITE-CHANGED | RECLASSIFIED ENV-DEPENDENT -> SITE-CHANGED: fresh probe reads the site as 'Unreachable' (no-dns); the name resolves nowhere (all resolvers,  |
+| T0456 | Non-English / international | http://www.tbipet.com.tw/ | Crawled | Invalid | SITE-CHANGED | RECLASSIFIED ENV-DEPENDENT -> SITE-CHANGED: fresh probe reads the site as 'Unreachable' (no-dns); the name resolves nowhere (all resolvers,  |
 | T0465 | Non-English / international | http://www.lgdisplay.com/ | Crawled | Invalid | ENV-DEPENDENT | expected Crawled, crawler said Invalid: cannot resolve host 'www.lgdisplay.com' |
 | T0468 | Non-English / international | http://www.dm.co.kr/ | Crawled | Failed | SITE-CHANGED | expected Crawled, crawler said Failed: HTTP 404 from http://dm.co.kr |
-| T0494 | Non-English / international | http://www.serpost.com.pe/ | Crawled | Invalid | ENV-DEPENDENT | expected Crawled, crawler said Invalid: cannot resolve host 'serpost.com.pe' |
+| T0494 | Non-English / international | http://www.serpost.com.pe/ | Crawled | Invalid | SITE-CHANGED | RECLASSIFIED ENV-DEPENDENT -> SITE-CHANGED: fresh probe reads the site as 'Unreachable' (no-dns); the name resolves nowhere (all resolvers,  |
 | T0495 | Non-English / international | http://www.koandina.com/ | Crawled | Unreachable | ENV-DEPENDENT | expected Crawled, crawler said Unreachable: timeout fetching http://koandina.com |
-| T0507 | JavaScript-heavy SPAs | http://smule.com | Crawled | Blocked | MISMATCH | expected Crawled, crawler said Blocked: HTTP 403 from https://www.smule.com/ |
+| T0507 | JavaScript-heavy SPAs | http://smule.com | Crawled | Blocked | MISMATCH | RECLASSIFIED SITE-CHANGED -> MISMATCH: fresh probe reads the site as 'Requires Review' (almost no static text (57 chars)), a plain GET canno |
 | T0518 | JavaScript-heavy SPAs | https://kettleconsulting.co.za | Crawled | Invalid | ENV-DEPENDENT | expected Crawled, crawler said Invalid: cannot resolve host 'kettleconsulting.co.za' |
 | T0521 | JavaScript-heavy SPAs | https://www.clap-walk.com/ | Crawled | Under Construction | MISMATCH | expected Crawled, crawler said Under Construction: no usable text found |
-| T0522 | JavaScript-heavy SPAs | https://www.kg-mobility.com/ | Crawled | Invalid | MISMATCH | expected Crawled, crawler said Invalid: cannot resolve host 'kg-mobility.com' |
+| T0522 | JavaScript-heavy SPAs | https://www.kg-mobility.com/ | Crawled | Invalid | SITE-CHANGED | expected Crawled, crawler said Invalid: cannot resolve host 'kg-mobility.com' |

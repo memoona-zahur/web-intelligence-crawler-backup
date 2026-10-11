@@ -2,11 +2,11 @@
  "files": {
   "judge.py": {
    "role": "judge (mechanical expected-vs-actual rules, compatibility table, checks)",
-   "sha256": "d652ecf7f75f38b110fece67343e58fb353cf62c9906d02f734218bcfbf34ea5"
+   "sha256": "3b1d8c72dd751b4189a86817d0c4bf19a74cc50772eea65271fa683b86caf3ba"
   },
   "run_eval.py": {
    "role": "labelling + probe + verdict logic + reports (run_eval.py: build_reports, probe_after, probe_recheck, predict_word, dns_robust)",
-   "sha256": "1ce92b1440d7cd31421cb26ca2639920be9710541d2dff1f3cbbb0279de410c5"
+   "sha256": "7d650606d1b6fbae9837b40bd8db2ce60724a623020234f2ff164276aedb1654"
   },
   "telemetry.py": {
    "role": "pass-through telemetry wrappers + safety net + watchdog",
@@ -49,7 +49,7 @@
    "sha256": "ccd708faefac83c2b97b1fd0ec42b0349fe8e6a23db6f2f24d630bd99594b5a5"
   }
  },
- "combined_sha256": "8f951d1f9a5c6c1b23e308fe5020d1aebb4a441cea1f5351b6ccdaeaab61add4",
+ "combined_sha256": "b5b3a08be96c5821b25d6c9e72c0c0138522a9033e04f3e2c79dd5692b62b45f",
  "note": "make_deliverables.py and deliverables_data.py write the Phase 1 report text; they are not part of the judge.",
  "previous_freezes": [
   {
@@ -70,15 +70,33 @@
     "baseline/run_manifest.json": "6b3ac61f7f47f4187eb038457eaedb2e2b88efa83733227a520a679abb6012c5",
     "tools/hash_manifest.py": "ccd708faefac83c2b97b1fd0ec42b0349fe8e6a23db6f2f24d630bd99594b5a5"
    }
+  },
+  {
+   "combined_sha256": "8f951d1f9a5c6c1b23e308fe5020d1aebb4a441cea1f5351b6ccdaeaab61add4",
+   "frozen_at": "2026-10-11T04:53:07",
+   "git_tag": "phase1-complete-v2",
+   "files": {
+    "judge.py": "d652ecf7f75f38b110fece67343e58fb353cf62c9906d02f734218bcfbf34ea5",
+    "run_eval.py": "1ce92b1440d7cd31421cb26ca2639920be9710541d2dff1f3cbbb0279de410c5",
+    "telemetry.py": "f3d1d72cf7150ccd474e8dd7d55c8f9612a0966a511f3a5be7c9180c752c10d6",
+    "scenario_server.py": "910c83cf0ec7981d732e1cdacaf8785496a92b1ffc74e0620230a8a952b0ed66",
+    "dataset/testing_URLs.csv": "0963ab3fead262c89d249e1f8d421eed857dc07968af65294e8e12f35c74c2bb",
+    "dataset/oracle_limitations.json": "25548c78fb6fa156130815f84d5d211bbfb39c3f07d3d6f76c5722de8946aaeb",
+    "dataset/label_reclassifications.json": "47cc8e43ac4ce68ecac8d5bf1e06c819fd5e6609c44adb202425497d67984cb1",
+    "relabel_check.py": "c3be7c21d8c5dbade341da252b2faa52ae6a9cf28961d10cca4cb37faaacaf50",
+    "analyze_full.py": "c1f41ab31157c5c26c0e15b136a8be940d5c3cfc26ef879391cc5c97b92bd3e1",
+    "tools/static_rows.py": "7cd67585799fa8936b61d6f6e4a4cc8ccd7e681b289bbedfacde349e1861fa08",
+    "baseline/run_manifest.json": "6b3ac61f7f47f4187eb038457eaedb2e2b88efa83733227a520a679abb6012c5",
+    "tools/hash_manifest.py": "ccd708faefac83c2b97b1fd0ec42b0349fe8e6a23db6f2f24d630bd99594b5a5"
+   }
   }
  ],
  "files_changed_since_previous_freeze": [
-  "run_eval.py",
-  "dataset/label_reclassifications.json",
-  "relabel_check.py"
+  "judge.py",
+  "run_eval.py"
  ],
- "git_tag": "phase1-complete-v2",
- "reason_for_refreeze": "Label review round 2: every remaining SITE-CHANGED / ENV-DEPENDENT row re-probed; written ENV-DEPENDENT rule added to relabel_check.py; run_eval.py applies reclassifications to ENV-DEPENDENT labels too.",
- "frozen_at": "2026-10-11T04:53:07",
+ "git_tag": "phase2-judge-v3",
+ "reason_for_refreeze": "Judge v3 (GATE 4a approved 2026-10-11): 4 additive status words (parked, redirected, under_construction, requires_review); run_eval.py --code-manifest/--code-tag and code-hash rule for --include-from; Phase 1 results.csv and metrics.json reproduced byte-identical (crawl_eval/judge_v3_equivalence.md); --code-manifest auto tested on a local-only mini run (crawl_eval/results/mini-local-A/B).",
+ "frozen_at": "2026-10-11T05:56:07",
  "rule": "Phase 2 must use the identical judge. Any change needs the project owner's written approval and a new freeze."
 }

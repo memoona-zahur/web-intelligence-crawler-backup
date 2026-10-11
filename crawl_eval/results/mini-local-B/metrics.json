@@ -1,0 +1,52 @@
+{
+ "run_id": "mini-local-B",
+ "rows_judged": 8,
+ "verdicts": {
+  "MISMATCH": 5,
+  "MATCH": 3
+ },
+ "status_counts": {
+  "crawled": 5,
+  "robots_blocked": 1,
+  "empty": 2
+ },
+ "match_rate_all": 0.375,
+ "judged_for_crawler_fault": 8,
+ "happy_rows": 0,
+ "happy_crawled": 0,
+ "happy_useful_text_ge_500": 0,
+ "latency_s_p50": 0.2,
+ "latency_s_p95": 1.97,
+ "total_http_requests": 24,
+ "retries": 0,
+ "browser_used_rows": 0,
+ "wall_seconds_crawl": 0.0,
+ "throughput_sites_per_hour_THIS_RUN_ONLY": 28800.0,
+ "peak_rss_mb_python_only": 72.9,
+ "by_category": {
+  "Parked / for-sale domains": {
+   "MISMATCH": 1
+  },
+  "Under construction / default pages": {
+   "MISMATCH": 2
+  },
+  "robots.txt": {
+   "MATCH": 2
+  },
+  "Login-walled": {
+   "MISMATCH": 1
+  },
+  "Encoding oddities": {
+   "MATCH": 1
+  },
+  "Thin / empty / error-only pages": {
+   "MISMATCH": 1
+  }
+ },
+ "concurrency_used": 5,
+ "crawler_own_default_concurrency": {
+  "config.CONCURRENCY": 10,
+  "limits.crawl_concurrency()": 10
+ },
+ "app_code_unchanged": true
+}
