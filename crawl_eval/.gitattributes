@@ -1,0 +1,2 @@
+# keep bytes exactly as written, so the frozen SHA-256 hashes in FROZEN_JUDGE.json stay valid after any checkout
+* -text
