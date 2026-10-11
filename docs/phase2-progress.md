@@ -8,8 +8,8 @@ Python for anything importing `app/`: `C:\crawl_eval_data\venv\Scripts\python.ex
 | Step | Work | State |
 |---|---|---|
 | 1a | Branch `crawler-v2` from main 54d03d0; source cross-check | DONE (no new CR-X found) |
-| 1b | Judge/harness change (plan section 5) + equivalence proof + re-freeze | IN PROGRESS |
-| GATE 4a | Show diff + equivalence proof to the user | WAITING |
+| 1b | Judge/harness change (plan section 5) + equivalence proof | DONE, committed 3d17da9 as a PROPOSAL; **not re-frozen, not tagged**. `freeze_judge.py verify` fails on purpose until approval. Evidence: `crawl_eval/judge_v3_equivalence.md` (results.csv + metrics.json byte-identical to Phase 1) |
+| GATE 4a | Show diff + equivalence proof to the user | WAITING for approval. Then: `freeze_judge.py write <copy of a run dir> phase2-judge-v3 "<reason>"`, verify, commit, `git tag phase2-judge-v3` |
 | 2 | PostgreSQL + new dependencies | BLOCKED until user confirms (see Open questions) |
 | 3-6 | Build (settings, guard, importer, fetcher, politeness, detectors, discovery, extraction, browser, queue, persistence, ops) | not started |
 | 7 | Smoke-1 (real sites) -> GATE 5 | not started |
