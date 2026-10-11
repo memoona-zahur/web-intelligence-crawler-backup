@@ -1,0 +1,32 @@
+{
+ "coverage_all_pct": 48.0,
+ "coverage_must_pct": 48.7,
+ "coverage_all_excluding_not_tested": 49.2,
+ "coverage_must_excluding_not_tested": 50.0,
+ "must_requirements_PASS_pct": 12.7,
+ "verdict_counts": {
+  "PARTIAL": 59,
+  "PASS": 10,
+  "FAIL": 13,
+  "NOT TESTED": 2,
+  "N/A": 10
+ },
+ "match_rate_judged_all": [
+  81.8,
+  919
+ ],
+ "match_rate_judged_happy": [
+  94.5,
+  561
+ ],
+ "match_rate_judged_error_edge": [
+  62.0,
+  358
+ ],
+ "defects_by_severity": {
+  "Critical": 4,
+  "Major": 13,
+  "Minor": 11,
+  "Cosmetic": 2
+ }
+}

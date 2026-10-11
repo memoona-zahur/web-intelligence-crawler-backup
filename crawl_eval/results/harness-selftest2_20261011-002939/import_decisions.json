@@ -1,0 +1,37 @@
+{
+"T0001": {
+"decision": "added",
+"normalized": "https://bakerlaw.com",
+"raw_first_cell": "http://www.bakerlaw.com/"
+},
+"T0701": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8899/"
+},
+"T0788": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8837/"
+},
+"T0789": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8838/"
+},
+"T0843": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8804/"
+},
+"T0844": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8805/"
+},
+"T0847": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8808/"
+}
+}

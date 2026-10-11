@@ -1,0 +1,14 @@
+{
+ "label": "600mb",
+ "scenario_port": 8862,
+ "expanded_size_mb": 600,
+ "status": "failed",
+ "crawl_error": "page larger than 2000000 bytes",
+ "seconds": 1.4,
+ "rss_before_mb": 69.7,
+ "rss_peak_mb": 1010.7,
+ "peak_increase_mb": 941.0,
+ "rss_after_run_mb": 75.6,
+ "sampler_samples": 21,
+ "watchdog_soft_limit_hit": null
+}

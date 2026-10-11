@@ -1,0 +1,102 @@
+[
+ {
+  "row": "T0843",
+  "url": "http://127.0.0.1:8804/",
+  "rss_before_mb": 95.8,
+  "rss_peak_mb": 156.3,
+  "peak_delta_mb": 60.5,
+  "rss_after_mb": 97.3,
+  "seconds": 27.6,
+  "watchdog_soft_stop": false,
+  "timeline_every_0.5s": [
+   [
+    16.74,
+    107.8
+   ],
+   [
+    18.77,
+    155.8
+   ],
+   [
+    20.8,
+    155.9
+   ],
+   [
+    22.87,
+    155.9
+   ],
+   [
+    24.95,
+    155.9
+   ],
+   [
+    27.0,
+    155.9
+   ],
+   [
+    29.06,
+    155.9
+   ],
+   [
+    31.09,
+    102.2
+   ],
+   [
+    33.12,
+    156.3
+   ],
+   [
+    35.17,
+    156.3
+   ],
+   [
+    37.22,
+    156.3
+   ],
+   [
+    39.26,
+    156.3
+   ],
+   [
+    41.29,
+    156.3
+   ],
+   [
+    43.32,
+    156.3
+   ]
+  ]
+ },
+ {
+  "row": "T0844",
+  "url": "http://127.0.0.1:8805/",
+  "rss_before_mb": 97.3,
+  "rss_peak_mb": 241.8,
+  "peak_delta_mb": 144.5,
+  "rss_after_mb": 241.8,
+  "seconds": 0.9,
+  "watchdog_soft_stop": false,
+  "timeline_every_0.5s": [
+   [
+    44.34,
+    98.0
+   ]
+  ]
+ },
+ {
+  "row": "T0847",
+  "url": "http://127.0.0.1:8808/",
+  "rss_before_mb": 241.8,
+  "rss_peak_mb": 99.6,
+  "peak_delta_mb": -142.2,
+  "rss_after_mb": 99.6,
+  "seconds": 0.8,
+  "watchdog_soft_stop": false,
+  "timeline_every_0.5s": [
+   [
+    45.35,
+    99.6
+   ]
+  ]
+ }
+]

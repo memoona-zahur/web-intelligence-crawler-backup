@@ -1,0 +1,49 @@
+{
+ "run_id": "harness-selftest2_20261011-002939",
+ "rows_judged": 7,
+ "verdicts": {
+  "MATCH": 5,
+  "MISMATCH": 2
+ },
+ "status_counts": {
+  "crawled": 3,
+  "unreachable": 2,
+  "empty": 1,
+  "failed": 1
+ },
+ "match_rate_all": 0.714,
+ "judged_for_crawler_fault": 7,
+ "happy_rows": 1,
+ "happy_crawled": 1,
+ "happy_useful_text_ge_500": 1,
+ "latency_s_p50": 6.49,
+ "latency_s_p95": 27.45,
+ "total_http_requests": 45,
+ "retries": 3,
+ "browser_used_rows": 1,
+ "wall_seconds_crawl": 45.7,
+ "throughput_sites_per_hour_THIS_RUN_ONLY": 551.4,
+ "peak_rss_mb_python_only": 156.3,
+ "by_category": {
+  "Corporate / B2B services": {
+   "MATCH": 1
+  },
+  "Timeouts / refused / slow": {
+   "MATCH": 1
+  },
+  "Redirect behaviour": {
+   "MISMATCH": 1,
+   "MATCH": 1
+  },
+  "Non-HTML and heavy content": {
+   "MISMATCH": 1,
+   "MATCH": 2
+  }
+ },
+ "concurrency_used": 5,
+ "crawler_own_default_concurrency": {
+  "config.CONCURRENCY": 10,
+  "limits.crawl_concurrency()": 10
+ },
+ "app_code_unchanged": true
+}

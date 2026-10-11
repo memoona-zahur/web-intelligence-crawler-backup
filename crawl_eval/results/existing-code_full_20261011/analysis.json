@@ -1,0 +1,1517 @@
+{
+ "run_id": "existing-code_full_20261011",
+ "gold_set": {
+  "gold_sites": 156,
+  "gold_pages_total": 397,
+  "gold_pages_found": 133,
+  "recall": 0.335,
+  "sites_with_all_gold_pages": 16,
+  "sites_with_none": 58,
+  "recall_by_type": {
+   "Services": "27/100",
+   "Industries": "3/57",
+   "About": "84/137",
+   "Products": "19/103"
+  },
+  "why_missing": {
+   "never requested: page cap / enough-text early stop": 89,
+   "never requested: ranking score 0 (skip-word or no keyword match)": 120,
+   "site not crawled (status unreachable)": 9,
+   "site not crawled (status blocked)": 20,
+   "site not crawled (status invalid)": 12,
+   "never requested: not in the top candidates (lower score than others)": 3,
+   "site not crawled (status empty)": 5,
+   "fetched but its text was empty or removed as duplicate/boilerplate": 1,
+   "requested but fetch failed": 2,
+   "site not crawled (status failed)": 3
+  },
+  "examples": {
+   "never requested: page cap / enough-text early stop": [
+    {
+     "row": "T0001",
+     "site": "bakerlaw.com",
+     "gold_page": "https://www.bakerlaw.com/services/",
+     "anchor": "Practices & Industries",
+     "score": 3
+    },
+    {
+     "row": "T0001",
+     "site": "bakerlaw.com",
+     "gold_page": "https://www.bakerlaw.com/services/",
+     "anchor": "Practices & Industries",
+     "score": 3
+    },
+    {
+     "row": "T0002",
+     "site": "troutman.com",
+     "gold_page": "https://www.troutman.com/capabilities/",
+     "anchor": "What We Do",
+     "score": 3
+    },
+    {
+     "row": "T0002",
+     "site": "troutman.com",
+     "gold_page": "https://www.troutman.com/services/industries/art/",
+     "anchor": "Art",
+     "score": 3
+    }
+   ],
+   "never requested: ranking score 0 (skip-word or no keyword match)": [
+    {
+     "row": "T0012",
+     "site": "dewender.de",
+     "gold_page": "https://www.dewender.de/cms/leistungen.php",
+     "anchor": "Leistungen",
+     "score": 0
+    },
+    {
+     "row": "T0015",
+     "site": "aaff.nl",
+     "gold_page": "https://www.aaff.nl/sectoren",
+     "anchor": "Sectoren",
+     "score": 0
+    },
+    {
+     "row": "T0017",
+     "site": "quinnemanuel.com",
+     "gold_page": "https://www.quinnemanuel.com/practice-areas/energy-sector-disputes/",
+     "anchor": "Energy Sector Disputes",
+     "score": 0
+    },
+    {
+     "row": "T0017",
+     "site": "quinnemanuel.com",
+     "gold_page": "https://www.quinnemanuel.com/practice-areas/product-liability-and-mass-torts-litigation/",
+     "anchor": "Product Liability & Mass Torts Litigation",
+     "score": 0
+    }
+   ],
+   "site not crawled (status unreachable)": [
+    {
+     "row": "T0021",
+     "site": "belex.com",
+     "gold_page": "https://www.belex.com/africa/servizi/",
+     "anchor": "Servizi",
+     "score": 0
+    },
+    {
+     "row": "T0021",
+     "site": "belex.com",
+     "gold_page": "https://www.belex.com/industry/tmt/",
+     "anchor": "TMT",
+     "score": 0
+    },
+    {
+     "row": "T0147",
+     "site": "maruiimai.mistore.jp",
+     "gold_page": "https://www.maruiimai.mistore.jp/hakodate/shops.html",
+     "anchor": "フロアガイド",
+     "score": 0
+    },
+    {
+     "row": "T0147",
+     "site": "maruiimai.mistore.jp",
+     "gold_page": "https://www.maruiimai.mistore.jp/hakodate/service.html",
+     "anchor": "サービス",
+     "score": 0
+    }
+   ],
+   "site not crawled (status blocked)": [
+    {
+     "row": "T0047",
+     "site": "prlab.co",
+     "gold_page": "https://prlab.co/pr-services/",
+     "anchor": "PR services",
+     "score": 3
+    },
+    {
+     "row": "T0047",
+     "site": "prlab.co",
+     "gold_page": "https://prlab.co/sectors/",
+     "anchor": "Sectors",
+     "score": 2
+    },
+    {
+     "row": "T0047",
+     "site": "prlab.co",
+     "gold_page": "https://prlab.co/about-us/",
+     "anchor": "About",
+     "score": 3
+    },
+    {
+     "row": "T0081",
+     "site": "gem.polaris.com",
+     "gold_page": "https://www.gemcar.com/industry/",
+     "anchor": "Industry Overview",
+     "score": 0
+    }
+   ],
+   "site not crawled (status invalid)": [
+    {
+     "row": "T0085",
+     "site": "dino-cars.de",
+     "gold_page": "https://www.dino-cars.de/ueber-uns",
+     "anchor": "Über uns",
+     "score": 0
+    },
+    {
+     "row": "T0085",
+     "site": "dino-cars.de",
+     "gold_page": "https://www.dino-cars.de/online-shop",
+     "anchor": "Online-Shop",
+     "score": 0
+    },
+    {
+     "row": "T0113",
+     "site": "cryorig.com",
+     "gold_page": "https://www.cryorig.com/products_detail/18",
+     "anchor": "",
+     "score": 3
+    },
+    {
+     "row": "T0113",
+     "site": "cryorig.com",
+     "gold_page": "https://www.cryorig.com/about/2",
+     "anchor": "關於我們",
+     "score": 3
+    }
+   ],
+   "never requested: not in the top candidates (lower score than others)": [
+    {
+     "row": "T0098",
+     "site": "conrad-modelle.de",
+     "gold_page": "https://conrad-modelle.de/en/product-support",
+     "anchor": "Support form",
+     "score": 1
+    },
+    {
+     "row": "T0111",
+     "site": "synapsun.com",
+     "gold_page": "https://synapsun.com/en/manufacturers/",
+     "anchor": "Industrial partners",
+     "score": 2
+    },
+    {
+     "row": "T0416",
+     "site": "altria.com",
+     "gold_page": "https://www.altria.com/moving-beyond-smoking/smoke-free-product-platforms?src=topnav",
+     "anchor": "Smoke-free Product Platforms",
+     "score": 3
+    }
+   ],
+   "site not crawled (status empty)": [
+    {
+     "row": "T0116",
+     "site": "briomoulds.com",
+     "gold_page": "https://www.briomoulds.com/it/stampi-per-industria-14",
+     "anchor": "Chi siamo",
+     "score": 0
+    },
+    {
+     "row": "T0116",
+     "site": "briomoulds.com",
+     "gold_page": "https://www.briomoulds.com/it/stampi-per-industria-14",
+     "anchor": "Chi siamo",
+     "score": 0
+    },
+    {
+     "row": "T0116",
+     "site": "briomoulds.com",
+     "gold_page": "https://www.briomoulds.com/it/referenze-1022",
+     "anchor": "PRODOTTI E REFERENZE",
+     "score": 0
+    },
+    {
+     "row": "T0437",
+     "site": "skad.ru",
+     "gold_page": "https://skad.ru/catalog/",
+     "anchor": "Перейти в каталог",
+     "score": 0
+    }
+   ],
+   "fetched but its text was empty or removed as duplicate/boilerplate": [
+    {
+     "row": "T0396",
+     "site": "sucaco.com",
+     "gold_page": "https://www.sucaco.com/company's%20share.html",
+     "anchor": "",
+     "score": 3
+    }
+   ],
+   "requested but fetch failed": [
+    {
+     "row": "T0416",
+     "site": "altria.com",
+     "gold_page": "https://www.altria.com/about-altria?src=topnav",
+     "anchor": "About Altria",
+     "score": 3
+    },
+    {
+     "row": "T0449",
+     "site": "newpan.co.il",
+     "gold_page": "https://www.newpan.co.il/page/index?id=2086",
+     "anchor": "פינוי פסולת אלקטרונית",
+     "score": 0
+    }
+   ],
+   "site not crawled (status failed)": [
+    {
+     "row": "T0420",
+     "site": "hamiltoncompany.com",
+     "gold_page": "https://www.hamiltoncompany.com/assay-ready-workstations",
+     "anchor": "Pre-configured Solutions {\n                                 ",
+     "score": 3
+    },
+    {
+     "row": "T0420",
+     "site": "hamiltoncompany.com",
+     "gold_page": "https://www.hamiltoncompany.com/venus",
+     "anchor": "VENUS Software",
+     "score": 3
+    },
+    {
+     "row": "T0420",
+     "site": "hamiltoncompany.com",
+     "gold_page": "https://www.hamiltoncompany.com/services/hamilton-emea-company-training",
+     "anchor": "Training",
+     "score": 3
+    }
+   ]
+  },
+  "precision_note": "Gold is not an exhaustive list of relevant pages, so true precision cannot be computed. Lower-bound proxy: share of crawled non-home pages whose path matches an About/Services/Products/Industries word:",
+  "proxy_relevant_share_of_crawled_nonhome_pages": 0.743,
+  "crawled_nonhome_pages": 440
+ },
+ "text": {
+  "happy_crawled_sites": 530,
+  "text_chars_p50": 6678,
+  "text_chars_p95": 21794,
+  "pages_p50": 3,
+  "pages_p95": 8,
+  "sites_ended_with_truncation_marker": 4,
+  "sites_text_ge_12000_chars (early-stop threshold)": 194,
+  "sites_with_only_homepage": 154,
+  "sites_with_8_pages_cap": 46
+ },
+ "browser": {
+  "sites_using_browser": 115,
+  "render_calls": 284,
+  "summary": {
+   "render_returned_nothing": 36,
+   "rendered": 248,
+   "rendered_extracted_NOT_more_than_http": 195,
+   "rendered_has_visible_text_but_crawler_extracted<80": 158,
+   "rendered_extracted_more_than_http": 53
+  },
+  "characters_removed_by_rule_in_failed_cases": {
+   "class/id contains 'sidebar'": 299672,
+   "<nav>": 177196,
+   "<footer>": 55590,
+   "class/id contains 'popup'": 46766,
+   "class/id contains 'cookie'": 46218,
+   "<header>": 34586,
+   "<form>": 33944,
+   "class/id contains 'newsletter'": 18791,
+   "class/id contains 'modal'": 16144,
+   "<aside>": 11504,
+   "class/id contains 'skip-link'": 10236,
+   "<button>": 5519,
+   "class/id contains 'breadcrumb'": 3410,
+   "<select>": 470,
+   "<iframe>": 14
+  },
+  "characters_removed_by_selector_rule_in_failed_cases": 5202,
+  "failed_cases": [
+   {
+    "row": "T0003",
+    "url": "https://www.dandelionstrategies.com/contact/",
+    "final_status": "crawled",
+    "http_html_bytes": 82054,
+    "http_visible_chars": 877,
+    "http_extracted_chars": 76,
+    "rendered_html_bytes": 90782,
+    "rendered_visible_chars": 877,
+    "rendered_extracted_chars": 76,
+    "lost_by_drop_rules": {
+     "<form>": 171,
+     "<nav>": 250,
+     "<footer>": 141,
+     "class/id contains 'sidebar'": 260
+    },
+    "text_left_after_drop_rules": 55,
+    "lost_by_selector_rule": 55,
+    "browser_ms": 5083
+   },
+   {
+    "row": "T0035",
+    "url": "https://excelpr.com",
+    "final_status": "crawled",
+    "http_html_bytes": 174868,
+    "http_visible_chars": 2650,
+    "http_extracted_chars": 60,
+    "rendered_html_bytes": 176975,
+    "rendered_visible_chars": 2650,
+    "rendered_extracted_chars": 60,
+    "lost_by_drop_rules": {
+     "<form>": 19,
+     "<nav>": 280,
+     "<header>": 67,
+     "<footer>": 354,
+     "class/id contains 'sidebar'": 1870
+    },
+    "text_left_after_drop_rules": 60,
+    "lost_by_selector_rule": 60,
+    "browser_ms": 5622
+   },
+   {
+    "row": "T0035",
+    "url": "https://excelpr.com/about-us/",
+    "final_status": "crawled",
+    "http_html_bytes": 153671,
+    "http_visible_chars": 2346,
+    "http_extracted_chars": 21,
+    "rendered_html_bytes": 155877,
+    "rendered_visible_chars": 2346,
+    "rendered_extracted_chars": 21,
+    "lost_by_drop_rules": {
+     "<form>": 19,
+     "<nav>": 280,
+     "<header>": 28,
+     "<footer>": 354,
+     "class/id contains 'sidebar'": 1644
+    },
+    "text_left_after_drop_rules": 21,
+    "lost_by_selector_rule": 21,
+    "browser_ms": 5987
+   },
+   {
+    "row": "T0035",
+    "url": "https://excelpr.com/about-us/how-were-different/",
+    "final_status": "crawled",
+    "http_html_bytes": 155247,
+    "http_visible_chars": 2272,
+    "http_extracted_chars": 35,
+    "rendered_html_bytes": 157509,
+    "rendered_visible_chars": 2272,
+    "rendered_extracted_chars": 35,
+    "lost_by_drop_rules": {
+     "<form>": 19,
+     "<nav>": 280,
+     "<header>": 64,
+     "<footer>": 354,
+     "class/id contains 'sidebar'": 1520
+    },
+    "text_left_after_drop_rules": 35,
+    "lost_by_selector_rule": 35,
+    "browser_ms": 5020
+   },
+   {
+    "row": "T0035",
+    "url": "https://excelpr.com/about-us/leadership/",
+    "final_status": "crawled",
+    "http_html_bytes": 166394,
+    "http_visible_chars": 6092,
+    "http_extracted_chars": 26,
+    "rendered_html_bytes": 169159,
+    "rendered_visible_chars": 6092,
+    "rendered_extracted_chars": 26,
+    "lost_by_drop_rules": {
+     "<form>": 19,
+     "<nav>": 280,
+     "<header>": 46,
+     "<footer>": 354,
+     "class/id contains 'sidebar'": 5367
+    },
+    "text_left_after_drop_rules": 26,
+    "lost_by_selector_rule": 26,
+    "browser_ms": 4395
+   },
+   {
+    "row": "T0035",
+    "url": "https://excelpr.com/about-us/making-a-difference/",
+    "final_status": "crawled",
+    "http_html_bytes": 161450,
+    "http_visible_chars": 1954,
+    "http_extracted_chars": 35,
+    "rendered_html_bytes": 164031,
+    "rendered_visible_chars": 1954,
+    "rendered_extracted_chars": 35,
+    "lost_by_drop_rules": {
+     "<form>": 19,
+     "<nav>": 280,
+     "<header>": 64,
+     "<footer>": 354,
+     "class/id contains 'sidebar'": 1202
+    },
+    "text_left_after_drop_rules": 35,
+    "lost_by_selector_rule": 35,
+    "browser_ms": 4895
+   },
+   {
+    "row": "T0035",
+    "url": "https://excelpr.com/pr-services/",
+    "final_status": "crawled",
+    "http_html_bytes": 156618,
+    "http_visible_chars": 2824,
+    "http_extracted_chars": 24,
+    "rendered_html_bytes": 158832,
+    "rendered_visible_chars": 2824,
+    "rendered_extracted_chars": 24,
+    "lost_by_drop_rules": {
+     "<form>": 19,
+     "<nav>": 280,
+     "<header>": 34,
+     "<footer>": 354,
+     "class/id contains 'sidebar'": 2113
+    },
+    "text_left_after_drop_rules": 24,
+    "lost_by_selector_rule": 24,
+    "browser_ms": 6389
+   },
+   {
+    "row": "T0035",
+    "url": "https://excelpr.com/clients/case-studies/",
+    "final_status": "crawled",
+    "http_html_bytes": 152989,
+    "http_visible_chars": 879,
+    "http_extracted_chars": 28,
+    "rendered_html_bytes": 154890,
+    "rendered_visible_chars": 879,
+    "rendered_extracted_chars": 28,
+    "lost_by_drop_rules": {
+     "<form>": 19,
+     "<nav>": 280,
+     "<header>": 52,
+     "<footer>": 354,
+     "class/id contains 'sidebar'": 146
+    },
+    "text_left_after_drop_rules": 28,
+    "lost_by_selector_rule": 28,
+    "browser_ms": 6336
+   },
+   {
+    "row": "T0035",
+    "url": "https://excelpr.com/clients/case-studies/bakespace-goes-hollywood/",
+    "final_status": "crawled",
+    "http_html_bytes": 158857,
+    "http_visible_chars": 5444,
+    "http_extracted_chars": 40,
+    "rendered_html_bytes": 160708,
+    "rendered_visible_chars": 5444,
+    "rendered_extracted_chars": 40,
+    "lost_by_drop_rules": {
+     "<form>": 19,
+     "<nav>": 280,
+     "<header>": 91,
+     "<footer>": 354,
+     "class/id contains 'sidebar'": 4660
+    },
+    "text_left_after_drop_rules": 40,
+    "lost_by_selector_rule": 40,
+    "browser_ms": 10201
+   },
+   {
+    "row": "T0046",
+    "url": "https://www.clm.com/practice/financial-services-regulation-and-enforcement/",
+    "final_status": "crawled",
+    "http_html_bytes": 37412,
+    "http_visible_chars": 5759,
+    "http_extracted_chars": 76,
+    "rendered_html_bytes": 38457,
+    "rendered_visible_chars": 5759,
+    "rendered_extracted_chars": 76,
+    "lost_by_drop_rules": {
+     "<form>": 7,
+     "<button>": 4,
+     "<nav>": 196,
+     "<header>": 61,
+     "<footer>": 90,
+     "<aside>": 251,
+     "class/id contains 'sidebar'": 5074
+    },
+    "text_left_after_drop_rules": 76,
+    "lost_by_selector_rule": 76,
+    "browser_ms": 3616
+   },
+   {
+    "row": "T0046",
+    "url": "https://www.clm.com/industries/",
+    "final_status": "crawled",
+    "http_html_bytes": 27062,
+    "http_visible_chars": 959,
+    "http_extracted_chars": 49,
+    "rendered_html_bytes": 28132,
+    "rendered_visible_chars": 959,
+    "rendered_extracted_chars": 49,
+    "lost_by_drop_rules": {
+     "<form>": 7,
+     "<nav>": 196,
+     "<header>": 528,
+     "<footer>": 90,
+     "<aside>": 8,
+     "class/id contains 'sidebar'": 81
+    },
+    "text_left_after_drop_rules": 49,
+    "lost_by_selector_rule": 49,
+    "browser_ms": 2606
+   },
+   {
+    "row": "T0046",
+    "url": "https://www.clm.com/practice/corporate/capital-markets-and-securities/",
+    "final_status": "crawled",
+    "http_html_bytes": 41053,
+    "http_visible_chars": 8240,
+    "http_extracted_chars": 61,
+    "rendered_html_bytes": 42107,
+    "rendered_visible_chars": 8240,
+    "rendered_extracted_chars": 61,
+    "lost_by_drop_rules": {
+     "<form>": 7,
+     "<button>": 4,
+     "<nav>": 196,
+     "<header>": 46,
+     "<footer>": 90,
+     "<aside>": 389,
+     "class/id contains 'sidebar'": 7447
+    },
+    "text_left_after_drop_rules": 61,
+    "lost_by_selector_rule": 61,
+    "browser_ms": 2522
+   },
+   {
+    "row": "T0046",
+    "url": "https://www.clm.com/locations/",
+    "final_status": "crawled",
+    "http_html_bytes": 22490,
+    "http_visible_chars": 493,
+    "http_extracted_chars": 40,
+    "rendered_html_bytes": 23694,
+    "rendered_visible_chars": 493,
+    "rendered_extracted_chars": 40,
+    "lost_by_drop_rules": {
+     "<form>": 7,
+     "<nav>": 196,
+     "<header>": 25,
+     "<footer>": 90,
+     "class/id contains 'breadcrumb'": 135
+    },
+    "text_left_after_drop_rules": 40,
+    "lost_by_selector_rule": 40,
+    "browser_ms": 3897
+   },
+   {
+    "row": "T0049",
+    "url": "https://www.teknita.com/",
+    "final_status": "crawled",
+    "http_html_bytes": 179943,
+    "http_visible_chars": 1458,
+    "http_extracted_chars": 41,
+    "rendered_html_bytes": 188681,
+    "rendered_visible_chars": 2065,
+    "rendered_extracted_chars": 41,
+    "lost_by_drop_rules": {
+     "<form>": 47,
+     "<nav>": 577,
+     "<header>": 577,
+     "<footer>": 195,
+     "class/id contains 'sidebar'": 628
+    },
+    "text_left_after_drop_rules": 41,
+    "lost_by_selector_rule": 41,
+    "browser_ms": 6113
+   },
+   {
+    "row": "T0049",
+    "url": "https://www.teknita.com/cloud-migration-services/",
+    "final_status": "crawled",
+    "http_html_bytes": 172449,
+    "http_visible_chars": 4910,
+    "http_extracted_chars": 34,
+    "rendered_html_bytes": 200550,
+    "rendered_visible_chars": 6641,
+    "rendered_extracted_chars": 34,
+    "lost_by_drop_rules": {
+     "<nav>": 1154,
+     "<header>": 1154,
+     "<footer>": 195,
+     "class/id contains 'sidebar'": 4104
+    },
+    "text_left_after_drop_rules": 34,
+    "lost_by_selector_rule": 34,
+    "browser_ms": 4569
+   },
+   {
+    "row": "T0049",
+    "url": "https://www.teknita.com/company/",
+    "final_status": "crawled",
+    "http_html_bytes": 159234,
+    "http_visible_chars": 1818,
+    "http_extracted_chars": 17,
+    "rendered_html_bytes": 190829,
+    "rendered_visible_chars": 3549,
+    "rendered_extracted_chars": 17,
+    "lost_by_drop_rules": {
+     "<form>": 47,
+     "<nav>": 1154,
+     "<header>": 1154,
+     "<footer>": 195,
+     "class/id contains 'sidebar'": 982
+    },
+    "text_left_after_drop_rules": 17,
+    "lost_by_selector_rule": 17,
+    "browser_ms": 10748
+   },
+   {
+    "row": "T0049",
+    "url": "https://www.teknita.com/company/partners/",
+    "final_status": "crawled",
+    "http_html_bytes": 164551,
+    "http_visible_chars": 2102,
+    "http_extracted_chars": 18,
+    "rendered_html_bytes": 192965,
+    "rendered_visible_chars": 3833,
+    "rendered_extracted_chars": 18,
+    "lost_by_drop_rules": {
+     "<nav>": 1154,
+     "<header>": 1154,
+     "<footer>": 195,
+     "class/id contains 'sidebar'": 1312
+    },
+    "text_left_after_drop_rules": 18,
+    "lost_by_selector_rule": 18,
+    "browser_ms": 7106
+   },
+   {
+    "row": "T0049",
+    "url": "https://www.teknita.com/industries/commercial/financial-services/",
+    "final_status": "crawled",
+    "http_html_bytes": 227489,
+    "http_visible_chars": 5818,
+    "http_extracted_chars": 28,
+    "rendered_html_bytes": 255921,
+    "rendered_visible_chars": 7549,
+    "rendered_extracted_chars": 28,
+    "lost_by_drop_rules": {
+     "<form>": 34,
+     "<nav>": 1154,
+     "<header>": 1154,
+     "<footer>": 195,
+     "class/id contains 'sidebar'": 4984
+    },
+    "text_left_after_drop_rules": 28,
+    "lost_by_selector_rule": 28,
+    "browser_ms": 3914
+   },
+   {
+    "row": "T0049",
+    "url": "https://www.teknita.com/industries/commercial/professional-services/",
+    "final_status": "crawled",
+    "http_html_bytes": 235831,
+    "http_visible_chars": 5957,
+    "http_extracted_chars": 31,
+    "rendered_html_bytes": 264137,
+    "rendered_visible_chars": 7688,
+    "rendered_extracted_chars": 31,
+    "lost_by_drop_rules": {
+     "<form>": 34,
+     "<nav>": 1154,
+     "<header>": 1154,
+     "<footer>": 195,
+     "class/id contains 'sidebar'": 5120
+    },
+    "text_left_after_drop_rules": 31,
+    "lost_by_selector_rule": 31,
+    "browser_ms": 3716
+   },
+   {
+    "row": "T0053",
+    "url": "https://crcadvisors.com/",
+    "final_status": "crawled",
+    "http_html_bytes": 108806,
+    "http_visible_chars": 1170,
+    "http_extracted_chars": 40,
+    "rendered_html_bytes": 110606,
+    "rendered_visible_chars": 1170,
+    "rendered_extracted_chars": 40,
+    "lost_by_drop_rules": {
+     "class/id contains 'modal'": 1130
+    },
+    "text_left_after_drop_rules": 40,
+    "lost_by_selector_rule": 40,
+    "browser_ms": 4955
+   },
+   {
+    "row": "T0053",
+    "url": "https://crcadvisors.com/contact/",
+    "final_status": "crawled",
+    "http_html_bytes": 88180,
+    "http_visible_chars": 149,
+    "http_extracted_chars": 22,
+    "rendered_html_bytes": 90852,
+    "rendered_visible_chars": 163,
+    "rendered_extracted_chars": 22,
+    "lost_by_drop_rules": {
+     "<form>": 26,
+     "class/id contains 'modal'": 115
+    },
+    "text_left_after_drop_rules": 22,
+    "lost_by_selector_rule": 22,
+    "browser_ms": 6316
+   },
+   {
+    "row": "T0057",
+    "url": "https://millermartin.com/about/accolades",
+    "final_status": "crawled",
+    "http_html_bytes": 560406,
+    "http_visible_chars": 4505,
+    "http_extracted_chars": 25,
+    "rendered_html_bytes": 574860,
+    "rendered_visible_chars": 5302,
+    "rendered_extracted_chars": 25,
+    "lost_by_drop_rules": {
+     "<form>": 12,
+     "<button>": 40,
+     "<nav>": 781,
+     "<header>": 2065,
+     "<footer>": 1302,
+     "class/id contains 'sidebar'": 1077
+    },
+    "text_left_after_drop_rules": 25,
+    "lost_by_selector_rule": 25,
+    "browser_ms": 3106
+   },
+   {
+    "row": "T0057",
+    "url": "https://millermartin.com/about/community",
+    "final_status": "crawled",
+    "http_html_bytes": 559367,
+    "http_visible_chars": 6838,
+    "http_extracted_chars": 36,
+    "rendered_html_bytes": 573626,
+    "rendered_visible_chars": 7635,
+    "rendered_extracted_chars": 36,
+    "lost_by_drop_rules": {
+     "<form>": 12,
+     "<button>": 40,
+     "<nav>": 781,
+     "<header>": 2065,
+     "<footer>": 1302,
+     "class/id contains 'sidebar'": 3399
+    },
+    "text_left_after_drop_rules": 36,
+    "lost_by_selector_rule": 36,
+    "browser_ms": 2844
+   },
+   {
+    "row": "T0057",
+    "url": "https://millermartin.com/about/diversity",
+    "final_status": "crawled",
+    "http_html_bytes": 565633,
+    "http_visible_chars": 6112,
+    "http_extracted_chars": 25,
+    "rendered_html_bytes": 580072,
+    "rendered_visible_chars": 6909,
+    "rendered_extracted_chars": 25,
+    "lost_by_drop_rules": {
+     "<form>": 12,
+     "<button>": 40,
+     "<nav>": 781,
+     "<header>": 2065,
+     "<footer>": 1302,
+     "class/id contains 'sidebar'": 2684
+    },
+    "text_left_after_drop_rules": 25,
+    "lost_by_selector_rule": 25,
+    "browser_ms": 2566
+   },
+   {
+    "row": "T0057",
+    "url": "https://millermartin.com/about/womens_network",
+    "final_status": "crawled",
+    "http_html_bytes": 554740,
+    "http_visible_chars": 4335,
+    "http_extracted_chars": 31,
+    "rendered_html_bytes": 569161,
+    "rendered_visible_chars": 5132,
+    "rendered_extracted_chars": 31,
+    "lost_by_drop_rules": {
+     "<form>": 12,
+     "<button>": 40,
+     "<nav>": 781,
+     "<header>": 2065,
+     "<footer>": 1302,
+     "class/id contains 'sidebar'": 901
+    },
+    "text_left_after_drop_rules": 31,
+    "lost_by_selector_rule": 31,
+    "browser_ms": 2086
+   },
+   {
+    "row": "T0057",
+    "url": "https://millermartin.com/industries",
+    "final_status": "crawled",
+    "http_html_bytes": 601619,
+    "http_visible_chars": 4053,
+    "http_extracted_chars": 26,
+    "rendered_html_bytes": 615347,
+    "rendered_visible_chars": 4850,
+    "rendered_extracted_chars": 26,
+    "lost_by_drop_rules": {
+     "<form>": 12,
+     "<button>": 40,
+     "<nav>": 781,
+     "<header>": 2065,
+     "<footer>": 1302,
+     "class/id contains 'sidebar'": 624
+    },
+    "text_left_after_drop_rules": 26,
+    "lost_by_selector_rule": 26,
+    "browser_ms": 2052
+   },
+   {
+    "row": "T0060",
+    "url": "https://www.dundas-wilson.com/about-us/",
+    "final_status": "crawled",
+    "http_html_bytes": 51319,
+    "http_visible_chars": 4611,
+    "http_extracted_chars": 52,
+    "rendered_html_bytes": 51938,
+    "rendered_visible_chars": 4611,
+    "rendered_extracted_chars": 52,
+    "lost_by_drop_rules": {
+     "<form>": 24,
+     "<nav>": 153,
+     "<header>": 54,
+     "<footer>": 51,
+     "<aside>": 124,
+     "class/id contains 'sidebar'": 4153
+    },
+    "text_left_after_drop_rules": 52,
+    "lost_by_selector_rule": 52,
+    "browser_ms": 5272
+   },
+   {
+    "row": "T0060",
+    "url": "https://www.dundas-wilson.com/all-about-tires-for-drifting/",
+    "final_status": "crawled",
+    "http_html_bytes": 66446,
+    "http_visible_chars": 7160,
+    "http_extracted_chars": 72,
+    "rendered_html_bytes": 66760,
+    "rendered_visible_chars": 7160,
+    "rendered_extracted_chars": 72,
+    "lost_by_drop_rules": {
+     "<form>": 24,
+     "<nav>": 263,
+     "<header>": 54,
+     "<footer>": 51,
+     "<aside>": 124,
+     "class/id contains 'sidebar'": 6572
+    },
+    "text_left_after_drop_rules": 72,
+    "lost_by_selector_rule": 72,
+    "browser_ms": 4044
+   },
+   {
+    "row": "T0060",
+    "url": "https://www.dundas-wilson.com/contact-us/",
+    "final_status": "crawled",
+    "http_html_bytes": 77234,
+    "http_visible_chars": 501,
+    "http_extracted_chars": 54,
+    "rendered_html_bytes": 82994,
+    "rendered_visible_chars": 635,
+    "rendered_extracted_chars": 54,
+    "lost_by_drop_rules": {
+     "<form>": 147,
+     "<nav>": 155,
+     "<header>": 54,
+     "<footer>": 51,
+     "<aside>": 124,
+     "class/id contains 'sidebar'": 50
+    },
+    "text_left_after_drop_rules": 54,
+    "lost_by_selector_rule": 54,
+    "browser_ms": 5390
+   },
+   {
+    "row": "T0061",
+    "url": "https://severn.de/case-studies",
+    "final_status": "crawled",
+    "http_html_bytes": 147178,
+    "http_visible_chars": 1573,
+    "http_extracted_chars": 74,
+    "rendered_html_bytes": 149575,
+    "rendered_visible_chars": 1573,
+    "rendered_extracted_chars": 74,
+    "lost_by_drop_rules": {
+     "<header>": 450,
+     "<footer>": 529,
+     "class/id contains 'sidebar'": 479
+    },
+    "text_left_after_drop_rules": 115,
+    "lost_by_selector_rule": 44,
+    "browser_ms": 5960
+   },
+   {
+    "row": "T0061",
+    "url": "https://severn.de/case-studies",
+    "final_status": "crawled",
+    "http_html_bytes": 147190,
+    "http_visible_chars": 1573,
+    "http_extracted_chars": 74,
+    "rendered_html_bytes": 149569,
+    "rendered_visible_chars": 1573,
+    "rendered_extracted_chars": 74,
+    "lost_by_drop_rules": {
+     "<header>": 450,
+     "<footer>": 529,
+     "class/id contains 'sidebar'": 479
+    },
+    "text_left_after_drop_rules": 115,
+    "lost_by_selector_rule": 44,
+    "browser_ms": 7096
+   },
+   {
+    "row": "T0071",
+    "url": "https://jcrooftile.com/company/",
+    "final_status": "crawled",
+    "http_html_bytes": 302129,
+    "http_visible_chars": 4694,
+    "http_extracted_chars": 33,
+    "rendered_html_bytes": 301530,
+    "rendered_visible_chars": 4707,
+    "rendered_extracted_chars": 33,
+    "lost_by_drop_rules": {
+     "<form>": 299,
+     "<button>": 30,
+     "<nav>": 1015,
+     "<header>": 203,
+     "<footer>": 403,
+     "class/id contains 'popup'": 2724
+    },
+    "text_left_after_drop_rules": 33,
+    "lost_by_selector_rule": 33,
+    "browser_ms": 5787
+   },
+   {
+    "row": "T0071",
+    "url": "https://jcrooftile.com/company/faq/",
+    "final_status": "crawled",
+    "http_html_bytes": 257642,
+    "http_visible_chars": 4895,
+    "http_extracted_chars": 26,
+    "rendered_html_bytes": 257021,
+    "rendered_visible_chars": 4890,
+    "rendered_extracted_chars": 26,
+    "lost_by_drop_rules": {
+     "<form>": 288,
+     "<button>": 30,
+     "<nav>": 1015,
+     "<header>": 203,
+     "<footer>": 403,
+     "class/id contains 'popup'": 2925
+    },
+    "text_left_after_drop_rules": 26,
+    "lost_by_selector_rule": 26,
+    "browser_ms": 16326
+   },
+   {
+    "row": "T0071",
+    "url": "https://jcrooftile.com/company/our-organization/",
+    "final_status": "crawled",
+    "http_html_bytes": 257241,
+    "http_visible_chars": 5065,
+    "http_extracted_chars": 39,
+    "rendered_html_bytes": 257586,
+    "rendered_visible_chars": 5068,
+    "rendered_extracted_chars": 39,
+    "lost_by_drop_rules": {
+     "<form>": 294,
+     "<button>": 30,
+     "<nav>": 1015,
+     "<header>": 203,
+     "<footer>": 403,
+     "class/id contains 'popup'": 3084
+    },
+    "text_left_after_drop_rules": 39,
+    "lost_by_selector_rule": 39,
+    "browser_ms": 4428
+   },
+   {
+    "row": "T0071",
+    "url": "https://jcrooftile.com/company/our-team/",
+    "final_status": "crawled",
+    "http_html_bytes": 248157,
+    "http_visible_chars": 3914,
+    "http_extracted_chars": 31,
+    "rendered_html_bytes": 247455,
+    "rendered_visible_chars": 3912,
+    "rendered_extracted_chars": 31,
+    "lost_by_drop_rules": {
+     "<form>": 289,
+     "<button>": 30,
+     "<nav>": 1015,
+     "<header>": 203,
+     "<footer>": 403,
+     "class/id contains 'popup'": 1941
+    },
+    "text_left_after_drop_rules": 31,
+    "lost_by_selector_rule": 31,
+    "browser_ms": 4670
+   },
+   {
+    "row": "T0071",
+    "url": "https://jcrooftile.com/company/our-values/",
+    "final_status": "crawled",
+    "http_html_bytes": 272505,
+    "http_visible_chars": 4730,
+    "http_extracted_chars": 33,
+    "rendered_html_bytes": 271834,
+    "rendered_visible_chars": 4727,
+    "rendered_extracted_chars": 33,
+    "lost_by_drop_rules": {
+     "<form>": 294,
+     "<button>": 30,
+     "<nav>": 1015,
+     "<header>": 203,
+     "<footer>": 403,
+     "class/id contains 'popup'": 2749
+    },
+    "text_left_after_drop_rules": 33,
+    "lost_by_selector_rule": 33,
+    "browser_ms": 8900
+   },
+   {
+    "row": "T0071",
+    "url": "https://jcrooftile.com/company/quality-control/",
+    "final_status": "crawled",
+    "http_html_bytes": 280523,
+    "http_visible_chars": 14515,
+    "http_extracted_chars": 38,
+    "rendered_html_bytes": 279847,
+    "rendered_visible_chars": 14513,
+    "rendered_extracted_chars": 38,
+    "lost_by_drop_rules": {
+     "<form>": 295,
+     "<button>": 30,
+     "<nav>": 1015,
+     "<header>": 203,
+     "<footer>": 403,
+     "class/id contains 'popup'": 12529
+    },
+    "text_left_after_drop_rules": 38,
+    "lost_by_selector_rule": 38,
+    "browser_ms": 4993
+   },
+   {
+    "row": "T0077",
+    "url": "https://www.davidsa.com/",
+    "final_status": "crawled",
+    "http_html_bytes": 145800,
+    "http_visible_chars": 8474,
+    "http_extracted_chars": 0,
+    "rendered_html_bytes": 155256,
+    "rendered_visible_chars": 8790,
+    "rendered_extracted_chars": 0,
+    "lost_by_drop_rules": {
+     "<button>": 79,
+     "<nav>": 400,
+     "<header>": 148,
+     "class/id contains 'cookie'": 8163
+    },
+    "text_left_after_drop_rules": 0,
+    "lost_by_selector_rule": 0,
+    "browser_ms": 10646
+   },
+   {
+    "row": "T0077",
+    "url": "https://www.davidsa.com/contacto/",
+    "final_status": "crawled",
+    "http_html_bytes": 108902,
+    "http_visible_chars": 3344,
+    "http_extracted_chars": 0,
+    "rendered_html_bytes": 113479,
+    "rendered_visible_chars": 3444,
+    "rendered_extracted_chars": 0,
+    "lost_by_drop_rules": {
+     "<form>": 161,
+     "<button>": 148,
+     "<nav>": 400,
+     "<header>": 68,
+     "class/id contains 'cookie'": 2667
+    },
+    "text_left_after_drop_rules": 0,
+    "lost_by_selector_rule": 0,
+    "browser_ms": 11829
+   },
+   {
+    "row": "T0079",
+    "url": "https://agrinar.com.ar",
+    "final_status": "empty",
+    "http_html_bytes": 126351,
+    "http_visible_chars": 325,
+    "http_extracted_chars": 7,
+    "rendered_html_bytes": 127643,
+    "rendered_visible_chars": 325,
+    "rendered_extracted_chars": 7,
+    "lost_by_drop_rules": {
+     "<form>": 121,
+     "<nav>": 74,
+     "<header>": 24,
+     "<footer>": 46,
+     "class/id contains 'sidebar'": 53
+    },
+    "text_left_after_drop_rules": 7,
+    "lost_by_selector_rule": 7,
+    "browser_ms": 5102
+   }
+  ]
+ },
+ "politeness": {
+  "user_agents_sent": {
+   "WebIntelligenceCrawler/1.0 (+internal research)": 7058
+  },
+  "http_status_or_error_counts": {
+   "200": 3772,
+   "301": 1909,
+   "ConnectError": 334,
+   "404": 317,
+   "302": 210,
+   "ConnectTimeout": 143,
+   "308": 113,
+   "403": 100,
+   "ReadTimeout": 40,
+   "500": 30,
+   "307": 25,
+   "503": 24,
+   "RemoteProtocolError": 14,
+   "null": 6,
+   "303": 5,
+   "429": 4,
+   "401": 3,
+   "410": 3,
+   "ReadError": 2,
+   "502": 2
+  },
+  "requests_total": 7058,
+  "gap_between_consecutive_page_requests_same_site_s": {
+   "p05": 0.08,
+   "p50": 0.82,
+   "p95": 10.14,
+   "min": 0.001
+  },
+  "sites_whose_min_gap_below_1s": 562,
+  "sites_with_2plus_page_requests": 673,
+  "failed_attempt_kinds": {
+   "http": 377,
+   "blocked": 107,
+   "network": 539,
+   "too_large": 36,
+   "GuardError": 84,
+   "not_html": 12,
+   "redirect": 15,
+   "InvalidURL": 2,
+   "UnicodeEncodeError": 2
+  },
+  "responses_with_Retry-After_header": [
+   {
+    "row": "T0387",
+    "url": "https://www.guardianangeldevices.com/about",
+    "status": 503,
+    "retry_after": "3600",
+    "next_request_gap_s": 1.61
+   },
+   {
+    "row": "T0387",
+    "url": "https://www.guardianangeldevices.com/about",
+    "status": 503,
+    "retry_after": "3600",
+    "next_request_gap_s": 0.05
+   },
+   {
+    "row": "T0387",
+    "url": "https://www.guardianangeldevices.com/shop",
+    "status": 503,
+    "retry_after": "3600",
+    "next_request_gap_s": 1.57
+   },
+   {
+    "row": "T0387",
+    "url": "https://www.guardianangeldevices.com/shop",
+    "status": 503,
+    "retry_after": "3600",
+    "next_request_gap_s": 0.05
+   },
+   {
+    "row": "T0387",
+    "url": "https://www.guardianangeldevices.com/contact-us",
+    "status": 503,
+    "retry_after": "3600",
+    "next_request_gap_s": 1.56
+   },
+   {
+    "row": "T0387",
+    "url": "https://www.guardianangeldevices.com/contact-us",
+    "status": 503,
+    "retry_after": "3600",
+    "next_request_gap_s": 0.04
+   },
+   {
+    "row": "T0387",
+    "url": "https://www.guardianangeldevices.com/customer-service",
+    "status": 503,
+    "retry_after": "3600",
+    "next_request_gap_s": 1.56
+   },
+   {
+    "row": "T0387",
+    "url": "https://www.guardianangeldevices.com/customer-service",
+    "status": 503,
+    "retry_after": "3600",
+    "next_request_gap_s": null
+   },
+   {
+    "row": "T0897",
+    "url": "http://www.muenchen.de",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.0
+   },
+   {
+    "row": "T0002",
+    "url": "https://troutman.com/robots.txt",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.13
+   },
+   {
+    "row": "T0002",
+    "url": "https://troutman.com",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.0
+   },
+   {
+    "row": "T0234",
+    "url": "https://eci.com/robots.txt",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.04
+   },
+   {
+    "row": "T0234",
+    "url": "https://eci.com",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.0
+   },
+   {
+    "row": "T0234",
+    "url": "https://eci.com/azure-managed-cloud",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.0
+   },
+   {
+    "row": "T0243",
+    "url": "https://broadbean.com/robots.txt",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.05
+   },
+   {
+    "row": "T0243",
+    "url": "https://broadbean.com",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.0
+   },
+   {
+    "row": "T0243",
+    "url": "https://broadbean.com/company",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.0
+   },
+   {
+    "row": "T0243",
+    "url": "https://broadbean.com/company/about-us",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.0
+   },
+   {
+    "row": "T0243",
+    "url": "https://broadbean.com/company/leadership",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.0
+   },
+   {
+    "row": "T0243",
+    "url": "https://broadbean.com/product-suite/job-distribution-platform",
+    "status": 301,
+    "retry_after": "0",
+    "next_request_gap_s": 0.01
+   }
+  ],
+  "most_requested_hosts": [
+   [
+    "httpbin.org",
+    54
+   ],
+   [
+    "www.hugedomains.com",
+    34
+   ],
+   [
+    "www.norbsoft.com",
+    26
+   ],
+   [
+    "norbsoft.com",
+    23
+   ],
+   [
+    "www.aiany.org",
+    23
+   ]
+  ]
+ },
+ "timing": {
+  "sites_timed_this_run": 835,
+  "p50_s": 7.44,
+  "p95_s": 58.08,
+  "max_s": 265.11,
+  "slowest": [
+   [
+    265.11,
+    "T0698",
+    "http://127.0.0.1:8801/"
+   ],
+   [
+    242.3,
+    "T0416",
+    "https://altria.com"
+   ],
+   [
+    141.4,
+    "T0445",
+    "https://eurofilet.net"
+   ],
+   [
+    107.09,
+    "T0086",
+    "https://seagrave.com"
+   ],
+   [
+    101.18,
+    "T0677",
+    "https://jaycfoods.com"
+   ],
+   [
+    98.78,
+    "T0071",
+    "https://jcrooftile.com"
+   ],
+   [
+    98.16,
+    "T0312",
+    "https://justice.govt.nz"
+   ],
+   [
+    94.76,
+    "T0545",
+    "https://lines.coscoshipping.com"
+   ],
+   [
+    93.82,
+    "T0442",
+    "https://msa.ir"
+   ],
+   [
+    86.06,
+    "T0618",
+    "https://cigna.com.tw"
+   ]
+  ]
+ },
+ "database_fields": {
+  "website_columns": [
+   "id",
+   "original_url",
+   "normalized_website",
+   "status",
+   "job_id",
+   "source_batch",
+   "clean_text",
+   "crawl_error",
+   "pages_crawled",
+   "last_crawled_at",
+   "claimed_at",
+   "company_name",
+   "description",
+   "business_type",
+   "industry",
+   "niche",
+   "products",
+   "services",
+   "confidence",
+   "evidence",
+   "classification_meta",
+   "crawl_status",
+   "classification_status",
+   "content_hash",
+   "secondary_industry",
+   "sub_niche",
+   "business_model",
+   "geographic_markets",
+   "created_at"
+  ],
+  "has_final_url_column": false,
+  "has_http_status_column": false,
+  "has_pages_attempted_column": false,
+  "has_retry_count_column": false,
+  "per_page_table_in_models": false,
+  "tables_in_models": [
+   "jobs",
+   "websites",
+   "evidence_records",
+   "domain_stats"
+  ],
+  "source_batch_non_null_rows": 0,
+  "rows_total": 954,
+  "domain_stats_rows": 758,
+  "crawl_status_vs_status_differs_rows": 0,
+  "jobs_by_kind_status": [
+   [
+    "crawl",
+    "completed",
+    25
+   ],
+   [
+    "import",
+    "queued",
+    1
+   ]
+  ],
+  "identical_content_hash_groups": 1
+ },
+ "verdicts_by_group": {
+  "happy": {
+   "MATCH": 530,
+   "MISMATCH": 30,
+   "ENV-DEPENDENT": 24,
+   "SITE-CHANGED": 16
+  },
+  "error_edge": {
+   "MISMATCH": 133,
+   "SITE-CHANGED": 24,
+   "MATCH": 222,
+   "ENV-DEPENDENT": 5,
+   "PARTIAL": 3,
+   "ORACLE-LIMITATION": 1
+  }
+ }
+}

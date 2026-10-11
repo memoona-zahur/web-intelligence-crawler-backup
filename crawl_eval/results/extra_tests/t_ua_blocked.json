@@ -1,0 +1,178 @@
+{
+ "crawler_user_agent": "WebIntelligenceCrawler/1.0 (+internal research)",
+ "rows_tested": 21,
+ "blocked_only_for_crawler_headers": 11,
+ "blocked_for_both": 10,
+ "other": 0,
+ "rows": [
+  {
+   "row": "T0004",
+   "url": "https://fabioluizvieira.com.br",
+   "crawler_error": "HTTP 403 from https://fabioluizvieira.com.br",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0047",
+   "url": "https://prlab.co",
+   "crawler_error": "HTTP 403 from https://prlab.co",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0054",
+   "url": "https://mongrove.com",
+   "crawler_error": "HTTP 403 from https://mongrove.com",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0081",
+   "url": "https://www.gemcar.com",
+   "crawler_error": "HTTP 403 from https://www.gemcar.com",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0082",
+   "url": "https://matthewsaurora.com",
+   "crawler_error": "HTTP 403 from https://matthewsaurora.com",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0089",
+   "url": "https://nutro.com",
+   "crawler_error": "HTTP 403 from https://nutro.com",
+   "verdict_in_report": "SITE-CHANGED",
+   "crawler_headers": 403,
+   "harness_headers": 403
+  },
+  {
+   "row": "T0091",
+   "url": "https://pedigree.com",
+   "crawler_error": "HTTP 403 from https://pedigree.com",
+   "verdict_in_report": "SITE-CHANGED",
+   "crawler_headers": 403,
+   "harness_headers": 403
+  },
+  {
+   "row": "T0101",
+   "url": "https://easteggbottle.com",
+   "crawler_error": "HTTP 403 from https://easteggbottle.com",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0118",
+   "url": "https://electric-center.co.uk",
+   "crawler_error": "HTTP 403 from https://electric-center.co.uk",
+   "verdict_in_report": "SITE-CHANGED",
+   "crawler_headers": 403,
+   "harness_headers": 403
+  },
+  {
+   "row": "T0124",
+   "url": "https://pagani.com",
+   "crawler_error": "HTTP 429 from https://pagani.com",
+   "verdict_in_report": "SITE-CHANGED",
+   "crawler_headers": 429,
+   "harness_headers": 429
+  },
+  {
+   "row": "T0133",
+   "url": "https://www.thekirbyonmain.com/",
+   "crawler_error": "HTTP 403 from https://www.thekirbyonmain.com/",
+   "verdict_in_report": "SITE-CHANGED",
+   "crawler_headers": 403,
+   "harness_headers": 403
+  },
+  {
+   "row": "T0164",
+   "url": "https://carvanbits.co.uk",
+   "crawler_error": "HTTP 403 from https://carvanbits.co.uk",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0205",
+   "url": "https://bromcom.com",
+   "crawler_error": "HTTP 403 from https://bromcom.com",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0252",
+   "url": "https://freedomclinicutah.com",
+   "crawler_error": "HTTP 403 from https://freedomclinicutah.com",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0288",
+   "url": "https://www.qbe.com/",
+   "crawler_error": "HTTP 403 from https://www.qbe.com/",
+   "verdict_in_report": "SITE-CHANGED",
+   "crawler_headers": 403,
+   "harness_headers": 403
+  },
+  {
+   "row": "T0358",
+   "url": "https://montelena.com",
+   "crawler_error": "HTTP 403 from https://montelena.com",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0364",
+   "url": "https://koperenknop.nl",
+   "crawler_error": "HTTP 403 from https://koperenknop.nl",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 200
+  },
+  {
+   "row": "T0441",
+   "url": "https://kimberly-clark.co.il",
+   "crawler_error": "HTTP 403 from https://kimberly-clark.co.il",
+   "verdict_in_report": "ENV-DEPENDENT",
+   "crawler_headers": 403,
+   "harness_headers": 403
+  },
+  {
+   "row": "T0507",
+   "url": "https://www.smule.com/",
+   "crawler_error": "HTTP 403 from https://www.smule.com/",
+   "verdict_in_report": "MISMATCH",
+   "crawler_headers": 403,
+   "harness_headers": 403
+  },
+  {
+   "row": "T0575",
+   "url": "https://www.allergan.com/",
+   "crawler_error": "HTTP 403 from https://www.allergan.com/",
+   "verdict_in_report": "SITE-CHANGED",
+   "crawler_headers": 403,
+   "harness_headers": 403
+  },
+  {
+   "row": "T0899",
+   "url": "https://www.buecher.de/",
+   "crawler_error": "HTTP 403 from https://www.buecher.de/",
+   "verdict_in_report": "SITE-CHANGED",
+   "crawler_headers": 403,
+   "harness_headers": 403
+  }
+ ],
+ "reading": "The crawler's User-Agent is descriptive and honest (requirement CR-F02) and the requirements forbid bypassing anti-bot protection (CR-F05): this is reported as a design decision, not as a defect."
+}

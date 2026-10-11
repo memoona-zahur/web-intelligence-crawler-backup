@@ -1,0 +1,34 @@
+{
+ "rows_whose_verdict_differs_between_original_labels_and_final": [
+  [
+   "T0118",
+   "SITE-CHANGED",
+   "MISMATCH"
+  ],
+  [
+   "T0522",
+   "MISMATCH",
+   "SITE-CHANGED"
+  ],
+  [
+   "T0524",
+   "MISMATCH",
+   "SITE-CHANGED"
+  ],
+  [
+   "T0575",
+   "SITE-CHANGED",
+   "MISMATCH"
+  ],
+  [
+   "T0722",
+   "SITE-CHANGED",
+   "ENV-DEPENDENT"
+  ],
+  [
+   "T0777",
+   "SITE-CHANGED",
+   "MISMATCH"
+  ]
+ ]
+}

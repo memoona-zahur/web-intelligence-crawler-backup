@@ -1,0 +1,7 @@
+{
+  "rule": "A row listed here has an expected outcome that the dataset builder verified in a way the crawler's design cannot reproduce. The expected outcome is NOT changed. The row is reported as ORACLE-LIMITATION, listed separately, and not counted as a crawler bug in Phase 1 or Phase 2. Rows are added here only by an explicit decision of the project owner.",
+  "decided_by": "project owner, GATE 2 (2026-10-11)",
+  "rows": {
+    "T0901": "The dataset oracle was verified with http://94.140.14.14 (HTTP 302 to a named site). The importer rewrites every input to https://host (normalize_website), and https://94.140.14.14 answers differently (a robots.txt that disallows crawling), so the crawler is judged on a URL the dataset did not verify."
+  }
+}

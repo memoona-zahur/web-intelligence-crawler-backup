@@ -1,0 +1,56 @@
+{
+ "files": {
+  "judge.py": {
+   "role": "judge (mechanical expected-vs-actual rules, compatibility table, checks)",
+   "sha256": "d652ecf7f75f38b110fece67343e58fb353cf62c9906d02f734218bcfbf34ea5"
+  },
+  "run_eval.py": {
+   "role": "labelling + probe + verdict logic + reports (run_eval.py: build_reports, probe_after, probe_recheck, predict_word, dns_robust)",
+   "sha256": "5573e108463fa7ca4fede4eda88d0e20cb31d97314c309507f58f9ed765870cf"
+  },
+  "telemetry.py": {
+   "role": "pass-through telemetry wrappers + safety net + watchdog",
+   "sha256": "f3d1d72cf7150ccd474e8dd7d55c8f9612a0966a511f3a5be7c9180c752c10d6"
+  },
+  "scenario_server.py": {
+   "role": "scenario server (oracle for local scenarios)",
+   "sha256": "910c83cf0ec7981d732e1cdacaf8785496a92b1ffc74e0620230a8a952b0ed66"
+  },
+  "dataset/testing_URLs.csv": {
+   "role": "dataset with expected outcomes (the oracle)",
+   "sha256": "0963ab3fead262c89d249e1f8d421eed857dc07968af65294e8e12f35c74c2bb"
+  },
+  "dataset/oracle_limitations.json": {
+   "role": "oracle limitations rule file",
+   "sha256": "25548c78fb6fa156130815f84d5d211bbfb39c3f07d3d6f76c5722de8946aaeb"
+  },
+  "dataset/label_reclassifications.json": {
+   "role": "label reclassifications (fresh-probe review)",
+   "sha256": "99a591427b3b762bb6c6d26047aeeb0d0184d7af6aae0d8d2880a1f2162fff13"
+  },
+  "relabel_check.py": {
+   "role": "label review procedure",
+   "sha256": "fc6ae8df5958d98422e5d4060c3aba894ac0c86fd9ba717a65db59e96da95233"
+  },
+  "analyze_full.py": {
+   "role": "post-run analysis (gold set, browser, politeness)",
+   "sha256": "c1f41ab31157c5c26c0e15b136a8be940d5c3cfc26ef879391cc5c97b92bd3e1"
+  },
+  "tools/static_rows.py": {
+   "role": "static rows (hand-designed oracle rows)",
+   "sha256": "7cd67585799fa8936b61d6f6e4a4cc8ccd7e681b289bbedfacde349e1861fa08"
+  },
+  "baseline/run_manifest.json": {
+   "role": "app code hash manifest (proves the crawler under test)",
+   "sha256": "6b3ac61f7f47f4187eb038457eaedb2e2b88efa83733227a520a679abb6012c5"
+  },
+  "tools/hash_manifest.py": {
+   "role": "hash tool",
+   "sha256": "ccd708faefac83c2b97b1fd0ec42b0349fe8e6a23db6f2f24d630bd99594b5a5"
+  }
+ },
+ "combined_sha256": "30a9f51564569e1ba80dbb7f9567e894172d464283136b8bc51194695885a07b",
+ "note": "make_deliverables.py and deliverables_data.py write the Phase 1 report text; they are not part of the judge.",
+ "frozen_at": "2026-10-11T04:16:20",
+ "rule": "Phase 2 must use the identical judge. Any change needs the project owner's written approval and a new freeze."
+}

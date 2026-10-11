@@ -1,0 +1,31 @@
+{
+ "what": "single runner.run() call per size; local scenario server; concurrency 5 (the harness value; the code's own default is 10)",
+ "run_100": {
+  "sites": 100,
+  "concurrency": 5,
+  "seconds": 9.3,
+  "sites_per_hour_this_test_only": 38559,
+  "statuses": {
+   "crawled": 100
+  },
+  "http_requests": 305,
+  "rss_before_mb": 69.2,
+  "rss_peak_mb": 77.4,
+  "asyncio_tasks_1s_after_start": 92,
+  "rows_in_crawling_state_1s_after_start": 90
+ },
+ "run_1000": {
+  "sites": 1000,
+  "concurrency": 5,
+  "seconds": 91.0,
+  "sites_per_hour_this_test_only": 39578,
+  "statuses": {
+   "crawled": 1000
+  },
+  "http_requests": 3005,
+  "rss_before_mb": 80.8,
+  "rss_peak_mb": 87.8,
+  "asyncio_tasks_1s_after_start": 992,
+  "rows_in_crawling_state_1s_after_start": 990
+ }
+}

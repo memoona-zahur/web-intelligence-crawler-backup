@@ -1,0 +1,342 @@
+{
+"T0621": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-1.invalid",
+"raw_first_cell": "http://crawl-eval-dead-1.invalid/"
+},
+"T0622": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-2.invalid",
+"raw_first_cell": "http://crawl-eval-dead-2.invalid/"
+},
+"T0623": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-3.invalid",
+"raw_first_cell": "http://crawl-eval-dead-3.invalid/"
+},
+"T0624": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-4.invalid",
+"raw_first_cell": "http://crawl-eval-dead-4.invalid/"
+},
+"T0631": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8830/"
+},
+"T0675": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8828/"
+},
+"T0676": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8829/"
+},
+"T0701": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8899/"
+},
+"T0708": {
+"decision": "added",
+"normalized": "https://expired.badssl.com",
+"raw_first_cell": "https://expired.badssl.com/"
+},
+"T0709": {
+"decision": "added",
+"normalized": "https://wrong.host.badssl.com",
+"raw_first_cell": "https://wrong.host.badssl.com/"
+},
+"T0710": {
+"decision": "added",
+"normalized": "https://self-signed.badssl.com",
+"raw_first_cell": "https://self-signed.badssl.com/"
+},
+"T0711": {
+"decision": "added",
+"normalized": "https://untrusted-root.badssl.com",
+"raw_first_cell": "https://untrusted-root.badssl.com/"
+},
+"T0740": {
+"decision": "added",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/401"
+},
+"T0741": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/403"
+},
+"T0742": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/404"
+},
+"T0743": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/410"
+},
+"T0778": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fexample.com%2F"
+},
+"T0779": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fexample.org%2F&status_code=301"
+},
+"T0780": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fexample.net%2F&status_code=307"
+},
+"T0781": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fhttpbin.org%2Fredirect-to%3Furl%3Dhttps%253A%252F%252Fexample.com%252F"
+},
+"T0816": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8832/"
+},
+"T0817": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/deny"
+},
+"T0818": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8818/"
+},
+"T0819": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8819/"
+},
+"T0820": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8820/"
+},
+"T0837": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/json"
+},
+"T0838": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/xml"
+},
+"T0839": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/image/png"
+},
+"T0840": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/gzip"
+},
+"T0856": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/basic-auth/user/passwd"
+},
+"T0857": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/bearer"
+},
+"T0858": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8831/"
+},
+"T0869": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/encoding/utf8"
+},
+"T0870": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8833/"
+},
+"T0871": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8834/"
+},
+"T0872": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8835/"
+},
+"T0874": {
+"decision": "added",
+"normalized": "https://example.com",
+"raw_first_cell": "https://example.com/"
+},
+"T0875": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "http://example.com"
+},
+"T0876": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://www.example.com"
+},
+"T0877": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "http://www.example.com/"
+},
+"T0878": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "HTTPS://EXAMPLE.COM"
+},
+"T0879": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "example.com"
+},
+"T0880": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "www.example.com"
+},
+"T0881": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://example.com/index.html"
+},
+"T0882": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://example.com/about?utm_source=x#top"
+},
+"T0883": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "example.com:443"
+},
+"T0884": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "http://example.com:80/"
+},
+"T0885": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://example.com"
+},
+"T0886": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "'https://example.com'"
+},
+"T0887": {
+"decision": "added",
+"normalized": "https://example.com.",
+"raw_first_cell": "https://example.com."
+},
+"T0888": {
+"decision": "duplicate",
+"normalized": "https://example.com.",
+"raw_first_cell": "https://www.example.com./"
+},
+"T0889": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "//example.com"
+},
+"T0890": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "ｅｘａｍｐｌｅ．ｃｏｍ"
+},
+"T0891": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://user:secret@example.com/"
+},
+"T0892": {
+"decision": "added",
+"normalized": "https://example.org",
+"raw_first_cell": "https://example.org/"
+},
+"T0893": {
+"decision": "duplicate",
+"normalized": "https://example.org",
+"raw_first_cell": "http://WWW.Example.Org/"
+},
+"T0894": {
+"decision": "duplicate",
+"normalized": "https://example.org",
+"raw_first_cell": "example.org/some/path.html"
+},
+"T0895": {
+"decision": "added",
+"normalized": "https://example.net",
+"raw_first_cell": "http://example.net"
+},
+"T0896": {
+"decision": "duplicate",
+"normalized": "https://example.net",
+"raw_first_cell": "https://www.example.net/?utm_source=newsletter&utm_medium=email"
+},
+"T0897": {
+"decision": "added",
+"normalized": "https://münchen.de",
+"raw_first_cell": "münchen.de"
+},
+"T0898": {
+"decision": "added",
+"normalized": "https://xn--mnchen-3ya.de",
+"raw_first_cell": "xn--mnchen-3ya.de"
+},
+"T0966": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/200"
+},
+"T0967": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8826/"
+},
+"T0968": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8827/"
+},
+"T0969": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8811/"
+},
+"T0970": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8812/"
+},
+"T0971": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8813/"
+},
+"T0972": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8841/"
+}
+}

@@ -1,0 +1,4 @@
+{"ts": "2026-10-11T07:00:26+00:00", "event": "crawl_started", "sites": 50, "job_id": 2}
+{"ts": "2026-10-11T07:02:23+00:00", "event": "crawl_finished", "sites": 50, "seconds": 116.7, "counts": {"crawled": 45, "blocked": 3, "empty": 2}, "job_id": 2}
+{"ts": "2026-10-11T07:02:23+00:00", "event": "crawl_started", "sites": 44, "job_id": 3}
+{"ts": "2026-10-11T07:03:59+00:00", "event": "crawl_finished", "sites": 44, "seconds": 96.6, "counts": {"crawled": 24, "empty": 4, "blocked": 4, "invalid": 4, "unreachable": 5, "robots_blocked": 1, "failed": 2}, "job_id": 3}

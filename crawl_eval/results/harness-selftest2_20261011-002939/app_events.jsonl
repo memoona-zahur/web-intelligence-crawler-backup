@@ -1,0 +1,8 @@
+{"ts": "2026-10-11T07:29:41+00:00", "event": "crawl_started", "sites": 4, "job_id": 2}
+{"ts": "2026-10-11T07:29:57+00:00", "event": "crawl_finished", "sites": 4, "seconds": 16.3, "counts": {"empty": 1, "crawled": 2, "unreachable": 1}, "job_id": 2}
+{"ts": "2026-10-11T07:29:57+00:00", "event": "crawl_started", "sites": 1, "job_id": 3}
+{"ts": "2026-10-11T07:30:25+00:00", "event": "crawl_finished", "sites": 1, "seconds": 27.6, "counts": {"unreachable": 1}, "job_id": 3}
+{"ts": "2026-10-11T07:30:25+00:00", "event": "crawl_started", "sites": 1, "job_id": 4}
+{"ts": "2026-10-11T07:30:26+00:00", "event": "crawl_finished", "sites": 1, "seconds": 0.9, "counts": {"failed": 1}, "job_id": 4}
+{"ts": "2026-10-11T07:30:26+00:00", "event": "crawl_started", "sites": 1, "job_id": 5}
+{"ts": "2026-10-11T07:30:27+00:00", "event": "crawl_finished", "sites": 1, "seconds": 0.8, "counts": {"crawled": 1}, "job_id": 5}

@@ -1,0 +1,35 @@
+{
+ "T0507": {
+  "url": "http://smule.com",
+  "expected": "Crawled",
+  "crawler": "Blocked",
+  "crawler_error": "HTTP 403 from https://www.smule.com/",
+  "label_now": "SITE-CHANGED",
+  "original_probe": "Blocked",
+  "fresh_probe": "Requires Review",
+  "fresh_detail": "almost no static text (57 chars)",
+  "dns_any_ok": true
+ },
+ "T0522": {
+  "url": "https://www.kg-mobility.com/",
+  "expected": "Crawled",
+  "crawler": "Invalid",
+  "crawler_error": "cannot resolve host 'kg-mobility.com'",
+  "label_now": "SITE-CHANGED",
+  "original_probe": "Unreachable",
+  "fresh_probe": "Unreachable",
+  "fresh_detail": "no-dns",
+  "dns_any_ok": false
+ },
+ "T0524": {
+  "url": "https://www.pegatroncorp.com/",
+  "expected": "Crawled",
+  "crawler": "Invalid",
+  "crawler_error": "cannot resolve host 'pegatroncorp.com'",
+  "label_now": "SITE-CHANGED",
+  "original_probe": "Unreachable",
+  "fresh_probe": "Unreachable",
+  "fresh_detail": "no-dns",
+  "dns_any_ok": false
+ }
+}

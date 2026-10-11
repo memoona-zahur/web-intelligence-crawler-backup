@@ -1,0 +1,54 @@
+{
+ "what": "cancel and crash-recovery behaviour of the unchanged runner (local sites only)",
+ "cancel": {
+  "cancelled_after_s": 5,
+  "seconds_until_run_returned_after_cancel": 20.9,
+  "row_statuses_after": {
+   "unreachable": 1,
+   "pending": 29
+  },
+  "note": "30 sites, 5 at a time, each site answers after 20 s; cancellation is only checked between completed sites"
+ },
+ "crash_recovery": {
+  "sites": 400,
+  "after_kill_-9": {
+   "invalid": 38,
+   "crawling": 362
+  },
+  "recover_abandoned_result": {
+   "websites_reset": 362,
+   "jobs_failed": 1
+  },
+  "after_recover": {
+   "invalid": 38,
+   "pending": 362
+  },
+  "second_run_counts": {
+   "crawled": 400
+  },
+  "final_statuses": {
+   "crawled": 400
+  },
+  "rows_lost": 0
+ },
+ "jobs": [
+  [
+   1,
+   "crawl",
+   "cancelled",
+   "Cancelled by an operator."
+  ],
+  [
+   2,
+   "crawl",
+   "failed",
+   "Interrupted by a restart. Website rows were returned to the queue."
+  ],
+  [
+   3,
+   "crawl",
+   "completed",
+   "crawled=400"
+  ]
+ ]
+}

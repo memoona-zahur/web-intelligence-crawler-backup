@@ -1,0 +1,2 @@
+{"ts": "2026-10-11T09:38:52+00:00", "event": "crawl_started", "sites": 1, "job_id": 1}
+{"ts": "2026-10-11T09:38:53+00:00", "event": "crawl_finished", "sites": 1, "seconds": 0.9, "counts": {"failed": 1}, "job_id": 1}

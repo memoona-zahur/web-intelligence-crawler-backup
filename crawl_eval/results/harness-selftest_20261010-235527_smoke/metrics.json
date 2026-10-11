@@ -1,0 +1,91 @@
+{
+ "run_id": "harness-selftest_20261010-235527_smoke",
+ "rows_judged": 68,
+ "verdicts": {
+  "MISMATCH": 17,
+  "MATCH": 48,
+  "PARTIAL": 3
+ },
+ "status_counts": {
+  "invalid": 5,
+  "crawled": 22,
+  "unreachable": 4,
+  "blocked": 5,
+  "failed": 6,
+  "robots_blocked": 2,
+  "empty": 5
+ },
+ "match_rate_all": 0.706,
+ "judged_for_crawler_fault": 68,
+ "happy_rows": 0,
+ "happy_crawled": 0,
+ "happy_useful_text_ge_500": 0,
+ "latency_s_p50": 0.45,
+ "latency_s_p95": 17.85,
+ "total_http_requests": 144,
+ "retries": 13,
+ "browser_used_rows": 0,
+ "wall_seconds_crawl": 28.2,
+ "throughput_sites_per_hour_THIS_RUN_ONLY": 6255.3,
+ "peak_rss_mb_python_only": 0.0,
+ "by_category": {
+  "Dead domains (NXDOMAIN)": {
+   "MISMATCH": 4
+  },
+  "Parked / for-sale domains": {
+   "MISMATCH": 1
+  },
+  "Under construction / default pages": {
+   "MISMATCH": 2
+  },
+  "Timeouts / refused / slow": {
+   "MATCH": 1
+  },
+  "SSL/TLS problems": {
+   "MATCH": 3,
+   "MISMATCH": 1
+  },
+  "HTTP errors": {
+   "MATCH": 4
+  },
+  "Redirect behaviour": {
+   "PARTIAL": 3,
+   "MISMATCH": 1
+  },
+  "Bot-protected / WAF": {
+   "MATCH": 1
+  },
+  "robots.txt": {
+   "MATCH": 3,
+   "MISMATCH": 1
+  },
+  "Non-HTML and heavy content": {
+   "MATCH": 4
+  },
+  "Login-walled": {
+   "MATCH": 2,
+   "MISMATCH": 1
+  },
+  "Encoding oddities": {
+   "MATCH": 3,
+   "MISMATCH": 1
+  },
+  "Input handling": {
+   "MATCH": 21,
+   "MISMATCH": 4
+  },
+  "Thin / empty / error-only pages": {
+   "MATCH": 2,
+   "MISMATCH": 1
+  },
+  "Crawl traps": {
+   "MATCH": 4
+  }
+ },
+ "concurrency_used": 5,
+ "crawler_own_default_concurrency": {
+  "config.CONCURRENCY": 10,
+  "limits.crawl_concurrency()": 10
+ },
+ "app_code_unchanged": true
+}

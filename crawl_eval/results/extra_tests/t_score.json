@@ -1,0 +1,367 @@
+{
+ "what": "discover._score on business and non-business paths (the real function, no network)",
+ "rows": [
+  {
+   "path": "/services",
+   "anchor": "Services",
+   "person_says": "good",
+   "crawler_score": 3,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/about",
+   "anchor": "About us",
+   "person_says": "good",
+   "crawler_score": 3,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/products",
+   "anchor": "Products",
+   "person_says": "good",
+   "crawler_score": 3,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/services/accounting",
+   "anchor": "Accounting services",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/services/legal-advice",
+   "anchor": "Legal advice",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/research",
+   "anchor": "Research",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/products/compressors",
+   "anchor": "Compressors",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/express-delivery",
+   "anchor": "Express delivery",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/products/cartridges",
+   "anchor": "Cartridges",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/services/administration",
+   "anchor": "Administration services",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/about/our-advantage",
+   "anchor": "Our advantage",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/about/heritage",
+   "anchor": "Our heritage",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/company/mortgage-services",
+   "anchor": "Mortgage services",
+   "person_says": "good",
+   "crawler_score": 3,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/solutions/stage-lighting",
+   "anchor": "Stage lighting",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/industries/newsprint",
+   "anchor": "Newsprint",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/products/guides-and-rails",
+   "anchor": "Guide rails",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/what-we-do",
+   "anchor": "What we do",
+   "person_says": "good",
+   "crawler_score": 3,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/en/solutions",
+   "anchor": "Solutions",
+   "person_says": "good",
+   "crawler_score": 3,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/ueber-uns",
+   "anchor": "Über uns",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/leistungen",
+   "anchor": "Leistungen",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/produkte",
+   "anchor": "Produkte",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/unternehmen",
+   "anchor": "Unternehmen",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/nosotros",
+   "anchor": "Nosotros",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/quienes-somos",
+   "anchor": "Quiénes somos",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/servicios",
+   "anchor": "Servicios",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/productos",
+   "anchor": "Productos",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/a-propos",
+   "anchor": "À propos",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/nos-services",
+   "anchor": "Nos services",
+   "person_says": "good",
+   "crawler_score": 3,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/produits",
+   "anchor": "Produits",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/chi-siamo",
+   "anchor": "Chi siamo",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/servizi",
+   "anchor": "Servizi",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/会社概要",
+   "anchor": "会社概要",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/company/",
+   "anchor": "会社案内",
+   "person_says": "good",
+   "crawler_score": 3,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/o-nas",
+   "anchor": "O nas",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/hakkimizda",
+   "anchor": "Hakkımızda",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/hizmetlerimiz",
+   "anchor": "Hizmetlerimiz",
+   "person_says": "good",
+   "crawler_score": 0,
+   "wrongly_skipped": true,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/blog",
+   "anchor": "Blog",
+   "person_says": "skip",
+   "crawler_score": 0,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/careers",
+   "anchor": "Careers",
+   "person_says": "skip",
+   "crawler_score": 0,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/privacy-policy",
+   "anchor": "Privacy",
+   "person_says": "skip",
+   "crawler_score": 0,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/login",
+   "anchor": "Login",
+   "person_says": "skip",
+   "crawler_score": 0,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  },
+  {
+   "path": "/cart",
+   "anchor": "Cart",
+   "person_says": "skip",
+   "crawler_score": 0,
+   "wrongly_skipped": false,
+   "wrongly_kept": false
+  }
+ ],
+ "good_paths_scored_0": 28,
+ "good_paths_total": 36,
+ "english_good_scored_0": [
+  "/services/accounting",
+  "/services/legal-advice",
+  "/research",
+  "/products/compressors",
+  "/express-delivery",
+  "/products/cartridges",
+  "/services/administration",
+  "/about/our-advantage",
+  "/about/heritage",
+  "/solutions/stage-lighting",
+  "/industries/newsprint",
+  "/products/guides-and-rails"
+ ],
+ "non_english_good_scored_0": [
+  "/ueber-uns",
+  "/leistungen",
+  "/produkte",
+  "/unternehmen",
+  "/nosotros",
+  "/quienes-somos",
+  "/servicios",
+  "/productos",
+  "/a-propos",
+  "/produits",
+  "/chi-siamo",
+  "/servizi",
+  "/会社概要",
+  "/o-nas",
+  "/hakkimizda",
+  "/hizmetlerimiz"
+ ]
+}

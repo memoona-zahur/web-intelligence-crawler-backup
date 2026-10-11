@@ -1,0 +1,41 @@
+{
+ "status": "crawled",
+ "error": null,
+ "secret_token_in_stored_text": true,
+ "stored_text_sample": "=== PAGE: homepage | http://127.0.0.1:8861/\nINTERNAL SECRET\nRetrieved via browser: http://127.0.0.1:8861/\nINTERNAL SECRET\nThis internal-only text must never appear in crawl output. SECRET-TOKEN-4711 We design and build industrial pumps and compressors for water treatment, mining and food processing ",
+ "guard_events_for_site": [
+  {
+   "t": 0.362,
+   "site": "http://127.0.0.1:8861/",
+   "url": "http://127.0.0.1:8861/robots.txt",
+   "decision": "allowed-scenario-host (guard relaxed by harness)"
+  },
+  {
+   "t": 0.44,
+   "site": "http://127.0.0.1:8861/",
+   "url": "http://127.0.0.1:8861/",
+   "decision": "allowed-scenario-host (guard relaxed by harness)"
+  },
+  {
+   "t": 0.58,
+   "site": "http://127.0.0.1:8861/",
+   "url": "http://127.0.0.1:8861/",
+   "decision": "allowed-scenario-host (guard relaxed by harness)"
+  },
+  {
+   "t": 1.987,
+   "site": "http://127.0.0.1:8861/",
+   "url": "http://127.0.0.1:8861/sitemap.xml",
+   "decision": "allowed-scenario-host (guard relaxed by harness)"
+  }
+ ],
+ "browser_calls": [
+  {
+   "url": "http://127.0.0.1:8861/",
+   "ms": 1517,
+   "returned_bytes": 463
+  }
+ ],
+ "http_requests_to_127.0.0.2_seen_by_python": [],
+ "reading": "If the secret token is stored, the browser followed a redirect to a host that the crawler's guard never checked (guard.assert_public_url is called once, before page.goto). Lead L-04 confirmed. The target here is this machine only."
+}

@@ -1,0 +1,173 @@
+{
+ "run_id": "existing-code_full_20261011",
+ "rows_judged": 988,
+ "verdicts": {
+  "MATCH": 752,
+  "MISMATCH": 164,
+  "ENV-DEPENDENT": 29,
+  "SITE-CHANGED": 39,
+  "PARTIAL": 3,
+  "ORACLE-LIMITATION": 1
+ },
+ "status_counts": {
+  "crawled": 664,
+  "blocked": 60,
+  "unreachable": 51,
+  "empty": 44,
+  "invalid": 66,
+  "failed": 37,
+  "robots_blocked": 7
+ },
+ "match_rate_all": 0.761,
+ "judged_for_crawler_fault": 919,
+ "happy_rows": 600,
+ "happy_crawled": 530,
+ "happy_useful_text_ge_500": 498,
+ "latency_s_p50": 7.44,
+ "latency_s_p95": 55.96,
+ "total_http_requests": 7058,
+ "retries": 307,
+ "browser_used_rows": 115,
+ "wall_seconds_crawl": 2997.4,
+ "throughput_sites_per_hour_THIS_RUN_ONLY": 1115.8,
+ "peak_rss_mb_python_only": 296.5,
+ "by_category": {
+  "Corporate / B2B services": {
+   "MATCH": 66,
+   "MISMATCH": 3,
+   "ENV-DEPENDENT": 1
+  },
+  "Manufacturers, industrial, distributors, wholesalers": {
+   "MATCH": 47,
+   "MISMATCH": 7,
+   "ENV-DEPENDENT": 2,
+   "SITE-CHANGED": 4
+  },
+  "E-commerce and retail": {
+   "MATCH": 56,
+   "SITE-CHANGED": 1,
+   "ENV-DEPENDENT": 1,
+   "MISMATCH": 2
+  },
+  "SaaS / software / platforms": {
+   "MATCH": 55,
+   "ENV-DEPENDENT": 3,
+   "MISMATCH": 1,
+   "SITE-CHANGED": 1
+  },
+  "Healthcare, education, finance, real estate, non-profit, government": {
+   "MATCH": 67,
+   "MISMATCH": 2,
+   "SITE-CHANGED": 4,
+   "ENV-DEPENDENT": 7
+  },
+  "Small local businesses on site builders": {
+   "MATCH": 57,
+   "MISMATCH": 2,
+   "SITE-CHANGED": 1
+  },
+  "Large multinational enterprises": {
+   "MATCH": 28,
+   "ENV-DEPENDENT": 1,
+   "MISMATCH": 1
+  },
+  "Non-English / international": {
+   "MATCH": 68,
+   "ENV-DEPENDENT": 8,
+   "SITE-CHANGED": 2,
+   "MISMATCH": 2
+  },
+  "JavaScript-heavy SPAs": {
+   "MATCH": 38,
+   "MISMATCH": 9,
+   "ENV-DEPENDENT": 1,
+   "SITE-CHANGED": 2
+  },
+  "Minimal / one-page / static sites": {
+   "MATCH": 28,
+   "MISMATCH": 2
+  },
+  "Sitemap variants and non-standard navigation": {
+   "MATCH": 20
+  },
+  "Dead domains (NXDOMAIN)": {
+   "MISMATCH": 26,
+   "SITE-CHANGED": 3,
+   "MATCH": 1
+  },
+  "Parked / for-sale domains": {
+   "MISMATCH": 29,
+   "ENV-DEPENDENT": 1
+  },
+  "Under construction / default pages": {
+   "MISMATCH": 8,
+   "SITE-CHANGED": 3,
+   "MATCH": 5
+  },
+  "Timeouts / refused / slow": {
+   "MATCH": 16,
+   "MISMATCH": 7,
+   "SITE-CHANGED": 2
+  },
+  "SSL/TLS problems": {
+   "MATCH": 17,
+   "SITE-CHANGED": 3
+  },
+  "HTTP errors": {
+   "ENV-DEPENDENT": 1,
+   "SITE-CHANGED": 6,
+   "MATCH": 21,
+   "MISMATCH": 2
+  },
+  "Redirect behaviour": {
+   "SITE-CHANGED": 2,
+   "MATCH": 18,
+   "MISMATCH": 16,
+   "ENV-DEPENDENT": 1,
+   "PARTIAL": 3
+  },
+  "Bot-protected / WAF": {
+   "MATCH": 24,
+   "SITE-CHANGED": 1
+  },
+  "robots.txt": {
+   "MATCH": 13,
+   "MISMATCH": 7
+  },
+  "Non-HTML and heavy content": {
+   "MATCH": 13,
+   "MISMATCH": 2
+  },
+  "Login-walled": {
+   "MISMATCH": 5,
+   "MATCH": 2
+  },
+  "Encoding oddities": {
+   "MATCH": 12,
+   "ENV-DEPENDENT": 1,
+   "MISMATCH": 2
+  },
+  "Input handling": {
+   "MATCH": 59,
+   "MISMATCH": 18,
+   "SITE-CHANGED": 1,
+   "ENV-DEPENDENT": 1,
+   "ORACLE-LIMITATION": 1
+  },
+  "Thin / empty / error-only pages": {
+   "SITE-CHANGED": 3,
+   "MISMATCH": 10,
+   "MATCH": 2
+  },
+  "Crawl traps": {
+   "MATCH": 19,
+   "MISMATCH": 1
+  }
+ },
+ "concurrency_used": 5,
+ "crawler_own_default_concurrency": {
+  "config.CONCURRENCY": 10,
+  "limits.crawl_concurrency()": 10
+ },
+ "app_code_unchanged": true
+}

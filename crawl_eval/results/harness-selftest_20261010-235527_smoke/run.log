@@ -1,0 +1,15 @@
+23:55:27 run harness-selftest_20261010-235527_smoke label=harness-selftest smoke=True limit=None concurrency=5 resume=False
+23:55:27 app code hash check before run: OK
+23:55:28 dataset _selftest.csv sha256 926605987e7247b7 rows=68 selected=68
+23:55:28 importer: added=15 duplicates=33 invalid=20; raws=68 lines=68
+23:55:29 crawl plan: 49 rows (43 direct, 6 via importer); to do now: 49
+23:55:32 run-time probe done for 2 real rows
+23:55:32 batch 1: 49 sites
+23:55:35   runner:   10/49 done — crawled (site #12)
+23:55:54   runner:   20/49 done — crawled (site #33)
+23:55:57   runner:   30/49 done — failed (site #42)
+23:55:59   runner:   40/49 done — empty (site #53)
+23:56:00   runner:   49/49 done — crawled (site #57)
+23:56:00   batch counts: {'crawled': 22, 'invalid': 5, 'blocked': 5, 'failed': 6, 'robots_blocked': 2, 'unreachable': 4, 'empty': 5} in 28.0s
+23:56:00   checkpoint written (49/49)
+23:56:00 app code hash check after run: OK

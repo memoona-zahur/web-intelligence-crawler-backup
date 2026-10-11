@@ -1,0 +1,23 @@
+﻿{
+    "recorded_at":  "2026-10-10T13:08:56",
+    "os":  "Microsoft Windows 10 Pro 10.0.19045",
+    "cpu":  "Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz",
+    "ram_gb":  15.9,
+    "python":  "Python 3.14.6",
+    "git_commit":  "24818a603f2fba198ee9447e027c0cdab06c475a",
+    "git_tag":  "crawler-baseline-v1",
+    "paths":  {
+                  "repo":  "C:\\Users\\DELL\\OneDrive\\Documents\\AI-Powered Website Intelligence\\Web-intelliegence-main",
+                  "venv":  "C:\\crawl_eval_data\\venv",
+                  "run_databases":  "C:\\crawl_eval_data\\db",
+                  "scratch_and_coverage_file":  "C:\\crawl_eval_data\\scratch",
+                  "playwright_browsers":  "C:\\crawl_eval_data\\browsers (env PLAYWRIGHT_BROWSERS_PATH)"
+              },
+    "playwright_chromium":  "Chrome for Testing 153.0.8010.12 (playwright chromium v1243), installed",
+    "network_location":  "Lahore, Pakistan (stated by user)",
+    "onedrive_note":  "Repo is inside OneDrive. venv, DBs, browsers kept outside it. Reports/CSVs stay in crawl_eval/.",
+    "python312_fallback":  "Not needed: all requirements installed on Python 3.14.6",
+    "dataset_tools_venv":  "C:\\crawl_eval_data\\venv_tools (httpx, dnspython, beautifulsoup4, lxml, playwright, charset-normalizer; see pip_freeze_tools_venv.txt). Used only to build the dataset; the crawler baseline venv was not changed.",
+    "scratch_data":  "C:\\crawl_eval_data\\scratch (probe results, harvest cache, selection files)",
+    "local_git":  "git init run by the agent on 2026-10-10; baseline commit tagged crawler-baseline-v1; nothing pushed"
+}

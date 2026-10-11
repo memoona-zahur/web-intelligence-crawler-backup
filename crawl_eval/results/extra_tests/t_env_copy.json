@@ -1,0 +1,22 @@
+{
+ "what": ".env contains CRAWL_CONCURRENCY=3 and CRAWLER_CONTACT_URL=https://example.test/bot-policy (copy of app/ in scratch, repo untouched)",
+ "result": {
+  "env_before": {
+   "CRAWL_CONCURRENCY": null,
+   "CRAWLER_CONTACT_URL": null
+  },
+  "after_importing_crawler_cli": {
+   "crawl_concurrency": 10,
+   "user_agent": "WebIntelligenceCrawler/1.0 (+internal research)"
+  },
+  "after_importing_ops": {
+   "crawl_concurrency": 10,
+   "user_agent": "WebIntelligenceCrawler/1.0 (+internal research)"
+  },
+  "after_importing_classifier": {
+   "crawl_concurrency": 3,
+   "user_agent": "WebsiteIntelligenceBot/1.0 (+https://example.test/bot-policy)"
+  }
+ },
+ "reading": "if the first two blocks still show 10 / the default User-Agent, the crawler CLI ignores .env until app.classifier is imported (lead L-12)"
+}

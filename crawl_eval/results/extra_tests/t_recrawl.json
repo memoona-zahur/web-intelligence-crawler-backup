@@ -1,0 +1,22 @@
+{
+ "what": "first crawl OK, then the same row is re-crawled after the site starts failing (simulated by pointing the row at an HTTP 500 page)",
+ "after_first_crawl": {
+  "status": "crawled",
+  "crawl_status": "crawled",
+  "crawl_error": null,
+  "pages_crawled": 2,
+  "clean_text_chars": 1115,
+  "content_hash": "3b57ecc94a35",
+  "last_crawled_at": "2026-10-11 09:38:48.942073"
+ },
+ "after_failed_recrawl": {
+  "status": "failed",
+  "crawl_status": "failed",
+  "crawl_error": "HTTP 500 from http://127.0.0.1:8843/",
+  "pages_crawled": 0,
+  "clean_text_chars": 1115,
+  "content_hash": "3b57ecc94a35",
+  "last_crawled_at": "2026-10-11 09:38:50.620630"
+ },
+ "reading": "If status says 'failed' while clean_text_chars is unchanged, the row mixes a current failure with old content, and the exported crawl status depends on which column a reader looks at (lead L-08)."
+}

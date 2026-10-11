@@ -1,0 +1,4943 @@
+{
+"T0944": {
+"decision": "crash",
+"error": "ValueError: Invalid IPv6 URL",
+"raw": "http://[invalid",
+"lost_rows_in_that_attempt": 988
+},
+"T0001": {
+"decision": "added",
+"normalized": "https://bakerlaw.com",
+"raw_first_cell": "http://www.bakerlaw.com/"
+},
+"T0002": {
+"decision": "added",
+"normalized": "https://troutman.com",
+"raw_first_cell": "https://www.troutman.com/"
+},
+"T0003": {
+"decision": "added",
+"normalized": "https://dandelionstrategies.com",
+"raw_first_cell": "https://www.dandelionstrategies.com"
+},
+"T0004": {
+"decision": "added",
+"normalized": "https://fabioluizvieira.com.br",
+"raw_first_cell": "https://fabioluizvieira.com.br/vz-associados-consultoria-em-saude/"
+},
+"T0005": {
+"decision": "added",
+"normalized": "https://creo-media.de",
+"raw_first_cell": "https://www.creo-media.de"
+},
+"T0006": {
+"decision": "added",
+"normalized": "https://gramlich-und-partner.de",
+"raw_first_cell": "https://www.gramlich-und-partner.de/"
+},
+"T0007": {
+"decision": "added",
+"normalized": "https://allenovery.com",
+"raw_first_cell": "http://www.allenovery.com"
+},
+"T0008": {
+"decision": "added",
+"normalized": "https://4-leaf-consulting.com",
+"raw_first_cell": "https://www.4-leaf-consulting.com/"
+},
+"T0009": {
+"decision": "added",
+"normalized": "https://creamuk.com",
+"raw_first_cell": "https://www.creamuk.com/"
+},
+"T0010": {
+"decision": "added",
+"normalized": "https://cms-hs.com",
+"raw_first_cell": "https://www.cms-hs.com"
+},
+"T0011": {
+"decision": "added",
+"normalized": "https://pearllemongroup.com",
+"raw_first_cell": "https://pearllemongroup.com/"
+},
+"T0012": {
+"decision": "added",
+"normalized": "https://dewender.de",
+"raw_first_cell": "https://www.dewender.de/"
+},
+"T0013": {
+"decision": "added",
+"normalized": "https://staempfliverlag.com",
+"raw_first_cell": "https://www.staempfliverlag.com/"
+},
+"T0014": {
+"decision": "added",
+"normalized": "https://akampion.com",
+"raw_first_cell": "https://www.akampion.com/"
+},
+"T0015": {
+"decision": "added",
+"normalized": "https://aaff.nl",
+"raw_first_cell": "https://www.aaff.nl"
+},
+"T0016": {
+"decision": "added",
+"normalized": "https://axley.com",
+"raw_first_cell": "http://www.axley.com/"
+},
+"T0017": {
+"decision": "added",
+"normalized": "https://quinnemanuel.com",
+"raw_first_cell": "http://www.quinnemanuel.com/"
+},
+"T0018": {
+"decision": "added",
+"normalized": "https://dwr-eco.com",
+"raw_first_cell": "https://dwr-eco.com/"
+},
+"T0019": {
+"decision": "added",
+"normalized": "https://climber.se",
+"raw_first_cell": "https://climber.se"
+},
+"T0020": {
+"decision": "added",
+"normalized": "https://ballardspahr.com",
+"raw_first_cell": "http://www.ballardspahr.com/"
+},
+"T0021": {
+"decision": "added",
+"normalized": "https://belex.com",
+"raw_first_cell": "http://www.belex.com"
+},
+"T0022": {
+"decision": "added",
+"normalized": "https://publicisgroupe.com",
+"raw_first_cell": "https://www.publicisgroupe.com/"
+},
+"T0023": {
+"decision": "added",
+"normalized": "https://proskauer.com",
+"raw_first_cell": "http://www.proskauer.com/"
+},
+"T0024": {
+"decision": "added",
+"normalized": "https://unternehmerhilfe-berlin.de",
+"raw_first_cell": "https://www.unternehmerhilfe-berlin.de/"
+},
+"T0025": {
+"decision": "added",
+"normalized": "https://sensemktg.com",
+"raw_first_cell": "https://sensemktg.com/"
+},
+"T0026": {
+"decision": "added",
+"normalized": "https://us.mullenlowe.com",
+"raw_first_cell": "https://us.mullenlowe.com/"
+},
+"T0027": {
+"decision": "added",
+"normalized": "https://10genpartners.com",
+"raw_first_cell": "https://10genpartners.com"
+},
+"T0028": {
+"decision": "added",
+"normalized": "https://cov.com",
+"raw_first_cell": "https://www.cov.com/"
+},
+"T0029": {
+"decision": "added",
+"normalized": "https://westexec.com",
+"raw_first_cell": "https://westexec.com"
+},
+"T0030": {
+"decision": "added",
+"normalized": "https://werbejunge.de",
+"raw_first_cell": "https://werbejunge.de"
+},
+"T0031": {
+"decision": "added",
+"normalized": "https://columnfivemedia.com",
+"raw_first_cell": "https://www.columnfivemedia.com"
+},
+"T0032": {
+"decision": "added",
+"normalized": "https://mofo.com",
+"raw_first_cell": "http://www.mofo.com"
+},
+"T0033": {
+"decision": "added",
+"normalized": "https://bracewell.com",
+"raw_first_cell": "https://bracewell.com"
+},
+"T0034": {
+"decision": "added",
+"normalized": "https://operate.dk",
+"raw_first_cell": "https://operate.dk/"
+},
+"T0035": {
+"decision": "added",
+"normalized": "https://excelpr.com",
+"raw_first_cell": "https://excelpr.com"
+},
+"T0036": {
+"decision": "added",
+"normalized": "https://mcguirewoods.com",
+"raw_first_cell": "http://www.mcguirewoods.com/"
+},
+"T0037": {
+"decision": "added",
+"normalized": "https://holocenepr.com",
+"raw_first_cell": "https://holocenepr.com"
+},
+"T0038": {
+"decision": "added",
+"normalized": "https://grey.com",
+"raw_first_cell": "http://www.grey.com/"
+},
+"T0039": {
+"decision": "added",
+"normalized": "https://tgpinternational.com",
+"raw_first_cell": "https://www.tgpinternational.com/"
+},
+"T0040": {
+"decision": "added",
+"normalized": "https://tauw.nl",
+"raw_first_cell": "http://www.tauw.nl/"
+},
+"T0041": {
+"decision": "added",
+"normalized": "https://altalab.io",
+"raw_first_cell": "https://altalab.io/"
+},
+"T0042": {
+"decision": "added",
+"normalized": "https://borenius.com",
+"raw_first_cell": "http://borenius.com"
+},
+"T0043": {
+"decision": "added",
+"normalized": "https://theonemanempire.com",
+"raw_first_cell": "https://theonemanempire.com/"
+},
+"T0044": {
+"decision": "added",
+"normalized": "https://geovm.ch",
+"raw_first_cell": "https://www.geovm.ch/"
+},
+"T0045": {
+"decision": "added",
+"normalized": "https://energypedia-consult.com",
+"raw_first_cell": "https://energypedia-consult.com/"
+},
+"T0046": {
+"decision": "added",
+"normalized": "https://clm.com",
+"raw_first_cell": "http://www.clm.com"
+},
+"T0047": {
+"decision": "added",
+"normalized": "https://prlab.co",
+"raw_first_cell": "https://prlab.co"
+},
+"T0048": {
+"decision": "added",
+"normalized": "https://bbdo.com",
+"raw_first_cell": "http://www.bbdo.com"
+},
+"T0049": {
+"decision": "added",
+"normalized": "https://teknita.com",
+"raw_first_cell": "https://www.teknita.com/"
+},
+"T0050": {
+"decision": "added",
+"normalized": "https://atp.ag",
+"raw_first_cell": "http://www.atp.ag/"
+},
+"T0051": {
+"decision": "added",
+"normalized": "https://bennettjones.com",
+"raw_first_cell": "http://www.bennettjones.com/"
+},
+"T0052": {
+"decision": "added",
+"normalized": "https://team-mm.de",
+"raw_first_cell": "https://www.team-mm.de/"
+},
+"T0053": {
+"decision": "added",
+"normalized": "https://crcstrategies.com",
+"raw_first_cell": "http://www.crcstrategies.com"
+},
+"T0054": {
+"decision": "added",
+"normalized": "https://mongrove.com",
+"raw_first_cell": "https://mongrove.com/"
+},
+"T0055": {
+"decision": "added",
+"normalized": "https://adison.cz",
+"raw_first_cell": "https://www.adison.cz/"
+},
+"T0056": {
+"decision": "added",
+"normalized": "https://bakerdonelson.com",
+"raw_first_cell": "https://www.bakerdonelson.com/"
+},
+"T0057": {
+"decision": "added",
+"normalized": "https://millermartin.com",
+"raw_first_cell": "http://www.millermartin.com"
+},
+"T0058": {
+"decision": "added",
+"normalized": "https://amic.cz",
+"raw_first_cell": "http://www.amic.cz/"
+},
+"T0059": {
+"decision": "added",
+"normalized": "https://stedia.com",
+"raw_first_cell": "http://www.stedia.com"
+},
+"T0060": {
+"decision": "added",
+"normalized": "https://dundas-wilson.com",
+"raw_first_cell": "http://www.dundas-wilson.com"
+},
+"T0061": {
+"decision": "added",
+"normalized": "https://severn.de",
+"raw_first_cell": "https://severn.de/"
+},
+"T0062": {
+"decision": "added",
+"normalized": "https://tazefikir.com",
+"raw_first_cell": "https://tazefikir.com"
+},
+"T0063": {
+"decision": "added",
+"normalized": "https://ogilvy.com",
+"raw_first_cell": "https://www.ogilvy.com/"
+},
+"T0064": {
+"decision": "added",
+"normalized": "https://somaprojectcontrols.com",
+"raw_first_cell": "https://www.somaprojectcontrols.com"
+},
+"T0065": {
+"decision": "added",
+"normalized": "https://kaizen.com",
+"raw_first_cell": "https://kaizen.com/pl/"
+},
+"T0066": {
+"decision": "added",
+"normalized": "https://0711.net",
+"raw_first_cell": "https://www.0711.net/"
+},
+"T0067": {
+"decision": "added",
+"normalized": "https://motherlondon.com",
+"raw_first_cell": "https://motherlondon.com/"
+},
+"T0068": {
+"decision": "added",
+"normalized": "https://novoinnovativepathways.com",
+"raw_first_cell": "https://novoinnovativepathways.com"
+},
+"T0069": {
+"decision": "added",
+"normalized": "https://drewcbrucker.com",
+"raw_first_cell": "https://drewcbrucker.com"
+},
+"T0070": {
+"decision": "added",
+"normalized": "https://interline.io",
+"raw_first_cell": "https://www.interline.io/"
+},
+"T0071": {
+"decision": "added",
+"normalized": "https://jcrooftile.com",
+"raw_first_cell": "https://jcrooftile.com/"
+},
+"T0072": {
+"decision": "added",
+"normalized": "https://valensina.de",
+"raw_first_cell": "http://www.valensina.de"
+},
+"T0073": {
+"decision": "added",
+"normalized": "https://isottafraschini.com",
+"raw_first_cell": "https://isottafraschini.com/"
+},
+"T0074": {
+"decision": "added",
+"normalized": "https://skydiamond.com",
+"raw_first_cell": "https://skydiamond.com/"
+},
+"T0075": {
+"decision": "added",
+"normalized": "https://gtmcars.com",
+"raw_first_cell": "http://www.gtmcars.com"
+},
+"T0076": {
+"decision": "added",
+"normalized": "https://waymo.com",
+"raw_first_cell": "https://waymo.com/"
+},
+"T0077": {
+"decision": "added",
+"normalized": "https://davidsa.com",
+"raw_first_cell": "http://www.davidsa.com/ca"
+},
+"T0078": {
+"decision": "added",
+"normalized": "https://kyosho.com",
+"raw_first_cell": "https://www.kyosho.com/"
+},
+"T0079": {
+"decision": "added",
+"normalized": "https://agrinar.com.ar",
+"raw_first_cell": "http://www.agrinar.com.ar/"
+},
+"T0080": {
+"decision": "added",
+"normalized": "https://globalbiochem.com",
+"raw_first_cell": "http://www.globalbiochem.com"
+},
+"T0081": {
+"decision": "added",
+"normalized": "https://gem.polaris.com",
+"raw_first_cell": "https://gem.polaris.com/en-us/"
+},
+"T0082": {
+"decision": "added",
+"normalized": "https://matthewsaurora.com",
+"raw_first_cell": "https://matthewsaurora.com/"
+},
+"T0083": {
+"decision": "added",
+"normalized": "https://jireh.com",
+"raw_first_cell": "https://www.jireh.com/"
+},
+"T0084": {
+"decision": "added",
+"normalized": "https://mtu-solutions.com",
+"raw_first_cell": "https://www.mtu-solutions.com"
+},
+"T0085": {
+"decision": "added",
+"normalized": "https://dino-cars.de",
+"raw_first_cell": "https://www.dino-cars.de/"
+},
+"T0086": {
+"decision": "added",
+"normalized": "https://seagrave.com",
+"raw_first_cell": "http://www.seagrave.com/"
+},
+"T0087": {
+"decision": "added",
+"normalized": "https://myreeves.com",
+"raw_first_cell": "https://myreeves.com/"
+},
+"T0088": {
+"decision": "added",
+"normalized": "https://modelu3d.co.uk",
+"raw_first_cell": "https://www.modelu3d.co.uk/"
+},
+"T0089": {
+"decision": "added",
+"normalized": "https://nutro.com",
+"raw_first_cell": "https://www.nutro.com/"
+},
+"T0090": {
+"decision": "added",
+"normalized": "https://marlinsportscars.co.uk",
+"raw_first_cell": "http://www.marlinsportscars.co.uk"
+},
+"T0091": {
+"decision": "added",
+"normalized": "https://pedigree.com",
+"raw_first_cell": "https://www.pedigree.com/"
+},
+"T0092": {
+"decision": "added",
+"normalized": "https://marcoscars.com",
+"raw_first_cell": "https://www.marcoscars.com"
+},
+"T0093": {
+"decision": "added",
+"normalized": "https://busplant.bogdan.ua",
+"raw_first_cell": "http://busplant.bogdan.ua"
+},
+"T0094": {
+"decision": "added",
+"normalized": "https://maultrommel.at",
+"raw_first_cell": "https://www.maultrommel.at/"
+},
+"T0095": {
+"decision": "added",
+"normalized": "https://vekoma.com",
+"raw_first_cell": "https://www.vekoma.com/"
+},
+"T0096": {
+"decision": "added",
+"normalized": "https://dahodisplay.com",
+"raw_first_cell": "https://www.dahodisplay.com/"
+},
+"T0097": {
+"decision": "added",
+"normalized": "https://edgewell.com",
+"raw_first_cell": "https://edgewell.com/"
+},
+"T0098": {
+"decision": "added",
+"normalized": "https://conrad-modelle.de",
+"raw_first_cell": "https://conrad-modelle.de/en"
+},
+"T0099": {
+"decision": "added",
+"normalized": "https://rega.co.uk",
+"raw_first_cell": "https://www.rega.co.uk/"
+},
+"T0100": {
+"decision": "added",
+"normalized": "https://goldensteelmil.com",
+"raw_first_cell": "https://goldensteelmil.com"
+},
+"T0101": {
+"decision": "added",
+"normalized": "https://easteggbottle.com",
+"raw_first_cell": "https://easteggbottle.com/"
+},
+"T0102": {
+"decision": "added",
+"normalized": "https://uk.airfix.com",
+"raw_first_cell": "https://uk.airfix.com/"
+},
+"T0103": {
+"decision": "added",
+"normalized": "https://smarties.com",
+"raw_first_cell": "https://www.smarties.com/"
+},
+"T0104": {
+"decision": "added",
+"normalized": "https://global.toyota",
+"raw_first_cell": "https://global.toyota"
+},
+"T0105": {
+"decision": "added",
+"normalized": "https://agsformule1.com",
+"raw_first_cell": "http://www.agsformule1.com/"
+},
+"T0106": {
+"decision": "added",
+"normalized": "https://frauscher.in",
+"raw_first_cell": "https://www.frauscher.in"
+},
+"T0107": {
+"decision": "added",
+"normalized": "https://wilkinsonsword.com",
+"raw_first_cell": "https://www.wilkinsonsword.com/"
+},
+"T0108": {
+"decision": "added",
+"normalized": "https://tazzari-zero.com",
+"raw_first_cell": "http://www.tazzari-zero.com"
+},
+"T0109": {
+"decision": "added",
+"normalized": "https://kohl.de",
+"raw_first_cell": "http://www.kohl.de/"
+},
+"T0110": {
+"decision": "added",
+"normalized": "https://kruitbosch.nl",
+"raw_first_cell": "https://www.kruitbosch.nl/"
+},
+"T0111": {
+"decision": "added",
+"normalized": "https://synapsun.com",
+"raw_first_cell": "https://synapsun.com/en"
+},
+"T0112": {
+"decision": "added",
+"normalized": "https://audi.com",
+"raw_first_cell": "https://www.audi.com"
+},
+"T0113": {
+"decision": "added",
+"normalized": "https://cryorig.com",
+"raw_first_cell": "http://www.cryorig.com/"
+},
+"T0114": {
+"decision": "added",
+"normalized": "https://iscsport.com",
+"raw_first_cell": "https://iscsport.com/home/"
+},
+"T0115": {
+"decision": "added",
+"normalized": "https://bac-mono.com",
+"raw_first_cell": "http://www.bac-mono.com"
+},
+"T0116": {
+"decision": "added",
+"normalized": "https://briomoulds.com",
+"raw_first_cell": "https://www.briomoulds.com/"
+},
+"T0117": {
+"decision": "added",
+"normalized": "https://innovadiscs.com",
+"raw_first_cell": "http://www.innovadiscs.com/"
+},
+"T0118": {
+"decision": "added",
+"normalized": "https://electric-center.co.uk",
+"raw_first_cell": "https://www.electric-center.co.uk/"
+},
+"T0119": {
+"decision": "added",
+"normalized": "https://hottoys.com.hk",
+"raw_first_cell": "http://www.hottoys.com.hk/"
+},
+"T0120": {
+"decision": "added",
+"normalized": "https://hyundai.com",
+"raw_first_cell": "https://www.hyundai.com/"
+},
+"T0121": {
+"decision": "added",
+"normalized": "https://facel.de",
+"raw_first_cell": "http://www.facel.de"
+},
+"T0122": {
+"decision": "added",
+"normalized": "https://lcut.co.uk",
+"raw_first_cell": "http://www.lcut.co.uk"
+},
+"T0123": {
+"decision": "added",
+"normalized": "https://necaonline.com",
+"raw_first_cell": "http://www.necaonline.com"
+},
+"T0124": {
+"decision": "added",
+"normalized": "https://pagani.com",
+"raw_first_cell": "http://www.pagani.com/"
+},
+"T0125": {
+"decision": "added",
+"normalized": "https://4frnt.com",
+"raw_first_cell": "https://4frnt.com/"
+},
+"T0126": {
+"decision": "added",
+"normalized": "https://gledopto.com",
+"raw_first_cell": "https://www.gledopto.com/"
+},
+"T0127": {
+"decision": "added",
+"normalized": "https://ramtel.com",
+"raw_first_cell": "http://ramtel.com/"
+},
+"T0128": {
+"decision": "added",
+"normalized": "https://psyonic.io",
+"raw_first_cell": "https://www.psyonic.io/"
+},
+"T0129": {
+"decision": "added",
+"normalized": "https://globalbronze.com",
+"raw_first_cell": "https://globalbronze.com"
+},
+"T0130": {
+"decision": "added",
+"normalized": "https://globalchangan.com",
+"raw_first_cell": "http://www.globalchangan.com/"
+},
+"T0131": {
+"decision": "added",
+"normalized": "https://kdb.bund.de",
+"raw_first_cell": "https://www.kdb.bund.de/"
+},
+"T0132": {
+"decision": "added",
+"normalized": "https://univermag.kharkov.ua",
+"raw_first_cell": "http://univermag.kharkov.ua"
+},
+"T0133": {
+"decision": "added",
+"normalized": "https://thekirbyonmain.com",
+"raw_first_cell": "https://www.thekirbyonmain.com"
+},
+"T0134": {
+"decision": "added",
+"normalized": "https://rushbowls.com",
+"raw_first_cell": "https://rushbowls.com/"
+},
+"T0135": {
+"decision": "added",
+"normalized": "https://lamichoacanameatmarket.com",
+"raw_first_cell": "https://www.lamichoacanameatmarket.com"
+},
+"T0136": {
+"decision": "added",
+"normalized": "https://bikester.ch",
+"raw_first_cell": "https://www.bikester.ch"
+},
+"T0137": {
+"decision": "added",
+"normalized": "https://market.yandex.ru",
+"raw_first_cell": "https://market.yandex.ru/"
+},
+"T0138": {
+"decision": "added",
+"normalized": "https://tempo.se",
+"raw_first_cell": "https://www.tempo.se"
+},
+"T0139": {
+"decision": "added",
+"normalized": "https://hankyu-dept.co.jp",
+"raw_first_cell": "https://www.hankyu-dept.co.jp/nishinomiya/"
+},
+"T0140": {
+"decision": "added",
+"normalized": "https://anger1erfurt.de",
+"raw_first_cell": "https://www.anger1erfurt.de/"
+},
+"T0141": {
+"decision": "added",
+"normalized": "https://bikester.be",
+"raw_first_cell": "https://www.bikester.be"
+},
+"T0142": {
+"decision": "added",
+"normalized": "https://gekas.com",
+"raw_first_cell": "https://www.gekas.com"
+},
+"T0143": {
+"decision": "added",
+"normalized": "https://foetex.dk",
+"raw_first_cell": "https://www.foetex.dk/"
+},
+"T0144": {
+"decision": "added",
+"normalized": "https://corilon.com",
+"raw_first_cell": "https://www.corilon.com"
+},
+"T0145": {
+"decision": "added",
+"normalized": "https://urbankosice.sk",
+"raw_first_cell": "https://www.urbankosice.sk/"
+},
+"T0146": {
+"decision": "added",
+"normalized": "https://halpahalli.fi",
+"raw_first_cell": "https://www.halpahalli.fi/"
+},
+"T0147": {
+"decision": "added",
+"normalized": "https://maruiimai.mistore.jp",
+"raw_first_cell": "https://www.maruiimai.mistore.jp/hakodate.html"
+},
+"T0148": {
+"decision": "added",
+"normalized": "https://kingkullen.com",
+"raw_first_cell": "http://kingkullen.com/"
+},
+"T0149": {
+"decision": "added",
+"normalized": "https://bikester.nl",
+"raw_first_cell": "https://www.bikester.nl"
+},
+"T0150": {
+"decision": "added",
+"normalized": "https://gerngross.at",
+"raw_first_cell": "http://www.gerngross.at/"
+},
+"T0151": {
+"decision": "added",
+"normalized": "https://website.hankyu-dept.co.jp",
+"raw_first_cell": "https://website.hankyu-dept.co.jp/takatsuki/"
+},
+"T0152": {
+"decision": "added",
+"normalized": "https://sakurano-dept.jp",
+"raw_first_cell": "https://sakurano-dept.jp/"
+},
+"T0153": {
+"decision": "added",
+"normalized": "https://suning.com",
+"raw_first_cell": "https://www.suning.com/"
+},
+"T0154": {
+"decision": "added",
+"normalized": "https://boswells.co.uk",
+"raw_first_cell": "http://www.boswells.co.uk/"
+},
+"T0155": {
+"decision": "added",
+"normalized": "https://mein-gartenshop24.de",
+"raw_first_cell": "https://www.mein-gartenshop24.de/"
+},
+"T0156": {
+"decision": "added",
+"normalized": "https://yourfoodtown.com",
+"raw_first_cell": "http://yourfoodtown.com"
+},
+"T0157": {
+"decision": "added",
+"normalized": "https://morrisons.com",
+"raw_first_cell": "https://www.morrisons.com/"
+},
+"T0158": {
+"decision": "added",
+"normalized": "https://zappos.com",
+"raw_first_cell": "https://www.zappos.com/"
+},
+"T0159": {
+"decision": "added",
+"normalized": "https://meremuuseum.100kingitust.ee",
+"raw_first_cell": "https://meremuuseum.100kingitust.ee"
+},
+"T0160": {
+"decision": "added",
+"normalized": "https://homelandstores.com",
+"raw_first_cell": "https://www.homelandstores.com/"
+},
+"T0161": {
+"decision": "added",
+"normalized": "https://esoworld.co.uk",
+"raw_first_cell": "https://esoworld.co.uk"
+},
+"T0162": {
+"decision": "added",
+"normalized": "https://ritchies.com.au",
+"raw_first_cell": "https://www.ritchies.com.au/"
+},
+"T0163": {
+"decision": "added",
+"normalized": "https://korona.by",
+"raw_first_cell": "http://www.korona.by/"
+},
+"T0164": {
+"decision": "added",
+"normalized": "https://carvanbits.co.uk",
+"raw_first_cell": "https://carvanbits.co.uk/"
+},
+"T0165": {
+"decision": "added",
+"normalized": "https://biedronka.pl",
+"raw_first_cell": "https://www.biedronka.pl/"
+},
+"T0166": {
+"decision": "added",
+"normalized": "https://hanshin-dept.jp",
+"raw_first_cell": "https://www.hanshin-dept.jp/hshonten/"
+},
+"T0167": {
+"decision": "added",
+"normalized": "https://corporate.publix.com",
+"raw_first_cell": "https://corporate.publix.com/"
+},
+"T0168": {
+"decision": "added",
+"normalized": "https://hometest.gr",
+"raw_first_cell": "https://www.hometest.gr"
+},
+"T0169": {
+"decision": "added",
+"normalized": "https://heinens.com",
+"raw_first_cell": "https://www.heinens.com/"
+},
+"T0170": {
+"decision": "added",
+"normalized": "https://coop.hu",
+"raw_first_cell": "https://www.coop.hu/"
+},
+"T0171": {
+"decision": "added",
+"normalized": "https://bikester.at",
+"raw_first_cell": "https://www.bikester.at"
+},
+"T0172": {
+"decision": "added",
+"normalized": "https://edora-park.com",
+"raw_first_cell": "http://www.edora-park.com/"
+},
+"T0173": {
+"decision": "added",
+"normalized": "https://kotvaprague.com",
+"raw_first_cell": "https://www.kotvaprague.com"
+},
+"T0174": {
+"decision": "added",
+"normalized": "https://shoppersfood.com",
+"raw_first_cell": "https://www.shoppersfood.com/"
+},
+"T0175": {
+"decision": "added",
+"normalized": "https://handlarn.se",
+"raw_first_cell": "https://www.handlarn.se"
+},
+"T0176": {
+"decision": "added",
+"normalized": "https://rema.no",
+"raw_first_cell": "https://rema.no"
+},
+"T0177": {
+"decision": "added",
+"normalized": "https://heller-hoeren.de",
+"raw_first_cell": "https://heller-hoeren.de"
+},
+"T0178": {
+"decision": "added",
+"normalized": "https://bunches.co.uk",
+"raw_first_cell": "https://www.bunches.co.uk/"
+},
+"T0179": {
+"decision": "added",
+"normalized": "https://daimaru.co.jp",
+"raw_first_cell": "https://www.daimaru.co.jp/umedamise/"
+},
+"T0180": {
+"decision": "added",
+"normalized": "https://salling.dk",
+"raw_first_cell": "https://salling.dk/"
+},
+"T0181": {
+"decision": "added",
+"normalized": "https://bim.com.tr",
+"raw_first_cell": "https://www.bim.com.tr"
+},
+"T0182": {
+"decision": "added",
+"normalized": "https://aktin.cz",
+"raw_first_cell": "https://aktin.cz/"
+},
+"T0183": {
+"decision": "added",
+"normalized": "https://matstar.bg",
+"raw_first_cell": "https://matstar.bg"
+},
+"T0184": {
+"decision": "added",
+"normalized": "https://say-10.com",
+"raw_first_cell": "https://www.say-10.com"
+},
+"T0185": {
+"decision": "added",
+"normalized": "https://zlatejablko.cz",
+"raw_first_cell": "http://www.zlatejablko.cz"
+},
+"T0186": {
+"decision": "added",
+"normalized": "https://cba.hu",
+"raw_first_cell": "https://www.cba.hu"
+},
+"T0187": {
+"decision": "added",
+"normalized": "https://justiz-auktion.de",
+"raw_first_cell": "https://www.justiz-auktion.de/"
+},
+"T0188": {
+"decision": "added",
+"normalized": "https://vanderveen.nl",
+"raw_first_cell": "https://www.vanderveen.nl/"
+},
+"T0189": {
+"decision": "added",
+"normalized": "https://savealot.com",
+"raw_first_cell": "https://savealot.com/"
+},
+"T0190": {
+"decision": "added",
+"normalized": "https://metro.ca",
+"raw_first_cell": "https://www.metro.ca/en"
+},
+"T0191": {
+"decision": "added",
+"normalized": "https://ansvar.eu",
+"raw_first_cell": "https://ansvar.eu"
+},
+"T0192": {
+"decision": "added",
+"normalized": "https://about.google",
+"raw_first_cell": "https://about.google/"
+},
+"T0193": {
+"decision": "added",
+"normalized": "https://concept3d.com",
+"raw_first_cell": "https://concept3d.com/"
+},
+"T0194": {
+"decision": "added",
+"normalized": "https://intrix.si",
+"raw_first_cell": "https://www.intrix.si/o-nas"
+},
+"T0195": {
+"decision": "added",
+"normalized": "https://bomchan.asia",
+"raw_first_cell": "https://bomchan.asia"
+},
+"T0196": {
+"decision": "added",
+"normalized": "https://synchronica.com",
+"raw_first_cell": "http://www.synchronica.com/"
+},
+"T0197": {
+"decision": "added",
+"normalized": "https://enagain.com",
+"raw_first_cell": "https://www.enagain.com/"
+},
+"T0198": {
+"decision": "added",
+"normalized": "https://chironglobal.tech",
+"raw_first_cell": "https://chironglobal.tech/"
+},
+"T0199": {
+"decision": "added",
+"normalized": "https://geomerics.com",
+"raw_first_cell": "http://www.geomerics.com/"
+},
+"T0200": {
+"decision": "added",
+"normalized": "https://yourdolphin.com",
+"raw_first_cell": "https://yourdolphin.com"
+},
+"T0201": {
+"decision": "added",
+"normalized": "https://firstquadrant.ai",
+"raw_first_cell": "https://firstquadrant.ai"
+},
+"T0202": {
+"decision": "added",
+"normalized": "https://polotab.com",
+"raw_first_cell": "https://www.polotab.com/"
+},
+"T0203": {
+"decision": "added",
+"normalized": "https://pkware.com",
+"raw_first_cell": "https://www.pkware.com/"
+},
+"T0204": {
+"decision": "added",
+"normalized": "https://calavion.com",
+"raw_first_cell": "https://calavion.com"
+},
+"T0205": {
+"decision": "added",
+"normalized": "https://bromcom.com",
+"raw_first_cell": "http://www.bromcom.com/"
+},
+"T0206": {
+"decision": "added",
+"normalized": "https://webtechnologygroup.co.uk",
+"raw_first_cell": "http://www.webtechnologygroup.co.uk/"
+},
+"T0207": {
+"decision": "added",
+"normalized": "https://lightworkdesign.com",
+"raw_first_cell": "http://www.lightworkdesign.com/"
+},
+"T0208": {
+"decision": "added",
+"normalized": "https://robonobo.fr",
+"raw_first_cell": "https://robonobo.fr"
+},
+"T0209": {
+"decision": "added",
+"normalized": "https://vaisala.com",
+"raw_first_cell": "https://www.vaisala.com/"
+},
+"T0210": {
+"decision": "added",
+"normalized": "https://unigroup.com.cn",
+"raw_first_cell": "https://www.unigroup.com.cn/"
+},
+"T0211": {
+"decision": "added",
+"normalized": "https://liquium.nz",
+"raw_first_cell": "https://www.liquium.nz"
+},
+"T0212": {
+"decision": "added",
+"normalized": "https://gluster.org",
+"raw_first_cell": "https://www.gluster.org/"
+},
+"T0213": {
+"decision": "added",
+"normalized": "https://pinja.com",
+"raw_first_cell": "https://pinja.com/"
+},
+"T0214": {
+"decision": "added",
+"normalized": "https://mercury.com",
+"raw_first_cell": "https://mercury.com/"
+},
+"T0215": {
+"decision": "added",
+"normalized": "https://afrodigital.dev",
+"raw_first_cell": "https://afrodigital.dev/"
+},
+"T0216": {
+"decision": "added",
+"normalized": "https://keywordkoenig.org",
+"raw_first_cell": "https://keywordkoenig.org/"
+},
+"T0217": {
+"decision": "added",
+"normalized": "https://vialoop.in",
+"raw_first_cell": "https://vialoop.in"
+},
+"T0218": {
+"decision": "added",
+"normalized": "https://rock-chips.com",
+"raw_first_cell": "http://www.rock-chips.com/"
+},
+"T0219": {
+"decision": "added",
+"normalized": "https://mambu.com",
+"raw_first_cell": "https://www.mambu.com"
+},
+"T0220": {
+"decision": "added",
+"normalized": "https://red-gate.com",
+"raw_first_cell": "https://www.red-gate.com/"
+},
+"T0221": {
+"decision": "added",
+"normalized": "https://alloq.digital",
+"raw_first_cell": "https://alloq.digital"
+},
+"T0222": {
+"decision": "added",
+"normalized": "https://apple.com",
+"raw_first_cell": "https://apple.com/"
+},
+"T0223": {
+"decision": "added",
+"normalized": "https://norbsoft.com",
+"raw_first_cell": "http://www.norbsoft.com/"
+},
+"T0224": {
+"decision": "added",
+"normalized": "https://onxmaps.com",
+"raw_first_cell": "https://www.onxmaps.com/"
+},
+"T0225": {
+"decision": "added",
+"normalized": "https://springshare.com",
+"raw_first_cell": "https://www.springshare.com"
+},
+"T0226": {
+"decision": "added",
+"normalized": "https://spielwende.de",
+"raw_first_cell": "https://spielwende.de/"
+},
+"T0227": {
+"decision": "added",
+"normalized": "https://appfleet.com",
+"raw_first_cell": "https://appfleet.com/"
+},
+"T0228": {
+"decision": "added",
+"normalized": "https://studiotrophis.com",
+"raw_first_cell": "http://www.studiotrophis.com/"
+},
+"T0229": {
+"decision": "added",
+"normalized": "https://geovation.uk",
+"raw_first_cell": "https://geovation.uk"
+},
+"T0230": {
+"decision": "added",
+"normalized": "https://engendertechnologies.com",
+"raw_first_cell": "https://engendertechnologies.com/"
+},
+"T0231": {
+"decision": "added",
+"normalized": "https://thegamecreators.com",
+"raw_first_cell": "http://www.thegamecreators.com"
+},
+"T0232": {
+"decision": "added",
+"normalized": "https://snaplogic.com",
+"raw_first_cell": "http://www.snaplogic.com"
+},
+"T0233": {
+"decision": "added",
+"normalized": "https://ldra.com",
+"raw_first_cell": "http://www.ldra.com"
+},
+"T0234": {
+"decision": "added",
+"normalized": "https://eci.com",
+"raw_first_cell": "https://www.eci.com"
+},
+"T0235": {
+"decision": "added",
+"normalized": "https://jolt.co.il",
+"raw_first_cell": "https://www.jolt.co.il/"
+},
+"T0236": {
+"decision": "added",
+"normalized": "https://culture.tech",
+"raw_first_cell": "https://www.culture.tech"
+},
+"T0237": {
+"decision": "added",
+"normalized": "https://lumari.ai",
+"raw_first_cell": "https://lumari.ai"
+},
+"T0238": {
+"decision": "added",
+"normalized": "https://q42.com",
+"raw_first_cell": "https://www.q42.com/"
+},
+"T0239": {
+"decision": "added",
+"normalized": "https://columbusglobal.com",
+"raw_first_cell": "http://columbusglobal.com"
+},
+"T0240": {
+"decision": "added",
+"normalized": "https://crelate.com",
+"raw_first_cell": "https://www.crelate.com"
+},
+"T0241": {
+"decision": "added",
+"normalized": "https://4mdg.com.br",
+"raw_first_cell": "https://4mdg.com.br"
+},
+"T0242": {
+"decision": "added",
+"normalized": "https://naanatech.com",
+"raw_first_cell": "https://www.naanatech.com/"
+},
+"T0243": {
+"decision": "added",
+"normalized": "https://broadbean.com",
+"raw_first_cell": "http://www.broadbean.com"
+},
+"T0244": {
+"decision": "added",
+"normalized": "https://ams.com",
+"raw_first_cell": "https://ams.com/"
+},
+"T0245": {
+"decision": "added",
+"normalized": "https://explus.com.tw",
+"raw_first_cell": "http://www.explus.com.tw"
+},
+"T0246": {
+"decision": "added",
+"normalized": "https://world.casio.com",
+"raw_first_cell": "http://world.casio.com/"
+},
+"T0247": {
+"decision": "added",
+"normalized": "https://usefluency.com",
+"raw_first_cell": "https://usefluency.com"
+},
+"T0248": {
+"decision": "added",
+"normalized": "https://scaidata.com",
+"raw_first_cell": "https://scaidata.com"
+},
+"T0249": {
+"decision": "added",
+"normalized": "https://ribbet.com",
+"raw_first_cell": "https://ribbet.com"
+},
+"T0250": {
+"decision": "added",
+"normalized": "https://tkawen.com",
+"raw_first_cell": "https://tkawen.com"
+},
+"T0251": {
+"decision": "added",
+"normalized": "https://krankenhaus-lindenbrunn.de",
+"raw_first_cell": "https://www.krankenhaus-lindenbrunn.de/"
+},
+"T0252": {
+"decision": "added",
+"normalized": "https://freedomclinicutah.com",
+"raw_first_cell": "https://freedomclinicutah.com/"
+},
+"T0253": {
+"decision": "added",
+"normalized": "https://khgh.at",
+"raw_first_cell": "https://www.khgh.at/"
+},
+"T0254": {
+"decision": "added",
+"normalized": "https://klinikum-fuerth.de",
+"raw_first_cell": "https://www.klinikum-fuerth.de/index.php"
+},
+"T0255": {
+"decision": "added",
+"normalized": "https://heinrich-braun-klinikum.de",
+"raw_first_cell": "https://www.heinrich-braun-klinikum.de/zwickau.php"
+},
+"T0256": {
+"decision": "added",
+"normalized": "https://uk-erlangen.de",
+"raw_first_cell": "http://www.uk-erlangen.de/en/"
+},
+"T0257": {
+"decision": "added",
+"normalized": "https://gesundheit-nordhessen.de",
+"raw_first_cell": "http://www.gesundheit-nordhessen.de/index.php?parent=1786"
+},
+"T0258": {
+"decision": "added",
+"normalized": "https://healthscreen.com.au",
+"raw_first_cell": "https://healthscreen.com.au/"
+},
+"T0259": {
+"decision": "added",
+"normalized": "https://klinikum-ingolstadt.de",
+"raw_first_cell": "https://klinikum-ingolstadt.de/"
+},
+"T0260": {
+"decision": "added",
+"normalized": "https://bonboz.vn",
+"raw_first_cell": "https://www.bonboz.vn"
+},
+"T0261": {
+"decision": "added",
+"normalized": "https://joslin.org",
+"raw_first_cell": "http://www.joslin.org/"
+},
+"T0262": {
+"decision": "added",
+"normalized": "https://grupporefrattivoitaliano.it",
+"raw_first_cell": "https://www.grupporefrattivoitaliano.it/"
+},
+"T0263": {
+"decision": "added",
+"normalized": "https://liusmed.com",
+"raw_first_cell": "https://www.liusmed.com/"
+},
+"T0264": {
+"decision": "added",
+"normalized": "https://cupid.or.jp",
+"raw_first_cell": "https://www.cupid.or.jp/clinic/"
+},
+"T0265": {
+"decision": "added",
+"normalized": "https://hochgebirgsklinik.ch",
+"raw_first_cell": "http://www.hochgebirgsklinik.ch/"
+},
+"T0266": {
+"decision": "added",
+"normalized": "https://city.minamisoma.lg.jp",
+"raw_first_cell": "https://www.city.minamisoma.lg.jp/portal/health/hospitals/odakashinryojo/"
+},
+"T0267": {
+"decision": "added",
+"normalized": "https://freudgymnasium.at",
+"raw_first_cell": "http://www.freudgymnasium.at"
+},
+"T0268": {
+"decision": "added",
+"normalized": "https://bit.edu.cn",
+"raw_first_cell": "http://www.bit.edu.cn/"
+},
+"T0269": {
+"decision": "added",
+"normalized": "https://sgu.ac.id",
+"raw_first_cell": "https://www.sgu.ac.id"
+},
+"T0270": {
+"decision": "added",
+"normalized": "https://unist.hr",
+"raw_first_cell": "https://www.unist.hr/"
+},
+"T0271": {
+"decision": "added",
+"normalized": "https://fachakademie-diako.de",
+"raw_first_cell": "https://fachakademie-diako.de/"
+},
+"T0272": {
+"decision": "added",
+"normalized": "https://gutenberg-schule-reutlingen.de",
+"raw_first_cell": "http://www.gutenberg-schule-reutlingen.de/"
+},
+"T0273": {
+"decision": "added",
+"normalized": "https://emil-molt-schule.de",
+"raw_first_cell": "http://www.emil-molt-schule.de"
+},
+"T0274": {
+"decision": "added",
+"normalized": "https://einhardschule.de",
+"raw_first_cell": "https://www.einhardschule.de/"
+},
+"T0275": {
+"decision": "added",
+"normalized": "https://college.nms.ac.jp",
+"raw_first_cell": "http://college.nms.ac.jp/"
+},
+"T0276": {
+"decision": "added",
+"normalized": "https://eszm.de",
+"raw_first_cell": "https://www.eszm.de/"
+},
+"T0277": {
+"decision": "added",
+"normalized": "https://chmnu.edu.ua",
+"raw_first_cell": "https://chmnu.edu.ua/"
+},
+"T0278": {
+"decision": "added",
+"normalized": "https://misuratau.edu.ly",
+"raw_first_cell": "http://www.misuratau.edu.ly/"
+},
+"T0279": {
+"decision": "added",
+"normalized": "https://freie-schule-untertaunus.de",
+"raw_first_cell": "http://www.freie-schule-untertaunus.de/"
+},
+"T0280": {
+"decision": "added",
+"normalized": "https://mtu.edu",
+"raw_first_cell": "https://www.mtu.edu/"
+},
+"T0281": {
+"decision": "added",
+"normalized": "https://www2.lehigh.edu",
+"raw_first_cell": "https://www2.lehigh.edu/"
+},
+"T0282": {
+"decision": "added",
+"normalized": "https://aegean.edu",
+"raw_first_cell": "https://www.aegean.edu/"
+},
+"T0283": {
+"decision": "added",
+"normalized": "https://bancopatagonia.com.ar",
+"raw_first_cell": "https://www.bancopatagonia.com.ar"
+},
+"T0284": {
+"decision": "added",
+"normalized": "https://belfius.be",
+"raw_first_cell": "https://www.belfius.be"
+},
+"T0285": {
+"decision": "added",
+"normalized": "https://amv.de",
+"raw_first_cell": "http://www.amv.de"
+},
+"T0286": {
+"decision": "added",
+"normalized": "https://axa.com",
+"raw_first_cell": "https://www.axa.com/"
+},
+"T0287": {
+"decision": "added",
+"normalized": "https://nedbank.co.zw",
+"raw_first_cell": "https://www.nedbank.co.zw/"
+},
+"T0288": {
+"decision": "added",
+"normalized": "https://qbe.com",
+"raw_first_cell": "http://www.qbe.com/"
+},
+"T0289": {
+"decision": "added",
+"normalized": "https://zav-sava.si",
+"raw_first_cell": "https://www.zav-sava.si/"
+},
+"T0290": {
+"decision": "added",
+"normalized": "https://agribank.com.vn",
+"raw_first_cell": "https://www.agribank.com.vn/"
+},
+"T0291": {
+"decision": "added",
+"normalized": "https://utmost.ie",
+"raw_first_cell": "https://www.utmost.ie/"
+},
+"T0292": {
+"decision": "added",
+"normalized": "https://misrins.com.eg",
+"raw_first_cell": "https://misrins.com.eg/"
+},
+"T0293": {
+"decision": "added",
+"normalized": "https://gob.mx",
+"raw_first_cell": "https://www.gob.mx/banobras"
+},
+"T0294": {
+"decision": "added",
+"normalized": "https://atb.tn",
+"raw_first_cell": "https://www.atb.tn/"
+},
+"T0295": {
+"decision": "added",
+"normalized": "https://la-bressane.fr",
+"raw_first_cell": "http://la-bressane.fr"
+},
+"T0296": {
+"decision": "added",
+"normalized": "https://ally.com",
+"raw_first_cell": "https://www.ally.com/"
+},
+"T0297": {
+"decision": "added",
+"normalized": "https://charterhouse.org.uk",
+"raw_first_cell": "http://www.charterhouse.org.uk/"
+},
+"T0298": {
+"decision": "added",
+"normalized": "https://wmc.org.uk",
+"raw_first_cell": "http://www.wmc.org.uk/"
+},
+"T0299": {
+"decision": "added",
+"normalized": "https://ica.coop",
+"raw_first_cell": "https://www.ica.coop/en"
+},
+"T0300": {
+"decision": "added",
+"normalized": "https://eurogroupforanimals.org",
+"raw_first_cell": "https://www.eurogroupforanimals.org"
+},
+"T0301": {
+"decision": "added",
+"normalized": "https://eaaf.org",
+"raw_first_cell": "https://eaaf.org/"
+},
+"T0302": {
+"decision": "added",
+"normalized": "https://biblesociety.org.uk",
+"raw_first_cell": "https://www.biblesociety.org.uk/"
+},
+"T0303": {
+"decision": "added",
+"normalized": "https://umoncton.ca",
+"raw_first_cell": "http://www.umoncton.ca/"
+},
+"T0304": {
+"decision": "added",
+"normalized": "https://sevenoaksschool.org",
+"raw_first_cell": "https://www.sevenoaksschool.org/"
+},
+"T0305": {
+"decision": "added",
+"normalized": "https://amref.org",
+"raw_first_cell": "http://www.amref.org"
+},
+"T0306": {
+"decision": "added",
+"normalized": "https://agoradanse.com",
+"raw_first_cell": "http://www.agoradanse.com/"
+},
+"T0307": {
+"decision": "added",
+"normalized": "https://uqat.ca",
+"raw_first_cell": "http://www.uqat.ca"
+},
+"T0308": {
+"decision": "added",
+"normalized": "https://wti.org.in",
+"raw_first_cell": "https://www.wti.org.in"
+},
+"T0309": {
+"decision": "added",
+"normalized": "https://investorsinpeople.com",
+"raw_first_cell": "https://www.investorsinpeople.com/"
+},
+"T0310": {
+"decision": "added",
+"normalized": "https://bnl.public.lu",
+"raw_first_cell": "http://bnl.public.lu"
+},
+"T0311": {
+"decision": "added",
+"normalized": "https://maspero.eg",
+"raw_first_cell": "https://www.maspero.eg/"
+},
+"T0312": {
+"decision": "added",
+"normalized": "https://justice.govt.nz",
+"raw_first_cell": "http://www.justice.govt.nz/tribunals/waitangi-tribunal"
+},
+"T0313": {
+"decision": "added",
+"normalized": "https://entwicklung.at",
+"raw_first_cell": "https://www.entwicklung.at/"
+},
+"T0314": {
+"decision": "added",
+"normalized": "https://ibuk5do.go.kr",
+"raw_first_cell": "http://www.ibuk5do.go.kr/"
+},
+"T0315": {
+"decision": "added",
+"normalized": "https://ign.gob.ar",
+"raw_first_cell": "https://www.ign.gob.ar/"
+},
+"T0316": {
+"decision": "added",
+"normalized": "https://81.cn",
+"raw_first_cell": "http://www.81.cn/jw_208551/index.html"
+},
+"T0317": {
+"decision": "added",
+"normalized": "https://cartermuseum.org",
+"raw_first_cell": "https://www.cartermuseum.org/"
+},
+"T0318": {
+"decision": "added",
+"normalized": "https://hdg.de",
+"raw_first_cell": "https://www.hdg.de/traenenpalast"
+},
+"T0319": {
+"decision": "added",
+"normalized": "https://beauxartsparis.fr",
+"raw_first_cell": "https://www.beauxartsparis.fr"
+},
+"T0320": {
+"decision": "added",
+"normalized": "https://buddenbrookhaus.de",
+"raw_first_cell": "http://www.buddenbrookhaus.de/"
+},
+"T0321": {
+"decision": "added",
+"normalized": "https://stift-stlambrecht.at",
+"raw_first_cell": "http://www.stift-stlambrecht.at/"
+},
+"T0322": {
+"decision": "added",
+"normalized": "https://museu-caramulo.net",
+"raw_first_cell": "http://www.museu-caramulo.net"
+},
+"T0323": {
+"decision": "added",
+"normalized": "https://eckener-gymnasium.de",
+"raw_first_cell": "http://www.eckener-gymnasium.de/"
+},
+"T0324": {
+"decision": "added",
+"normalized": "https://cumbria.gov.uk",
+"raw_first_cell": "https://www.cumbria.gov.uk/libraries/locations/bar_lib.asp"
+},
+"T0325": {
+"decision": "added",
+"normalized": "https://bpa.ad",
+"raw_first_cell": "https://www.bpa.ad/"
+},
+"T0326": {
+"decision": "added",
+"normalized": "https://centralpubliclibrarydhaka.org",
+"raw_first_cell": "http://www.centralpubliclibrarydhaka.org/"
+},
+"T0327": {
+"decision": "added",
+"normalized": "https://eks-bochum.org",
+"raw_first_cell": "http://www.eks-bochum.org/"
+},
+"T0328": {
+"decision": "added",
+"normalized": "https://kpi.ua",
+"raw_first_cell": "https://kpi.ua/"
+},
+"T0329": {
+"decision": "added",
+"normalized": "https://atmorepubliclibrary.com",
+"raw_first_cell": "https://www.atmorepubliclibrary.com/"
+},
+"T0330": {
+"decision": "added",
+"normalized": "https://musicacademy.edu.az",
+"raw_first_cell": "http://musicacademy.edu.az/"
+},
+"T0331": {
+"decision": "added",
+"normalized": "https://appareladvisors.com",
+"raw_first_cell": "https://www.appareladvisors.com"
+},
+"T0332": {
+"decision": "added",
+"normalized": "https://andataritornolab.ch",
+"raw_first_cell": "http://www.andataritornolab.ch"
+},
+"T0333": {
+"decision": "added",
+"normalized": "https://aiany.org",
+"raw_first_cell": "http://www.aiany.org"
+},
+"T0334": {
+"decision": "added",
+"normalized": "https://edufold.com",
+"raw_first_cell": "https://edufold.com"
+},
+"T0335": {
+"decision": "added",
+"normalized": "https://anomaly.com",
+"raw_first_cell": "http://anomaly.com/"
+},
+"T0336": {
+"decision": "added",
+"normalized": "https://theagencyeast.co",
+"raw_first_cell": "https://www.theagencyeast.co"
+},
+"T0337": {
+"decision": "added",
+"normalized": "https://schillingspartners.com",
+"raw_first_cell": "http://www.schillingspartners.com/"
+},
+"T0338": {
+"decision": "added",
+"normalized": "https://baeckerei-horsthemke.de",
+"raw_first_cell": "https://www.baeckerei-horsthemke.de/"
+},
+"T0339": {
+"decision": "added",
+"normalized": "https://visitrauhalahti.fi",
+"raw_first_cell": "https://visitrauhalahti.fi/"
+},
+"T0340": {
+"decision": "added",
+"normalized": "https://anthropic.com",
+"raw_first_cell": "https://www.anthropic.com/"
+},
+"T0341": {
+"decision": "added",
+"normalized": "https://finokapi.com",
+"raw_first_cell": "https://www.finokapi.com"
+},
+"T0342": {
+"decision": "added",
+"normalized": "https://chateau-figeac.com",
+"raw_first_cell": "http://www.chateau-figeac.com"
+},
+"T0343": {
+"decision": "added",
+"normalized": "https://hyperice.com",
+"raw_first_cell": "http://hyperice.com/"
+},
+"T0344": {
+"decision": "added",
+"normalized": "https://bolliger-mabillard.com",
+"raw_first_cell": "https://www.bolliger-mabillard.com"
+},
+"T0345": {
+"decision": "added",
+"normalized": "https://cruzcampo.es",
+"raw_first_cell": "http://www.cruzcampo.es"
+},
+"T0346": {
+"decision": "added",
+"normalized": "https://uplands.ca",
+"raw_first_cell": "https://www.uplands.ca/"
+},
+"T0347": {
+"decision": "added",
+"normalized": "https://mein1907.de",
+"raw_first_cell": "https://www.mein1907.de/"
+},
+"T0348": {
+"decision": "added",
+"normalized": "https://centrea.org",
+"raw_first_cell": "https://centrea.org/"
+},
+"T0349": {
+"decision": "added",
+"normalized": "https://fellworthhouse.co.nz",
+"raw_first_cell": "http://fellworthhouse.co.nz"
+},
+"T0350": {
+"decision": "added",
+"normalized": "https://kulmbacher-moenchshof.de",
+"raw_first_cell": "https://kulmbacher-moenchshof.de/bayerisches-brauereimuseum-kulmbach/"
+},
+"T0351": {
+"decision": "added",
+"normalized": "https://wurzerhof.at",
+"raw_first_cell": "https://wurzerhof.at/"
+},
+"T0352": {
+"decision": "added",
+"normalized": "https://dauercamping-wernsdorf.de",
+"raw_first_cell": "https://www.dauercamping-wernsdorf.de"
+},
+"T0353": {
+"decision": "added",
+"normalized": "https://ternary.energy",
+"raw_first_cell": "https://www.ternary.energy/"
+},
+"T0354": {
+"decision": "added",
+"normalized": "https://thedeerbornegroup.com",
+"raw_first_cell": "https://thedeerbornegroup.com/"
+},
+"T0355": {
+"decision": "added",
+"normalized": "https://dutchmaid.net",
+"raw_first_cell": "https://www.dutchmaid.net/"
+},
+"T0356": {
+"decision": "added",
+"normalized": "https://dreher.it",
+"raw_first_cell": "http://dreher.it/"
+},
+"T0357": {
+"decision": "added",
+"normalized": "https://research.ibm.com",
+"raw_first_cell": "http://www.research.ibm.com/labs/tokyo/"
+},
+"T0358": {
+"decision": "added",
+"normalized": "https://montelena.com",
+"raw_first_cell": "http://www.montelena.com/"
+},
+"T0359": {
+"decision": "added",
+"normalized": "https://intouchgroup.net",
+"raw_first_cell": "https://www.intouchgroup.net/"
+},
+"T0360": {
+"decision": "added",
+"normalized": "https://nomad8.com",
+"raw_first_cell": "https://nomad8.com/"
+},
+"T0361": {
+"decision": "added",
+"normalized": "https://alstermobruk.com",
+"raw_first_cell": "http://www.alstermobruk.com"
+},
+"T0362": {
+"decision": "added",
+"normalized": "https://cair.gr",
+"raw_first_cell": "http://cair.gr/"
+},
+"T0363": {
+"decision": "added",
+"normalized": "https://hi-aspect.com",
+"raw_first_cell": "https://www.hi-aspect.com/"
+},
+"T0364": {
+"decision": "added",
+"normalized": "https://koperenknop.nl",
+"raw_first_cell": "http://www.koperenknop.nl"
+},
+"T0365": {
+"decision": "added",
+"normalized": "https://aucoin.nl",
+"raw_first_cell": "https://www.aucoin.nl"
+},
+"T0366": {
+"decision": "added",
+"normalized": "https://parkwestgallery.com",
+"raw_first_cell": "http://www.parkwestgallery.com/"
+},
+"T0367": {
+"decision": "added",
+"normalized": "https://benjaminfpackardhouse.com",
+"raw_first_cell": "https://benjaminfpackardhouse.com/"
+},
+"T0368": {
+"decision": "added",
+"normalized": "https://wdp.dk",
+"raw_first_cell": "http://www.wdp.dk"
+},
+"T0369": {
+"decision": "added",
+"normalized": "https://kantiv.com",
+"raw_first_cell": "https://www.kantiv.com/"
+},
+"T0370": {
+"decision": "added",
+"normalized": "https://zumwolffenturm.de",
+"raw_first_cell": "http://www.zumwolffenturm.de/"
+},
+"T0371": {
+"decision": "added",
+"normalized": "https://guenther-braeu.de",
+"raw_first_cell": "http://www.guenther-braeu.de"
+},
+"T0372": {
+"decision": "added",
+"normalized": "https://astra.com",
+"raw_first_cell": "http://astra.com/"
+},
+"T0373": {
+"decision": "added",
+"normalized": "https://htk.co.uk",
+"raw_first_cell": "https://www.htk.co.uk/"
+},
+"T0374": {
+"decision": "added",
+"normalized": "https://dapol.co.uk",
+"raw_first_cell": "http://www.dapol.co.uk"
+},
+"T0375": {
+"decision": "added",
+"normalized": "https://georg-mueller-stiftung.de",
+"raw_first_cell": "https://georg-mueller-stiftung.de/"
+},
+"T0376": {
+"decision": "added",
+"normalized": "https://marinetaxonomicservices.com",
+"raw_first_cell": "https://marinetaxonomicservices.com/"
+},
+"T0377": {
+"decision": "added",
+"normalized": "https://moelle-sued-camp.de",
+"raw_first_cell": "https://moelle-sued-camp.de/"
+},
+"T0378": {
+"decision": "added",
+"normalized": "https://vergelegen.co.za",
+"raw_first_cell": "http://www.vergelegen.co.za"
+},
+"T0379": {
+"decision": "added",
+"normalized": "https://moravska-galerie.cz",
+"raw_first_cell": "https://moravska-galerie.cz/"
+},
+"T0380": {
+"decision": "added",
+"normalized": "https://luminomadx.com",
+"raw_first_cell": "https://www.luminomadx.com/"
+},
+"T0381": {
+"decision": "added",
+"normalized": "https://linksbridge.com",
+"raw_first_cell": "https://linksbridge.com/"
+},
+"T0382": {
+"decision": "added",
+"normalized": "https://mobileculinaire.com",
+"raw_first_cell": "https://www.mobileculinaire.com"
+},
+"T0383": {
+"decision": "added",
+"normalized": "https://scheiwein.com",
+"raw_first_cell": "https://www.scheiwein.com/"
+},
+"T0384": {
+"decision": "added",
+"normalized": "https://rasa.com",
+"raw_first_cell": "https://rasa.com"
+},
+"T0385": {
+"decision": "added",
+"normalized": "https://cmvp.ca",
+"raw_first_cell": "https://www.cmvp.ca/"
+},
+"T0386": {
+"decision": "added",
+"normalized": "https://byjasco.com",
+"raw_first_cell": "https://byjasco.com/"
+},
+"T0387": {
+"decision": "added",
+"normalized": "https://guardianangeldevices.com",
+"raw_first_cell": "https://www.guardianangeldevices.com/"
+},
+"T0388": {
+"decision": "added",
+"normalized": "https://campingplatz-werbellinsee.de",
+"raw_first_cell": "https://www.campingplatz-werbellinsee.de/"
+},
+"T0389": {
+"decision": "added",
+"normalized": "https://copenhageneconomics.com",
+"raw_first_cell": "https://copenhageneconomics.com/"
+},
+"T0390": {
+"decision": "added",
+"normalized": "https://lmi.org",
+"raw_first_cell": "http://www.lmi.org"
+},
+"T0391": {
+"decision": "added",
+"normalized": "https://r-biopharm.com",
+"raw_first_cell": "http://www.r-biopharm.com"
+},
+"T0392": {
+"decision": "added",
+"normalized": "https://solvay.com",
+"raw_first_cell": "https://www.solvay.com/en"
+},
+"T0393": {
+"decision": "added",
+"normalized": "https://americas.kyocera.com",
+"raw_first_cell": "https://americas.kyocera.com/"
+},
+"T0394": {
+"decision": "added",
+"normalized": "https://agence.engie-homeservices.fr",
+"raw_first_cell": "https://agence.engie-homeservices.fr/"
+},
+"T0395": {
+"decision": "added",
+"normalized": "https://loreal.com",
+"raw_first_cell": "http://www.loreal.com"
+},
+"T0396": {
+"decision": "added",
+"normalized": "https://sucaco.com",
+"raw_first_cell": "https://www.sucaco.com/"
+},
+"T0397": {
+"decision": "added",
+"normalized": "https://eu.puma.com",
+"raw_first_cell": "https://eu.puma.com/de/en/home"
+},
+"T0398": {
+"decision": "added",
+"normalized": "https://nepalcangroup.com",
+"raw_first_cell": "https://www.nepalcangroup.com"
+},
+"T0399": {
+"decision": "added",
+"normalized": "https://dsiwm.com",
+"raw_first_cell": "https://www.dsiwm.com"
+},
+"T0400": {
+"decision": "added",
+"normalized": "https://arteche.com",
+"raw_first_cell": "http://www.arteche.com/en"
+},
+"T0401": {
+"decision": "added",
+"normalized": "https://lexingtonpartners.com",
+"raw_first_cell": "http://www.lexingtonpartners.com/"
+},
+"T0402": {
+"decision": "added",
+"normalized": "https://tetralaval.com",
+"raw_first_cell": "http://www.tetralaval.com"
+},
+"T0403": {
+"decision": "added",
+"normalized": "https://keringeyewear.com",
+"raw_first_cell": "https://www.keringeyewear.com"
+},
+"T0404": {
+"decision": "added",
+"normalized": "https://global.kyocera.com",
+"raw_first_cell": "https://global.kyocera.com/"
+},
+"T0405": {
+"decision": "added",
+"normalized": "https://flexiplan.eulen.com",
+"raw_first_cell": "https://flexiplan.eulen.com/"
+},
+"T0406": {
+"decision": "added",
+"normalized": "https://novartis.com",
+"raw_first_cell": "http://www.novartis.com/"
+},
+"T0407": {
+"decision": "added",
+"normalized": "https://manusa.com",
+"raw_first_cell": "https://www.manusa.com/"
+},
+"T0408": {
+"decision": "added",
+"normalized": "https://corporate.exxonmobil.com",
+"raw_first_cell": "https://corporate.exxonmobil.com/"
+},
+"T0409": {
+"decision": "added",
+"normalized": "https://enel.com",
+"raw_first_cell": "https://www.enel.com/"
+},
+"T0410": {
+"decision": "added",
+"normalized": "https://corporate.visa.com",
+"raw_first_cell": "https://corporate.visa.com/"
+},
+"T0411": {
+"decision": "added",
+"normalized": "https://motorola.it",
+"raw_first_cell": "http://www.motorola.it/home"
+},
+"T0412": {
+"decision": "added",
+"normalized": "https://nikon.com",
+"raw_first_cell": "https://www.nikon.com/"
+},
+"T0413": {
+"decision": "added",
+"normalized": "https://generalmills.com",
+"raw_first_cell": "http://www.generalmills.com"
+},
+"T0414": {
+"decision": "added",
+"normalized": "https://goodyear.com",
+"raw_first_cell": "https://www.goodyear.com/"
+},
+"T0415": {
+"decision": "added",
+"normalized": "https://conaprole.com.uy",
+"raw_first_cell": "http://www.conaprole.com.uy"
+},
+"T0416": {
+"decision": "added",
+"normalized": "https://altria.com",
+"raw_first_cell": "http://www.altria.com"
+},
+"T0417": {
+"decision": "added",
+"normalized": "https://sonyinteractive.com",
+"raw_first_cell": "https://sonyinteractive.com/"
+},
+"T0418": {
+"decision": "added",
+"normalized": "https://jp.nikon.com",
+"raw_first_cell": "https://www.jp.nikon.com/"
+},
+"T0419": {
+"decision": "added",
+"normalized": "https://global.canon",
+"raw_first_cell": "https://global.canon/"
+},
+"T0420": {
+"decision": "added",
+"normalized": "https://hamiltoncompany.com",
+"raw_first_cell": "https://www.hamiltoncompany.com"
+},
+"T0421": {
+"decision": "added",
+"normalized": "https://aoeks.ru",
+"raw_first_cell": "https://aoeks.ru/"
+},
+"T0422": {
+"decision": "added",
+"normalized": "https://colakoglu.com.tr",
+"raw_first_cell": "https://www.colakoglu.com.tr/"
+},
+"T0423": {
+"decision": "added",
+"normalized": "https://autostrade.it",
+"raw_first_cell": "http://www.autostrade.it"
+},
+"T0424": {
+"decision": "added",
+"normalized": "https://o2.fr",
+"raw_first_cell": "https://www.o2.fr/"
+},
+"T0425": {
+"decision": "added",
+"normalized": "https://heidelbergmaterials.it",
+"raw_first_cell": "https://www.heidelbergmaterials.it/it"
+},
+"T0426": {
+"decision": "added",
+"normalized": "https://gendiag.com",
+"raw_first_cell": "https://www.gendiag.com/"
+},
+"T0427": {
+"decision": "added",
+"normalized": "https://2gis.ru",
+"raw_first_cell": "https://2gis.ru/"
+},
+"T0428": {
+"decision": "added",
+"normalized": "https://taximaxim.com",
+"raw_first_cell": "https://taximaxim.com/"
+},
+"T0429": {
+"decision": "added",
+"normalized": "https://beefull.com",
+"raw_first_cell": "https://beefull.com/"
+},
+"T0430": {
+"decision": "added",
+"normalized": "https://irg-online.de",
+"raw_first_cell": "http://www.irg-online.de"
+},
+"T0431": {
+"decision": "added",
+"normalized": "https://luther-akademie.de",
+"raw_first_cell": "http://www.luther-akademie.de"
+},
+"T0432": {
+"decision": "added",
+"normalized": "https://sugold.ru",
+"raw_first_cell": "http://sugold.ru"
+},
+"T0433": {
+"decision": "added",
+"normalized": "https://skydiveempuriabrava.com",
+"raw_first_cell": "http://www.skydiveempuriabrava.com/"
+},
+"T0434": {
+"decision": "added",
+"normalized": "https://scalperscompany.com",
+"raw_first_cell": "https://scalperscompany.com/"
+},
+"T0435": {
+"decision": "added",
+"normalized": "https://atmtrapani.it",
+"raw_first_cell": "http://www.atmtrapani.it"
+},
+"T0436": {
+"decision": "added",
+"normalized": "https://dirk.org",
+"raw_first_cell": "https://www.dirk.org/"
+},
+"T0437": {
+"decision": "added",
+"normalized": "https://skad.ru",
+"raw_first_cell": "https://skad.ru/"
+},
+"T0438": {
+"decision": "added",
+"normalized": "https://nextstage-am.com",
+"raw_first_cell": "https://nextstage-am.com"
+},
+"T0439": {
+"decision": "added",
+"normalized": "https://petrom.ma",
+"raw_first_cell": "http://petrom.ma/"
+},
+"T0440": {
+"decision": "added",
+"normalized": "https://pei.co.il",
+"raw_first_cell": "http://www.pei.co.il"
+},
+"T0441": {
+"decision": "added",
+"normalized": "https://kimberly-clark.co.il",
+"raw_first_cell": "https://www.kimberly-clark.co.il"
+},
+"T0442": {
+"decision": "added",
+"normalized": "https://msa.ir",
+"raw_first_cell": "http://www.msa.ir/"
+},
+"T0443": {
+"decision": "added",
+"normalized": "https://alrajhibank.com.sa",
+"raw_first_cell": "https://www.alrajhibank.com.sa/"
+},
+"T0444": {
+"decision": "added",
+"normalized": "https://iran-transfo.com",
+"raw_first_cell": "http://www.iran-transfo.com/"
+},
+"T0445": {
+"decision": "added",
+"normalized": "https://eurofilet.net",
+"raw_first_cell": "http://www.eurofilet.net/"
+},
+"T0446": {
+"decision": "added",
+"normalized": "https://hamat.co.il",
+"raw_first_cell": "http://www.hamat.co.il/"
+},
+"T0447": {
+"decision": "added",
+"normalized": "https://saic.com.sa",
+"raw_first_cell": "https://saic.com.sa"
+},
+"T0448": {
+"decision": "added",
+"normalized": "https://materna.co.il",
+"raw_first_cell": "https://www.materna.co.il/"
+},
+"T0449": {
+"decision": "added",
+"normalized": "https://newpan.co.il",
+"raw_first_cell": "https://newpan.co.il/"
+},
+"T0450": {
+"decision": "added",
+"normalized": "https://mellishoeco.com",
+"raw_first_cell": "http://mellishoeco.com/"
+},
+"T0451": {
+"decision": "added",
+"normalized": "https://groupebcp.com",
+"raw_first_cell": "https://www.groupebcp.com/ar"
+},
+"T0452": {
+"decision": "added",
+"normalized": "https://orange.ma",
+"raw_first_cell": "https://www.orange.ma/"
+},
+"T0453": {
+"decision": "added",
+"normalized": "https://icbc.com.cn",
+"raw_first_cell": "https://www.icbc.com.cn"
+},
+"T0454": {
+"decision": "added",
+"normalized": "https://hanwa.co.jp",
+"raw_first_cell": "https://www.hanwa.co.jp/"
+},
+"T0455": {
+"decision": "added",
+"normalized": "https://nanliugroup.com",
+"raw_first_cell": "https://www.nanliugroup.com"
+},
+"T0456": {
+"decision": "added",
+"normalized": "https://tbipet.com.tw",
+"raw_first_cell": "http://www.tbipet.com.tw/"
+},
+"T0457": {
+"decision": "added",
+"normalized": "https://hs-tamtam.jp",
+"raw_first_cell": "http://www.hs-tamtam.jp/"
+},
+"T0458": {
+"decision": "added",
+"normalized": "https://kongyen.com.tw",
+"raw_first_cell": "https://www.kongyen.com.tw"
+},
+"T0459": {
+"decision": "added",
+"normalized": "https://pchome.com.tw",
+"raw_first_cell": "http://www.pchome.com.tw/"
+},
+"T0460": {
+"decision": "added",
+"normalized": "https://activ8.co.jp",
+"raw_first_cell": "https://activ8.co.jp/"
+},
+"T0461": {
+"decision": "added",
+"normalized": "https://iriver.co.kr",
+"raw_first_cell": "https://www.iriver.co.kr/"
+},
+"T0462": {
+"decision": "added",
+"normalized": "https://knot-designs.com",
+"raw_first_cell": "https://knot-designs.com/"
+},
+"T0463": {
+"decision": "added",
+"normalized": "https://geekpictures.co.jp",
+"raw_first_cell": "https://geekpictures.co.jp/jp/geektoys/"
+},
+"T0464": {
+"decision": "added",
+"normalized": "https://now.com",
+"raw_first_cell": "https://now.com/home"
+},
+"T0465": {
+"decision": "added",
+"normalized": "https://lgdisplay.com",
+"raw_first_cell": "http://www.lgdisplay.com/"
+},
+"T0466": {
+"decision": "added",
+"normalized": "https://hhi.co.kr",
+"raw_first_cell": "https://www.hhi.co.kr/"
+},
+"T0467": {
+"decision": "added",
+"normalized": "https://ahnlab.com",
+"raw_first_cell": "https://www.ahnlab.com"
+},
+"T0468": {
+"decision": "added",
+"normalized": "https://dm.co.kr",
+"raw_first_cell": "http://www.dm.co.kr/"
+},
+"T0469": {
+"decision": "added",
+"normalized": "https://bok.com.pk",
+"raw_first_cell": "http://www.bok.com.pk/"
+},
+"T0470": {
+"decision": "added",
+"normalized": "https://paktourismportal.com",
+"raw_first_cell": "http://paktourismportal.com/"
+},
+"T0471": {
+"decision": "added",
+"normalized": "https://sakhaliq.com",
+"raw_first_cell": "https://sakhaliq.com/"
+},
+"T0472": {
+"decision": "added",
+"normalized": "https://walledcitylahore.gop.pk",
+"raw_first_cell": "http://walledcitylahore.gop.pk/"
+},
+"T0473": {
+"decision": "added",
+"normalized": "https://thefilmtuition.com",
+"raw_first_cell": "https://www.thefilmtuition.com"
+},
+"T0474": {
+"decision": "added",
+"normalized": "https://irapa.org",
+"raw_first_cell": "https://irapa.org"
+},
+"T0475": {
+"decision": "added",
+"normalized": "https://fintechpaa.com",
+"raw_first_cell": "https://www.fintechpaa.com"
+},
+"T0476": {
+"decision": "added",
+"normalized": "https://pintech.com.pk",
+"raw_first_cell": "https://pintech.com.pk"
+},
+"T0477": {
+"decision": "added",
+"normalized": "https://grameenphone.com",
+"raw_first_cell": "http://grameenphone.com"
+},
+"T0478": {
+"decision": "added",
+"normalized": "https://bellatrix.aero",
+"raw_first_cell": "https://www.bellatrix.aero/"
+},
+"T0479": {
+"decision": "added",
+"normalized": "https://elite-leather.com",
+"raw_first_cell": "http://elite-leather.com"
+},
+"T0480": {
+"decision": "added",
+"normalized": "https://zong.com.pk",
+"raw_first_cell": "http://www.zong.com.pk"
+},
+"T0481": {
+"decision": "added",
+"normalized": "https://businessinspection.com.bd",
+"raw_first_cell": "https://businessinspection.com.bd"
+},
+"T0482": {
+"decision": "added",
+"normalized": "https://h2o-sportswear.com",
+"raw_first_cell": "https://h2o-sportswear.com/"
+},
+"T0483": {
+"decision": "added",
+"normalized": "https://gphispat.com.bd",
+"raw_first_cell": "http://www.gphispat.com.bd"
+},
+"T0484": {
+"decision": "added",
+"normalized": "https://worldcall.com.pk",
+"raw_first_cell": "http://www.worldcall.com.pk/"
+},
+"T0485": {
+"decision": "added",
+"normalized": "https://mcb.com.pk",
+"raw_first_cell": "https://www.mcb.com.pk/"
+},
+"T0486": {
+"decision": "added",
+"normalized": "https://qnulabs.com",
+"raw_first_cell": "https://www.qnulabs.com/"
+},
+"T0487": {
+"decision": "added",
+"normalized": "https://hvmultiplay.co",
+"raw_first_cell": "https://www.hvmultiplay.co/"
+},
+"T0488": {
+"decision": "added",
+"normalized": "https://stoneco.com.br",
+"raw_first_cell": "https://www.stoneco.com.br/"
+},
+"T0489": {
+"decision": "added",
+"normalized": "https://xepelin.com",
+"raw_first_cell": "https://xepelin.com"
+},
+"T0490": {
+"decision": "added",
+"normalized": "https://jhsf.com.br",
+"raw_first_cell": "http://www.jhsf.com.br"
+},
+"T0491": {
+"decision": "added",
+"normalized": "https://redeglobo.globo.com",
+"raw_first_cell": "http://redeglobo.globo.com/mg/tvintegracao"
+},
+"T0492": {
+"decision": "added",
+"normalized": "https://national-report.com",
+"raw_first_cell": "https://national-report.com/"
+},
+"T0493": {
+"decision": "added",
+"normalized": "https://ecogas.com.ar",
+"raw_first_cell": "http://www.ecogas.com.ar/"
+},
+"T0494": {
+"decision": "added",
+"normalized": "https://serpost.com.pe",
+"raw_first_cell": "http://www.serpost.com.pe/"
+},
+"T0495": {
+"decision": "added",
+"normalized": "https://koandina.com",
+"raw_first_cell": "http://www.koandina.com/"
+},
+"T0496": {
+"decision": "added",
+"normalized": "https://ihara.com.br",
+"raw_first_cell": "http://www.ihara.com.br/"
+},
+"T0497": {
+"decision": "added",
+"normalized": "https://metrovias.com.ar",
+"raw_first_cell": "https://www.metrovias.com.ar/"
+},
+"T0498": {
+"decision": "added",
+"normalized": "https://juarezthompson.mx",
+"raw_first_cell": "https://juarezthompson.mx"
+},
+"T0499": {
+"decision": "added",
+"normalized": "https://jne.co.id",
+"raw_first_cell": "http://www.jne.co.id/"
+},
+"T0500": {
+"decision": "added",
+"normalized": "https://pindad.com",
+"raw_first_cell": "https://pindad.com"
+},
+"T0501": {
+"decision": "added",
+"normalized": "https://munrobooks.com",
+"raw_first_cell": "https://www.munrobooks.com/"
+},
+"T0502": {
+"decision": "added",
+"normalized": "https://aiowear.com",
+"raw_first_cell": "https://aiowear.com/"
+},
+"T0503": {
+"decision": "added",
+"normalized": "https://warpspace.jp",
+"raw_first_cell": "https://warpspace.jp/"
+},
+"T0504": {
+"decision": "added",
+"normalized": "https://habs.ai",
+"raw_first_cell": "https://www.habs.ai"
+},
+"T0505": {
+"decision": "added",
+"normalized": "https://mytu.lt",
+"raw_first_cell": "https://mytu.lt"
+},
+"T0506": {
+"decision": "added",
+"normalized": "https://mytu.ee",
+"raw_first_cell": "https://mytu.ee"
+},
+"T0507": {
+"decision": "added",
+"normalized": "https://smule.com",
+"raw_first_cell": "http://smule.com"
+},
+"T0508": {
+"decision": "added",
+"normalized": "https://tattebakery.com",
+"raw_first_cell": "https://tattebakery.com/"
+},
+"T0509": {
+"decision": "added",
+"normalized": "https://corporate.aeroporto.catania.it",
+"raw_first_cell": "https://corporate.aeroporto.catania.it/"
+},
+"T0510": {
+"decision": "added",
+"normalized": "https://cie-dca.com",
+"raw_first_cell": "http://www.cie-dca.com"
+},
+"T0511": {
+"decision": "added",
+"normalized": "https://72andsunny.com",
+"raw_first_cell": "http://www.72andsunny.com"
+},
+"T0512": {
+"decision": "added",
+"normalized": "https://eurekosigorta.com.tr",
+"raw_first_cell": "https://eurekosigorta.com.tr/"
+},
+"T0513": {
+"decision": "added",
+"normalized": "https://pbwt.com",
+"raw_first_cell": "http://www.pbwt.com"
+},
+"T0514": {
+"decision": "added",
+"normalized": "https://ejadlabs.com",
+"raw_first_cell": "https://www.ejadlabs.com"
+},
+"T0515": {
+"decision": "added",
+"normalized": "https://mytu.it",
+"raw_first_cell": "https://mytu.it"
+},
+"T0516": {
+"decision": "added",
+"normalized": "https://hongqi.faw.cn",
+"raw_first_cell": "https://hongqi.faw.cn/"
+},
+"T0517": {
+"decision": "added",
+"normalized": "https://bigomorfi.ai",
+"raw_first_cell": "https://bigomorfi.ai"
+},
+"T0518": {
+"decision": "added",
+"normalized": "https://kettleconsulting.co.za",
+"raw_first_cell": "https://kettleconsulting.co.za"
+},
+"T0519": {
+"decision": "added",
+"normalized": "https://hbclark.co.uk",
+"raw_first_cell": "https://www.hbclark.co.uk"
+},
+"T0520": {
+"decision": "added",
+"normalized": "https://banglalink.net",
+"raw_first_cell": "https://www.banglalink.net/"
+},
+"T0521": {
+"decision": "added",
+"normalized": "https://clap-walk.com",
+"raw_first_cell": "https://www.clap-walk.com/"
+},
+"T0522": {
+"decision": "added",
+"normalized": "https://kg-mobility.com",
+"raw_first_cell": "https://www.kg-mobility.com/"
+},
+"T0523": {
+"decision": "added",
+"normalized": "https://picoxr.com",
+"raw_first_cell": "https://www.picoxr.com/"
+},
+"T0524": {
+"decision": "added",
+"normalized": "https://pegatroncorp.com",
+"raw_first_cell": "https://www.pegatroncorp.com/"
+},
+"T0525": {
+"decision": "added",
+"normalized": "https://casa-andina.com",
+"raw_first_cell": "http://www.casa-andina.com"
+},
+"T0526": {
+"decision": "added",
+"normalized": "https://themuslim.company",
+"raw_first_cell": "https://www.themuslim.company/"
+},
+"T0527": {
+"decision": "added",
+"normalized": "https://vortia.ai",
+"raw_first_cell": "https://vortia.ai/"
+},
+"T0528": {
+"decision": "added",
+"normalized": "https://mysteriousbookshop.com",
+"raw_first_cell": "http://www.mysteriousbookshop.com/"
+},
+"T0529": {
+"decision": "added",
+"normalized": "https://atbank.de",
+"raw_first_cell": "http://www.atbank.de"
+},
+"T0530": {
+"decision": "added",
+"normalized": "https://blerp.com",
+"raw_first_cell": "https://blerp.com"
+},
+"T0531": {
+"decision": "added",
+"normalized": "https://brainheal.in",
+"raw_first_cell": "https://brainheal.in"
+},
+"T0532": {
+"decision": "added",
+"normalized": "https://digitalleague.ru",
+"raw_first_cell": "https://digitalleague.ru/"
+},
+"T0533": {
+"decision": "added",
+"normalized": "https://asoview.co.jp",
+"raw_first_cell": "https://www.asoview.co.jp/"
+},
+"T0534": {
+"decision": "added",
+"normalized": "https://biola.slingshotedu.com",
+"raw_first_cell": "https://biola.slingshotedu.com/"
+},
+"T0535": {
+"decision": "added",
+"normalized": "https://glavior.ai",
+"raw_first_cell": "https://glavior.ai"
+},
+"T0536": {
+"decision": "added",
+"normalized": "https://mytu.lv",
+"raw_first_cell": "https://mytu.lv"
+},
+"T0537": {
+"decision": "added",
+"normalized": "https://mytu.de",
+"raw_first_cell": "https://mytu.de"
+},
+"T0538": {
+"decision": "added",
+"normalized": "https://thewritersblock.org",
+"raw_first_cell": "http://www.thewritersblock.org/"
+},
+"T0539": {
+"decision": "added",
+"normalized": "https://atbank.at",
+"raw_first_cell": "http://www.atbank.at"
+},
+"T0540": {
+"decision": "added",
+"normalized": "https://bitter-cars.de",
+"raw_first_cell": "https://www.bitter-cars.de/"
+},
+"T0541": {
+"decision": "added",
+"normalized": "https://avagotech.com",
+"raw_first_cell": "http://www.avagotech.com/"
+},
+"T0542": {
+"decision": "added",
+"normalized": "https://dakaholding.com",
+"raw_first_cell": "https://dakaholding.com/consulting"
+},
+"T0543": {
+"decision": "added",
+"normalized": "https://alsuper.com",
+"raw_first_cell": "https://alsuper.com/"
+},
+"T0544": {
+"decision": "added",
+"normalized": "https://almarai.com",
+"raw_first_cell": "https://www.almarai.com/"
+},
+"T0545": {
+"decision": "added",
+"normalized": "https://lines.coscoshipping.com",
+"raw_first_cell": "https://lines.coscoshipping.com/home/"
+},
+"T0546": {
+"decision": "added",
+"normalized": "https://mytu.es",
+"raw_first_cell": "https://mytu.es"
+},
+"T0547": {
+"decision": "added",
+"normalized": "https://santaisabel.cl",
+"raw_first_cell": "https://www.santaisabel.cl/"
+},
+"T0548": {
+"decision": "added",
+"normalized": "https://garaventa.com",
+"raw_first_cell": "http://www.garaventa.com/"
+},
+"T0549": {
+"decision": "added",
+"normalized": "https://wolfsohn.de",
+"raw_first_cell": "https://wolfsohn.de"
+},
+"T0550": {
+"decision": "added",
+"normalized": "https://sirakstudios.com",
+"raw_first_cell": "https://sirakstudios.com"
+},
+"T0551": {
+"decision": "added",
+"normalized": "https://weingut-huber.com",
+"raw_first_cell": "http://www.weingut-huber.com/"
+},
+"T0552": {
+"decision": "added",
+"normalized": "https://lemadrid.ca",
+"raw_first_cell": "http://www.lemadrid.ca"
+},
+"T0553": {
+"decision": "added",
+"normalized": "https://donburk.com.sg",
+"raw_first_cell": "http://www.donburk.com.sg"
+},
+"T0554": {
+"decision": "added",
+"normalized": "https://xs4all.nl",
+"raw_first_cell": "https://www.xs4all.nl/"
+},
+"T0555": {
+"decision": "added",
+"normalized": "https://creativegood.com",
+"raw_first_cell": "https://creativegood.com/"
+},
+"T0556": {
+"decision": "added",
+"normalized": "https://camping-ferch.de",
+"raw_first_cell": "https://camping-ferch.de"
+},
+"T0557": {
+"decision": "added",
+"normalized": "https://atrium-ed-arte.at",
+"raw_first_cell": "http://www.atrium-ed-arte.at/"
+},
+"T0558": {
+"decision": "added",
+"normalized": "https://hudsonmolonglo.com",
+"raw_first_cell": "http://hudsonmolonglo.com/"
+},
+"T0559": {
+"decision": "added",
+"normalized": "https://ammer-cembalo.de",
+"raw_first_cell": "http://www.ammer-cembalo.de/startseite.html"
+},
+"T0560": {
+"decision": "added",
+"normalized": "https://uproject.su",
+"raw_first_cell": "https://uproject.su/"
+},
+"T0561": {
+"decision": "added",
+"normalized": "https://galerieorli.cz",
+"raw_first_cell": "http://www.galerieorli.cz"
+},
+"T0562": {
+"decision": "added",
+"normalized": "https://westone.co.jp",
+"raw_first_cell": "http://www.westone.co.jp/"
+},
+"T0563": {
+"decision": "added",
+"normalized": "https://malinche.net",
+"raw_first_cell": "http://www.malinche.net/"
+},
+"T0564": {
+"decision": "added",
+"normalized": "https://azimo.com",
+"raw_first_cell": "https://azimo.com"
+},
+"T0565": {
+"decision": "added",
+"normalized": "https://wacom.ir",
+"raw_first_cell": "https://www.wacom.ir"
+},
+"T0566": {
+"decision": "added",
+"normalized": "https://norskstrek.no",
+"raw_first_cell": "https://norskstrek.no/"
+},
+"T0567": {
+"decision": "added",
+"normalized": "https://chateauchasselas.fr",
+"raw_first_cell": "http://www.chateauchasselas.fr/"
+},
+"T0568": {
+"decision": "added",
+"normalized": "https://aldi.com",
+"raw_first_cell": "https://www.aldi.com"
+},
+"T0569": {
+"decision": "added",
+"normalized": "https://publicopinionresearch.net",
+"raw_first_cell": "http://www.publicopinionresearch.net"
+},
+"T0570": {
+"decision": "added",
+"normalized": "https://alte-leimsiederei.de",
+"raw_first_cell": "https://www.alte-leimsiederei.de/"
+},
+"T0571": {
+"decision": "added",
+"normalized": "https://textuality.com",
+"raw_first_cell": "https://textuality.com/"
+},
+"T0572": {
+"decision": "added",
+"normalized": "https://campingplatz-kaehnsdorf.de",
+"raw_first_cell": "http://www.campingplatz-kaehnsdorf.de"
+},
+"T0573": {
+"decision": "added",
+"normalized": "https://kabelbw.de",
+"raw_first_cell": "http://www.kabelbw.de/"
+},
+"T0574": {
+"decision": "added",
+"normalized": "https://sandpiperci.com",
+"raw_first_cell": "http://www.sandpiperci.com/safeway.php"
+},
+"T0575": {
+"decision": "added",
+"normalized": "https://allergan.com",
+"raw_first_cell": "http://www.allergan.com/"
+},
+"T0576": {
+"decision": "added",
+"normalized": "https://mslgroup.co.uk",
+"raw_first_cell": "http://www.mslgroup.co.uk"
+},
+"T0577": {
+"decision": "added",
+"normalized": "https://rome.ai",
+"raw_first_cell": "https://rome.ai"
+},
+"T0578": {
+"decision": "added",
+"normalized": "https://stadscamping-rotterdam.nl",
+"raw_first_cell": "https://stadscamping-rotterdam.nl/"
+},
+"T0579": {
+"decision": "added",
+"normalized": "https://margaree.ca",
+"raw_first_cell": "http://www.margaree.ca/"
+},
+"T0580": {
+"decision": "added",
+"normalized": "https://loekemeyer.com",
+"raw_first_cell": "https://loekemeyer.com/"
+},
+"T0581": {
+"decision": "added",
+"normalized": "https://debrie.fr",
+"raw_first_cell": "https://debrie.fr/"
+},
+"T0582": {
+"decision": "added",
+"normalized": "https://eagleview.ca",
+"raw_first_cell": "https://eagleview.ca"
+},
+"T0583": {
+"decision": "added",
+"normalized": "https://addleshawgoddard.com",
+"raw_first_cell": "https://www.addleshawgoddard.com/en/"
+},
+"T0584": {
+"decision": "added",
+"normalized": "https://greeninfo.org",
+"raw_first_cell": "https://www.greeninfo.org/"
+},
+"T0585": {
+"decision": "added",
+"normalized": "https://univ-ouargla.dz",
+"raw_first_cell": "http://www.univ-ouargla.dz"
+},
+"T0586": {
+"decision": "added",
+"normalized": "https://regiobank.nl",
+"raw_first_cell": "https://www.regiobank.nl"
+},
+"T0587": {
+"decision": "added",
+"normalized": "https://hugendubel.de",
+"raw_first_cell": "https://www.hugendubel.de/"
+},
+"T0588": {
+"decision": "added",
+"normalized": "https://odregata.cz",
+"raw_first_cell": "https://www.odregata.cz/od-ladvi"
+},
+"T0589": {
+"decision": "added",
+"normalized": "https://knowmadmood.com",
+"raw_first_cell": "https://www.knowmadmood.com/es"
+},
+"T0590": {
+"decision": "added",
+"normalized": "https://schlausitz.de",
+"raw_first_cell": "http://www.schlausitz.de/"
+},
+"T0591": {
+"decision": "added",
+"normalized": "https://claytonutz.com",
+"raw_first_cell": "http://www.claytonutz.com"
+},
+"T0592": {
+"decision": "added",
+"normalized": "https://papelprensa.com",
+"raw_first_cell": "http://www.papelprensa.com/"
+},
+"T0593": {
+"decision": "added",
+"normalized": "https://feverup.com",
+"raw_first_cell": "https://feverup.com/"
+},
+"T0594": {
+"decision": "added",
+"normalized": "https://motu.com",
+"raw_first_cell": "http://www.motu.com/"
+},
+"T0595": {
+"decision": "added",
+"normalized": "https://campingplatz-flakensee.de",
+"raw_first_cell": "https://www.campingplatz-flakensee.de"
+},
+"T0596": {
+"decision": "added",
+"normalized": "https://manoir.com",
+"raw_first_cell": "http://www.manoir.com/"
+},
+"T0597": {
+"decision": "added",
+"normalized": "https://campbellmithun.com",
+"raw_first_cell": "http://www.campbellmithun.com/"
+},
+"T0598": {
+"decision": "added",
+"normalized": "https://lowenstein.com",
+"raw_first_cell": "http://www.lowenstein.com/"
+},
+"T0599": {
+"decision": "added",
+"normalized": "https://zorrooo.com",
+"raw_first_cell": "https://zorrooo.com"
+},
+"T0600": {
+"decision": "added",
+"normalized": "https://dechert.com",
+"raw_first_cell": "http://www.dechert.com/"
+},
+"T0601": {
+"decision": "added",
+"normalized": "https://bi.consulting",
+"raw_first_cell": "https://bi.consulting"
+},
+"T0602": {
+"decision": "added",
+"normalized": "https://yuki-web.co.jp",
+"raw_first_cell": "http://www.yuki-web.co.jp"
+},
+"T0603": {
+"decision": "added",
+"normalized": "https://mecglobal.com",
+"raw_first_cell": "http://www.mecglobal.com/"
+},
+"T0604": {
+"decision": "added",
+"normalized": "https://lacgiocattoli.it",
+"raw_first_cell": "http://www.lacgiocattoli.it/"
+},
+"T0605": {
+"decision": "added",
+"normalized": "https://bihodo.co.jp",
+"raw_first_cell": "http://www.bihodo.co.jp/"
+},
+"T0606": {
+"decision": "added",
+"normalized": "https://meitechinc.com",
+"raw_first_cell": "http://www.meitechinc.com/"
+},
+"T0607": {
+"decision": "added",
+"normalized": "https://auto-zagaia.com",
+"raw_first_cell": "http://auto-zagaia.com/"
+},
+"T0608": {
+"decision": "added",
+"normalized": "https://demasandpartners.it",
+"raw_first_cell": "http://demasandpartners.it/"
+},
+"T0609": {
+"decision": "added",
+"normalized": "https://luce.com",
+"raw_first_cell": "http://www.luce.com"
+},
+"T0610": {
+"decision": "added",
+"normalized": "https://g.ho.st",
+"raw_first_cell": "http://g.ho.st/home"
+},
+"T0611": {
+"decision": "added",
+"normalized": "https://aj-wright.com",
+"raw_first_cell": "http://www.aj-wright.com/"
+},
+"T0612": {
+"decision": "added",
+"normalized": "https://nds.com",
+"raw_first_cell": "http://www.nds.com"
+},
+"T0613": {
+"decision": "added",
+"normalized": "https://e-toks.co.jp",
+"raw_first_cell": "http://www.e-toks.co.jp/index.html"
+},
+"T0614": {
+"decision": "added",
+"normalized": "https://opuscope.io",
+"raw_first_cell": "http://opuscope.io"
+},
+"T0615": {
+"decision": "added",
+"normalized": "https://bteamroyal.com",
+"raw_first_cell": "https://bteamroyal.com"
+},
+"T0616": {
+"decision": "added",
+"normalized": "https://aeplc.co.uk",
+"raw_first_cell": "http://www.aeplc.co.uk/"
+},
+"T0617": {
+"decision": "added",
+"normalized": "https://gamebank.co.jp",
+"raw_first_cell": "http://www.gamebank.co.jp/"
+},
+"T0618": {
+"decision": "added",
+"normalized": "https://cigna.com.tw",
+"raw_first_cell": "https://www.cigna.com.tw/"
+},
+"T0619": {
+"decision": "added",
+"normalized": "https://eng.sibirtelecom.ru",
+"raw_first_cell": "http://eng.sibirtelecom.ru/"
+},
+"T0620": {
+"decision": "added",
+"normalized": "https://necotrans.com",
+"raw_first_cell": "http://www.necotrans.com"
+},
+"T0621": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-1.invalid",
+"raw_first_cell": "http://crawl-eval-dead-1.invalid/"
+},
+"T0622": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-2.invalid",
+"raw_first_cell": "http://crawl-eval-dead-2.invalid/"
+},
+"T0623": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-3.invalid",
+"raw_first_cell": "http://crawl-eval-dead-3.invalid/"
+},
+"T0624": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-4.invalid",
+"raw_first_cell": "http://crawl-eval-dead-4.invalid/"
+},
+"T0625": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-5.invalid",
+"raw_first_cell": "http://crawl-eval-dead-5.invalid/"
+},
+"T0626": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-6.invalid",
+"raw_first_cell": "http://crawl-eval-dead-6.invalid/"
+},
+"T0627": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-7.invalid",
+"raw_first_cell": "http://crawl-eval-dead-7.invalid/"
+},
+"T0628": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-8.invalid",
+"raw_first_cell": "http://crawl-eval-dead-8.invalid/"
+},
+"T0629": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-1.test",
+"raw_first_cell": "https://crawl-eval-dead-1.test/about"
+},
+"T0630": {
+"decision": "added",
+"normalized": "https://crawl-eval-dead-2.test",
+"raw_first_cell": "https://crawl-eval-dead-2.test/about"
+},
+"T0631": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8830/"
+},
+"T0632": {
+"decision": "added",
+"normalized": "https://capitolarts.com",
+"raw_first_cell": "http://www.capitolarts.com"
+},
+"T0633": {
+"decision": "added",
+"normalized": "https://mvc.co.uk",
+"raw_first_cell": "http://www.mvc.co.uk/"
+},
+"T0634": {
+"decision": "added",
+"normalized": "https://acsa.ro",
+"raw_first_cell": "http://www.acsa.ro/"
+},
+"T0635": {
+"decision": "added",
+"normalized": "https://bcnmultimedia.cat",
+"raw_first_cell": "http://www.bcnmultimedia.cat/"
+},
+"T0636": {
+"decision": "added",
+"normalized": "https://teliris.com",
+"raw_first_cell": "http://www.teliris.com"
+},
+"T0637": {
+"decision": "added",
+"normalized": "https://energi-mp.com",
+"raw_first_cell": "http://www.energi-mp.com/"
+},
+"T0638": {
+"decision": "added",
+"normalized": "https://elcoteq.com",
+"raw_first_cell": "http://www.elcoteq.com"
+},
+"T0639": {
+"decision": "added",
+"normalized": "https://loopmobile.in",
+"raw_first_cell": "http://www.loopmobile.in/"
+},
+"T0640": {
+"decision": "added",
+"normalized": "https://starparks.com",
+"raw_first_cell": "http://www.starparks.com"
+},
+"T0641": {
+"decision": "added",
+"normalized": "https://demaekelboerger.de",
+"raw_first_cell": "http://www.demaekelboerger.de"
+},
+"T0642": {
+"decision": "added",
+"normalized": "https://softkey.info",
+"raw_first_cell": "http://softkey.info"
+},
+"T0643": {
+"decision": "added",
+"normalized": "https://kanbay.com",
+"raw_first_cell": "http://www.kanbay.com"
+},
+"T0644": {
+"decision": "added",
+"normalized": "https://dantek.dk",
+"raw_first_cell": "http://www.dantek.dk/"
+},
+"T0645": {
+"decision": "added",
+"normalized": "https://rubyetviolette.com",
+"raw_first_cell": "http://www.rubyetviolette.com/"
+},
+"T0646": {
+"decision": "added",
+"normalized": "https://aonesat.com",
+"raw_first_cell": "http://www.aonesat.com/"
+},
+"T0647": {
+"decision": "added",
+"normalized": "https://marine5-shimizuya.com",
+"raw_first_cell": "http://marine5-shimizuya.com/"
+},
+"T0648": {
+"decision": "added",
+"normalized": "https://jpexpress.jp",
+"raw_first_cell": "http://www.jpexpress.jp/"
+},
+"T0649": {
+"decision": "added",
+"normalized": "https://shw-ct.de",
+"raw_first_cell": "http://www.shw-ct.de/"
+},
+"T0650": {
+"decision": "added",
+"normalized": "https://myllykoski.com",
+"raw_first_cell": "http://www.myllykoski.com/"
+},
+"T0651": {
+"decision": "added",
+"normalized": "https://peterson.no",
+"raw_first_cell": "http://www.peterson.no"
+},
+"T0652": {
+"decision": "added",
+"normalized": "https://norseenergy.com",
+"raw_first_cell": "http://www.norseenergy.com"
+},
+"T0653": {
+"decision": "added",
+"normalized": "https://takimaging.com",
+"raw_first_cell": "http://www.takimaging.com"
+},
+"T0654": {
+"decision": "added",
+"normalized": "https://edmc.com",
+"raw_first_cell": "http://www.edmc.com"
+},
+"T0655": {
+"decision": "added",
+"normalized": "https://hwcomms.com",
+"raw_first_cell": "https://www.hwcomms.com/"
+},
+"T0656": {
+"decision": "added",
+"normalized": "https://auverland.com",
+"raw_first_cell": "http://www.auverland.com"
+},
+"T0657": {
+"decision": "added",
+"normalized": "https://bbi.co.im",
+"raw_first_cell": "http://www.bbi.co.im/"
+},
+"T0658": {
+"decision": "added",
+"normalized": "https://zelepro.com",
+"raw_first_cell": "http://zelepro.com/index.html"
+},
+"T0659": {
+"decision": "added",
+"normalized": "https://jihsun.com.tw",
+"raw_first_cell": "https://www.jihsun.com.tw/"
+},
+"T0660": {
+"decision": "added",
+"normalized": "https://paramountparks.com",
+"raw_first_cell": "http://paramountparks.com/"
+},
+"T0661": {
+"decision": "added",
+"normalized": "https://tamimigroup.com.sa",
+"raw_first_cell": "https://tamimigroup.com.sa/"
+},
+"T0662": {
+"decision": "added",
+"normalized": "https://innova.info",
+"raw_first_cell": "http://www.innova.info/"
+},
+"T0663": {
+"decision": "added",
+"normalized": "https://predict.com",
+"raw_first_cell": "http://www.predict.com/"
+},
+"T0664": {
+"decision": "added",
+"normalized": "https://fly.ch",
+"raw_first_cell": "http://www.fly.ch/"
+},
+"T0665": {
+"decision": "added",
+"normalized": "https://linuxcare.com",
+"raw_first_cell": "http://www.linuxcare.com/"
+},
+"T0666": {
+"decision": "added",
+"normalized": "https://mytv.ua",
+"raw_first_cell": "https://mytv.ua/"
+},
+"T0667": {
+"decision": "added",
+"normalized": "https://kingdom.com.sa",
+"raw_first_cell": "http://www.kingdom.com.sa/"
+},
+"T0668": {
+"decision": "added",
+"normalized": "https://panamsat.com",
+"raw_first_cell": "http://www.panamsat.com"
+},
+"T0669": {
+"decision": "added",
+"normalized": "https://gianniniautomobili.com",
+"raw_first_cell": "http://www.gianniniautomobili.com"
+},
+"T0670": {
+"decision": "added",
+"normalized": "https://inqmobile.com",
+"raw_first_cell": "http://www.inqmobile.com"
+},
+"T0671": {
+"decision": "added",
+"normalized": "https://star-airlines.fr",
+"raw_first_cell": "http://www.star-airlines.fr"
+},
+"T0672": {
+"decision": "added",
+"normalized": "https://smrt.co.kr",
+"raw_first_cell": "http://www.smrt.co.kr/"
+},
+"T0673": {
+"decision": "added",
+"normalized": "https://coica.org.ec",
+"raw_first_cell": "https://coica.org.ec/"
+},
+"T0674": {
+"decision": "added",
+"normalized": "https://sico.com.eg",
+"raw_first_cell": "http://sico.com.eg/"
+},
+"T0675": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8828/"
+},
+"T0676": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8829/"
+},
+"T0677": {
+"decision": "added",
+"normalized": "https://jaycfoods.com",
+"raw_first_cell": "http://www.jaycfoods.com/"
+},
+"T0678": {
+"decision": "added",
+"normalized": "https://ukonline.net",
+"raw_first_cell": "http://ukonline.net/"
+},
+"T0679": {
+"decision": "added",
+"normalized": "https://chiyomaru-studio.com",
+"raw_first_cell": "http://chiyomaru-studio.com/"
+},
+"T0680": {
+"decision": "added",
+"normalized": "https://gsicommerce.com",
+"raw_first_cell": "http://gsicommerce.com"
+},
+"T0681": {
+"decision": "added",
+"normalized": "https://aplusfinancial.co.jp",
+"raw_first_cell": "http://www.aplusfinancial.co.jp/"
+},
+"T0682": {
+"decision": "added",
+"normalized": "https://comhem.se",
+"raw_first_cell": "https://www.comhem.se/"
+},
+"T0683": {
+"decision": "added",
+"normalized": "https://greencity.coop",
+"raw_first_cell": "https://www.greencity.coop/"
+},
+"T0684": {
+"decision": "added",
+"normalized": "https://baltlease.ru",
+"raw_first_cell": "https://baltlease.ru/"
+},
+"T0685": {
+"decision": "added",
+"normalized": "https://keepa.ir",
+"raw_first_cell": "https://keepa.ir"
+},
+"T0686": {
+"decision": "added",
+"normalized": "https://byco.com.pk",
+"raw_first_cell": "http://www.byco.com.pk/"
+},
+"T0687": {
+"decision": "added",
+"normalized": "https://nwtelecom.ru",
+"raw_first_cell": "http://www.nwtelecom.ru/"
+},
+"T0688": {
+"decision": "added",
+"normalized": "https://uniqagroup.it",
+"raw_first_cell": "https://www.uniqagroup.it"
+},
+"T0689": {
+"decision": "added",
+"normalized": "https://watervliet.nl",
+"raw_first_cell": "https://www.watervliet.nl"
+},
+"T0690": {
+"decision": "added",
+"normalized": "https://millat.com.pk",
+"raw_first_cell": "https://www.millat.com.pk/"
+},
+"T0691": {
+"decision": "added",
+"normalized": "https://petroperu.com.pe",
+"raw_first_cell": "http://www.petroperu.com.pe"
+},
+"T0692": {
+"decision": "added",
+"normalized": "https://tfmi.com.tw",
+"raw_first_cell": "http://www.tfmi.com.tw/"
+},
+"T0693": {
+"decision": "added",
+"normalized": "https://macronix.com",
+"raw_first_cell": "http://www.macronix.com"
+},
+"T0694": {
+"decision": "added",
+"normalized": "https://taian.com.tw",
+"raw_first_cell": "https://www.taian.com.tw/"
+},
+"T0695": {
+"decision": "added",
+"normalized": "https://diamond-gp.com",
+"raw_first_cell": "https://diamond-gp.com/"
+},
+"T0696": {
+"decision": "added",
+"normalized": "https://bfn.de",
+"raw_first_cell": "https://www.bfn.de/"
+},
+"T0697": {
+"decision": "added",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/drip?duration=30&numbytes=30&code=200"
+},
+"T0698": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8801/"
+},
+"T0699": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8802/"
+},
+"T0700": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8803/"
+},
+"T0701": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8899/"
+},
+"T0702": {
+"decision": "added",
+"normalized": "https://prink.es",
+"raw_first_cell": "https://prink.es/"
+},
+"T0703": {
+"decision": "added",
+"normalized": "https://plantagen.fi",
+"raw_first_cell": "https://www.plantagen.fi/"
+},
+"T0704": {
+"decision": "added",
+"normalized": "https://hdb-egy.com",
+"raw_first_cell": "https://www.hdb-egy.com/"
+},
+"T0705": {
+"decision": "added",
+"normalized": "https://lincolnhaney.com",
+"raw_first_cell": "https://lincolnhaney.com/"
+},
+"T0706": {
+"decision": "added",
+"normalized": "https://lemurrr.ru",
+"raw_first_cell": "https://lemurrr.ru/"
+},
+"T0707": {
+"decision": "added",
+"normalized": "https://kadewe.de",
+"raw_first_cell": "https://www.kadewe.de/"
+},
+"T0708": {
+"decision": "added",
+"normalized": "https://expired.badssl.com",
+"raw_first_cell": "https://expired.badssl.com/"
+},
+"T0709": {
+"decision": "added",
+"normalized": "https://wrong.host.badssl.com",
+"raw_first_cell": "https://wrong.host.badssl.com/"
+},
+"T0710": {
+"decision": "added",
+"normalized": "https://self-signed.badssl.com",
+"raw_first_cell": "https://self-signed.badssl.com/"
+},
+"T0711": {
+"decision": "added",
+"normalized": "https://untrusted-root.badssl.com",
+"raw_first_cell": "https://untrusted-root.badssl.com/"
+},
+"T0712": {
+"decision": "added",
+"normalized": "https://incomplete-chain.badssl.com",
+"raw_first_cell": "https://incomplete-chain.badssl.com/"
+},
+"T0713": {
+"decision": "added",
+"normalized": "https://no-common-name.badssl.com",
+"raw_first_cell": "https://no-common-name.badssl.com/"
+},
+"T0714": {
+"decision": "added",
+"normalized": "https://no-subject.badssl.com",
+"raw_first_cell": "https://no-subject.badssl.com/"
+},
+"T0715": {
+"decision": "added",
+"normalized": "https://edellroot.badssl.com",
+"raw_first_cell": "https://edellroot.badssl.com/"
+},
+"T0716": {
+"decision": "added",
+"normalized": "https://sha1-intermediate.badssl.com",
+"raw_first_cell": "https://sha1-intermediate.badssl.com/"
+},
+"T0717": {
+"decision": "added",
+"normalized": "https://mitm-software.badssl.com",
+"raw_first_cell": "https://mitm-software.badssl.com/"
+},
+"T0718": {
+"decision": "added",
+"normalized": "https://null.badssl.com",
+"raw_first_cell": "https://null.badssl.com/"
+},
+"T0719": {
+"decision": "added",
+"normalized": "https://rc4.badssl.com",
+"raw_first_cell": "https://rc4.badssl.com/"
+},
+"T0720": {
+"decision": "added",
+"normalized": "https://dh480.badssl.com",
+"raw_first_cell": "https://dh480.badssl.com/"
+},
+"T0721": {
+"decision": "added",
+"normalized": "https://dh512.badssl.com",
+"raw_first_cell": "https://dh512.badssl.com/"
+},
+"T0722": {
+"decision": "added",
+"normalized": "https://imachine.com.tw",
+"raw_first_cell": "https://www.imachine.com.tw/"
+},
+"T0723": {
+"decision": "added",
+"normalized": "https://kundmueller.de",
+"raw_first_cell": "http://www.kundmueller.de/frameset.html"
+},
+"T0724": {
+"decision": "added",
+"normalized": "https://chorus.de",
+"raw_first_cell": "http://www.chorus.de"
+},
+"T0725": {
+"decision": "added",
+"normalized": "https://supermarchesmatch.fr",
+"raw_first_cell": "https://www.supermarchesmatch.fr/"
+},
+"T0726": {
+"decision": "added",
+"normalized": "https://patriziapepe.com",
+"raw_first_cell": "http://www.patriziapepe.com"
+},
+"T0727": {
+"decision": "added",
+"normalized": "https://nps.gov",
+"raw_first_cell": "https://www.nps.gov/cato/planyourvisit/greentop.htm"
+},
+"T0728": {
+"decision": "added",
+"normalized": "https://axonautomotive.com",
+"raw_first_cell": "http://www.axonautomotive.com"
+},
+"T0729": {
+"decision": "added",
+"normalized": "https://penny.it",
+"raw_first_cell": "https://www.penny.it/"
+},
+"T0730": {
+"decision": "added",
+"normalized": "https://vmlyr.com",
+"raw_first_cell": "https://www.vmlyr.com/da-dk/denmark"
+},
+"T0731": {
+"decision": "added",
+"normalized": "https://keralty.com",
+"raw_first_cell": "https://www.keralty.com/"
+},
+"T0732": {
+"decision": "added",
+"normalized": "https://jac.cl",
+"raw_first_cell": "https://www.jac.cl"
+},
+"T0733": {
+"decision": "added",
+"normalized": "https://horuslabs.tech",
+"raw_first_cell": "https://horuslabs.tech/"
+},
+"T0734": {
+"decision": "added",
+"normalized": "https://hannaford.com",
+"raw_first_cell": "https://hannaford.com/"
+},
+"T0735": {
+"decision": "added",
+"normalized": "https://cybercook.com.br",
+"raw_first_cell": "https://cybercook.com.br/"
+},
+"T0736": {
+"decision": "added",
+"normalized": "https://xdsc.cn",
+"raw_first_cell": "https://www.xdsc.cn/"
+},
+"T0737": {
+"decision": "added",
+"normalized": "https://krupp-krankenhaus.de",
+"raw_first_cell": "http://www.krupp-krankenhaus.de/en/home/"
+},
+"T0738": {
+"decision": "added",
+"normalized": "https://metamind.io",
+"raw_first_cell": "http://www.metamind.io/"
+},
+"T0739": {
+"decision": "added",
+"normalized": "https://sun.com",
+"raw_first_cell": "https://www.sun.com/"
+},
+"T0740": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/401"
+},
+"T0741": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/403"
+},
+"T0742": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/404"
+},
+"T0743": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/410"
+},
+"T0744": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/429"
+},
+"T0745": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/500"
+},
+"T0746": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/502"
+},
+"T0747": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/503"
+},
+"T0748": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8824/"
+},
+"T0749": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8825/"
+},
+"T0750": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8842/"
+},
+"T0751": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8843/"
+},
+"T0752": {
+"decision": "added",
+"normalized": "https://etdb.org",
+"raw_first_cell": "http://www.etdb.org/"
+},
+"T0753": {
+"decision": "added",
+"normalized": "https://cueillettefraisochamp.fr",
+"raw_first_cell": "http://www.cueillettefraisochamp.fr/"
+},
+"T0754": {
+"decision": "added",
+"normalized": "https://jlv.cz",
+"raw_first_cell": "http://www.jlv.cz"
+},
+"T0755": {
+"decision": "added",
+"normalized": "https://develop.de",
+"raw_first_cell": "http://www.develop.de"
+},
+"T0756": {
+"decision": "added",
+"normalized": "https://paulweiss.com",
+"raw_first_cell": "http://www.paulweiss.com/"
+},
+"T0757": {
+"decision": "added",
+"normalized": "https://brauerei-fiedler.de",
+"raw_first_cell": "http://www.brauerei-fiedler.de"
+},
+"T0758": {
+"decision": "added",
+"normalized": "https://nurun.com",
+"raw_first_cell": "https://www.nurun.com/"
+},
+"T0759": {
+"decision": "added",
+"normalized": "https://softpress.com",
+"raw_first_cell": "https://www.softpress.com/"
+},
+"T0760": {
+"decision": "added",
+"normalized": "https://landesmuseum-hannover.de",
+"raw_first_cell": "https://www.landesmuseum-hannover.de/"
+},
+"T0761": {
+"decision": "added",
+"normalized": "https://assecosolutions.com",
+"raw_first_cell": "https://assecosolutions.com"
+},
+"T0762": {
+"decision": "added",
+"normalized": "https://dvsshoes.com",
+"raw_first_cell": "https://www.dvsshoes.com/"
+},
+"T0763": {
+"decision": "added",
+"normalized": "https://starobrno.com",
+"raw_first_cell": "http://www.starobrno.com"
+},
+"T0764": {
+"decision": "added",
+"normalized": "https://pvi.fr",
+"raw_first_cell": "http://www.pvi.fr"
+},
+"T0765": {
+"decision": "added",
+"normalized": "https://eds.com",
+"raw_first_cell": "http://www.eds.com/"
+},
+"T0766": {
+"decision": "added",
+"normalized": "https://foveon.com",
+"raw_first_cell": "http://www.foveon.com/"
+},
+"T0767": {
+"decision": "added",
+"normalized": "https://sternbrau.com",
+"raw_first_cell": "https://www.sternbrau.com/"
+},
+"T0768": {
+"decision": "added",
+"normalized": "https://seeburger.de",
+"raw_first_cell": "http://www.seeburger.de"
+},
+"T0769": {
+"decision": "added",
+"normalized": "https://pastel.co.za",
+"raw_first_cell": "http://www.pastel.co.za/"
+},
+"T0770": {
+"decision": "added",
+"normalized": "https://komatsu-kohag.com",
+"raw_first_cell": "http://www.komatsu-kohag.com"
+},
+"T0771": {
+"decision": "added",
+"normalized": "https://rolandberger.com",
+"raw_first_cell": "http://rolandberger.com"
+},
+"T0772": {
+"decision": "added",
+"normalized": "https://flydining.com",
+"raw_first_cell": "https://www.flydining.com/city-locations/locations"
+},
+"T0773": {
+"decision": "added",
+"normalized": "https://fsd.ch",
+"raw_first_cell": "http://www.fsd.ch"
+},
+"T0774": {
+"decision": "added",
+"normalized": "https://realschule-kreuztal.de",
+"raw_first_cell": "http://www.realschule-kreuztal.de/"
+},
+"T0775": {
+"decision": "added",
+"normalized": "https://glambecksee.de",
+"raw_first_cell": "https://glambecksee.de"
+},
+"T0776": {
+"decision": "added",
+"normalized": "https://tecmo.co.jp",
+"raw_first_cell": "http://www.tecmo.co.jp"
+},
+"T0777": {
+"decision": "added",
+"normalized": "https://gregorypacks.com",
+"raw_first_cell": "https://www.gregorypacks.com"
+},
+"T0778": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fexample.com%2F"
+},
+"T0779": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fexample.org%2F&status_code=301"
+},
+"T0780": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fexample.net%2F&status_code=307"
+},
+"T0781": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fhttpbin.org%2Fredirect-to%3Furl%3Dhttps%253A%252F%252Fexample.com%252F"
+},
+"T0782": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fhttpbin.org%2Fredirect-to%3Furl%3Dhttps%253A%252F%252Fhttpbin.org%252F"
+},
+"T0783": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fhttpbin.org%2Fredirect-to%3Furl%3Dhttps%253A%252F%252Fhttpbin.org%252F"
+},
+"T0784": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=https%3A%2F%2Fhttpbin.org%2Fredirect-to%3Furl%3Dhttps%253A%252F%252Fhttpbin.org%252F"
+},
+"T0785": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/redirect-to?url=http%3A%2F%2F127.0.0.2%3A8810%2Fsecret"
+},
+"T0786": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8809/"
+},
+"T0787": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8814/"
+},
+"T0788": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8837/"
+},
+"T0789": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8838/"
+},
+"T0790": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8839/"
+},
+"T0791": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8810/"
+},
+"T0792": {
+"decision": "added",
+"normalized": "https://suma.coop",
+"raw_first_cell": "https://www.suma.coop/"
+},
+"T0793": {
+"decision": "added",
+"normalized": "https://scribesoft.com",
+"raw_first_cell": "http://www.scribesoft.com"
+},
+"T0794": {
+"decision": "added",
+"normalized": "https://fabletics.com",
+"raw_first_cell": "http://www.fabletics.com"
+},
+"T0795": {
+"decision": "added",
+"normalized": "https://strandbooks.com",
+"raw_first_cell": "https://www.strandbooks.com/"
+},
+"T0796": {
+"decision": "added",
+"normalized": "https://ford.co.za",
+"raw_first_cell": "https://www.ford.co.za/"
+},
+"T0797": {
+"decision": "added",
+"normalized": "https://cadillaceurope.com",
+"raw_first_cell": "https://www.cadillaceurope.com/"
+},
+"T0798": {
+"decision": "added",
+"normalized": "https://bergfreunde.de",
+"raw_first_cell": "https://www.bergfreunde.de/"
+},
+"T0799": {
+"decision": "added",
+"normalized": "https://anko.com",
+"raw_first_cell": "https://anko.com"
+},
+"T0800": {
+"decision": "added",
+"normalized": "https://shoprite.com",
+"raw_first_cell": "http://www.shoprite.com"
+},
+"T0801": {
+"decision": "added",
+"normalized": "https://athenaeumscheltema.nl",
+"raw_first_cell": "https://athenaeumscheltema.nl/athenaeum"
+},
+"T0802": {
+"decision": "added",
+"normalized": "https://audi.co.za",
+"raw_first_cell": "https://www.audi.co.za/"
+},
+"T0803": {
+"decision": "added",
+"normalized": "https://idaireland.com",
+"raw_first_cell": "https://www.idaireland.com/"
+},
+"T0804": {
+"decision": "added",
+"normalized": "https://maserati.com",
+"raw_first_cell": "https://www.maserati.com/"
+},
+"T0805": {
+"decision": "added",
+"normalized": "https://firstmidwest.com",
+"raw_first_cell": "http://www.firstmidwest.com/"
+},
+"T0806": {
+"decision": "added",
+"normalized": "https://gm.com",
+"raw_first_cell": "https://www.gm.com/"
+},
+"T0807": {
+"decision": "added",
+"normalized": "https://monvinfrancais.com",
+"raw_first_cell": "https://www.monvinfrancais.com/"
+},
+"T0808": {
+"decision": "added",
+"normalized": "https://ostrich.com.ua",
+"raw_first_cell": "http://www.ostrich.com.ua"
+},
+"T0809": {
+"decision": "added",
+"normalized": "https://velz.it",
+"raw_first_cell": "https://velz.it"
+},
+"T0810": {
+"decision": "added",
+"normalized": "https://alpargatas.com.br",
+"raw_first_cell": "https://alpargatas.com.br/"
+},
+"T0811": {
+"decision": "added",
+"normalized": "https://fiat.com",
+"raw_first_cell": "https://www.fiat.com/"
+},
+"T0812": {
+"decision": "added",
+"normalized": "https://harrods.com",
+"raw_first_cell": "http://www.harrods.com/"
+},
+"T0813": {
+"decision": "added",
+"normalized": "https://eureko.ro",
+"raw_first_cell": "http://www.eureko.ro/"
+},
+"T0814": {
+"decision": "added",
+"normalized": "https://wine.com",
+"raw_first_cell": "https://www.wine.com"
+},
+"T0815": {
+"decision": "added",
+"normalized": "https://acmemarkets.com",
+"raw_first_cell": "https://www.acmemarkets.com/"
+},
+"T0816": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8832/"
+},
+"T0817": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/deny"
+},
+"T0818": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8818/"
+},
+"T0819": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8819/"
+},
+"T0820": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8820/"
+},
+"T0821": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8821/"
+},
+"T0822": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8822/"
+},
+"T0823": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8823/"
+},
+"T0824": {
+"decision": "added",
+"normalized": "https://olympicairlines.com",
+"raw_first_cell": "http://www.olympicairlines.com/"
+},
+"T0825": {
+"decision": "added",
+"normalized": "https://bloomingprairie.com",
+"raw_first_cell": "http://www.bloomingprairie.com/index.asp?Type=B_BASIC&SEC=%7BB2702B03-807A-4A39-8C1D-D5028E1F34C6%7D"
+},
+"T0826": {
+"decision": "added",
+"normalized": "https://uea.org",
+"raw_first_cell": "https://uea.org/"
+},
+"T0827": {
+"decision": "added",
+"normalized": "https://cuicuistudios.com",
+"raw_first_cell": "https://cuicuistudios.com/"
+},
+"T0828": {
+"decision": "added",
+"normalized": "https://schloss-weikertsham.de",
+"raw_first_cell": "http://www.schloss-weikertsham.de/"
+},
+"T0829": {
+"decision": "added",
+"normalized": "https://countryfarm-satoen.jimdofree.com",
+"raw_first_cell": "https://countryfarm-satoen.jimdofree.com/"
+},
+"T0830": {
+"decision": "added",
+"normalized": "https://mesto-zruc.cz",
+"raw_first_cell": "http://www.mesto-zruc.cz/"
+},
+"T0831": {
+"decision": "added",
+"normalized": "https://linklaters.de",
+"raw_first_cell": "http://www.linklaters.de"
+},
+"T0832": {
+"decision": "added",
+"normalized": "https://netfonds.no",
+"raw_first_cell": "http://www.netfonds.no/"
+},
+"T0833": {
+"decision": "added",
+"normalized": "https://oakpont.com",
+"raw_first_cell": "https://oakpont.com"
+},
+"T0834": {
+"decision": "added",
+"normalized": "https://genealogicalinstitute.ca",
+"raw_first_cell": "https://www.genealogicalinstitute.ca/"
+},
+"T0835": {
+"decision": "added",
+"normalized": "https://synnexcorp.com",
+"raw_first_cell": "https://www.synnexcorp.com/"
+},
+"T0836": {
+"decision": "added",
+"normalized": "https://ciina-ciina.com",
+"raw_first_cell": "https://ciina-ciina.com/marudai-niigata/"
+},
+"T0837": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/json"
+},
+"T0838": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/xml"
+},
+"T0839": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/image/png"
+},
+"T0840": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/gzip"
+},
+"T0841": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/stream-bytes/300000"
+},
+"T0842": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/robots.txt"
+},
+"T0843": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8804/"
+},
+"T0844": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8805/"
+},
+"T0845": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8806/"
+},
+"T0846": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8807/"
+},
+"T0847": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8808/"
+},
+"T0848": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8817/"
+},
+"T0849": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8815/"
+},
+"T0850": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8816/"
+},
+"T0851": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8840/"
+},
+"T0852": {
+"decision": "added",
+"normalized": "https://atletica.com",
+"raw_first_cell": "http://www.atletica.com/"
+},
+"T0853": {
+"decision": "added",
+"normalized": "https://frys.com",
+"raw_first_cell": "http://frys.com"
+},
+"T0854": {
+"decision": "added",
+"normalized": "https://whitwelltaxandledger.com",
+"raw_first_cell": "https://whitwelltaxandledger.com"
+},
+"T0855": {
+"decision": "added",
+"normalized": "https://phones4u.co.uk",
+"raw_first_cell": "http://www.phones4u.co.uk/"
+},
+"T0856": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/basic-auth/user/passwd"
+},
+"T0857": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/bearer"
+},
+"T0858": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8831/"
+},
+"T0859": {
+"decision": "added",
+"normalized": "https://cgram.com",
+"raw_first_cell": "http://www.cgram.com"
+},
+"T0860": {
+"decision": "added",
+"normalized": "https://pamesa.com",
+"raw_first_cell": "http://www.pamesa.com"
+},
+"T0861": {
+"decision": "added",
+"normalized": "https://dakhla-birgabal.com",
+"raw_first_cell": "http://www.dakhla-birgabal.com/"
+},
+"T0862": {
+"decision": "added",
+"normalized": "https://terrion-vrn.ru",
+"raw_first_cell": "http://terrion-vrn.ru"
+},
+"T0863": {
+"decision": "added",
+"normalized": "https://masymas.es",
+"raw_first_cell": "https://www.masymas.es/"
+},
+"T0864": {
+"decision": "added",
+"normalized": "https://berlinerbuergerbraeu.de",
+"raw_first_cell": "http://www.berlinerbuergerbraeu.de/"
+},
+"T0865": {
+"decision": "added",
+"normalized": "https://mellotronics.com",
+"raw_first_cell": "http://www.mellotronics.com/"
+},
+"T0866": {
+"decision": "added",
+"normalized": "https://sonigas.com.mx",
+"raw_first_cell": "https://www.sonigas.com.mx/"
+},
+"T0867": {
+"decision": "added",
+"normalized": "https://ragingagency.com",
+"raw_first_cell": "https://ragingagency.com"
+},
+"T0868": {
+"decision": "added",
+"normalized": "https://nlc.com.pk",
+"raw_first_cell": "http://www.nlc.com.pk"
+},
+"T0869": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/encoding/utf8"
+},
+"T0870": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8833/"
+},
+"T0871": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8834/"
+},
+"T0872": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8835/"
+},
+"T0873": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8836/"
+},
+"T0874": {
+"decision": "added",
+"normalized": "https://example.com",
+"raw_first_cell": "https://example.com/"
+},
+"T0875": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "http://example.com"
+},
+"T0876": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://www.example.com"
+},
+"T0877": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "http://www.example.com/"
+},
+"T0878": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "HTTPS://EXAMPLE.COM"
+},
+"T0879": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "example.com"
+},
+"T0880": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "www.example.com"
+},
+"T0881": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://example.com/index.html"
+},
+"T0882": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://example.com/about?utm_source=x#top"
+},
+"T0883": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "example.com:443"
+},
+"T0884": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "http://example.com:80/"
+},
+"T0885": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://example.com"
+},
+"T0886": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "'https://example.com'"
+},
+"T0887": {
+"decision": "added",
+"normalized": "https://example.com.",
+"raw_first_cell": "https://example.com."
+},
+"T0888": {
+"decision": "duplicate",
+"normalized": "https://example.com.",
+"raw_first_cell": "https://www.example.com./"
+},
+"T0889": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "//example.com"
+},
+"T0890": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "ｅｘａｍｐｌｅ．ｃｏｍ"
+},
+"T0891": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://user:secret@example.com/"
+},
+"T0892": {
+"decision": "added",
+"normalized": "https://example.org",
+"raw_first_cell": "https://example.org/"
+},
+"T0893": {
+"decision": "duplicate",
+"normalized": "https://example.org",
+"raw_first_cell": "http://WWW.Example.Org/"
+},
+"T0894": {
+"decision": "duplicate",
+"normalized": "https://example.org",
+"raw_first_cell": "example.org/some/path.html"
+},
+"T0895": {
+"decision": "added",
+"normalized": "https://example.net",
+"raw_first_cell": "http://example.net"
+},
+"T0896": {
+"decision": "duplicate",
+"normalized": "https://example.net",
+"raw_first_cell": "https://www.example.net/?utm_source=newsletter&utm_medium=email"
+},
+"T0897": {
+"decision": "added",
+"normalized": "https://münchen.de",
+"raw_first_cell": "münchen.de"
+},
+"T0898": {
+"decision": "added",
+"normalized": "https://xn--mnchen-3ya.de",
+"raw_first_cell": "xn--mnchen-3ya.de"
+},
+"T0899": {
+"decision": "added",
+"normalized": "https://bücher.de",
+"raw_first_cell": "https://bücher.de/"
+},
+"T0900": {
+"decision": "added",
+"normalized": "https://💩.la",
+"raw_first_cell": "http://💩.la"
+},
+"T0901": {
+"decision": "added",
+"normalized": "https://94.140.14.14",
+"raw_first_cell": "http://94.140.14.14"
+},
+"T0902": {
+"decision": "added",
+"normalized": "https://208.67.222.222",
+"raw_first_cell": "http://208.67.222.222"
+},
+"T0903": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "localhost"
+},
+"T0904": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "http://localhost"
+},
+"T0905": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "http://localhost:8000/admin"
+},
+"T0906": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1"
+},
+"T0907": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "https://127.0.0.1:8080/admin"
+},
+"T0908": {
+"decision": "added",
+"normalized": "https://127.1",
+"raw_first_cell": "http://127.1"
+},
+"T0909": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "http://2130706433"
+},
+"T0910": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "http://0x7f000001"
+},
+"T0911": {
+"decision": "added",
+"normalized": "https://0177.0.0.1",
+"raw_first_cell": "http://0177.0.0.1"
+},
+"T0912": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "http://[::1]/"
+},
+"T0913": {
+"decision": "invalid",
+"normalized": "https://::ffff:127.0.0.1",
+"raw_first_cell": "http://[::ffff:127.0.0.1]/"
+},
+"T0914": {
+"decision": "invalid",
+"normalized": "https://0.0.0.0",
+"raw_first_cell": "http://0.0.0.0"
+},
+"T0915": {
+"decision": "invalid",
+"normalized": "https://10.0.0.1",
+"raw_first_cell": "http://10.0.0.1"
+},
+"T0916": {
+"decision": "invalid",
+"normalized": "https://172.16.0.1",
+"raw_first_cell": "http://172.16.0.1"
+},
+"T0917": {
+"decision": "invalid",
+"normalized": "https://192.168.1.1",
+"raw_first_cell": "http://192.168.1.1/admin"
+},
+"T0918": {
+"decision": "invalid",
+"normalized": "https://169.254.169.254",
+"raw_first_cell": "http://169.254.169.254/latest/meta-data/"
+},
+"T0919": {
+"decision": "invalid",
+"normalized": "https://metadata.google.internal",
+"raw_first_cell": "http://metadata.google.internal/computeMetadata/v1/"
+},
+"T0920": {
+"decision": "added",
+"normalized": "https://100.100.100.200",
+"raw_first_cell": "http://100.100.100.200/latest/meta-data/"
+},
+"T0921": {
+"decision": "invalid",
+"normalized": "https://224.0.0.1",
+"raw_first_cell": "http://224.0.0.1"
+},
+"T0922": {
+"decision": "invalid",
+"normalized": "https://intranet.local",
+"raw_first_cell": "http://intranet.local"
+},
+"T0923": {
+"decision": "invalid",
+"normalized": "https://printer.internal",
+"raw_first_cell": "http://printer.internal"
+},
+"T0924": {
+"decision": "added",
+"normalized": "https://nas.lan",
+"raw_first_cell": "http://nas.lan"
+},
+"T0925": {
+"decision": "added",
+"normalized": "https://router.home.arpa",
+"raw_first_cell": "http://router.home.arpa"
+},
+"T0926": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://example.com@127.0.0.1/"
+},
+"T0927": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1#@example.com/"
+},
+"T0928": {
+"decision": "added",
+"normalized": "https://localtest.me",
+"raw_first_cell": "http://localtest.me/"
+},
+"T0929": {
+"decision": "added",
+"normalized": "https://lvh.me",
+"raw_first_cell": "http://lvh.me/"
+},
+"T0930": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "not a website"
+},
+"T0931": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "http://"
+},
+"T0932": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "https://"
+},
+"T0933": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "://example.com"
+},
+"T0934": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "htp://example.com"
+},
+"T0935": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "ftp://example.com"
+},
+"T0936": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "javascript:alert(1)"
+},
+"T0937": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "mailto:info@example.com"
+},
+"T0938": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "file:///etc/passwd"
+},
+"T0939": {
+"decision": "added",
+"normalized": "https://exa mple.com",
+"raw_first_cell": "http://exa mple.com"
+},
+"T0940": {
+"decision": "added",
+"normalized": "https://example..com",
+"raw_first_cell": "http://example..com"
+},
+"T0941": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "example"
+},
+"T0942": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "http://example"
+},
+"T0943": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "http://example.com:99999"
+},
+"T0945": {
+"decision": "added",
+"normalized": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com",
+"raw_first_cell": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com"
+},
+"T0946": {
+"decision": "added",
+"normalized": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com",
+"raw_first_cell": "https://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+},
+"T0947": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "=HYPERLINK(\"http://evil.test\""
+},
+"T0948": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "+cmd|' /C calc'!A0"
+},
+"T0949": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "@SUM(1+1)"
+},
+"T0950": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "# this is a comment"
+},
+"T0951": {
+"decision": "invalid",
+"normalized": null,
+"raw_first_cell": "url"
+},
+"T0952": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://example.com/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+},
+"T0953": {
+"decision": "duplicate",
+"normalized": "https://example.com",
+"raw_first_cell": "https://example.com/?q=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+},
+"T0954": {
+"decision": "added",
+"normalized": "https://henriettenstiftung.de",
+"raw_first_cell": "http://www.henriettenstiftung.de"
+},
+"T0955": {
+"decision": "added",
+"normalized": "https://gmtc.com.tw",
+"raw_first_cell": "https://www.gmtc.com.tw/tw"
+},
+"T0956": {
+"decision": "added",
+"normalized": "https://jugendfarm-bb.de",
+"raw_first_cell": "http://www.jugendfarm-bb.de/index.htm"
+},
+"T0957": {
+"decision": "added",
+"normalized": "https://leonardo.ru",
+"raw_first_cell": "https://leonardo.ru/"
+},
+"T0958": {
+"decision": "added",
+"normalized": "https://psygroup.com",
+"raw_first_cell": "http://www.psygroup.com"
+},
+"T0959": {
+"decision": "added",
+"normalized": "https://renewpower.in",
+"raw_first_cell": "http://renewpower.in/"
+},
+"T0960": {
+"decision": "added",
+"normalized": "https://sf.tv",
+"raw_first_cell": "http://www.sf.tv/archiv/"
+},
+"T0961": {
+"decision": "added",
+"normalized": "https://thalesgroup.com",
+"raw_first_cell": "https://www.thalesgroup.com/"
+},
+"T0962": {
+"decision": "added",
+"normalized": "https://eraz.auto.am",
+"raw_first_cell": "https://eraz.auto.am"
+},
+"T0963": {
+"decision": "added",
+"normalized": "https://euly.org",
+"raw_first_cell": "http://euly.org"
+},
+"T0964": {
+"decision": "added",
+"normalized": "https://sahamassurance.com",
+"raw_first_cell": "http://sahamassurance.com/"
+},
+"T0965": {
+"decision": "added",
+"normalized": "https://759store.com",
+"raw_first_cell": "https://www.759store.com"
+},
+"T0966": {
+"decision": "duplicate",
+"normalized": "https://httpbin.org",
+"raw_first_cell": "https://httpbin.org/status/200"
+},
+"T0967": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8826/"
+},
+"T0968": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8827/"
+},
+"T0969": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8811/"
+},
+"T0970": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8812/"
+},
+"T0971": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8813/"
+},
+"T0972": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8841/"
+},
+"T0973": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8844/"
+},
+"T0974": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8845/"
+},
+"T0975": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8846/"
+},
+"T0976": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8847/"
+},
+"T0977": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8848/"
+},
+"T0978": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8849/"
+},
+"T0979": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8850/"
+},
+"T0980": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8852/"
+},
+"T0981": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8853/"
+},
+"T0982": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8854/"
+},
+"T0983": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8855/"
+},
+"T0984": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8856/"
+},
+"T0985": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8857/"
+},
+"T0986": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8858/"
+},
+"T0987": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8859/"
+},
+"T0988": {
+"decision": "invalid",
+"normalized": "https://127.0.0.1",
+"raw_first_cell": "http://127.0.0.1:8860/"
+}
+}

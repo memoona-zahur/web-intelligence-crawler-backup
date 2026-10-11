@@ -1,0 +1,12 @@
+﻿{
+ "what": "Does the 403 depend on the crawler's request headers? One GET per URL per header set, from Lahore, run right after the smoke run (2026-10-11).",
+ "crawler_headers": "User-Agent: WebIntelligenceCrawler/1.0 (+internal research); Accept: text/html,application/xhtml+xml;q=0.9,*/*;q=0.5; Accept-Language: en, *;q=0.5",
+ "harness_headers": "User-Agent: WebsiteIntelligenceEval/1.0 (academic crawler field test; Lahore); Accept: text/html,*/*;q=0.5",
+ "results": {
+  "https://www.gemcar.com":     {"crawler_headers": 403, "harness_headers": 200},
+  "https://matthewsaurora.com": {"crawler_headers": 403, "harness_headers": 200},
+  "https://www.qbe.com/":       {"crawler_headers": 403, "harness_headers": 403},
+  "https://www.allergan.com/":  {"crawler_headers": 403, "harness_headers": 403}
+ },
+ "reading": "gemcar.com and matthewsaurora.com block the crawler's User-Agent/headers specifically (crawler finding, CR-F02/L-13). qbe.com and allergan.com refuse both clients, so that is the site or this network, not the crawler (ENV/SITE)."
+}

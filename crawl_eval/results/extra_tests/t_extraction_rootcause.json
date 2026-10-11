@@ -1,0 +1,499 @@
+{
+ "part_A_static_text_deleted_by_name_hint_rule": [
+  {
+   "url": "https://www.dandelionstrategies.com/contact/",
+   "page_visible_chars": 881,
+   "crawler_extracted_chars": 76,
+   "elements_matching_name_hints": 2,
+   "largest_matches": [
+    {
+     "tag": "body",
+     "hint": "sidebar",
+     "class_or_id": "nb-3-3-8 nimble-has-local-data-skp__post_page_63 nimble-no-group-site-tmpl-skp__all_page w",
+     "chars_inside": 825,
+     "share_of_page_text": 0.94
+    },
+    {
+     "tag": "a",
+     "hint": "skip-link",
+     "class_or_id": "sek-skip-link sek-screen-reader-text ",
+     "chars_inside": 15,
+     "share_of_page_text": 0.02
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 1,
+   "root_cause": "a <body> whose class/id contains 'sidebar' holds 94% of the text and is deleted with everything inside it",
+   "row": "T0003"
+  },
+  {
+   "url": "https://www.creamuk.com/our-services",
+   "page_visible_chars": 1304,
+   "crawler_extracted_chars": 20,
+   "elements_matching_name_hints": 1,
+   "largest_matches": [
+    {
+     "tag": "body",
+     "hint": "newsletter",
+     "class_or_id": "tweak-site-width-option-full-background tweak-icon-weight-hairline tweak-site-ajax-loading",
+     "chars_inside": 1283,
+     "share_of_page_text": 0.98
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 1,
+   "root_cause": "a <body> whose class/id contains 'newsletter' holds 98% of the text and is deleted with everything inside it",
+   "row": "T0009"
+  },
+  {
+   "url": "https://excelpr.com",
+   "page_visible_chars": 2650,
+   "crawler_extracted_chars": 60,
+   "elements_matching_name_hints": 3,
+   "largest_matches": [
+    {
+     "tag": "body",
+     "hint": "sidebar",
+     "class_or_id": "home wp-singular page-template-default page page-id-73 wp-custom-logo wp-theme-cleanfin pb",
+     "chars_inside": 2589,
+     "share_of_page_text": 0.98
+    },
+    {
+     "tag": "a",
+     "hint": "skip-link",
+     "class_or_id": "skip-link screen-reader-text ",
+     "chars_inside": 15,
+     "share_of_page_text": 0.01
+    },
+    {
+     "tag": "link",
+     "hint": "popup",
+     "class_or_id": "magnific-popup-css",
+     "chars_inside": 0,
+     "share_of_page_text": 0.0
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 1,
+   "root_cause": "a <body> whose class/id contains 'sidebar' holds 98% of the text and is deleted with everything inside it",
+   "row": "T0035"
+  },
+  {
+   "url": "https://www.clm.com/practice/financial-services-regulation-and-enforcement/",
+   "page_visible_chars": 5759,
+   "crawler_extracted_chars": 76,
+   "elements_matching_name_hints": 5,
+   "largest_matches": [
+    {
+     "tag": "body",
+     "hint": "sidebar",
+     "class_or_id": "wp-singular poa_practice-template-default single single-poa_practice postid-1090 wp-custom",
+     "chars_inside": 5682,
+     "share_of_page_text": 0.99
+    },
+    {
+     "tag": "div",
+     "hint": "sidebar",
+     "class_or_id": "content-sidebar-wrap ",
+     "chars_inside": 5272,
+     "share_of_page_text": 0.92
+    },
+    {
+     "tag": "aside",
+     "hint": "sidebar",
+     "class_or_id": "sidebar sidebar-primary widget-area genesis-sidebar-primary",
+     "chars_inside": 250,
+     "share_of_page_text": 0.04
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 2,
+   "root_cause": "a <body> whose class/id contains 'sidebar' holds 99% of the text and is deleted with everything inside it",
+   "row": "T0046"
+  },
+  {
+   "url": "https://www.teknita.com/",
+   "page_visible_chars": 1458,
+   "crawler_extracted_chars": 41,
+   "elements_matching_name_hints": 1,
+   "largest_matches": [
+    {
+     "tag": "body",
+     "hint": "sidebar",
+     "class_or_id": "home wp-singular page-template-default page page-id-10 wp-theme-divi et-tb-has-template et",
+     "chars_inside": 1416,
+     "share_of_page_text": 0.97
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 1,
+   "root_cause": "a <body> whose class/id contains 'sidebar' holds 97% of the text and is deleted with everything inside it",
+   "row": "T0049"
+  },
+  {
+   "url": "https://crcadvisors.com/",
+   "page_visible_chars": 1170,
+   "crawler_extracted_chars": 40,
+   "elements_matching_name_hints": 3,
+   "largest_matches": [
+    {
+     "tag": "body",
+     "hint": "modal",
+     "class_or_id": "home wp-singular page-template page-template-100-width page-template-100-width-php page pa",
+     "chars_inside": 1129,
+     "share_of_page_text": 0.96
+    },
+    {
+     "tag": "a",
+     "hint": "skip-link",
+     "class_or_id": "skip-link screen-reader-text ",
+     "chars_inside": 15,
+     "share_of_page_text": 0.01
+    },
+    {
+     "tag": "div",
+     "hint": "breadcrumb",
+     "class_or_id": "fusion-page-title-bar fusion-page-title-bar-breadcrumbs fusion-page-title-bar-left ",
+     "chars_inside": 0,
+     "share_of_page_text": 0.0
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 1,
+   "root_cause": "a <body> whose class/id contains 'modal' holds 96% of the text and is deleted with everything inside it",
+   "row": "T0053"
+  },
+  {
+   "url": "https://millermartin.com/about/accolades",
+   "page_visible_chars": 4505,
+   "crawler_extracted_chars": 25,
+   "elements_matching_name_hints": 5,
+   "largest_matches": [
+    {
+     "tag": "body",
+     "hint": "sidebar",
+     "class_or_id": "wp-singular page-template-default page page-id-27397854 page-child parent-pageid-27397824 ",
+     "chars_inside": 4479,
+     "share_of_page_text": 0.99
+    },
+    {
+     "tag": "div",
+     "hint": "popup",
+     "class_or_id": "brifcase-popup-main ",
+     "chars_inside": 40,
+     "share_of_page_text": 0.01
+    },
+    {
+     "tag": "div",
+     "hint": "popup",
+     "class_or_id": "brifcase-popup ",
+     "chars_inside": 38,
+     "share_of_page_text": 0.01
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 1,
+   "root_cause": "a <body> whose class/id contains 'sidebar' holds 99% of the text and is deleted with everything inside it",
+   "row": "T0057"
+  },
+  {
+   "url": "https://www.dundas-wilson.com/about-us/",
+   "page_visible_chars": 4611,
+   "crawler_extracted_chars": 52,
+   "elements_matching_name_hints": 4,
+   "largest_matches": [
+    {
+     "tag": "body",
+     "hint": "sidebar",
+     "class_or_id": "wp-singular page-template-default page page-id-39 wp-custom-logo wp-theme-color-blog do-et",
+     "chars_inside": 4558,
+     "share_of_page_text": 0.99
+    },
+    {
+     "tag": "a",
+     "hint": "skip-link",
+     "class_or_id": "skip-link screen-reader-text ",
+     "chars_inside": 15,
+     "share_of_page_text": 0.0
+    },
+    {
+     "tag": "nav",
+     "hint": "breadcrumb",
+     "class_or_id": "mt-breadcrumb breadcrumb",
+     "chars_inside": 13,
+     "share_of_page_text": 0.0
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 1,
+   "root_cause": "a <body> whose class/id contains 'sidebar' holds 99% of the text and is deleted with everything inside it",
+   "row": "T0060"
+  },
+  {
+   "url": "https://severn.de/case-studies",
+   "page_visible_chars": 1573,
+   "crawler_extracted_chars": 74,
+   "elements_matching_name_hints": 4,
+   "largest_matches": [
+    {
+     "tag": "div",
+     "hint": "sidebar",
+     "class_or_id": "post-content un-no-sidebar-layout ",
+     "chars_inside": 478,
+     "share_of_page_text": 0.3
+    },
+    {
+     "tag": "link",
+     "hint": "cookie",
+     "class_or_id": "borlabs-cookie-custom-css",
+     "chars_inside": 0,
+     "share_of_page_text": 0.0
+    },
+    {
+     "tag": "div",
+     "hint": "cookie",
+     "class_or_id": "borlabscookiebox",
+     "chars_inside": 0,
+     "share_of_page_text": 0.0
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 0,
+   "root_cause": "no single element; several rules together",
+   "row": "T0061"
+  },
+  {
+   "url": "https://jcrooftile.com/company/",
+   "page_visible_chars": 4694,
+   "crawler_extracted_chars": 33,
+   "elements_matching_name_hints": 8,
+   "largest_matches": [
+    {
+     "tag": "body",
+     "hint": "popup",
+     "class_or_id": "wp-singular page-template page-template-elementor_header_footer page page-id-10008 page-pa",
+     "chars_inside": 4660,
+     "share_of_page_text": 0.99
+    },
+    {
+     "tag": "div",
+     "hint": "sidebar",
+     "class_or_id": "sidebar-none sidebar-divider-off main",
+     "chars_inside": 2887,
+     "share_of_page_text": 0.62
+    },
+    {
+     "tag": "div",
+     "hint": "breadcrumb",
+     "class_or_id": "elementor-element elementor-element-d8f757b elementor-widget elementor-widget-breadcrumbs ",
+     "chars_inside": 17,
+     "share_of_page_text": 0.0
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 2,
+   "root_cause": "a <body> whose class/id contains 'popup' holds 99% of the text and is deleted with everything inside it",
+   "row": "T0071"
+  },
+  {
+   "url": "https://www.davidsa.com/",
+   "page_visible_chars": 8474,
+   "crawler_extracted_chars": 0,
+   "elements_matching_name_hints": 15,
+   "largest_matches": [
+    {
+     "tag": "html",
+     "hint": "cookie",
+     "class_or_id": "html_stretched responsive av-preloader-disabled html_header_top html_logo_left html_main_n",
+     "chars_inside": 8474,
+     "share_of_page_text": 1.0
+    },
+    {
+     "tag": "div",
+     "hint": "cookie",
+     "class_or_id": "cmplz-cookiebanner-container",
+     "chars_inside": 1843,
+     "share_of_page_text": 0.22
+    },
+    {
+     "tag": "div",
+     "hint": "cookie",
+     "class_or_id": "cmplz-cookiebanner cmplz-hidden banner-1 bottom-right-view-preferences optin cmplz-bottom-",
+     "chars_inside": 1843,
+     "share_of_page_text": 0.22
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 1,
+   "root_cause": "a <html> whose class/id contains 'cookie' holds 100% of the text and is deleted with everything inside it",
+   "row": "T0077"
+  },
+  {
+   "url": "https://seagrave.com/Company/About-Us",
+   "page_visible_chars": 4527,
+   "crawler_extracted_chars": 0,
+   "elements_matching_name_hints": 0,
+   "largest_matches": [],
+   "matches_holding_50pct_or_more_of_the_page_text": 0,
+   "root_cause": "no single element; several rules together",
+   "row": "T0086"
+  },
+  {
+   "url": "https://www.vekoma.com/about-us",
+   "page_visible_chars": 5208,
+   "crawler_extracted_chars": 40,
+   "elements_matching_name_hints": 8,
+   "largest_matches": [
+    {
+     "tag": "body",
+     "hint": "cookie",
+     "class_or_id": "no-jquery page cookie-control ",
+     "chars_inside": 5167,
+     "share_of_page_text": 0.99
+    },
+    {
+     "tag": "div",
+     "hint": "cookie",
+     "class_or_id": "cookie ",
+     "chars_inside": 293,
+     "share_of_page_text": 0.06
+    },
+    {
+     "tag": "button",
+     "hint": "cookie",
+     "class_or_id": "button | js-cookie-confirmation u-margin-left-xxs u-pull-right ",
+     "chars_inside": 18,
+     "share_of_page_text": 0.0
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 1,
+   "root_cause": "a <body> whose class/id contains 'cookie' holds 99% of the text and is deleted with everything inside it",
+   "row": "T0095"
+  },
+  {
+   "url": "https://conrad-modelle.de",
+   "page_visible_chars": 2894,
+   "crawler_extracted_chars": 0,
+   "elements_matching_name_hints": 157,
+   "largest_matches": [
+    {
+     "tag": "div",
+     "hint": "cookie",
+     "class_or_id": "off-canvas is--left block-transition cookie-consent",
+     "chars_inside": 983,
+     "share_of_page_text": 0.34
+    },
+    {
+     "tag": "div",
+     "hint": "cookie",
+     "class_or_id": "cookie-consent--configuration ",
+     "chars_inside": 618,
+     "share_of_page_text": 0.21
+    },
+    {
+     "tag": "div",
+     "hint": "cookie",
+     "class_or_id": "cookie-consent--configuration-main ",
+     "chars_inside": 604,
+     "share_of_page_text": 0.21
+    }
+   ],
+   "matches_holding_50pct_or_more_of_the_page_text": 0,
+   "root_cause": "no single element; several rules together",
+   "row": "T0098"
+  }
+ ],
+ "part_B_render_timing": [
+  {
+   "row": "T0437",
+   "url": "https://skad.ru",
+   "at_domcontentloaded": {
+    "html_bytes": 319367,
+    "crawler_extracted_chars": 1407
+   },
+   "networkidle": "not reached in 10 s",
+   "after_network_idle": {
+    "html_bytes": 457008,
+    "crawler_extracted_chars": 1407
+   }
+  },
+  {
+   "row": "T0523",
+   "url": "https://picoxr.com",
+   "at_domcontentloaded": {
+    "html_bytes": 21939,
+    "crawler_extracted_chars": 0
+   },
+   "after_network_idle": {
+    "html_bytes": 136172,
+    "crawler_extracted_chars": 148
+   }
+  },
+  {
+   "row": "T0528",
+   "url": "https://mysteriousbookshop.com",
+   "at_domcontentloaded": {
+    "html_bytes": 5619,
+    "crawler_extracted_chars": 14
+   },
+   "networkidle": "not reached in 10 s",
+   "after_network_idle": {
+    "html_bytes": 119087,
+    "crawler_extracted_chars": 1587
+   }
+  },
+  {
+   "row": "T0529",
+   "url": "https://atbank.de",
+   "at_domcontentloaded": {
+    "html_bytes": 7815,
+    "crawler_extracted_chars": 0
+   },
+   "after_network_idle": {
+    "html_bytes": 68273,
+    "crawler_extracted_chars": 61543
+   }
+  },
+  {
+   "row": "T0532",
+   "url": "https://digitalleague.ru",
+   "at_domcontentloaded": {
+    "html_bytes": 1693,
+    "crawler_extracted_chars": 0
+   },
+   "after_network_idle": {
+    "html_bytes": 146402,
+    "crawler_extracted_chars": 2559
+   }
+  },
+  {
+   "row": "T0534",
+   "url": "https://biola.slingshotedu.com",
+   "error": "TimeoutError: Page.goto: Timeout 15000ms exceeded.\nCall log:\n  - navigating to \"https://biola."
+  },
+  {
+   "row": "T0665",
+   "url": "https://linuxcare.com",
+   "error": "Error: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://linuxcare.com/\nCall log:"
+  },
+  {
+   "row": "T0668",
+   "url": "https://panamsat.com",
+   "at_domcontentloaded": {
+    "html_bytes": 626,
+    "crawler_extracted_chars": 23
+   },
+   "after_network_idle": {
+    "html_bytes": 626,
+    "crawler_extracted_chars": 23
+   }
+  },
+  {
+   "row": "T0957",
+   "url": "https://leonardo.ru",
+   "at_domcontentloaded": {
+    "html_bytes": 13598,
+    "crawler_extracted_chars": 0
+   },
+   "after_network_idle": {
+    "html_bytes": 13598,
+    "crawler_extracted_chars": 0
+   }
+  }
+ ],
+ "summary": {
+  "part_A_sites_tested": 14,
+  "part_A_sites_where_one_matching_element_holds_50pct_or_more_of_the_text": 11,
+  "part_B_sites_tested": 9,
+  "part_B_sites_where_waiting_for_network_idle_gives_80_plus_chars": 4
+ }
+}

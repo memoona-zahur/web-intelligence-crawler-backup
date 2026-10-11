@@ -1,0 +1,487 @@
+{
+ "sampled_rows": [
+  "T0089",
+  "T0091",
+  "T0118",
+  "T0124",
+  "T0575",
+  "T0705",
+  "T0722",
+  "T0752",
+  "T0777",
+  "T0955"
+ ],
+ "extra_rows_checked_because_the_refinement_moved_them": [
+  "T0507",
+  "T0522",
+  "T0524"
+ ],
+ "fresh_probes": {
+  "T0089": {
+   "host": "nutro.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 403,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Blocked",
+   "final_url": "https://nutro.com",
+   "scheme": "https",
+   "bytes": 919,
+   "note": "http 403",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0091": {
+   "host": "pedigree.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 403,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Blocked",
+   "final_url": "https://pedigree.com",
+   "scheme": "https",
+   "bytes": 919,
+   "note": "http 403",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0118": {
+   "host": "electric-center.co.uk",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.electric-center.co.uk/",
+   "scheme": "https",
+   "bytes": 201596,
+   "note": "15180 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0124": {
+   "host": "pagani.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 429,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Blocked",
+   "final_url": "https://pagani.com",
+   "scheme": "https",
+   "bytes": 33938,
+   "note": "http 429",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0575": {
+   "host": "allergan.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.abbvie.com/allergan.html?utm_source=allergan_redirect&utm_medium=referral",
+   "scheme": "https",
+   "bytes": 18244,
+   "note": "1748 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0705": {
+   "host": "lincolnhaney.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Crawled",
+   "final_url": "https://www.sebagotechnics.com/insights/sebago-technics-acquires-lincoln-haney-engineering-associates/",
+   "scheme": "http",
+   "bytes": 204201,
+   "note": "180 chars",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0722": {
+   "host": "imachine.com.tw",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "ConnectError",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0752": {
+   "host": "etdb.org",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0777": {
+   "host": "gregorypacks.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 307,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Requires Review",
+   "final_url": "https://www.gregory.com",
+   "scheme": "https",
+   "bytes": 5669,
+   "note": "almost no static text (35 chars)",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0955": {
+   "host": "gmtc.com.tw",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0507": {
+   "host": "smule.com",
+   "dns_system_ok": true,
+   "dns_public_ok": true,
+   "dns_dead": false,
+   "head_status": 200,
+   "error": "",
+   "dns_public_rcode": 0,
+   "predicted": "Requires Review",
+   "final_url": "https://www.smule.com/",
+   "scheme": "https",
+   "bytes": 9076,
+   "note": "almost no static text (57 chars)",
+   "dns_any_ok": true,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     true,
+     true,
+     true
+    ],
+    "1.1.1.1": [
+     "ok",
+     "ok",
+     "ok"
+    ],
+    "8.8.8.8": [
+     "ok",
+     "ok",
+     "ok"
+    ]
+   }
+  },
+  "T0522": {
+   "host": "kg-mobility.com",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "T0524": {
+   "host": "pegatroncorp.com",
+   "dns_system_ok": false,
+   "dns_public_ok": false,
+   "dns_dead": false,
+   "head_status": null,
+   "error": "no-dns",
+   "dns_public_rcode": 0,
+   "predicted": "Unreachable",
+   "dns_any_ok": false,
+   "dns_nxdomain_seen": false,
+   "dns_recheck": {
+    "system": [
+     false,
+     false,
+     false
+    ],
+    "1.1.1.1": [
+     0,
+     0,
+     0
+    ],
+    "8.8.8.8": [
+     0,
+     0,
+     0
+    ]
+   }
+  }
+ },
+ "reclassified": {
+  "T0118": {
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (15180 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "15180 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0507": {
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Requires Review' (almost no static text (57 chars)), a plain GET cannot execute JavaScript, so the probe cannot show that this JavaScript-redirect site changed; the SITE-CHANGED label has no support and the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Requires Review",
+    "note": "almost no static text (57 chars)",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0575": {
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (1748 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "1748 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0722": {
+   "to": "ENV-DEPENDENT",
+   "reason": "fresh probe reads the site as 'Unreachable' (ConnectError), name resolves but the site is not reachable from this network",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "ConnectError",
+    "head_status": null,
+    "dns_any_ok": true
+   }
+  },
+  "T0777": {
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Requires Review' (almost no static text (35 chars)), a plain GET cannot execute JavaScript, so the probe cannot show that this JavaScript-redirect site changed; the SITE-CHANGED label has no support and the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Requires Review",
+    "note": "almost no static text (35 chars)",
+    "error": "",
+    "head_status": 307,
+    "dns_any_ok": true
+   }
+  }
+ }
+}

@@ -1,0 +1,24 @@
+23:59:53 run existing-code_20261010-235953_smoke label=existing-code smoke=True limit=None concurrency=5 resume=False
+23:59:53 app code hash check before run: OK
+23:59:54 dataset testing_URLs.csv sha256 0963ab3fead262c8 rows=988 selected=100
+23:59:55 IMPORTER CRASH on row T0944 'http://[invalid': ValueError: Invalid IPv6 URL (batch of 988 rows lost); retrying without it
+23:59:56 importer: added=842 duplicates=50 invalid=95; raws=987 lines=987; crashes=1
+23:59:56 crawl plan: 94 rows (12 direct, 82 via importer); to do now: 94
+00:00:26 run-time probe done for 86 real rows
+00:00:26 batch 1: 50 sites
+00:00:50   runner:   10/50 done — empty (site #93)
+00:01:15   runner:   20/50 done — crawled (site #211)
+00:01:32   runner:   30/50 done — crawled (site #264)
+00:01:57   runner:   40/50 done — crawled (site #412)
+00:02:23   runner:   50/50 done — crawled (site #474)
+00:02:23   batch counts: {'crawled': 45, 'blocked': 3, 'empty': 2} in 116.7s
+00:02:23   checkpoint written (50/94)
+00:02:23 batch 2: 44 sites
+00:02:39   runner:   10/44 done — crawled (site #561)
+00:03:04   runner:   20/44 done — crawled (site #730)
+00:03:22   runner:   30/44 done — invalid (site #844)
+00:03:33   runner:   40/44 done — crawled (site #853)
+00:03:59   runner:   44/44 done — unreachable (site #684)
+00:03:59   batch counts: {'crawled': 24, 'empty': 4, 'blocked': 4, 'invalid': 4, 'unreachable': 5, 'robots_blocked': 1, 'failed': 2} in 96.6s
+00:04:00   checkpoint written (94/94)
+00:04:00 app code hash check after run: OK

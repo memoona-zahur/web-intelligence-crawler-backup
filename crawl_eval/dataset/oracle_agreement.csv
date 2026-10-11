@@ -1,0 +1,41 @@
+﻿id,group,category,url,expected,fresh_probe_says,detail,agree
+T0004,happy,Corporate / B2B services,https://fabioluizvieira.com.br/vz-associados-consultoria-em-saude/,Crawled,Crawled,ok,Y
+T0015,happy,Corporate / B2B services,https://www.aaff.nl,Crawled,Crawled,ok,Y
+T0017,happy,Corporate / B2B services,http://www.quinnemanuel.com/,Crawled,Crawled,ok,Y
+T0027,happy,Corporate / B2B services,https://10genpartners.com,Crawled,Crawled,ok,Y
+T0039,happy,Corporate / B2B services,https://www.tgpinternational.com/,Crawled,Crawled,ok,Y
+T0041,happy,Corporate / B2B services,https://altalab.io/,Crawled,Crawled,ok,Y
+T0057,happy,Corporate / B2B services,http://www.millermartin.com,Crawled,Crawled,ok,Y
+T0132,happy,E-commerce and retail,http://univermag.kharkov.ua,Crawled,Crawled,ok,Y
+T0144,happy,E-commerce and retail,https://www.corilon.com,Crawled,Crawled,ok,Y
+T0155,happy,E-commerce and retail,https://www.mein-gartenshop24.de/,Crawled,Crawled,ok,Y
+T0200,happy,SaaS / software / platforms,https://yourdolphin.com,Crawled,Crawled,ok,Y
+T0223,happy,SaaS / software / platforms,http://www.norbsoft.com/,Crawled,Crawled,ok,Y
+T0236,happy,SaaS / software / platforms,https://www.culture.tech,Crawled,Crawled,ok,Y
+T0248,happy,SaaS / software / platforms,https://scaidata.com,Crawled,Crawled,ok,Y
+T0264,happy,"Healthcare, education, finance, real estate, non-profit, government",https://www.cupid.or.jp/clinic/,Crawled,Crawled,ok,Y
+T0286,happy,"Healthcare, education, finance, real estate, non-profit, government",https://www.axa.com/,Crawled,Crawled,ok,Y
+T0300,happy,"Healthcare, education, finance, real estate, non-profit, government",https://www.eurogroupforanimals.org,Crawled,Crawled,ok,Y
+T0347,happy,Small local businesses on site builders,https://www.mein1907.de/,Crawled,Crawled,ok,Y
+T0354,happy,Small local businesses on site builders,https://thedeerbornegroup.com/,Crawled,Crawled,ok,Y
+T0355,happy,Small local businesses on site builders,https://www.dutchmaid.net/,Crawled,Crawled,ok,Y
+T0359,happy,Small local businesses on site builders,https://www.intouchgroup.net/,Crawled,Crawled,ok,Y
+T0367,happy,Small local businesses on site builders,https://benjaminfpackardhouse.com/,Crawled,Crawled,ok,Y
+T0380,happy,Small local businesses on site builders,https://www.luminomadx.com/,Crawled,Crawled,ok,Y
+T0428,happy,Non-English / international,https://taximaxim.com/,Crawled,Crawled,ok,Y
+T0466,happy,Non-English / international,https://www.hhi.co.kr/,Crawled,Crawled,ok,Y
+T0484,happy,Non-English / international,http://www.worldcall.com.pk/,Crawled,Crawled,ok,Y
+T0492,happy,Non-English / international,https://national-report.com/,Crawled,Crawled,ok,Y
+T0504,happy,JavaScript-heavy SPAs,https://www.habs.ai,Crawled,Requires Review,thin,N
+T0508,happy,JavaScript-heavy SPAs,https://tattebakery.com/,Crawled,Requires Review,thin,N
+T0544,happy,JavaScript-heavy SPAs,https://www.almarai.com/,Crawled,Requires Review,thin,N
+T0639,error,Parked / for-sale domains,http://www.loopmobile.in/,Parked,Parked,parked,Y
+T0653,error,Parked / for-sale domains,http://www.takimaging.com,Parked,Parked,parked,Y
+T0663,error,Under construction / default pages,http://www.predict.com/,Under Construction,Under Construction,construction,Y
+T0668,error,Under construction / default pages,http://www.panamsat.com,Under Construction,Under Construction,construction,Y
+T0691,error,Timeouts / refused / slow,http://www.petroperu.com.pe,Unreachable,Unreachable,connect,Y
+T0724,error,HTTP errors,http://www.chorus.de,Blocked,Blocked,http403,Y
+T0760,error,Redirect behaviour,https://www.landesmuseum-hannover.de/,Crawled,Crawled,ok,Y
+T0775,error,Redirect behaviour,https://glambecksee.de,Crawled,Crawled,ok,Y
+T0861,error,Encoding oddities,http://www.dakhla-birgabal.com/,Crawled,Crawled,ok,Y
+T0957,error,Thin / empty / error-only pages,https://leonardo.ru/,Requires Review,Requires Review,thin,Y

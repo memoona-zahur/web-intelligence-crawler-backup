@@ -1,0 +1,128 @@
+{
+ "run_id": "existing-code_20261010-235953_smoke",
+ "rows_judged": 100,
+ "verdicts": {
+  "MATCH": 79,
+  "MISMATCH": 16,
+  "SITE-CHANGED": 5
+ },
+ "status_counts": {
+  "crawled": 69,
+  "blocked": 7,
+  "empty": 6,
+  "invalid": 4,
+  "unreachable": 5,
+  "failed": 2,
+  "robots_blocked": 1
+ },
+ "match_rate_all": 0.79,
+ "judged_for_crawler_fault": 95,
+ "happy_rows": 60,
+ "happy_crawled": 53,
+ "happy_useful_text_ge_500": 48,
+ "latency_s_p50": 7.49,
+ "latency_s_p95": 25.57,
+ "total_http_requests": 722,
+ "retries": 38,
+ "browser_used_rows": 13,
+ "wall_seconds_crawl": 213.7,
+ "throughput_sites_per_hour_THIS_RUN_ONLY": 1583.5,
+ "peak_rss_mb_python_only": 141.0,
+ "by_category": {
+  "Corporate / B2B services": {
+   "MATCH": 7
+  },
+  "Manufacturers, industrial, distributors, wholesalers": {
+   "MISMATCH": 3,
+   "MATCH": 3
+  },
+  "E-commerce and retail": {
+   "MATCH": 5,
+   "MISMATCH": 1
+  },
+  "SaaS / software / platforms": {
+   "MATCH": 6
+  },
+  "Healthcare, education, finance, real estate, non-profit, government": {
+   "MATCH": 7,
+   "SITE-CHANGED": 1
+  },
+  "Small local businesses on site builders": {
+   "MATCH": 6
+  },
+  "Large multinational enterprises": {
+   "MATCH": 3
+  },
+  "Non-English / international": {
+   "MATCH": 8
+  },
+  "JavaScript-heavy SPAs": {
+   "MATCH": 4,
+   "MISMATCH": 1
+  },
+  "Minimal / one-page / static sites": {
+   "MATCH": 2,
+   "SITE-CHANGED": 1
+  },
+  "Sitemap variants and non-standard navigation": {
+   "MATCH": 2
+  },
+  "Dead domains (NXDOMAIN)": {
+   "MISMATCH": 3
+  },
+  "Parked / for-sale domains": {
+   "MISMATCH": 3
+  },
+  "Under construction / default pages": {
+   "SITE-CHANGED": 1,
+   "MATCH": 1
+  },
+  "Timeouts / refused / slow": {
+   "MATCH": 2
+  },
+  "SSL/TLS problems": {
+   "MATCH": 2
+  },
+  "HTTP errors": {
+   "SITE-CHANGED": 1,
+   "MATCH": 2
+  },
+  "Redirect behaviour": {
+   "MATCH": 3,
+   "MISMATCH": 1
+  },
+  "Bot-protected / WAF": {
+   "MATCH": 1,
+   "SITE-CHANGED": 1
+  },
+  "robots.txt": {
+   "MATCH": 1,
+   "MISMATCH": 1
+  },
+  "Non-HTML and heavy content": {
+   "MATCH": 2
+  },
+  "Login-walled": {
+   "MATCH": 1
+  },
+  "Encoding oddities": {
+   "MATCH": 2
+  },
+  "Input handling": {
+   "MATCH": 7,
+   "MISMATCH": 1
+  },
+  "Thin / empty / error-only pages": {
+   "MISMATCH": 2
+  },
+  "Crawl traps": {
+   "MATCH": 2
+  }
+ },
+ "concurrency_used": 5,
+ "crawler_own_default_concurrency": {
+  "config.CONCURRENCY": 10,
+  "limits.crawl_concurrency()": 10
+ },
+ "app_code_unchanged": true
+}

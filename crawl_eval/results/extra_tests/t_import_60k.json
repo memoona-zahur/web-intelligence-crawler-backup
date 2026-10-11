@@ -1,0 +1,40 @@
+{
+ "urls": 60000,
+ "chars_domain_only": 2099912,
+ "chars_with_paths": 2605872,
+ "avg_chars_per_line_domain_only": 35.0,
+ "avg_chars_per_line_with_paths": 43.4,
+ "MAX_IMPORT_CHARS": 2000000,
+ "MAX_UPLOAD_BYTES": 5000000,
+ "urls_that_fit_in_limit_at_domain_only_avg": 57145,
+ "urls_that_fit_in_limit_at_with_paths_avg": 46049,
+ "importer_function": {
+  "seconds": 49.9,
+  "added": 60000,
+  "duplicates": 0,
+  "invalid": 0,
+  "rss_before_mb": 71.5,
+  "rss_peak_mb": 84.4
+ },
+ "second_import_same_list": {
+  "seconds": 19.9,
+  "added": 0,
+  "duplicates": 60000
+ },
+ "web_endpoint_post_import": {
+  "domain_only_60000_lines": {
+   "bytes": 2099912,
+   "http_status": 303,
+   "redirect_to": "/?notice=upload",
+   "accepted": false,
+   "refused_as_too_large": true
+  },
+  "with_paths_60000_lines": {
+   "bytes": 2605872,
+   "http_status": 303,
+   "redirect_to": "/?notice=upload",
+   "accepted": false,
+   "refused_as_too_large": true
+  }
+ }
+}

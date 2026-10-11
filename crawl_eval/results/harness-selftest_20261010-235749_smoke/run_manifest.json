@@ -1,0 +1,50 @@
+{
+ "run_id": "harness-selftest_20261010-235749_smoke",
+ "label": "harness-selftest",
+ "started": "20261010-235749",
+ "smoke": true,
+ "concurrency_used": 5,
+ "crawler_own_default_concurrency": {
+  "config.CONCURRENCY": 10,
+  "limits.crawl_concurrency()": 10
+ },
+ "git_commit": "24818a603f2fba198ee9447e027c0cdab06c475a",
+ "git_tag": "crawler-baseline-v1",
+ "app_code_unchanged_before": true,
+ "app_code_unchanged_after": true,
+ "dataset_file": "_selftest.csv",
+ "dataset_sha256": "926605987e7247b7e8065137ae788a1920f39f0949edaf11c51363cfcfea1090",
+ "rows_total": 68,
+ "rows_selected": 68,
+ "rows_crawled": 49,
+ "python": "3.14.6",
+ "os": "Windows-10-10.0.19045-SP0",
+ "db": "C:\\crawl_eval_data\\db\\harness-selftest_20261010-235749_smoke.db",
+ "wrappers": [
+  "httpx.AsyncClient.send (request log, UA, timing, safety net)",
+  "app.crawler.fetcher._one_attempt (attempt/retry log)",
+  "app.crawler.fetcher.assert_public_url + app.crawler.browser.assert_public_url (guard log; scenario host:port allow-list)",
+  "app.crawler.pipeline.load_robots (robots decision)",
+  "app.crawler.pipeline.render_page + app.crawler.browser.render_page (browser use)",
+  "app.crawler.pipeline.crawl_one + app.crawler.runner.crawl_one (per-site timing and result)",
+  "app.crawler.runner._save (DB write time)",
+  "app.importer.extract_urls / normalize_website / is_safe_import_target (import decisions)"
+ ],
+ "guard_relaxed_for": "127.0.0.1 ports 8800-8860 and 8899 only",
+ "safety_net": "requests aimed at non-global addresses that the crawler's guard did not stop are not sent (recorded SAFETY_NET_BLOCKED)",
+ "direct_insert_rows": 43,
+ "memory_note": "RSS is this Python process only; Chromium child processes are not included",
+ "wall_seconds_crawl": 16.8,
+ "secret_stored": false,
+ "domain_stats_rows": 16,
+ "crawl_jobs": [
+  [
+   2,
+   "crawl",
+   "completed",
+   49,
+   "blocked=5, crawled=22, empty=5, failed=6, invalid=4, robots_blocked=2, unreachable=5"
+  ]
+ ],
+ "peak_rss_mb": 95.9
+}

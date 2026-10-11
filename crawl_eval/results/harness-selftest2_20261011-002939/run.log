@@ -1,0 +1,20 @@
+00:29:39 run harness-selftest2_20261011-002939 label=harness-selftest2 smoke=False limit=None concurrency=5 resume=False
+00:29:39 app code hash check before run: OK
+00:29:41 dataset _selftest2.csv sha256 d8684b3f0c23adff rows=7 selected=7
+00:29:41 importer: added=1 duplicates=0 invalid=6; raws=7 lines=7; crashes=0
+00:29:41 crawl plan: 7 rows (6 direct, 1 via importer); reused 0; to do now: 4 normal + 3 heavy (final stage)
+00:29:41 stage 1 batch 1: 4 sites
+00:29:57   runner:   4/4 done — crawled (site #1)
+00:29:57   batch counts: {'empty': 1, 'crawled': 2, 'unreachable': 1} in 16.3s
+00:29:57   checkpoint written (4/4)
+00:29:57 stage 2 (final, heavy scenarios): 3 rows, one at a time
+00:29:57   heavy row T0843 http://127.0.0.1:8804/ (rss now 96 MB, machine free 7511 MB)
+00:30:25   runner:   1/1 done — unreachable (site #5)
+00:30:25   batch counts: {'unreachable': 1} in 27.6s
+00:30:25   heavy row T0844 http://127.0.0.1:8805/ (rss now 97 MB, machine free 7552 MB)
+00:30:26   runner:   1/1 done — failed (site #6)
+00:30:26   batch counts: {'failed': 1} in 0.9s
+00:30:26   heavy row T0847 http://127.0.0.1:8808/ (rss now 242 MB, machine free 7428 MB)
+00:30:27   runner:   1/1 done — crawled (site #7)
+00:30:27   batch counts: {'crawled': 1} in 0.8s
+00:30:27 app code hash check after run: OK

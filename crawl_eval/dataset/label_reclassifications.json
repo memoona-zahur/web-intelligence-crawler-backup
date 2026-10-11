@@ -1,0 +1,77 @@
+{
+ "rule": "Fresh independent probe of 10 random SITE-CHANGED rows (seed 20261012) at Phase 1 close. A label is changed only when the fresh probe shows it does not hold. Applied by run_eval.build_reports. Same rule in Phase 2.",
+ "sampled": [
+  "T0089",
+  "T0091",
+  "T0118",
+  "T0124",
+  "T0575",
+  "T0705",
+  "T0722",
+  "T0752",
+  "T0777",
+  "T0955"
+ ],
+ "extra_checked": [
+  "T0507",
+  "T0522",
+  "T0524"
+ ],
+ "rows": {
+  "T0118": {
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (15180 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "15180 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0507": {
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Requires Review' (almost no static text (57 chars)), a plain GET cannot execute JavaScript, so the probe cannot show that this JavaScript-redirect site changed; the SITE-CHANGED label has no support and the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Requires Review",
+    "note": "almost no static text (57 chars)",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0575": {
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Crawled' (1748 chars), compatible with the dataset expectation, so the site had not changed; the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Crawled",
+    "note": "1748 chars",
+    "error": "",
+    "head_status": 200,
+    "dns_any_ok": true
+   }
+  },
+  "T0722": {
+   "to": "ENV-DEPENDENT",
+   "reason": "fresh probe reads the site as 'Unreachable' (ConnectError), name resolves but the site is not reachable from this network",
+   "fresh_probe": {
+    "predicted": "Unreachable",
+    "note": null,
+    "error": "ConnectError",
+    "head_status": null,
+    "dns_any_ok": true
+   }
+  },
+  "T0777": {
+   "to": "MISMATCH",
+   "reason": "fresh probe reads the site as 'Requires Review' (almost no static text (35 chars)), a plain GET cannot execute JavaScript, so the probe cannot show that this JavaScript-redirect site changed; the SITE-CHANGED label has no support and the difference is a crawler result",
+   "fresh_probe": {
+    "predicted": "Requires Review",
+    "note": "almost no static text (35 chars)",
+    "error": "",
+    "head_status": 307,
+    "dns_any_ok": true
+   }
+  }
+ }
+}
