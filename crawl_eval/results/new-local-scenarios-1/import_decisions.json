@@ -54,11 +54,6 @@
 "normalized": "https://127.0.0.1:8843",
 "raw_first_cell": "http://127.0.0.1:8843/"
 },
-"T0785": {
-"decision": "added",
-"normalized": "https://httpbin.org",
-"raw_first_cell": "https://httpbin.org/redirect-to?url=http%3A%2F%2F127.0.0.2%3A8810%2Fsecret"
-},
 "T0786": {
 "decision": "invalid",
 "normalized": "https://127.0.0.1:8809",

@@ -180,7 +180,7 @@ Stay on about 100 representative websites until crawl quality and a manual check
 .venv/bin/pip install -r requirements-dev.txt
 .venv/bin/pytest -q                                    # unit and fixture tests (network mocked; 9 PostgreSQL tests are skipped without TEST_DATABASE_URL)
 .venv/bin/pytest -q --cov=app.crawler --cov=app.importer --cov=app.normalize --cov=app.domains --cov=app.settings --cov=app.profile
-# the exact numbers of the last run are in docs/phase2-progress.md (the Phase 1 README figures "108 passed / 100%" were wrong)
+# last run: 739 passed, 9 skipped (PostgreSQL), 94% coverage of app/ - details in docs/phase2-progress.md (the Phase 1 README figures "108 passed / 100%" were wrong)
 ```
 
 Set `TEST_DATABASE_URL=postgresql+psycopg://user:password@localhost:5432/crawl_test` (an EMPTY test database) to run the PostgreSQL tests too.

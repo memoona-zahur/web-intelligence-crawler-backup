@@ -30,11 +30,11 @@ Phase 1 column = verdict of the existing code in `existing-code_full_20261011`. 
 | B06 | M | PARTIAL | TESTED | status words: crawled, redirected, parked, under_construction, requires_review, blocked, robots_blocked, unreachable, invalid, failed + lifecycle (pending/queued/crawling/extracting = "Active") + `website_status` word | test_pipeline_v2, test_persist, test_runner_v2; judge v3 reads the new words |
 | B07 | M | PARTIAL | TESTED | `crawl_outcome` Completed / Partial / Failed / Blocked; partial keeps evidence | test_pipeline_v2, test_persist::partial_crawl... |
 | B08 | M | PARTIAL | TESTED | crawl status columns separate from `classification_status`; failed recrawl marks old text stale | test_persist::crawl_status_is_separate..., ::failed_recrawl_keeps_old_text_but_marks_it_stale |
-| B09 | M | PARTIAL | TESTED | import validation before any task exists; `is_global` rule; DNS check at fetch | test_guard_v2 (57 addresses/spellings), test_normalize_v2 |
+| B09 | M | PARTIAL | TESTED | import validation before any task exists; `is_global` rule; DNS check at fetch | test_guard_v2 (36 non-global addresses, 8 odd spellings of private addresses, 9 internal names, 7 non-http schemes), test_normalize_v2 |
 | B10 | M | FAIL | TESTED | every redirect hop and every browser request goes through the guard; Chromium has no network of its own | test_guard_v2 (redirect hops), **test_browser_real (JavaScript redirect to 127.0.0.2: secret never fetched)** |
 | C01 | M | PASS | TESTED / FIELD | focused crawl: coverage-based page selection | test_pipeline_v2 |
 | C02 | M | PASS | TESTED | homepage first | test_pipeline_v2 |
-| C03 | M | PARTIAL | TESTED / FIELD | page types About/Products/Services/Industries/Customers/Contact, 18 languages | test_discover_v2 (73 genuine paths); gold-set recall = FIELD |
+| C03 | M | PARTIAL | TESTED / FIELD | page types About/Products/Services/Industries/Customers/Contact; word lists for 18 languages (15 of them tested) | test_discover_v2 (65 genuine paths in 15 languages, all recognised; Phase 1 scored 28 of 36 such paths 0); gold-set recall = FIELD |
 | C04 | S | PARTIAL | TESTED | fetch order About → Products → Services → Industries → Customers → Contact; other pages only if evidence is thin | test_discover_v2::preference_order, test_pipeline_v2 |
 | C05 | M | FAIL | TESTED / FIELD | link text, menu position, title/aria-label, sitemap, page title confirmation, non-standard paths | test_discover_v2, test_pipeline_v2 (non-English, sitemap-only) |
 | C06 | M | PARTIAL | TESTED | whole-word skip rules; section words always skip; policy words skip unless a business word is present | test_discover_v2 (29 junk paths, whole-word tests) |
@@ -64,7 +64,7 @@ Phase 1 column = verdict of the existing code in `existing-code_full_20261011`. 
 | E10 | M | PARTIAL | TESTED | `truncation_note` says what was cut | test_pipeline_v2::truncation... |
 | E11 | M | NOT TESTED | TESTED | `app/sanitize.py` in `ops export-crawl` and in the company CSV/XLSX/JSON export | test_ops (formula cells neutralised, control characters removed) |
 | E12 | O | FAIL | DEFERRED | personal-data policy needed; structured data deliberately ignores telephone/e-mail | test_extract_v2::no_contact_details_are_collected |
-| F01 | M | PARTIAL | TESTED / FIELD | RFC 9309 via protego; 5xx/429 = not crawled now; policy in `docs/robots-policy.md`; setting `ROBOTS_5XX_POLICY` (pending sir) | test_fetcher_v2 (robots section, 20 tests), test_pipeline_v2; harness T0818 MATCH |
+| F01 | M | PARTIAL | TESTED / FIELD | RFC 9309 via protego; 5xx/429 = not crawled now; policy in `docs/robots-policy.md`; setting `ROBOTS_5XX_POLICY` (pending sir) | test_fetcher_v2 (21 robots tests), test_pipeline_v2; harness T0818 MATCH |
 | F02 | M | PARTIAL | TESTED | one name `WebsiteIntelligenceBot/2.0 (+contact)`; production refuses to start without a real contact; test contact never sent to non-local hosts | test_settings, test_fetcher_v2 (contact policy), test_runner_v2, test_worker_cli |
 | F03 | M | PARTIAL | TESTED | per-domain gate (1 request at a time, min gap), concurrency setting, `.env` loaded for every entry point | test_politeness, test_runner_v2, test_settings |
 | F04 | M | FAIL | TESTED | exponential back-off + jitter, 3 attempts, Retry-After | test_fetcher_v2, test_politeness |

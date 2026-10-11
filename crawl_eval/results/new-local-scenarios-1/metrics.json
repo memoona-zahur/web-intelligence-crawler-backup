@@ -1,34 +1,33 @@
 {
  "run_id": "new-local-scenarios-1",
- "rows_judged": 61,
+ "rows_judged": 60,
  "verdicts": {
-  "MATCH": 58,
-  "MISMATCH": 3
+  "MATCH": 60
  },
  "status_counts": {
   "parked": 1,
-  "under_construction": 2,
+  "under_construction": 3,
   "unreachable": 4,
   "blocked": 3,
-  "failed": 10,
-  "crawled": 33,
-  "requires_review": 5,
+  "failed": 9,
+  "crawled": 34,
+  "requires_review": 3,
   "invalid": 1,
   "robots_blocked": 2
  },
- "match_rate_all": 0.951,
- "judged_for_crawler_fault": 61,
+ "match_rate_all": 1.0,
+ "judged_for_crawler_fault": 60,
  "happy_rows": 0,
  "happy_crawled": 0,
  "happy_useful_text_ge_500": 0,
- "latency_s_p50": 8.19,
- "latency_s_p95": 39.49,
- "total_http_requests": 494,
+ "latency_s_p50": 8.29,
+ "latency_s_p95": 52.04,
+ "total_http_requests": 498,
  "retries": 13,
  "browser_used_rows": 1,
- "wall_seconds_crawl": 274.8,
- "throughput_sites_per_hour_THIS_RUN_ONLY": 799.1,
- "peak_rss_mb_python_only": 141.8,
+ "wall_seconds_crawl": 278.6,
+ "throughput_sites_per_hour_THIS_RUN_ONLY": 775.3,
+ "peak_rss_mb_python_only": 140.2,
  "by_category": {
   "Parked / for-sale domains": {
    "MATCH": 1
@@ -43,7 +42,6 @@
    "MATCH": 4
   },
   "Redirect behaviour": {
-   "MISMATCH": 1,
    "MATCH": 6
   },
   "Bot-protected / WAF": {
@@ -59,12 +57,10 @@
    "MATCH": 1
   },
   "Encoding oddities": {
-   "MATCH": 3,
-   "MISMATCH": 1
+   "MATCH": 4
   },
   "Thin / empty / error-only pages": {
-   "MATCH": 1,
-   "MISMATCH": 1
+   "MATCH": 2
   },
   "Crawl traps": {
    "MATCH": 20

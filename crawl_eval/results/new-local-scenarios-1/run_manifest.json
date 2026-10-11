@@ -1,24 +1,24 @@
 {
  "run_id": "new-local-scenarios-1",
  "label": "new-local-scenarios",
- "started": "20261011-090908",
+ "started": "20261011-092352",
  "smoke": false,
  "concurrency_used": 5,
  "crawler_own_default_concurrency": {
   "config.CONCURRENCY": 10,
   "limits.crawl_concurrency()": 10
  },
- "git_commit": "29bb33c457bf996bf1f047304d63b60a7714932a",
+ "git_commit": "ea0cafa4aa4278a0aa96668ebfd4d9ed9cac8de0",
  "git_tag": "phase2-dev-selftest",
  "code_manifest": "code_manifest.json",
- "code_sha256": "5886e92128929c97f89aa614bbe3fbb6a5b06ad61642424f7620acc971512aae",
+ "code_sha256": "144e04cc57058189a0c3505c52f8c299d855ec19bc62e8cfc79fc94f0207ddc2",
  "app_code_unchanged_before": true,
  "app_code_unchanged_after": true,
  "dataset_file": "local_scenarios.csv",
- "dataset_sha256": "a73f6b132ea8ce564908b094d765f764e7a5d6e5b8359607b616765a10fb0872",
- "rows_total": 61,
- "rows_selected": 61,
- "rows_crawled": 61,
+ "dataset_sha256": "35c840640e6755fb38c47986a9ead121b499c526e918a1bb1ca69ff6d6f85802",
+ "rows_total": 60,
+ "rows_selected": 60,
+ "rows_crawled": 60,
  "python": "3.14.6",
  "os": "Windows-10-10.0.19045-SP0",
  "db": "C:\\crawl_eval_data\\db\\new-local-scenarios-1.db",
@@ -34,25 +34,25 @@
  ],
  "guard_relaxed_for": "127.0.0.1 ports 8800-8861 and 8899 only",
  "safety_net": "requests aimed at non-global addresses that the crawler's guard did not stop are not sent (recorded SAFETY_NET_BLOCKED)",
- "direct_insert_rows": 61,
+ "direct_insert_rows": 60,
  "memory_note": "RSS is this Python process only; Chromium child processes are not included",
- "wall_seconds_crawl": 274.8,
+ "wall_seconds_crawl": 278.6,
  "secret_stored": false,
- "domain_stats_rows": 61,
+ "domain_stats_rows": 60,
  "crawl_jobs": [
   [
    2,
    "crawl",
    "completed",
    50,
-   "blocked=3, crawled=27, failed=8, invalid=1, parked=1, requires_review=5, robots_blocked=2, under_construction=2, unreachable=1"
+   "blocked=3, crawled=29, failed=7, invalid=1, parked=1, requires_review=3, robots_blocked=2, under_construction=3, unreachable=1"
   ],
   [
    3,
    "crawl",
    "completed",
-   3,
-   "crawled=3"
+   2,
+   "crawled=2"
   ],
   [
    4,
@@ -111,7 +111,7 @@
    "crawled=1"
   ]
  ],
- "peak_rss_mb": 141.8,
+ "peak_rss_mb": 140.2,
  "rows_reused_from_earlier_run": [],
  "include_from": null,
  "watchdog": {

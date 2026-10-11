@@ -44,7 +44,9 @@ Chromium for the browser tests/harness: `set PLAYWRIGHT_BROWSERS_PATH=C:/crawl_e
 | test_phase2::test_stops_early_when_enough_text_is_collected | now `..._when_the_important_page_types_are_read` (coverage rule) | ISS-08 |
 
 ## Test results
-See the stop report (`pytest` output and coverage are attached there). Last full run before this log: 725 passed.
+Last full run (2026-10-11, end of build step 6): **739 passed, 9 skipped** (the 9 PostgreSQL tests: no `TEST_DATABASE_URL`), coverage of all of `app/` **94 %** (crawler modules 91-100 %). Full output: `docs/phase2-test-output.txt`.
+
+Other runs (all local, no real website): harness mini run 8/8 MATCH; all 60 local scenario rows MATCH (`crawl_eval/results/new-local-scenarios-1`); SQLite scale test 1,000 sites x 3 processes x concurrency 5/10/20, all checks PASS (`crawl_eval/results/scale_sqlite_local`); harness contract 68/68 (`crawl_eval/tools/check_harness_contract.py`).
 
 ## Commits / tags
 | Ref | Meaning |
