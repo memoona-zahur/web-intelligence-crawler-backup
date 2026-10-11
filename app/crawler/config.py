@@ -38,7 +38,6 @@ SUFFICIENT_TEXT_CHARS = 12_000   # kept for compatibility; no longer an early-st
 PAGE_TIMEOUT = _float("CRAWL_PAGE_TIMEOUT", 12.0)        # connect / read, per step
 TOTAL_TIMEOUT = _float("CRAWL_TOTAL_TIMEOUT", 25.0)      # whole response incl. body, per request (ISS-16)
 SITE_DEADLINE = _float("CRAWL_SITE_DEADLINE", 150.0)     # whole site, all pages
-ROBOTS_TIMEOUT = 8.0
 MAX_REDIRECTS = _int("CRAWL_MAX_REDIRECTS", 10)          # ISS-24
 RETRIES = _int("CRAWL_RETRIES", 2)                       # extra attempts after the first (3 attempts in all)
 RETRY_BACKOFF = _float("CRAWL_RETRY_BACKOFF", 1.0)       # 1, 2, 4 ... seconds (exponential, with jitter)

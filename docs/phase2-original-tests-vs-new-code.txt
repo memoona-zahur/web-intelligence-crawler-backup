@@ -1,0 +1,116 @@
+﻿.................FF...............................F......F.............. [ 46%]
+.....................F.............................F............F....... [ 93%]
+..........                                                               [100%]
+================================== FAILURES ===================================
+__________________ test_excludes_offsite_and_subdomain_links __________________
+
+    def test_excludes_offsite_and_subdomain_links():
+        html = """
+        <html><body>
+          <a href="https://evil.com/about">Evil</a>
+          <a href="https://shop.example.com/products">Shop subdomain</a>
+          <a href="/about">Real about</a>
+        </body></html>
+        """
+        found = links(html)
+>       assert found == ["https://example.com/about"]
+E       AssertionError: assert ['https://exa...com/products'] == ['https://example.com/about']
+E         
+E         Left contains one more item: 'https://shop.example.com/products'
+E         Use -v to get more diff
+
+tests\test_discover.py:65: AssertionError
+_____________________ test_www_variant_matches_base_host ______________________
+
+    def test_www_variant_matches_base_host():
+        html = '<html><body><a href="https://www.example.com/about">About</a></body></html>'
+>       assert links(html) == ["https://example.com/about"]
+E       AssertionError: assert ['https://www...le.com/about'] == ['https://example.com/about']
+E         
+E         At index 0 diff: 'https://www.example.com/about' != 'https://example.com/about'
+E         Use -v to get more diff
+
+tests\test_discover.py:70: AssertionError
+__________________ test_timeout_maps_to_network_and_retries ___________________
+
+    def test_timeout_maps_to_network_and_retries():
+        calls = {"n": 0}
+    
+        def handler(request):
+            calls["n"] += 1
+            raise httpx.ConnectTimeout("timed out", request=request)
+    
+        with pytest.raises(FetchError) as exc:
+            fetch(make_client(handler), "https://example.com/")
+        assert exc.value.kind == "network"
+>       assert calls["n"] == 1 + config.RETRIES
+E       assert 2 == (1 + 2)
+E        +  where 2 = config.RETRIES
+
+tests\test_fetcher.py:160: AssertionError
+____________________ test_robots_fail_open_on_server_error ____________________
+
+    def test_robots_fail_open_on_server_error():
+        def handler(request):
+            return httpx.Response(500, request=request)
+    
+        rules = asyncio.run(load_robots(make_client(handler), "https://example.com", {}))
+>       assert rules.allowed("https://example.com/")
+E       AssertionError: assert False
+E        +  where False = allowed('https://example.com/')
+E        +    where allowed = RobotsRules(origin='https://example.com', parser=None, missing=False, unavailable=True, detail='robots.txt unavailable (HTTP 500 from https://example.com/robots.txt)', retry_after=None, error_kind='http').allowed
+
+tests\test_fetcher.py:236: AssertionError
+_______________ test_stops_early_when_enough_text_is_collected ________________
+
+allow_hosts = None
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000022776017E00>
+
+    def test_stops_early_when_enough_text_is_collected(allow_hosts, monkeypatch):
+        monkeypatch.setattr(config, "SUFFICIENT_TEXT_CHARS", 80)
+        result = run_crawl(html_client({"/": HOME, "/about": ABOUT, "/locations": LOCATIONS}))
+>       assert result.pages_crawled == 1
+E       AssertionError: assert 2 == 1
+E        +  where 2 = CrawlResult(status='crawled', clean_text='=== PAGE: homepage | https://example.com/\nACME\nRetrieved via http: https:/...mple.com/about', 'attempt_no': 1, 'ms': 2, 'http_status': 200, 'bytes': 165, 'note': None}], job_id=None, attempt_no=0).pages_crawled
+
+tests\test_phase2.py:167: AssertionError
+_____________________ test_empty_when_below_minimum_text ______________________
+
+allow_hosts = None
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000022775FDE580>
+
+    def test_empty_when_below_minimum_text(allow_hosts, monkeypatch):
+        monkeypatch.setattr(config, "MIN_TEXT_CHARS", 10_000)
+        result = run_crawl(html_client({"/": HOME}))
+>       assert result.status == "empty"
+E       AssertionError: assert 'requires_review' == 'empty'
+E         
+E         - empty
+E         + requires_review
+
+tests\test_pipeline.py:82: AssertionError
+___________________ test_contact_url_changes_the_user_agent ___________________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000227767A67B0>
+
+    def test_contact_url_changes_the_user_agent(monkeypatch):
+        monkeypatch.setenv("CRAWLER_CONTACT_URL", "mailto:crawler@example.com")
+    
+>       assert config.user_agent() == "WebsiteIntelligenceBot/1.0 (+mailto:crawler@example.com)"
+E       AssertionError: assert 'WebsiteIntel...@example.com)' == 'WebsiteIntel...@example.com)'
+E         
+E         - WebsiteIntelligenceBot/1.0 (+mailto:crawler@example.com)
+E         ?                        ^
+E         + WebsiteIntelligenceBot/2.0 (+mailto:crawler@example.com)
+E         ?                        ^
+
+tests\test_requirements.py:22: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_discover.py::test_excludes_offsite_and_subdomain_links - As...
+FAILED tests/test_discover.py::test_www_variant_matches_base_host - Assertion...
+FAILED tests/test_fetcher.py::test_timeout_maps_to_network_and_retries - asse...
+FAILED tests/test_fetcher.py::test_robots_fail_open_on_server_error - Asserti...
+FAILED tests/test_phase2.py::test_stops_early_when_enough_text_is_collected
+FAILED tests/test_pipeline.py::test_empty_when_below_minimum_text - Assertion...
+FAILED tests/test_requirements.py::test_contact_url_changes_the_user_agent - ...
+7 failed, 147 passed in 117.57s (0:01:57)

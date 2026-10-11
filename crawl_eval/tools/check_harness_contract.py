@@ -98,6 +98,7 @@ def main() -> int:
 
     from tests.sitekit import crawl, standard_site
 
+    fetcher.assert_public_url = lambda url: url   # the sample crawl uses a fake host on a mocked network: no DNS lookup, nothing leaves this machine
     out = crawl(standard_site())
     check(bool(re.search(r"^=== PAGE: (.*?) \| (\S+)\n", out.clean_text or "", re.M)), "clean_text sections look like '=== PAGE: label | url'")
     check("Retrieved via http:" in (out.clean_text or ""), "clean_text carries 'Retrieved via http|browser:'")
