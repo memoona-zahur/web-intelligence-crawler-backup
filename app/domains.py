@@ -51,6 +51,17 @@ def domain_key(value: str) -> str:
     return f"{base}:{port}" if base and port and port not in (80, 443) else base
 
 
+def health_key(value: str) -> str:
+    """Key of one server for domain health (host without www, plus a non-default port). Used when health is written AND when the queue reads it."""
+    host = host_of(value).removeprefix("www.")
+    text = (value or "").strip()
+    try:
+        port = urlparse(text if "://" in text else "//" + text).port
+    except ValueError:
+        port = None
+    return f"{host}:{port}" if host and port and port not in (80, 443) else host
+
+
 def same_site(url_a: str, url_b: str) -> bool:
     """http->https and www<->apex are the same site; a different registrable domain is a cross-domain redirect."""
     a, b = registrable_domain(url_a), registrable_domain(url_b)

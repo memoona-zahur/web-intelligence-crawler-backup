@@ -1,0 +1,10 @@
+08:23:29 run mini-local-new-1 label=new-mini smoke=False limit=None concurrency=5 resume=False
+08:23:29 app code hash check before run: OK
+08:23:32 dataset mini_local.csv sha256 766cbeb5ffc6ef31 rows=8 selected=8
+08:23:32 importer: added=0 duplicates=0 invalid=8; raws=8 lines=8; crashes=0
+08:23:32 crawl plan: 8 rows (8 direct, 0 via importer); reused 0; to do now: 8 normal + 0 heavy (final stage)
+08:23:32 stage 1 batch 1: 8 sites
+08:23:41   runner:   8/8 done — crawled (site #5)
+08:23:41   batch counts: {'robots_blocked': 1, 'parked': 1, 'under_construction': 2, 'requires_review': 2, 'crawled': 2} in 8.6s
+08:23:41   checkpoint written (8/8)
+08:23:41 app code hash check after run: OK

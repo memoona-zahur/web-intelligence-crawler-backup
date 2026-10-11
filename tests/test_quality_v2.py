@@ -80,6 +80,7 @@ SOFT_404 = [
     "<html><head><title>Page not found</title></head><body><h1>Oops!</h1><p>The page you requested could not be found.</p></body></html>",
     "<html><head><title>404</title></head><body><p>Error 404 - nothing here</p></body></html>",
     "<html><head><title>Seite nicht gefunden</title></head><body><p>Diese Seite wurde nicht gefunden.</p></body></html>",
+    "<html><body><p>Sorry, the page you are looking for does not exist.</p></body></html>",   # found by the harness run: was read as a default server page
 ]
 
 

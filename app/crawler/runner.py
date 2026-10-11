@@ -22,7 +22,7 @@ import time
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 
-from sqlalchemy import select
+from sqlalchemy import select, update
 
 import app.settings as settings
 from app.crawler import config, queue
@@ -184,10 +184,13 @@ def _task_state(task_id: int, state: str) -> None:
         queue.set_state(session, task_id, state)
 
 
-def _finish_task(task_id: int, state: str, error: str | None, delay: float | None) -> None:
+def _finish_task(task_id: int, state: str, error: str | None, delay: float | None, website_id: int | None = None) -> None:
     with get_session() as session:
         not_before = _utcnow() + timedelta(seconds=delay) if delay else None
         queue.finish(session, task_id, state, error, not_before)
+        if state == "retry_scheduled" and website_id is not None:  # the row shows when the next attempt will happen
+            session.execute(update(Website).where(Website.id == website_id).values(next_retry_at=not_before))
+            session.commit()
 
 
 def _decide(result: CrawlResult, attempt: int, max_attempts: int = queue.MAX_ATTEMPTS) -> tuple[str, float | None]:
@@ -268,7 +271,7 @@ async def _drain(job_id: int | None, concurrency: int, log, summary: RunSummary,
                 summary.counts["failed"] = summary.counts.get("failed", 0) + 1
                 return
             state, delay = _decide(result, claimed.attempt)
-            await _db(_finish_task, claimed.task_id, state, result.error if state != "done" else None, delay)
+            await _db(_finish_task, claimed.task_id, state, result.error if state != "done" else None, delay, claimed.website_id)
             summary.counts[result.status] = summary.counts.get(result.status, 0) + 1
             done_n["n"] += 1
             if done_n["n"] % 10 == 0 or (total and done_n["n"] == total):

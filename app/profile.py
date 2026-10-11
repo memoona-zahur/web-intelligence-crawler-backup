@@ -16,10 +16,13 @@ from sqlalchemy.orm import object_session
 
 from app.crawler.pipeline import CrawlResult
 from app.database import get_session
-from app.domains import domain_key
+from app.domains import domain_key, health_key
 from app.models import DomainStat, EvidenceRecord, Website
 from app.recovery import utcnow
 
+# Outcomes that say the SERVER is unhealthy (cannot be reached, refuses, rate-limits). Content verdicts are not health problems.
+HEALTH_FAILURE_STATUSES = {"unreachable", "blocked", "robots_blocked", "failed"}
+CONTENT_CATEGORIES = {"http_4xx", "not_html", "too_large", "redirect", "robots_disallowed", "parked", "under_construction", "login_wall", "soft_404", "no_content", "invalid_host"}
 _PAGE = re.compile(r"^=== PAGE: (.*?) \| (\S+)\s*$", re.MULTILINE)
 _METHOD = re.compile(r"Retrieved via (http|browser):")
 
@@ -115,11 +118,13 @@ def apply_crawl_result(site: Website, result: CrawlResult, now: datetime | None 
 
 def record_domain(website: str, result: CrawlResult, now: datetime | None = None) -> None:
     """Write domain health that the queue READS before claiming more work for the same host (CR-F06, F07, ISS-22)."""
-    host = (urlparse(website).hostname or "").lower().removeprefix("www.")
+    host = health_key(website)
     if not host:
         return
     now = now or utcnow()
     ok = result.status in ("crawled", "redirected")
+    # Domain HEALTH is about the server, not about what the site says: a parked page, a login wall or a 404 homepage prove the host answers.
+    unhealthy = result.status in HEALTH_FAILURE_STATUSES and result.error_category not in CONTENT_CATEGORIES
     with get_session() as session:
         stat = session.scalar(select(DomainStat).where(DomainStat.domain == host))
         if stat is None:
@@ -137,12 +142,14 @@ def record_domain(website: str, result: CrawlResult, now: datetime | None = None
             stat.backoff_until = None
         else:
             stat.failure_count = (stat.failure_count or 0) + 1
-            stat.consecutive_failures = (stat.consecutive_failures or 0) + 1
+            stat.consecutive_failures = (stat.consecutive_failures or 0) + 1 if unhealthy else 0
+            if not unhealthy:
+                stat.backoff_until = None
             blocking = result.status in ("blocked", "robots_blocked") or result.error_category in ("rate_limited", "robots_unavailable", "challenge")
             if blocking:
                 stat.blocked_at = now
                 stat.blocked_reason = (result.error or result.status)[:255]
-            if stat.consecutive_failures >= 3 or (blocking and result.retry_after):
+            if unhealthy and (stat.consecutive_failures >= 3 or (blocking and result.retry_after)):
                 wait = max(result.retry_after or 0, 900 * 2 ** min(stat.consecutive_failures - 1, 6))
                 stat.backoff_until = now + timedelta(seconds=min(wait, 24 * 3600))
         session.commit()

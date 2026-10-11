@@ -21,7 +21,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app.crawler import config
-from app.domains import domain_key, host_of
+from app.domains import domain_key, health_key
 from app.models import TASK_ACTIVE_STATES, TASK_RUNNING_STATES, CrawlTask, DomainStat, Website
 from app.recovery import utcnow
 
@@ -111,10 +111,10 @@ def claim_next(session: Session, worker_id: str, job_id: int | None = None, leas
     if not rows:
         session.rollback()
         return None
-    backoffs = _host_backoffs(session, {host_of(r.normalized_website).removeprefix("www.") for r in rows}, now)
+    backoffs = _host_backoffs(session, {health_key(r.normalized_website) for r in rows}, now)
 
     for row in rows:
-        host = host_of(row.normalized_website).removeprefix("www.")
+        host = health_key(row.normalized_website)
         if host in backoffs:  # domain health says 'wait': park the task until then instead of hammering the site
             session.execute(update(CrawlTask).where(CrawlTask.id == row.id, CrawlTask.state.in_(RUNNABLE_STATES))
                             .values(state="retry_scheduled", not_before=backoffs[host], last_error=f"domain back-off until {backoffs[host].isoformat(timespec='seconds')}"))

@@ -79,7 +79,7 @@ _DEFAULT_SERVER_PHRASES = (
     "domain default page", "default parallels plesk page", "plesk default page", "cpanel", "site not found", "this site can't be reached",
     "future home of something quite cool", "is your new web server", "the web server software is running but no content has been added",
     "default page", "lighttpd", "welcome to centos", "welcome to openresty", "caddy works", "hello world!", "wordpress › installation",
-    "sorry, the page you are looking for", "no website configured", "no site configured", "account suspended", "this account has been suspended",
+    "no website configured", "no site configured", "account suspended", "this account has been suspended",
     "this website is not configured",
 )
 
@@ -97,6 +97,7 @@ _SOFT404_TITLE = re.compile(
     re.I,
 )
 _SOFT404_TEXT = (
+    "sorry, the page you are looking for", "the page you are looking for could not", "page you were looking for",
     "page not found", "404 not found", "404 error", "error 404", "this page does not exist", "the page you requested could not be found",
     "the page you are looking for might have been removed", "nothing was found", "no longer exists", "we couldn't find that page",
     "page you're looking for doesn't exist", "page you are looking for doesn't exist", "seite wurde nicht gefunden", "page introuvable",
